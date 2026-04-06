@@ -186,9 +186,41 @@ main {
   color: var(--accent);
 }
 
+.footer__tail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
+  text-align: right;
+}
+
 .footer__meta {
   font-size: 0.85rem;
   color: var(--text-muted);
+  margin: 0;
+}
+
+.footer__credits {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+  opacity: 0.82;
+}
+
+@media (max-width: 720px) {
+  .footer__tail {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.contact-credits {
+  margin: 2rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+  opacity: 0.82;
 }
 
 .page-title {
