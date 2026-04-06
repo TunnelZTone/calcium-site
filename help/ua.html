@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e14">
+  <title>Довідка CalcIUM — CalcIUM</title>
+  <link rel="icon" type="image/png" href="../assets/img/CalcIUM_Dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/help-content.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/CalcIUM_Dark.png" width="36" height="36" alt="">
+        <span>CalcIUM</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html" aria-current="page">Help</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout-main">
+    <main>
+      <nav class="help-lang-switch" aria-label="Help language">
+          <a href="en.html">English</a>
+          <a href="ru.html">Русский</a>
+          <a href="ua.html" aria-current="page">Українська</a>
+          <a href="de.html">Deutsch</a>
+          <a href="es.html">Español</a>
+          <a href="fr.html">Français</a>
+          <a href="hu.html">Magyar</a>
+      </nav>
+      <article class="help-document theme-dark">
+<!-- ========== NUMERIC PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Числова панель</span></summary>
+  <div>
+    <p class="help-section-desc">Основна клавіатура для цифр, операторів та пам'яті. Підписи кнопок збігаються з відображеними на екрані.</p>
+
+<details>
+  <summary><span class="summary-title">MR</span></summary>
+  <div><p><strong>Виклик з пам'яті.</strong> <span class="key">Вставляє</span> збережене в пам'яті значення в позицію курсора. Пам'ять не очищається.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MS</span></summary>
+  <div><p><strong>Запис у пам'ять.</strong> <span class="key">Зберігає</span> поточний результат у пам'яті (замінює попереднє значення).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M+</span></summary>
+  <div><p><strong>Додати до пам'яті.</strong> Додає поточний результат до значення в пам'яті.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M−</span></summary>
+  <div><p><strong>Відняти з пам'яті.</strong> Віднімає поточний результат від значення в пам'яті.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MC</span></summary>
+  <div><p><strong>Очистити пам'ять.</strong> <span class="key">Очищає</span> збережене значення пам'яті.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">←</span></summary>
+  <div><p><strong>Видалення.</strong> Видаляє один символ перед курсором. Якщо в Налаштуваннях увімкнено <span class="key">Розумний back</span>, може видаляти цілий токен (наприклад, ім'я функції).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">(</span></summary>
+  <div><p><strong>Ліва дужка.</strong> Вставляє <code>(</code> у вираз.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">)</span></summary>
+  <div><p><strong>Права дужка.</strong> Вставляє <code>)</code> у вираз.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">//</span></summary>
+  <div><p><strong>Цілочисельне ділення / остача.</strong> Вставляє <code>//</code>. Результат — остача від цілочисельного ділення. Поведінка задається в Налаштування → Режим остачі '//': Остача (усічення), Модуло (евклідів) або Остача (до −∞).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">C</span></summary>
+  <div><p><strong>Очистити.</strong> Очищає вираз і результат.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">7, 8, 9</span></summary>
+  <div><p><strong>Цифри.</strong> Вставляють символи 7, 8, 9 у вираз.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">/</span></summary>
+  <div><p><strong>Ділення.</strong> Вставляє <code>/</code>. Формула: a/b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Фн/Дод (Fn/Ext)</span></summary>
+  <div><p><strong>Перемикання панелей.</strong> Коротке натискання: перемикає між Числовою та Функціональною панелями. Довге: одразу відкриває панель розширень. Підпис кнопки змінюється залежно від контексту.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">4, 5, 6</span></summary>
+  <div><p><strong>Цифри.</strong> Вставляють 4, 5, 6.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">*</span></summary>
+  <div><p><strong>Множення.</strong> Вставляє <code>*</code>. Формула: a*b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">%</span></summary>
+  <div><p><strong>Відсоток.</strong> Вставляє <code>%</code>. Значення задається в Налаштування → Режим відсотка: <strong>Класичний</strong> — відсоток від лівого операнда (наприклад 200−10% = 200−20 = 180); <strong>Простий</strong> — відсоток як десятковий дріб (200−10% = 200−0.1 = 199.9).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">1, 2, 3</span></summary>
+  <div><p><strong>Цифри.</strong> Вставляють 1, 2, 3.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">−</span></summary>
+  <div><p><strong>Мінус.</strong> Вставляє <code>−</code>. Формула: a−b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">√</span></summary>
+  <div><p><strong>Квадратний корінь.</strong> Вставляє <code>√(</code>. Формула: √x (додатний корінь).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">0, 00</span></summary>
+  <div><p><strong>Цифри.</strong> Вставляють 0 або 00.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">.</span></summary>
+  <div><p><strong>Десяткова крапка.</strong> Вставляє <code>.</code> для десяткових чисел.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">+</span></summary>
+  <div><p><strong>Плюс.</strong> Вставляє <code>+</code>. Формула: a+b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">=</span></summary>
+  <div>
+    <p><strong>Дорівнює.</strong> <span class="key">Обчислює</span> вираз і показує результат.</p>
+    <p><strong>Довге натискання</strong> на = додає вираз і результат до Історії (Меню → Історія) для подальшого використання.</p>
+    <p>Формат результату задається в Налаштуваннях (точність, експоненціальний формат тощо).</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== FUNCTION PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Функціональна панель</span></summary>
+  <div>
+    <p class="help-section-desc">Тригонометричні, логарифмічні та службові функції. Деякі кнопки відкривають накладання (панелі).</p>
+
+<details>
+  <summary><span class="summary-title">поз (pos)</span></summary>
+  <div>
+    <p><strong>Накладання курсора.</strong> Відкриває панель <strong>КУРСОР</strong> для переміщення курсора у виразі та перегляду позиції.</p>
+    <p><strong>Заголовок:</strong> назва панелі; <strong>×</strong> — закрити (або кнопка <strong>Вим</strong> нижче).</p>
+    <p><strong>Вміст:</strong></p>
+    <ul>
+      <li><strong>SL</strong> — тільки читання: символ зліва від курсора.</li>
+      <li><strong>CP</strong> — тільки читання: кількість символів від курсора до кінця виразу.</li>
+      <li><strong>SR</strong> — тільки читання: символ справа від курсора.</li>
+      <li><strong>←</strong> — зсув курсора вліво на один символ.</li>
+      <li><strong>↑</strong> — перехід на рядок вище (при багаторядковому введенні).</li>
+      <li><strong>→</strong> — зсув курсора вправо на один символ.</li>
+      <li><strong>Кінець (END)</strong> — в кінець виразу.</li>
+      <li><strong>↓</strong> — на рядок нижче.</li>
+      <li><strong>Поч (BEG)</strong> — на початок виразу.</li>
+      <li><strong>Вим (Off)</strong> (деактивація курсора) — зняти фокус з поля виразу і закрити режим курсора.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ABS</span></summary>
+  <div><p><strong>Модуль.</strong> Вставляє <code>abs(</code>. Формула: |x|.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEG</span></summary>
+  <div><p><strong>Функція градусів.</strong> Вставляє <code>deg(</code> у вираз. Перетворює радіани в градуси (наприклад deg(π) = 180).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RAD</span></summary>
+  <div><p><strong>Функція радіан.</strong> Вставляє <code>rad(</code> у вираз. Перетворює градуси в радіани (наприклад rad(180) = π).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">HYP</span></summary>
+  <div><p><strong>Перемикач гіперболічного режиму.</strong> Вмикає гіперболічні функції. При ввімкненні SIN/COS/TAN тощо стають sinh/cosh/tanh; ASIN/ACOS/ATAN — asinh/acosh/atanh (аналогічно для COT, CSC, SEC та обернених).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">EXP</span></summary>
+  <div><p><strong>Експонента.</strong> Вставляє <code>exp(</code>. Формула: e^x.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">INT</span></summary>
+  <div><p><strong>Ціла частина.</strong> Вставляє <code>int(</code>. Усічення до нуля.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LOG</span></summary>
+  <div>
+    <p><strong>Логарифм за основою 10.</strong> Коротке натискання: вставляє <code>log(</code>. Довге — вставляє <code>log2(</code> (логарифм за основою 2). Позначка <strong>LOG2</strong> в кутку кнопки вказує на дію при утриманні.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SIN, COS, TAN</span></summary>
+  <div><p>Вставляють <code>sin(</code>, <code>cos(</code>, <code>tan(</code>. При ввімкненому HYP: <code>sinh(</code>, <code>cosh(</code>, <code>tanh(</code>. Враховується режим кутів (DEG/RAD).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LN</span></summary>
+  <div><p><strong>Натуральний логарифм.</strong> Вставляє <code>ln(</code>. Формула: ln(x) = log_e(x).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Чс/Дод (Nr/Ext)</span></summary>
+  <div><p><strong>Перемикання панелей.</strong> Коротке натискання: перемикає між Функціональною та панеллю розширень. Довге: відкриває панель розширень. Підпис кнопки змінюється залежно від контексту.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ASIN, ACOS, ATAN</span></summary>
+  <div><p>Обернені тригонометричні. Вставляють <code>asin(</code>, <code>acos(</code>, <code>atan(</code>. З HYP: asinh, acosh, atanh.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">N!</span></summary>
+  <div><p><strong>Факторіал.</strong> Вставляє <code>!(</code> або факторіал попереднього числа. Формула: n! = 1·2·…·n (ціле n ≥ 0).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">x^y</span></summary>
+  <div><p><strong>Степінь.</strong> Вставляє <code>^</code>. Формула: x^y.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">COT, CSC, SEC</span></summary>
+  <div><p>Вставляють <code>cot(</code>, <code>csc(</code>, <code>sec(</code>. З HYP: coth, csch, sech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">℮</span></summary>
+  <div><p><strong>Число Ейлера.</strong> Вставляє константу e (≈ 2.718…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ʸ√x</span></summary>
+  <div><p><strong>Корінь степеня y з x.</strong> Вставляє функцію кореня. Формула: ʸ√x = x^(1/y).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ACOT, ACSC, ASEC</span></summary>
+  <div><p>Обернені cot, csc, sec. З HYP: acoth, acsch, asech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">π</span></summary>
+  <div><p><strong>Пі.</strong> Вставляє константу π (≈ 3.14159…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Функціональна панель)</span></summary>
+  <div>
+    <p>Як на числовій панелі: тап обчислює; довге натискання додає запис до Історії.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== EXTENSION PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Панель розширень</span></summary>
+  <div>
+    <p class="help-section-desc">Логіка, системи числення, константи, одиниці, конфіг, статистика, графіки, час та інше. Багато кнопок відкривають накладання (у тому числі вкладені).</p>
+
+<details>
+  <summary><span class="summary-title">AND, OR, XOR, NOT</span></summary>
+  <div><p><strong>Побітові/логіка.</strong> Вставляють <code>and</code>, <code>or</code>, <code>xor</code>, <code>not</code>. Використовуються з цілочисельними основами (BIN, OCT, HEX).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG</span></summary>
+  <div><p><strong>Інженерна нотація.</strong> Перемикає відображення результату в інженерній нотації (експонента кратна 3, наприклад 1.5E3). Відображається в рядку стану при ввімкненні.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">AB</span></summary>
+  <div><p><strong>Панель символів (AB).</strong> Відкриває панель для вставки символів формату чисел та шістнадцяткових цифр.</p>
+    <p><strong>Рядок заголовка:</strong></p>
+    <ul>
+      <li><strong>←</strong> — видалення у виразі.</li>
+      <li><strong>C</strong> — Очистити вираз.</li>
+      <li><strong>Чс</strong> — Відкрити міні числову панель.</li>
+      <li><strong>Фн</strong> — Відкрити міні функціональну панель.</li>
+    </ul>
+    <p><strong>Сітка символів (що вставляється):</strong></p>
+    <ul>
+      <li><strong>0b</strong> — префікс двійкового літерала (наприклад 0b1010).</li>
+      <li><strong>0o</strong> — префікс вісімкового літерала (наприклад 0o12).</li>
+      <li><strong>0x</strong> — префікс шістнадцяткового літерала (наприклад 0xFF).</li>
+      <li><strong>_</strong> — роздільник цифр (візуальне групування, у значенні ігнорується).</li>
+      <li><strong>A, B, C, D, E, F</strong> — шістнадцяткові цифри (вставка символу).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">КОНСТ</span></summary>
+  <div><p><strong>Панель констант.</strong> Вставляє ім'я константи (додаток підставляє числове значення при обчисленні).</p>
+    <p><strong>Заголовок:</strong> ← (видалення), C (очистити), Чс (міні числова), Фн (міні функціональна).</p>
+    <p><strong>Константи (підпис = що вставляється):</strong></p>
+    <ul>
+      <li><strong>π</strong> — Пі (3.14159…).</li>
+      <li><strong>e</strong> — число Ейлера (2.718…).</li>
+      <li><strong>τ</strong> — Тау (2π).</li>
+      <li><strong>φ</strong> — Золотий переріз.</li>
+      <li><strong>γ</strong> — константа Ейлера–Маскероні.</li>
+      <li><strong>ln2, ln10</strong> — ln(2), ln(10).</li>
+      <li><strong>c</strong> — швидкість світла; <strong>h, ħ</strong> — сталі Планка; <strong>kB</strong> — Больцман; <strong>R</strong> — газова стала; <strong>NA</strong> — Авогадро; <strong>qe</strong> — елементарний заряд.</li>
+      <li><strong>ε0, μ0</strong> — діелектрична та магнітна проникність вакууму; <strong>g0</strong> — стандартна гравітація; <strong>G</strong> — гравітаційна стала; <strong>σ</strong> — Стефана–Больцмана.</li>
+      <li><strong>me, mp, mn</strong> — маса електрона, протона, нейтрона.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ОД. ВИМ.</span></summary>
+  <div>
+    <p><strong>Панель одиниць.</strong> Конвертер одиниць у два рівні: список категорій, потім екран категорії з перетворенням.</p>
+    <p><strong>Перший рівень (ОД. ВИМ.):</strong></p>
+    <ul>
+      <li><strong>Заголовок:</strong> <strong>ОД. ВИМ.</strong>; <strong>×</strong> — закрити.</li>
+      <li><strong>Вміст:</strong> Сітка кнопок категорій. Натискання відкриває категорію. Категорії: <strong>Час</strong>, <strong>Довжина</strong>, <strong>Площа</strong>, <strong>Об'єм</strong>, <strong>Маса</strong>, <strong>Темп.</strong>, <strong>Швидк.</strong>, <strong>Тиск</strong>, <strong>Енерг.</strong>, <strong>Потужн.</strong>, <strong>Кут</strong>, <strong>Частота</strong>, <strong>Сила</strong>, <strong>Приск.</strong>, <strong>Момент</strong>, <strong>Густ.</strong>, <strong>Дані</strong>, <strong>Струм</strong>, <strong>Напр.</strong>, <strong>Опір</strong>, <strong>Ємність</strong>.</li>
+    </ul>
+    <p><strong>Рівень категорії (наприклад ЧАС, ДОВЖИНА):</strong></p>
+    <ul>
+      <li><strong>Заголовок:</strong> Назва категорії (наприклад ЧАС); <strong>←</strong> — назад до списку; <strong>×</strong> — закрити.</li>
+      <li><strong>Поля:</strong> <strong>Ввід</strong> — значення в одиниці ДЖЕРЕЛО; <strong>Результат</strong> — значення в одиниці РЕЗУЛЬТАТ. Підказка показує «символ_з → символ_в».</li>
+      <li><strong>Рядок кнопок:</strong> <strong>З</strong> (поточний символ ДЖЕРЕЛО) — натискання відкриває вибір одиниці джерела; <strong>В</strong> (символ РЕЗУЛЬТАТ) — вибір цільової одиниці; <strong>&lt;&gt;</strong> — поміняти З і В; <strong>Дод</strong> — вставити результат у вираз; <strong>←</strong> — назад до списку категорій.</li>
+      <li><strong>Клавіатура:</strong> Цифри <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> для редагування поля Ввід.</li>
+      <li><strong>Категорія ДАНІ:</strong> У заголовку також є перемикач <strong>SI</strong>/<strong>IEC</strong>. <strong>SI</strong> використовує десяткові одиниці (<strong>kB, MB, GB, TB</strong> = степені 1000); <strong>IEC</strong> використовує двійкові одиниці (<strong>KiB, MiB, GiB, TiB</strong> = степені 1024).</li>
+    </ul>
+    <p><strong>Нещодавно додані одиниці:</strong> <strong>Об'єм</strong> — <strong>floz</strong>, <strong>tsp</strong>, <strong>tbsp</strong>, <strong>cup</strong>, <strong>pt</strong>; <strong>Маса</strong> — <strong>µg</strong>; <strong>Потужність</strong> — <strong>mW</strong>, <strong>GW</strong>; <strong>Частота</strong> — <strong>mHz</strong>, <strong>THz</strong>; <strong>Сила</strong> — <strong>mN</strong>; <strong>Густина</strong> — <strong>g/ml</strong>; <strong>Струм</strong> — <strong>nA</strong>, <strong>MA</strong>; <strong>Напруга</strong> — <strong>µV</strong>, <strong>MV</strong>; <strong>Опір</strong> — <strong>mΩ</strong>, <strong>GΩ</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ЦІЛИЙ ФОРМАТ</span></summary>
+  <div>
+    <p><strong>Панель конфігурації (формат цілих).</strong> Задає представлення цілих для БАЗА та побітових операцій (AND, OR, // тощо).</p>
+    <p><strong>Заголовок:</strong> <strong>ЦІЛИЙ ФОРМАТ</strong>; <strong>×</strong> — закрити.</p>
+    <p><strong>Вміст:</strong></p>
+    <ul>
+      <li><strong>Розрядність</strong> — розрядність у бітах. Кнопки: <strong>8</strong>, <strong>16</strong>, <strong>32</strong>, <strong>64</strong>. Вибір натисканням.</li>
+      <li><strong>Знак</strong> — <strong>Увм</strong> (доповняльний код) або <strong>Вим</strong> (без знаку). Вибір натисканням.</li>
+    </ul>
+    <p>Також відкривається з панелі БАЗА як Глобальна або Локальна конфігурація.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">nCr, nPr</span></summary>
+  <div><p><strong>Комбінації / розміщення.</strong> Вставляють nCr(n,k) та nPr(n,k). Формули: nCr = n!/(k!(n−k)!), nPr = n!/(n−k)!.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">СІ</span></summary>
+  <div><p><strong>Панель префіксів СІ.</strong> Кожна кнопка вставляє числовий множник префікса (наприклад k → 1000, μ → 1e-6).</p>
+    <p><strong>Заголовок:</strong> ←, C, Чс, Фн.</p>
+    <p><strong>Сітка префіксів (4 рядки × 5):</strong></p>
+    <ul>
+      <li>Рядок 1: <strong>Y, Z, E, P, T</strong> (10^24 … 10^12).</li>
+      <li>Рядок 2: <strong>G, M, k, h, da</strong> (10^9, 10^6, 10^3, 10^2, 10^1).</li>
+      <li>Рядок 3: <strong>d, c, m, μ, n</strong> (10^-1 … 10^-9).</li>
+      <li>Рядок 4: <strong>p, f, a, z, y</strong> (10^-12 … 10^-24).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Фн/Чс, Чс, Фн (Fn/Nr, Nr, Fn)</span></summary>
+  <div><p><strong>Перемикання панелей / міні-накладання.</strong> <strong>Фн/Чс</strong> (рядок 3): натискання → Функціональна панель, довге → Числова. <strong>Чс</strong> (рядок 4) та <strong>Фн</strong> (рядок 5) відкривають невелике плаваюче накладання клавіатури.</p>
+    <p><strong>Накладання ЧИСЛА (міні Чс):</strong> Заголовок «ЧИСЛА», у заголовку <strong>×</strong> (закрити). Рядки: ← ( ) // C | 7 8 9 / % | 4 5 6 * x^y | 1 2 3 - √ | 0 00 . + ʸ√x. Ті ж дії, що й у основної числової панелі, крім кнопки <strong>=</strong>.</p>
+    <p><strong>Накладання ФУНКЦІЇ (міні Фн):</strong> Заголовок «ФУНКЦІЇ», у заголовку <strong>×</strong>. Рядки: ← DEG RAD HYP C | ABS EXP INT LOG LOG2 | SIN COS TAN LN % | ASIN ACOS ATAN N! x^y | COT CSC SEC e √ | ACOT ACSC ASEC π ʸ√x. Як на функціональній панелі (режим кутів, HYP, усі триг/лог/функції, e, π).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">БАЗА</span></summary>
+  <div><p><strong>Панель основи.</strong> Показує поточний результат у чотирьох основах; опціонально копіювання або вставка у вираз.</p>
+    <p><strong>Заголовок:</strong> <strong>Копір</strong> — копіювати вибраний рядок основи в буфер; <strong>→Вир</strong> — вставити вибране представлення у вираз; <strong>×</strong> — закрити.</p>
+    <p><strong>Рядки:</strong> Кожен рядок — одна основа: <strong>Глоб: Рзр=…, Знак=…</strong> з <strong>Конфіг</strong> (відкриває глобальну конфігурацію: Розрядність, Знак Увм/Вим); <strong>Лок: …</strong> з <strong>Конфіг</strong> (локальна конфігурація основи); потім <strong>DEC</strong>, <strong>HEX</strong>, <strong>OCT</strong>, <strong>BIN</strong> з поточним результатом у цій основі. Натискання на рядок вибирає його для Копір/→Вир.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ЗЕРНО</span></summary>
+  <div>
+    <p><strong>Панель ЗЕРНО ГПВЧ.</strong> Встановлення зерна для генератора випадкових чисел, що використовується <strong>RAND</strong> та панеллю <strong>Вип. числа</strong>. Однакове зерно дає відтворювану послідовність.</p>
+    <p><strong>Заголовок:</strong> <strong>ЗЕРНО ГПВЧ</strong>; <strong>Заст</strong> — застосувати введене зерно (наступний RAND/Вип. буде його використовувати); <strong>×</strong> — закрити.</p>
+    <p><strong>Вміст:</strong> Поле введення значення зерна (ціле). Клавіатура: цифри, <strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>±</strong>, <strong>.</strong>, опціонально <strong>+1</strong>/<strong>−1</strong>. <strong>Заст</strong> активна при непорожньому полі; натискання встановлює зерно.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GCD, LCM</span></summary>
+  <div><p><strong>НСД / НСК.</strong> Вставляють gcd( та lcm( для двох цілих.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Вип. числа</span></summary>
+  <div><p><strong>Панель Вип. числа.</strong> Генерація випадкових чисел; опціонально копіювання або вставка у вираз.</p>
+    <p><strong>Заголовок:</strong> <strong>Копір</strong> — копіювати поточне значення; <strong>→Вир</strong> — вставити поточне значення в позицію курсора; <strong>×</strong> — закрити.</p>
+    <p><strong>Генер. число</strong> — кнопка в тілі панелі (одноразова генерація).</p>
+    <p><strong>Режим:</strong> Перемикач <strong>INT</strong> / <strong>FLOAT</strong> — ціле в [Мін, Макс] або дробове в [Мін, Макс].</p>
+    <p><strong>Поля:</strong> <strong>Мін</strong>, <strong>Макс</strong> — межі діапазону (редаговані). <strong>Вип.</strong> — згенерувати один раз.</p>
+    <p><strong>Клавіатура:</strong> Перший рядок: <strong>&lt;&gt;</strong>, <strong>-</strong>, <strong>.</strong>, <strong>←</strong>, <strong>C</strong>. Потім цифри <strong>1 2 3 4 5</strong> та <strong>6 7 8 9 0</strong> — для редагування Мін/Макс у панелі.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ГМС</span></summary>
+  <div>
+    <p><strong>Панель ГМС.</strong> Перетворення між десятковими градусами та градусами–хвилинами–секундами (D°M′S″).</p>
+    <p><strong>Заголовок:</strong> <strong>→Вир</strong> — вставити результат перетворення у вираз; <strong>×</strong> — закрити.</p>
+    <p><strong>Режими:</strong> <strong>→ГМС</strong> — введення десяткових градусів, результат D°M′S″; <strong>→ГРАД</strong> — введення градусів, хвилин, секунд, результат — десяткові градуси. Натискання на кнопку режиму перемикає.</p>
+    <p><strong>Поля:</strong></p>
+    <ul>
+      <li><strong>→ГМС:</strong> одне поле десяткового введення; <strong>Результат</strong> показує D°M′S″.</li>
+      <li><strong>→ГРАД:</strong> <strong>Градуси</strong>, <strong>Хвилини</strong>, <strong>Секунди</strong> (три поля); <strong>Результат</strong> — десяткові градуси.</li>
+    </ul>
+    <p>Клавіатура та кнопки редагування використовуються для активного поля. Довге натискання на ГМС (панель розширень) відкриває цю панель напряму.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ФМТ</span></summary>
+  <div>
+    <p><strong>Панель формату.</strong> Форматування поточного результату з локальними опціями, потім копіювання або вставка рядка у вираз. Поле <strong>Формат:</strong> показує результат у реальному часі.</p>
+    <p><strong>Заголовок:</strong> <strong>Копір</strong> — копіювати відформатований результат; <strong>→Вир</strong> — вставити відформатований результат у позицію курсора; <strong>×</strong> — закрити.</p>
+    <p><strong>Рядок 1 (натискання відкриває вибір):</strong></p>
+    <ul>
+      <li><strong>Точність</strong> — знаків після коми. Варіанти: <strong>Повн/Поч.</strong>, <strong>Авто</strong>, <strong>0</strong>, <strong>1</strong>, … <strong>10</strong>, <strong>20</strong>.</li>
+      <li><strong>Округлення</strong> — режим округлення. Варіанти: <strong>Немає</strong>, <strong>До нуля</strong>, <strong>Від нуля</strong>, <strong>Вгору</strong>, <strong>Вниз</strong>, <strong>Банк.</strong>.</li>
+      <li><strong>Експонента</strong> — коли використовувати експоненту. Варіанти: <strong>Ніколи</strong>, <strong>Авто</strong>, <strong>Завжди</strong>.</li>
+    </ul>
+    <p><strong>Рядок 2:</strong></p>
+    <ul>
+      <li><strong>Прибрати нулі</strong> — перемикач <strong>Увм</strong> / <strong>Вим</strong> (приховати або показувати кінцеві нулі).</li>
+      <li><strong>Роздільники</strong> — групування цифр. Натискання відкриває вибір: <strong>Немає</strong>, <strong>Пробіл</strong>, <strong>Апостроф</strong>.</li>
+      <li><strong>Інженерний</strong> — перемикач <strong>Увм</strong> / <strong>Вим</strong> (експонента кратна 3, наприклад 1.5E3).</li>
+    </ul>
+    <p>Кожна основна кнопка показує поточне значення; натискання на <strong>Точність</strong>, <strong>Округлення</strong>, <strong>Експонента</strong> або <strong>Роздільники</strong> відкриває вибір. <strong>Прибрати нулі</strong> та <strong>Інженерний</strong> перемикаються напряму.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ВИП.</span></summary>
+  <div><p><strong>Випадкове число.</strong> Вставляє випадкове число (використовуються налаштування панелі Вип. числа або діапазон за замовчуванням).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Стат.</span></summary>
+  <div>
+    <p><strong>Панель Стат.</strong> Перегляд поточного результату: кожен рядок — обчислена властивість числа. Натискання на рядок вибирає його; <strong>Копір</strong> копіює значення цього рядка; <strong>Копір. все</strong> копіює весь список.</p>
+    <p><strong>Заголовок:</strong> <strong>Копір</strong> — копіювати значення вибраного рядка; <strong>Копір. все</strong> — копіювати всі рядки в буфер; <strong>→Вир</strong> — вставити значення у вираз; <strong>×</strong> — закрити.</p>
+    <p><strong>Рядки (по порядку):</strong></p>
+    <ul>
+      <li><strong>Знак</strong> — + або −</li>
+      <li><strong>Модуль</strong> — модуль (рядок)</li>
+      <li><strong>Ціл. ч.</strong> — ціла частина</li>
+      <li><strong>Дроб. ч.</strong> — дробова частина (або —)</li>
+      <li><strong>Масшт.</strong> — масштаб десяткової частини</li>
+      <li><strong>Цифри</strong> — кількість цифр</li>
+      <li><strong>Нуль</strong> — Так / Ні</li>
+      <li><strong>Ціле</strong> — Так / Ні</li>
+      <li><strong>Скінчен.</strong> — Так / Ні</li>
+      <li><strong>Парн.</strong> — Парне / Непарне / —</li>
+    </ul>
+    <p>Натискання на рядок вибирає його (червона рамка); потім <strong>Копір</strong> використовує значення цього рядка.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">РІЗН</span></summary>
+  <div><p><strong>Панель РІЗН.</strong> Порівняння двох результатів (A = попередній, B = поточний).</p>
+    <p><strong>Заголовок:</strong> <strong>&lt;&gt;</strong> — поміняти A і B; <strong>→Вир</strong> — вставити вибране значення різниці у вираз; <strong>×</strong> — закрити.</p>
+    <p><strong>Кнопки:</strong> <strong>A←</strong> — встановити A в поточний результат; <strong>B←</strong> — встановити B в поточний результат. <strong>Δ</strong> — різниця B−A; <strong>|Δ|</strong> — модуль різниці; <strong>%Δ</strong> — відсоткова зміна (100*(B−A)/A тощо). Одне з Δ, |Δ|, %Δ вибирається для <strong>→Вир</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ГРАФ</span></summary>
+  <div><p><strong>Екран графіка.</strong> Відкриває вкладку графіка. Доступне накладання <strong>ГРАФ</strong> з:</p>
+    <details>
+      <summary><span class="summary-title">До історії</span></summary>
+      <div><p>Зберігає поточний графік в Історію: формули, діапазони X/T/θ, опції (Авто Y, легенда тощо) та зображення PNG. Пізніше можна відкрити з Меню → Історія та «Вставити графік».</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Серії</span></summary>
+      <div>
+        <p>Відкриває накладання <strong>СЕРІЇ</strong>. Заголовок: <strong>Дод. серію</strong> (додати серію, до 6); <strong>×</strong> закрити.</p>
+        <p>Для кожного рядка серії:</p>
+        <ul>
+          <li><strong>Кольоровий квадрат з номером (1, 2, 3…)</strong> — натискання робить цю серію <strong>активною</strong> (використовується в Формула, X-діап., x0 тощо).</li>
+          <li><strong>✓ / ✕</strong> — видимість: показувати або приховувати серію на графіку.</li>
+          <li><strong>Функ / Парам / Поляр</strong> — тип: функція y=f(x), параметричні x(t),y(t) або полярні r(θ). Натискання перемикає.</li>
+          <li><strong>Лін / Тчк</strong> — малювати лінією або точками. Натискання перемикає.</li>
+          <li><strong>f′</strong> (тільки Функція) — показувати першу похідну. Натискання перемикає.</li>
+          <li><strong>Іконка: анімована точка</strong> (тільки Поляр) — кнопка без тексту; натискання перемикає анімовану точку на кривій.</li>
+          <li><strong>f″</strong> (тільки Функція) — показувати другу похідну. Натискання перемикає.</li>
+          <li><strong>Fill</strong> (тільки Функція) — заливка під кривою. Натискання перемикає.</li>
+          <li><strong>Видал</strong> — видалити цю серію (для першої серії не показується).</li>
+        </ul>
+        <p>Для редагування формули використовуйте кнопку <strong>Формула</strong> в основному накладанні ГРАФ (редагується активна серія).</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Вид</span></summary>
+      <div>
+        <p>Відкриває накладання <strong>Вид</strong> графіка. Заголовок: <strong>×</strong> закрити.</p>
+        <p><strong>Рядок 1</strong></p>
+        <ul>
+          <li><strong>Центр</strong> — центрувати осі</li>
+          <li><strong>Zoom+</strong> — наблизити</li>
+          <li><strong>×N</strong> (наприклад ×1.00) — поточний коефіцієнт масштабу</li>
+          <li><strong>Zoom−</strong> — віддалити</li>
+          <li><strong>Скид</strong> — скинути масштаб і сітку</li>
+        </ul>
+        <p><strong>Рядок 2</strong></p>
+        <ul>
+          <li><strong>Robust</strong> — стійке масштабування Y (для однієї видимої серії)</li>
+          <li><strong>GridX+</strong> / <strong>GridX−</strong> — крок сітки по X (значення між ними)</li>
+          <li><strong>Snap</strong> — прив'язка курсора до сітки</li>
+        </ul>
+        <p><strong>Рядок 3</strong></p>
+        <ul>
+          <li><strong>Auto Y</strong> — авто діапазон Y</li>
+          <li><strong>GridY+</strong> / <strong>GridY−</strong> — крок сітки по Y</li>
+          <li><strong>Курсор</strong> — показувати/приховувати курсор-перехрестя</li>
+        </ul>
+        <p><strong>Рядок 4</strong></p>
+        <ul>
+          <li><strong>Асимп</strong> — показувати асимптоти</li>
+          <li><strong>Осі</strong> — показувати осі</li>
+          <li><strong>Сітка</strong> — показувати сітку</li>
+          <li><strong>Мітки</strong> — показувати підписи</li>
+          <li><strong>Легенд</strong> — показувати легенду</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Формула</span></summary>
+      <div>
+        <p>Відкриває накладання <strong>Формула</strong> для редагування формули <strong>активної</strong> серії.</p>
+        <p><strong>Заголовок:</strong> <strong>×</strong> — закрити.</p>
+        <p><strong>Вміст:</strong> Редаговане поле формули (для параметричних: цілі x(t), y(t); для полярних: r(θ)). Клавіатура: <strong>←</strong>, <strong>C</strong>, цифри, оператори, кнопки функцій (LOG, LOG2, LN, sin, cos тощо), <strong>,</strong> як роздільник аргументів. Для Функції: один вираз (наприклад sin(x)); для Парам: x(t) та y(t); для Поляр: r(θ).</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">X-діап. / T-діап. / θ-діап.</span></summary>
+      <div>
+        <p>Відкриває накладання <strong>Діапазон</strong> для активної серії. Заголовок і поля залежать від типу серії.</p>
+        <p><strong>Заголовок:</strong> <strong>X-діап.</strong> / <strong>T-діап.</strong> / <strong>θ-діап.</strong>; <strong>×</strong> — закрити.</p>
+        <p><strong>Вміст:</strong></p>
+        <ul>
+          <li><strong>Функція (X-діап.):</strong> <strong>X min</strong>, <strong>X max</strong>, <strong>Δx</strong> (крок).</li>
+          <li><strong>Параметр (T-діап.):</strong> <strong>t min</strong>, <strong>t max</strong>, <strong>Δt</strong>.</li>
+          <li><strong>Поляр (θ-діап.):</strong> <strong>θ min</strong>, <strong>θ max</strong>, <strong>Δθ</strong>.</li>
+        </ul>
+        <p>Кожне значення редагується; клавіатура та кнопки (<strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, цифри, пресети π, 2π) застосовуються до активного поля. Для підтвердження діапазону може використовуватися <strong>Застосувати</strong>.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">x0, t0, θ0</span></summary>
+      <div>
+        <p>Відкриває накладання зміщення курсора для активної серії. Перехрестя на графіку знаходиться в цьому значенні.</p>
+        <p><strong>Заголовок:</strong> <strong>X0</strong> / <strong>T0</strong> / <strong>θ0</strong> (залежно від типу серії: Функція → X0, Параметр → T0, Поляр → θ0); <strong>×</strong> — закрити.</p>
+        <p><strong>Вміст:</strong> Одне редаговане поле для значення курсора (x0, t0 або θ0). Пресети: для Функції <strong>−π</strong>, <strong>0</strong>, <strong>π</strong>; для Параметр/Поляр <strong>0</strong>, <strong>π</strong>, <strong>2π</strong>. Рядок керування: <strong>←</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, <strong>C</strong>. Можна вводити цифри та константи (наприклад π). Застосувати оновлює позицію курсора на графіку.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Режим чисел: Норм / Поч.</span></summary>
+      <div><p>Перемикач відображення чисел на графіку (Норм = форматовані, Поч. = повна точність).</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Теми</span></summary>
+      <div>
+        <p>Відкриває накладання <strong>Теми</strong> для вибору кольорової теми графіка (фон і криві).</p>
+        <p><strong>Заголовок:</strong> назва накладання; <strong>×</strong> — закрити.</p>
+        <p><strong>Вміст:</strong> Чотири кнопки тем — <strong>Світла</strong>, <strong>Сер. світла</strong>, <strong>Сер. темна</strong>, <strong>Темна</strong>. Натискання вибирає; активна тема підсвічена.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Режим рендеру: Кеш / Реалт.</span></summary>
+      <div><p>Режим відмальовування: <strong>Кеш</strong> — швидше, кешований bitmap; <strong>Реалт.</strong> — перемальовування при зміні. Використовуйте Кеш для складних графіків на слабких пристроях.</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Пресети</span></summary>
+      <div>
+        <p>Відкриває накладання <strong>Пресети</strong> з вбудованими прикладами графіків. Завантаження готового графіка (функції, параметричні, полярні або змішані) для подальшого редагування або надсилання.</p>
+        <p><strong>Заголовок:</strong> <strong>ПРЕСЕТИ</strong>; <strong>×</strong> — закрити.</p>
+        <p><strong>Вкладки:</strong> <strong>Функ</strong> — y=f(x); <strong>Парам</strong> — параметричні x(t), y(t); <strong>Поляр</strong> — r(θ); <strong>Зміш</strong> — змішані.</p>
+        <p><strong>Вміст:</strong> Прокручуваний список карток пресетів (назва, коментар, превью). Натискання на картку вибирає її (з'являється заголовок «Вибрано»). Меню картки (натискання або довге):</p>
+        <ul>
+          <li><strong>Вставити граф.</strong> — завантажити цей пресет у графік (замінює поточний).</li>
+          <li><strong>Надісл. зобр.</strong> — надіслати як зображення за наявності збереженого.</li>
+          <li><strong>Надісл. дані</strong> — надіслати визначення графіка як JSON.</li>
+          <li><strong>Ред. комент.</strong> — редагувати коментар пресета (локально, в цій сесії).</li>
+        </ul>
+        <p>Щоб зберегти поточний графік для подальшого використання, використовуйте <strong>До історії</strong> в накладанні ГРАФ.</p>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ЧАС</span></summary>
+  <div>
+    <p><strong>Панель ЧАС.</strong> Обчислення з двома операндами <strong>A</strong> та <strong>B</strong>: тривалості (дні, години, хв, сек, мс) або дата-час (РРРР-ММ-ДД та ГГ:ХХ:СС.мс). Операція <strong>+</strong> або <strong>−</strong>; результат — тривалість або дата-час. Копіювання або вставка результату у вираз.</p>
+    <p><strong>Заголовок:</strong> <strong>Копір</strong> — копіювати читабельний результат; <strong>→Вир</strong> — вставити числовий результат (наприклад тривалість у вибраній одиниці або епоха в мс) у вираз; <strong>×</strong> — закрити.</p>
+    <p><strong>Рядок операндів (зверху):</strong></p>
+    <ul>
+      <li><strong>A</strong> / <strong>B</strong> — перемикання активного операнда (редагування та ціль «Вик. рез.»).</li>
+      <li><strong>Трив.</strong> / <strong>ДатаЧас</strong> — тип активного операнда: тривалість (d, h, m, s, ms) або дата-час.</li>
+      <li><strong>Пот.</strong> — заповнити активний операнд поточною датою і часом (тільки при вибраному ДатаЧас).</li>
+      <li><strong>CA</strong> / <strong>CB</strong> — очистити операнд A або B.</li>
+    </ul>
+    <p><strong>Перетворювач результату:</strong> Кнопка показує одиницю числового результату (<strong>рік</strong>, <strong>міс</strong>, <strong>тиж</strong>, <strong>день</strong>, <strong>год</strong>, <strong>хв</strong>, <strong>сек</strong>, <strong>мс</strong>) — натискання перемикає. Значення поруч — результат у цій одиниці (для тривалостей).</p>
+    <p><strong>Форматування результату:</strong></p>
+    <ul>
+      <li><strong>Abs</strong> — використовувати модуль результату (для тривалості; наприклад різниця A−B).</li>
+      <li><strong>Норм</strong> — нормалізувати тривалість в A і B (наприклад 90 хв → 1год 30хв).</li>
+      <li><strong>Вик. рез.</strong> — записати числовий результат в активний операнд (для ланцюжка обчислень).</li>
+    </ul>
+    <p><strong>Клавіатура:</strong> <strong>←</strong> видалення, <strong>−</strong> мінус (допустимий у днях або в даті), <strong>:</strong> та <strong>.</strong> для часу/дробів, <strong>C</strong> очистити, цифри <strong>0–9</strong>. Введення йде в активне поле активного операнда (Трив.: Дні, Години, Хв, Сек, мс; ДатаЧас: дата, потім час).</p>
+    <p><strong>Операції:</strong> Тривалість ± Тривалість; Дата-час + Тривалість або Дата-час − Тривалість; Дата-час − Дата-час дає тривалість. ДатаЧас + ДатаЧас не допускається. На повному екрані ЧАС (коли ЧАС показано у верхній області) операнди A і B відображаються з підписаними полями (Дні, Години, Хв, Сек, мс або Дата, Час), операція <strong>+</strong>/<strong>−</strong> та <strong>&lt;&gt;</strong> для обміну A і B.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Панель розширень)</span></summary>
+  <div>
+    <p>Обчислює вираз; довге натискання додає запис до Історії, як на інших панелях.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== STATUSBAR ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Рядок стану</span></summary>
+  <div>
+    <p class="help-section-desc">Рядок стану дозволяє вибрати режим кутів, основу числа, викликати Обране, показує індикатори ENG/HYP і також містить меню.</p>
+
+<details>
+  <summary><span class="summary-title">RAD / DEG (випадаючий список)</span></summary>
+  <div><p>Натискання відкриває список: <strong>RAD</strong> — кути в радіанах; <strong>DEG</strong> — кути в градусах. Галочка показує поточний. Впливає на sin, cos, tan тощо.</p>
+    <p>У режимі <strong>DEG</strong> аргументи sin, cos, tan задаються в <strong>градусах</strong>. Для sin(π/6) використовуйте RAD або введіть sin(30).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEC / HEX / OCT / BIN (випадаючий список)</span></summary>
+  <div><p>Натискання вибирає основу числа для введення та результату: <strong>DEC</strong> десяткова, <strong>HEX</strong> шістнадцяткова, <strong>OCT</strong> вісімкова, <strong>BIN</strong> двійкова.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Заголовок (CalcIUM / ОБРАНЕ)</span></summary>
+  <div>
+    <p>Коли накладання не відкрито: показується назва додатку <strong>CalcIUM</strong>. При відновленні стану коротко може з'являтися іконка шестерні.</p>
+    <p>Коли відкрито накладання панелі розширень: заголовок змінюється на <strong>ОБРАНЕ</strong> і стає натискуваним. Натискання відкриває накладання <strong>ОБРАНЕ</strong> (список нещодавно використаних накладань).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Накладання ОБРАНЕ</span></summary>
+  <div>
+    <p>Відкривається натисканням на заголовок у рядку стану, коли відображається <strong>ОБРАНЕ</strong> (при активному накладанні панелі розширень). Показує нещодавно використані накладання картками; натискання на картку відкриває це накладання. На кожній картці — назва накладання та час останнього використання.</p>
+    <p><strong>Заголовок:</strong> <strong>ОБРАНЕ</strong>; <strong>×</strong> — закрити.</p>
+    <p><strong>Вкладки:</strong></p>
+    <ul>
+      <li><strong>Все</strong> — всі нещодавно використані накладання.</li>
+      <li><strong>Інстр</strong> — AB (Символи), КОНСТ, СІ, ГМС, ФМТ, ЧАС, Стат., РІЗН, Вип. числа, міні Чс, міні Фн.</li>
+      <li><strong>Налш</strong> — налаштування: ЗЕРНО ГПВЧ, ЦІЛИЙ ФОРМАТ, БАЗА.</li>
+      <li><strong>Од</strong> — список категорій одиниць, екран категорії, вибір одиниць.</li>
+      <li><strong>Граф</strong> — інструменти графіка, Формула, gФункції, gКонстанти, gЧисла, Серії, Вид, Теми, Пресети, Діапазон (X/T/θ), x0, t0, θ0.</li>
+    </ul>
+    <p>Натискання на картку відкриває це накладання.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ІНЖ, ГІП (індикатори)</span></summary>
+  <div><p><strong>ІНЖ</strong> — відображається при ввімкненій інженерній нотації. <strong>ГІП</strong> — відображається при ввімкненому гіперболічному режимі.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Меню (☰)</span></summary>
+  <div><p>Натискання відкриває:</p>
+    <ul>
+      <li><strong>Історія</strong> — екран історії (вирази та графіки).</li>
+      <li><strong>Налаштування</strong> — екран налаштувань.</li>
+      <li><strong>Оцінити</strong> — оцінка додатку (магазин).</li>
+      <li><strong>Про додаток</strong> — інформація про додаток та версія.</li>
+      <li><strong>Довідка</strong> — відкрити цю довідку.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== HISTORY ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Історія</span></summary>
+  <div>
+    <p class="help-section-desc">Відкриття: <span class="key">Рядок стану → Меню → Історія</span>. Зберігає два типи: <strong>записи виразів</strong> (вираз + результат + опціональний коментар) та <strong>записи графіків</strong> (формули, діапазони, опціональне зображення та коментар).</p>
+
+<details>
+  <summary><span class="summary-title">Картки виразів — контекстне меню</span></summary>
+  <div><p>Довге натискання (або контекстна дія) по картці виразу:</p>
+    <ul>
+      <li><strong>Вставити вираз</strong> — вставити вираз у калькулятор і повернутися.</li>
+      <li><strong>Вставити результат</strong> — вставити результат у вираз.</li>
+      <li><strong>Копіювати вираз=результат</strong> — копіювати «вираз=результат» у буфер.</li>
+      <li><strong>Копіювати вираз</strong> — копіювати тільки вираз.</li>
+      <li><strong>Копіювати результат</strong> — копіювати тільки результат.</li>
+      <li><strong>Редагувати коментар</strong> — додати або змінити коментар картки.</li>
+      <li><strong>Видалити</strong> — видалити цей запис.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Картки графіків — контекстне меню</span></summary>
+  <div><p>Довге натискання по картці графіка:</p>
+    <ul>
+      <li><strong>Вставити графік</strong> — відновити цей графік (формули, діапазони) на екрані графіка і повернутися.</li>
+      <li><strong>Поділитися зображенням графіка</strong> — надіслати збережене зображення графіка. Може відображатися «немає збереженого», якщо графік було збережено без зображення.</li>
+      <li><strong>Поділитися даними графіка</strong> — надіслати параметри та формули графіка у форматі JSON.</li>
+      <li><strong>Копіювати всі формули</strong> — копіювати всі формули серій у буфер.</li>
+      <li><strong>Редагувати коментар</strong> — додати або змінити коментар графіка.</li>
+      <li><strong>Видалити</strong> — видалити цей запис графіка.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== SETTINGS ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Налаштування</span></summary>
+  <div>
+    <p class="help-section-desc">Відкриття: <span class="key">Рядок стану → Меню → Налаштування</span>. Кожен пункт відкриває діалог або підекран.</p>
+
+<details>
+  <summary><span class="summary-title">Мова</span></summary>
+  <div>
+    <p>Відкриває діалог вибору мови додатку.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>English</strong>, <strong>Російська</strong>, <strong>Українська</strong>. Натискання вибирає і закриває діалог.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Тема</span></summary>
+  <div>
+    <p>Відкриває діалог вибору теми додатку.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>Beach Pebbles (світла)</strong>, <strong>Starry Night (темна)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Параметри вводу</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Параметри вводу</strong>.</p>
+    <p><strong>Рядок 1 — режим вводу:</strong> <strong>Розумний ввід</strong> — підстановка операторів і дужок; <strong>Вільн. ввід</strong> — введення як є. Вибирається один.</p>
+    <p><strong>Рядок 2 — видалення:</strong> <strong>Розумний back</strong> — видалення по токенах (наприклад ціле ім'я функції); <strong>По символу</strong> — видалення по символу. Вибирається один.</p>
+    <p><strong>Прапорець:</strong> <strong>Додавати результат до виразу (експ.)</strong> — після <strong>=</strong> наступне введення може доповнювати результат.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Параметри відображення</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Параметри відображення</strong>.</p>
+    <p><strong>Прапорці:</strong></p>
+    <ul>
+      <li><strong>Підсвічування</strong> — підсвічування синтаксису у виразі (цифри, функції, оператори).</li>
+      <li><strong>Показувати панель налаштувань</strong> — показувати панель налаштувань на екрані калькулятора.</li>
+    </ul>
+    <p><strong>Роздільники цифр</strong> (сегментні кнопки): <strong>Немає</strong>, <strong>Пробіл</strong>, <strong>Апостроф</strong>. Вибирається один.</p>
+    <p><strong>Регістр степеня кореня</strong> (сегмент): <strong>Верх. інд.</strong>, <strong>Класичний</strong>. Вибирається один.</p>
+    <p><strong>Регістр степеня</strong> (сегмент): <strong>Верх. інд.</strong>, <strong>Класичний</strong>. Вибирається один.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Анімації</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Анімації</strong>.</p>
+    <p><strong>Прапорці:</strong> <strong>При запуску (екран)</strong>, <strong>Сріблястий градієнт (текст)</strong>, <strong>Поява/зникнення по символах (текст)</strong>, <strong>Затухання виразу (екран)</strong>, <strong>Затухання результату (екран)</strong>.</p>
+    <p><strong>Натискання кнопок</strong> (сегмент): <strong>Натискання</strong>, <strong>Світло</strong>, <strong>Мікс</strong>. Вибирається один.</p>
+    <p><strong>Перемикання кнопок і екранів</strong> (сегмент): <strong>Затухання</strong>, <strong>Зсув</strong>. Вибирається один.</p>
+    <p><strong>Поява накладань</strong> (сегмент): <strong>Немає</strong>, <strong>Зсув</strong>, <strong>Збіл.</strong> (збільшення), <strong>Мікс</strong>. Вибирається один.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Вібрація</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Тривалість вібрації</strong>. Задає тривалість тактильного відгуку в мс при натисканні кнопок; <strong>0</strong> вимикає вібрацію.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>0 мс</strong>, <strong>15 мс</strong>, <strong>20 мс</strong>, <strong>25 мс</strong>, <strong>30 мс</strong>, <strong>35 мс</strong>, <strong>40 мс</strong>, <strong>45 мс</strong>, <strong>50 мс</strong>. Натискання вибирає і закриває.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Округлення</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Округлення</strong>. Вибір способу округлення десяткових результатів.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>Без округлення</strong>; <strong>До меншого</strong> (x.5 вниз); <strong>До більшого</strong> (x.5 вгору); <strong>До +∞</strong>; <strong>До −∞</strong>; <strong>Банківське</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Точність</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Знаків після коми</strong>. Кількість знаків після коми в результаті.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>Повна/початкова</strong>; <strong>Авто</strong>; <strong>0 знаків</strong>, <strong>1 знаків</strong>, … <strong>10 знаків</strong>; <strong>20 знаків</strong>. Натискання вибирає і закриває.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Режим остачі '//'</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Режим остачі '//'</strong>. Поведінка оператора <strong>//</strong> (остача від цілочисельного ділення).</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>Остача (усічення)</strong> — наприклад 7//−4=3, −7//4=−3; <strong>Модуло (евклідів)</strong> — наприклад 7//−4=3, −7//4=1; <strong>Остача (до −∞)</strong> — наприклад 7//−4=−1, −7//4=1.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Формат експоненти</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Формат експоненти</strong>. Коли показувати експоненціальний запис у результаті.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>Ніколи</strong>, <strong>Авто</strong>, <strong>Завжди</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Обробка результату</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Обробка результату</strong>.</p>
+    <p><strong>Прапорець:</strong> <strong>Прибирати нулі</strong> — при ввімкненні кінцеві нулі в результаті приховуються; при вимкненні — показуються.</p>
+    <p><strong>Прапорець:</strong> <strong>Спрощувати біля нуля</strong> — при ввімкненні значення, дуже близькі до нуля (|x| &lt; ε), показуються як 0.</p>
+    <p><strong>Прапорець:</strong> <strong>Спрощувати біля цілого</strong> — при ввімкненні значення, близькі до 0.5, 1 або −1, показуються як 0.5, 1, −1.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Режим відсотка</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Режим відсотка</strong>. Задає інтерпретацію <strong>%</strong> (наприклад 200−10%).</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>Класичний</strong> — відсоток від лівого операнда (200−10% = 180); <strong>Простий</strong> — відсоток як десятковий дріб (200−10% = 199.9).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Відновлення стану</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Відновлення стану</strong>. Що відновлювати при запуску додатку.</p>
+    <p><strong>Прапорці:</strong></p>
+    <ul>
+      <li><strong>Текст/графік при запуску</strong> — відновлювати останній вираз і графік при запуску.</li>
+      <li><strong>Екран/панель при запуску</strong> — відновлювати останній екран (калькулятор/графік) і панель (Числова/Функціональна/Розширень).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Історія</span></summary>
+  <div>
+    <p>Відкриває діалог <strong>Макс. записів в історії</strong>. Максимальна кількість записів в історії виразів і графіків.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>100 записів</strong>, <strong>200</strong>, <strong>300</strong>, <strong>400</strong>, <strong>500</strong>, <strong>1000 записів</strong>. Натискання вибирає і закриває.</p>
+    <p><strong>Кнопки:</strong> <strong>Очистити історію</strong> — відкриває діалог підтвердження; підтвердження <strong>Очистити</strong> видаляє всю історію виразів і графіків. <strong>Закрити</strong> — закрити діалог. У діалозі підтвердження — <strong>Очистити</strong> та <strong>Скасувати</strong>.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+      </article>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html">Help</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <p class="footer__meta">CalcIUM · Scientific calculator for Android</p>
+    </div>
+  </footer>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

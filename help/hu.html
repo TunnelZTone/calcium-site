@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e14">
+  <title>Súgó CalcIUM — CalcIUM</title>
+  <link rel="icon" type="image/png" href="../assets/img/CalcIUM_Dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/help-content.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/CalcIUM_Dark.png" width="36" height="36" alt="">
+        <span>CalcIUM</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html" aria-current="page">Help</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout-main">
+    <main>
+      <nav class="help-lang-switch" aria-label="Help language">
+          <a href="en.html">English</a>
+          <a href="ru.html">Русский</a>
+          <a href="ua.html">Українська</a>
+          <a href="de.html">Deutsch</a>
+          <a href="es.html">Español</a>
+          <a href="fr.html">Français</a>
+          <a href="hu.html" aria-current="page">Magyar</a>
+      </nav>
+      <article class="help-document theme-dark">
+<!-- ========== SZÁM PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Szám panel</span></summary>
+  <div>
+    <p class="help-section-desc">A számjegyek, műveletek és memória fő billentyűzete. A gomb feliratai megegyeznek a képernyőn láthatókkal.</p>
+
+<details>
+  <summary><span class="summary-title">MR</span></summary>
+  <div><p><strong>Memória visszahívás.</strong> <span class="key">Beilleszti</span> a memóriában tárolt értéket a kurzor helyére. Nem törli a memóriát.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MS</span></summary>
+  <div><p><strong>Memóriamentés.</strong> <span class="key">Ment</span>i a jelenlegi eredményt a memóriába (felülírja az előző értéket).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M+</span></summary>
+  <div><p><strong>Memória hozzáadás.</strong> Hozzáadja a jelenlegi eredményt a memória értékéhez.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M−</span></summary>
+  <div><p><strong>Memória kivonás.</strong> Kivonja a jelenlegi eredményt a memória értékéből.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MC</span></summary>
+  <div><p><strong>Memória törlés.</strong> <span class="key">Törli</span> a tárolt memóriaértéket.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">←</span></summary>
+  <div><p><strong>Visszatörlés.</strong> Töröl egy karaktert a kurzor előtt. Ha a Beállításokban az <span class="key">Int. törlés</span> be van kapcsolva, egy egész token (pl. függvénynév) törlődhet.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">(</span></summary>
+  <div><p><strong>Nyitó zárójel.</strong> Beilleszti a <code>(</code> karaktert a kifejezésbe.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">)</span></summary>
+  <div><p><strong>Záró zárójel.</strong> Beilleszti a <code>)</code> karaktert a kifejezésbe.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">//</span></summary>
+  <div><p><strong>Egész osztás / maradék.</strong> Beilleszti a <code>//</code> jelet. Az eredmény az egész osztás maradéka (vagy modulója). A viselkedés a Beállítások → Maradék '//' módtól függ.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">C</span></summary>
+  <div><p><strong>Törlés.</strong> Törli a teljes kifejezést és eredményt.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">7, 8, 9</span></summary>
+  <div><p><strong>Számjegyek.</strong> Beilleszti a 7, 8, 9 karaktereket a kifejezésbe.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">/</span></summary>
+  <div><p><strong>Osztás.</strong> Beilleszti a <code>/</code> jelet. Képlet: a/b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Fn/Ext</span></summary>
+  <div><p><strong>Panel váltás.</strong> Érintés: vált a Szám és Függvény panelek között. Hosszú nyomás: közvetlenül a Kiterjesztések panelre vált. A gomb felirata a jelenlegi panel szerint változik.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">4, 5, 6</span></summary>
+  <div><p><strong>Számjegyek.</strong> Beilleszti a 4, 5, 6 karaktereket.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">*</span></summary>
+  <div><p><strong>Szorzás.</strong> Beilleszti a <code>*</code> jelet. Képlet: a*b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">%</span></summary>
+  <div><p><strong>Százalék.</strong> Beilleszti a <code>%</code> jelet. A jelentés a Beállítások → Százalék módtól függ: <strong>Klasszikus</strong> — a bal oldali operandus százaléka; <strong>Egyszerű</strong> — százalék tizedesként.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">1, 2, 3</span></summary>
+  <div><p><strong>Számjegyek.</strong> Beilleszti az 1, 2, 3 karaktereket.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">−</span></summary>
+  <div><p><strong>Mínusz.</strong> Beilleszti a <code>−</code> jelet. Képlet: a−b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">√</span></summary>
+  <div><p><strong>Négyzetgyök.</strong> Beilleszti a <code>√(</code> jelet. Képlet: √x (pozitív gyök).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">0, 00</span></summary>
+  <div><p><strong>Számjegyek.</strong> Beilleszti a 0 vagy 00 karaktert.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">.</span></summary>
+  <div><p><strong>Tizedesjel.</strong> Beilleszti a <code>.</code> jelet a tizedes számokhoz.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">+</span></summary>
+  <div><p><strong>Plusz.</strong> Beilleszti a <code>+</code> jelet. Képlet: a+b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">=</span></summary>
+  <div>
+    <p><strong>Egyenlő.</strong> <span class="key">Kiértékeli</span> a kifejezést és megjeleníti az eredményt.</p>
+    <p>A = gomb <strong>hosszú megnyomása</strong> hozzáadja a kifejezést és az eredményt az Előzményekhez (Menü → Előzmények) későbbi felhasználásra.</p>
+    <p>Az eredmény formátuma a Beállításoktól függ (pontosság, kitevő formátum stb.).</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== FÜGGVÉNY PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Függvény panel</span></summary>
+  <div>
+    <p class="help-section-desc">Trigonometrikus, logaritmus és segédfüggvények. Egyes gombok overlay-eket (paneleket) nyitnak.</p>
+
+<details>
+  <summary><span class="summary-title">pos</span></summary>
+  <div>
+    <p><strong>Kurzor overlay.</strong> Megnyitja a <strong>CURSOR</strong> overlayt a kurzor mozgatásához a kifejezésben és a pozíció megtekintéséhez.</p>
+    <p><strong>Fejléc:</strong> overlay címe; <strong>×</strong> — bezárás (vagy a <strong>Ki</strong> gomb alul).</p>
+    <p><strong>Tartalom:</strong></p>
+    <ul>
+      <li><strong>SL</strong> — csak olvasható: a kurzor bal oldalán lévő karakter.</li>
+      <li><strong>CP</strong> — csak olvasható: a kurzortól a kifejezés végéig tartó karakterek száma.</li>
+      <li><strong>SR</strong> — csak olvasható: a kurzor jobb oldalán lévő karakter.</li>
+      <li><strong>←</strong> — kurzor egy karakterrel balra.</li>
+      <li><strong>↑</strong> — ugrás a felső sorra (többsoros esetén).</li>
+      <li><strong>→</strong> — kurzor egy karakterrel jobbra.</li>
+      <li><strong>END</strong> — ugrás a kifejezés végére.</li>
+      <li><strong>↓</strong> — ugrás az alsó sorra.</li>
+      <li><strong>BEG</strong> — ugrás a kifejezés elejére.</li>
+      <li><strong>Ki</strong> — kifejezés mező kijelölésének megszüntetése és kurzor mód bezárása.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ABS</span></summary>
+  <div><p><strong>Abszolút érték.</strong> Beilleszti az <code>abs(</code> függvényt. Képlet: |x|.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEG</span></summary>
+  <div><p><strong>Fok függvény.</strong> Beilleszti a <code>deg(</code> függvényt. Radiánból fokba konvertál (pl. deg(π) = 180).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RAD</span></summary>
+  <div><p><strong>Radián függvény.</strong> Beilleszti a <code>rad(</code> függvényt. Fokból radiánba konvertál (pl. rad(180) = π).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">HYP</span></summary>
+  <div><p><strong>Hiperbolikus mód.</strong> Be/kikapcsolja a hiperbolikus függvényeket. Ha be van kapcsolva, SIN/COS/TAN stb. sinh/cosh/tanh lesz; ASIN/ACOS/ATAN asinh/acosh/atanh (ugyanígy COT, CSC, SEC és inverzeik).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">EXP</span></summary>
+  <div><p><strong>Exponenciális.</strong> Beilleszti az <code>exp(</code> függvényt. Képlet: e^x.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">INT</span></summary>
+  <div><p><strong>Egész rész.</strong> Beilleszti az <code>int(</code> függvényt. Nullához truncál.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LOG</span></summary>
+  <div>
+    <p><strong>10-es alapú logaritmus.</strong> Rövid érintés: beilleszti a <code>log(</code> függvényt. Hosszú nyomás: beilleszti a <code>log2(</code> függvényt (2-es alapú logaritmus). A sarokban lévő kis <strong>LOG2</strong> felirat a hosszú nyomás műveletét jelzi.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SIN, COS, TAN</span></summary>
+  <div><p>Beilleszti a <code>sin(</code>, <code>cos(</code>, <code>tan(</code> függvényeket. HYP bekapcsolva: <code>sinh(</code>, <code>cosh(</code>, <code>tanh(</code>. A szögmód (DEG/RAD) érvényes.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LN</span></summary>
+  <div><p><strong>Természetes logaritmus.</strong> Beilleszti a <code>ln(</code> függvényt. Képlet: ln(x) = log_e(x).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Nr/Ext</span></summary>
+  <div><p><strong>Panel váltás.</strong> Érintés: vált a Függvény és Kiterjesztések panelek között. Hosszú nyomás: Kiterjesztések panelre vált.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ASIN, ACOS, ATAN</span></summary>
+  <div><p>Inverz trigonometrikus. Beilleszti az <code>asin(</code>, <code>acos(</code>, <code>atan(</code> függvényeket. HYP esetén: asinh, acosh, atanh.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">N!</span></summary>
+  <div><p><strong>Faktoriális.</strong> Beilleszti a <code>!(</code> jelet vagy az előző szám faktoriálisát. Képlet: n! = 1·2·…·n (n ≥ 0 egész).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">x^y</span></summary>
+  <div><p><strong>Hatvány.</strong> Beilleszti a <code>^</code> jelet. Képlet: x^y.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">COT, CSC, SEC</span></summary>
+  <div><p>Beilleszti a <code>cot(</code>, <code>csc(</code>, <code>sec(</code> függvényeket. HYP esetén: coth, csch, sech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">℮</span></summary>
+  <div><p><strong>Euler-szám.</strong> Beilleszti az e konstanst (≈ 2,718…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ʸ√x</span></summary>
+  <div><p><strong>X y-edik gyöke.</strong> Beilleszti a gyökfüggvényt. Képlet: ʸ√x = x^(1/y).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ACOT, ACSC, ASEC</span></summary>
+  <div><p>Inverz cot, csc, sec. HYP esetén: acoth, acsch, asech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">π</span></summary>
+  <div><p><strong>Pi.</strong> Beilleszti a π konstanst (≈ 3,14159…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Függvény panel)</span></summary>
+  <div>
+    <p>Mint a Szám panelon: rövid megnyomás kiértékeli; hosszú megnyomás hozzáadja az előzményekhez.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== KITERJESZTÉSEK PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Kiterjesztések panel</span></summary>
+  <div>
+    <p class="help-section-desc">Logika, számrendszerek, konstansok, mértékegységek, beállítások, statisztika, grafikon, idő és egyéb. Sok gomb overlay-t nyit (némelyik beágyazott overlay-ekkel).</p>
+
+<details>
+  <summary><span class="summary-title">AND, OR, XOR, NOT</span></summary>
+  <div><p><strong>Bitenkénti/logika.</strong> Beilleszti az <code>and</code>, <code>or</code>, <code>xor</code>, <code>not</code> műveleteket. Egész alapú módokkal (BIN, OCT, HEX) használható.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG</span></summary>
+  <div><p><strong>Mérnöki jelölés.</strong> Be/kikapcsolja az eredmény mérnöki jelölésben történő megjelenítését (kitevő 3 többszöröse). Aktív állapotban az állapotsorban látható.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">AB</span></summary>
+  <div><p><strong>Szimbólumok overlay (AB).</strong> Megnyitja a panelt a számformátum szimbólumok és hexadecimális számjegyek beillesztéséhez.</p>
+    <p><strong>Fejléc sor:</strong></p>
+    <ul>
+      <li><strong>←</strong> — Visszatörlés a kifejezésben.</li>
+      <li><strong>C</strong> — Kifejezés törlése.</li>
+      <li><strong>Nr</strong> — Mini Szám overlay megnyitása.</li>
+      <li><strong>Fn</strong> — Mini Függvény overlay megnyitása.</li>
+    </ul>
+    <p><strong>Szimbólumrács (mit illeszt be):</strong></p>
+    <ul>
+      <li><strong>0b</strong> — Bináris literál előtag (pl. 0b1010).</li>
+      <li><strong>0o</strong> — Oktális literál előtag (pl. 0o12).</li>
+      <li><strong>0x</strong> — Hexadecimális literál előtag (pl. 0xFF).</li>
+      <li><strong>_</strong> — Számjegyelválasztó (vizuális csoportosítás, az értékben figyelmen kívül marad).</li>
+      <li><strong>A, B, C, D, E, F</strong> — Hexadecimális számjegyek (a karakter beillesztése).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">CONST</span></summary>
+  <div><p><strong>Konstansok overlay.</strong> Beilleszti egy konstans nevét (az alkalmazás kiértékeléskor numerikus értékre cseréli).</p>
+    <p><strong>Fejléc:</strong> ← (visszatörlés), C (törlés), Nr (mini Szám), Fn (mini Függvény).</p>
+    <p><strong>Konstansok (címke = beillesztett érték):</strong></p>
+    <ul>
+      <li><strong>π</strong> — Pi (3.14159…).</li>
+      <li><strong>e</strong> — Euler-szám (2.718…).</li>
+      <li><strong>τ</strong> — Tau (2π).</li>
+      <li><strong>φ</strong> — Aranymetszés.</li>
+      <li><strong>γ</strong> — Euler–Mascheroni-konstans.</li>
+      <li><strong>ln2, ln10</strong> — ln(2), ln(10).</li>
+      <li><strong>c</strong> — Fénysebesség; <strong>h, ħ</strong> — Planck-konstansok; <strong>kB</strong> — Boltzmann; <strong>R</strong> — gázállandó; <strong>NA</strong> — Avogadro; <strong>qe</strong> — elemi töltés.</li>
+      <li><strong>ε0, μ0</strong> — Vákuum permittivitás és permeabilitás; <strong>g0</strong> — nehézségi gyorsulás; <strong>G</strong> — gravitációs állandó; <strong>σ</strong> — Stefan–Boltzmann.</li>
+      <li><strong>me, mp, mn</strong> — Elektron, proton, neutron tömeg.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">UNITS</span></summary>
+  <div>
+    <p><strong>Mértékegységek overlay.</strong> Mértékegység-átalakító két szinttel: kategorialista, majd kategória képernyő konverzióval.</p>
+    <p><strong>Első szint (EGYSÉGEK):</strong></p>
+    <ul>
+      <li><strong>Fejléc:</strong> <strong>EGYSÉGEK</strong> cím; <strong>×</strong> — bezárás.</li>
+      <li><strong>Tartalom:</strong> Kategóriagombok rácsa. Érintse meg a kategóriát a megnyitáshoz. Kategóriák: <strong>Idő</strong>, <strong>Hossz</strong>, <strong>Terület</strong>, <strong>Térfogat</strong>, <strong>Tömeg</strong>, <strong>Hőm.</strong>, <strong>Sebesség</strong>, <strong>Nyomás</strong>, <strong>Energia</strong>, <strong>Teljesítmény</strong>, <strong>Szög</strong>, <strong>Frekvencia</strong>, <strong>Erő</strong>, <strong>Gyorsulás</strong>, <strong>Nyomaték</strong>, <strong>Sűrűség</strong>, <strong>Adat</strong>, <strong>Áram</strong>, <strong>Feszültség</strong>, <strong>Ellenállás</strong>, <strong>Kapacitás</strong>.</li>
+    </ul>
+    <p><strong>Kategória szint (pl. IDŐ, HOSSZ):</strong></p>
+    <ul>
+      <li><strong>Fejléc:</strong> Kategória neve (pl. IDŐ); <strong>←</strong> — vissza a kategórialistához; <strong>×</strong> — overlay bezárása.</li>
+      <li><strong>Mezők:</strong> <strong>Bemenet</strong> — érték a forrás egységben; <strong>Eredmény</strong> — érték a CÉL egységben. A hint sor: „forrás_szimbólum → cél_szimbólum”.</li>
+      <li><strong>Gombsor:</strong> <strong>FORRÁS</strong> (aktuális forrás egység szimbólum) — érintés: egységválasztó megnyitása; <strong>CÉL</strong> (cél egység szimbólum) — érintés: cél választó; <strong>&lt;&gt;</strong> — forrás és cél cseréje; <strong>Hozzáad</strong> — eredmény beillesztése a kifejezésbe; <strong>←</strong> — vissza a kategórialistához.</li>
+      <li><strong>Billentyűzet:</strong> Számjegyek <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> a bemenet szerkesztéséhez.</li>
+      <li><strong>ADAT kategória:</strong> A fejlécben egy <strong>SI</strong>/<strong>IEC</strong> kapcsoló is megjelenik. Az <strong>SI</strong> decimális egységeket használ (<strong>kB, MB, GB, TB</strong> = 1000 hatványai); az <strong>IEC</strong> bináris egységeket használ (<strong>KiB, MiB, GiB, TiB</strong> = 1024 hatványai).</li>
+    </ul>
+    <p><strong>Újonnan hozzáadott egységek:</strong> <strong>Térfogat</strong> — <strong>floz</strong>, <strong>tsp</strong>, <strong>tbsp</strong>, <strong>cup</strong>, <strong>pt</strong>; <strong>Tömeg</strong> — <strong>µg</strong>; <strong>Teljesítmény</strong> — <strong>mW</strong>, <strong>GW</strong>; <strong>Frekvencia</strong> — <strong>mHz</strong>, <strong>THz</strong>; <strong>Erő</strong> — <strong>mN</strong>; <strong>Sűrűség</strong> — <strong>g/ml</strong>; <strong>Áram</strong> — <strong>nA</strong>, <strong>MA</strong>; <strong>Feszültség</strong> — <strong>µV</strong>, <strong>MV</strong>; <strong>Ellenállás</strong> — <strong>mΩ</strong>, <strong>GΩ</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">CFG</span></summary>
+  <div>
+    <p><strong>Konfig overlay (Egész formátum).</strong> Beállítja az egész ábrázolást a BASE és bitműveletekhez (AND, OR, // stb.).</p>
+    <p><strong>Fejléc:</strong> <strong>EGÉSZ FORMÁTUM</strong> cím; <strong>×</strong> — bezárás.</p>
+    <p><strong>Tartalom:</strong></p>
+    <ul>
+      <li><strong>Szó méret</strong> — bitméret. Gombok: <strong>8</strong>, <strong>16</strong>, <strong>32</strong>, <strong>64</strong>. Érintés a kiválasztáshoz.</li>
+      <li><strong>Előjel</strong> — <strong>Be</strong> (kettes komplemens) vagy <strong>Ki</strong> (előjel nélküli). Érintés a kiválasztáshoz.</li>
+    </ul>
+    <p>A BASE overlayről is megnyitható Globális vagy Helyi CFG-ként.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">nCr, nPr</span></summary>
+  <div><p><strong>Kombinációk / permutációk.</strong> Beilleszti az nCr(n,k) és nPr(n,k) függvényeket.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">SI</span></summary>
+  <div><p><strong>SI előtagok overlay.</strong> Minden gomb beilleszti az adott SI előtag numerikus szorzóját (pl. k → 1000, μ → 1e-6).</p>
+    <p><strong>Fejléc:</strong> ←, C, Nr, Fn.</p>
+    <p><strong>Előtag rács (4 sor × 5):</strong></p>
+    <ul>
+      <li>1. sor: <strong>Y, Z, E, P, T</strong> (10^24 … 10^12).</li>
+      <li>2. sor: <strong>G, M, k, h, da</strong> (10^9, 10^6, 10^3, 10^2, 10^1).</li>
+      <li>3. sor: <strong>d, c, m, μ, n</strong> (10^-1 … 10^-9).</li>
+      <li>4. sor: <strong>p, f, a, z, y</strong> (10^-12 … 10^-24).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Fn/Nr, Nr, Fn</span></summary>
+  <div><p><strong>Panel váltás / mini overlayek.</strong> <strong>Fn/Nr</strong> (3. sor): érintés → Függvény panel, hosszú nyomás → Szám. <strong>Nr</strong> (4. sor) és <strong>Fn</strong> (5. sor) egy lebegő billentyűzet-overlayt nyit.</p>
+    <p><strong>NUMERIKUS overlay (mini Nr):</strong> Cím „NUMERIKUS”, fejléc <strong>×</strong> (bezárás). Sorok: ← ( ) // C | 7 8 9 / % | 4 5 6 * x^y | 1 2 3 - √ | 0 00 . + ʸ√x. Ugyanaz, mint a fő Szám panel, kivéve nincs <strong>=</strong> gomb.</p>
+    <p><strong>FÜGGVÉNYEK overlay (mini Fn):</strong> Cím „FÜGGVÉNYEK”, fejléc <strong>×</strong>. Sorok: ← DEG RAD HYP C | ABS EXP INT LOG LOG2 | SIN COS TAN LN % | ASIN ACOS ATAN N! x^y | COT CSC SEC e √ | ACOT ACSC ASEC π ʸ√x. Ugyanaz, mint a Függvény panel (szögmód, HYP, trig/log függvények, e, π).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">BASE</span></summary>
+  <div><p><strong>Bázis overlay.</strong> A jelenlegi eredményt négy bázisban mutatja; opcionális másolás vagy beillesztés a kifejezésbe.</p>
+    <p><strong>Fejléc:</strong> <strong>Másolás</strong> — kijelölt bázis másolása a vágólapra; <strong>→Expr</strong> — kijelölt bázis beillesztése a kifejezésbe; <strong>×</strong> — bezárás.</p>
+    <p><strong>Sorok:</strong> Minden sor egy bázis: <strong>Globális: WS=…, Előjel=…</strong> <strong>CFG</strong>-vel (globális konfig: Szó méret, Előjel Be/Ki); <strong>Helyi: …</strong> <strong>CFG</strong>-vel; majd <strong>DEC</strong>, <strong>HEX</strong>, <strong>OCT</strong>, <strong>BIN</strong> az aktuális eredménnyel. Sor érintése kijelöli Másolás/→Kifejezéshez.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SEED</span></summary>
+  <div>
+    <p><strong>Mag overlay (RNG mag beállítás).</strong> Beállítja a véletlenszám-generátor magját, amelyet a <strong>RAND</strong> és az <strong>RND</strong> overlay használ. Ugyanaz a mag reprodukálható sorozatot ad.</p>
+    <p><strong>Fejléc:</strong> <strong>RNG MAG BEÁLLÍTÁS</strong> cím; <strong>Alkalmaz</strong> — megadott mag alkalmazása (a következő RAND/Rnd ezt használja); <strong>×</strong> — bezárás.</p>
+    <p><strong>Tartalom:</strong> Szerkeszthető mező a mag értékéhez (egész). Billentyűzet: számjegyek, <strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>±</strong>, <strong>.</strong>, opcionálisan <strong>+1</strong>/<strong>−1</strong>. <strong>Alkalmaz</strong> akkor aktív, ha a mező nem üres; érintés beállítja a magot.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GCD, LCM</span></summary>
+  <div><p><strong>Legnagyobb közös osztó / Legkisebb közös többszörös.</strong> Beilleszti a gcd( és lcm( függvényeket két egészhez.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RND</span></summary>
+  <div><p><strong>RND overlay.</strong> Véletlenszámok generálása; opcionális másolás vagy beillesztés a kifejezésbe.</p>
+    <p><strong>Fejléc:</strong> <strong>Másolás</strong> — aktuális érték másolása; <strong>→Expr</strong> — aktuális érték beillesztése a kurzor helyére; <strong>×</strong> — bezárás.</p>
+    <p><strong>Szám generálása</strong> — gomb az overlay testében (egyszeri generálás).</p>
+    <p><strong>Mód:</strong> <strong>INT</strong> / <strong>FLOAT</strong> váltó — egész [Min, Max] vagy lebegő [Min, Max].</p>
+    <p><strong>Mezők:</strong> <strong>Min</strong>, <strong>Max</strong> — tartomány határok (szerkeszthető). <strong>Rnd</strong> — egyszeri generálás.</p>
+    <p><strong>Billentyűzet:</strong> Első sor: <strong>&lt;&gt;</strong>, <strong>-</strong>, <strong>.</strong>, <strong>←</strong>, <strong>C</strong>. Aztán számjegyek <strong>1 2 3 4 5</strong> és <strong>6 7 8 9 0</strong> — Min/Max szerkesztéséhez.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">DMS</span></summary>
+  <div>
+    <p><strong>DMS overlay.</strong> Átváltás tizedes fok és fok–perc–másodperc (D°M′S″) között.</p>
+    <p><strong>Fejléc:</strong> <strong>→Expr</strong> — átváltási eredmény beillesztése a kifejezésbe; <strong>×</strong> — bezárás.</p>
+    <p><strong>Módok:</strong> <strong>→DMS</strong> — tizedes fok megadása, eredmény D°M′S″; <strong>→DEG</strong> — Fok, Perc, Másodperc megadása, eredmény tizedes fok. Érintse meg a mód gombot a váltáshoz.</p>
+    <p><strong>Mezők:</strong></p>
+    <ul>
+      <li><strong>→DMS:</strong> egy tizedes bemeneti mező; <strong>Eredmény</strong> mutatja D°M′S″.</li>
+      <li><strong>→DEG:</strong> <strong>Fok</strong>, <strong>Perc</strong>, <strong>Másodperc</strong> (három mező); <strong>Eredmény</strong> mutatja a tizedes fokot.</li>
+    </ul>
+    <p>A billentyűzet és a visszatörlés/szerkesztés gombok az aktív mező szerkesztéséhez. DMS hosszú nyomása (Kiterjesztések panel) közvetlenül megnyitja ezt az overlayt.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">FMT</span></summary>
+  <div>
+    <p><strong>Formátum overlay.</strong> A jelenlegi eredményt formázza a helyi beállításokkal, majd másolja vagy beilleszti a kifejezésbe. A <strong>Formázott:</strong> mező valós időben mutatja az eredményt.</p>
+    <p><strong>Fejléc:</strong> <strong>Másolás</strong> — formázott eredmény másolása a vágólapra; <strong>→Expr</strong> — formázott eredmény beillesztése a kurzor helyére; <strong>×</strong> — bezárás.</p>
+    <p><strong>1. sor (érintés választót nyit):</strong></p>
+    <ul>
+      <li><strong>Pontosság</strong> — tizedesjegyek. Választó: <strong>Teljes/Nyers</strong>, <strong>Auto</strong>, <strong>0</strong>, <strong>1</strong>, … <strong>10</strong>, <strong>20</strong>.</li>
+      <li><strong>Kerekítés</strong> — kerekítési mód. Választó: <strong>Nincs</strong>, <strong>Fél le</strong>, <strong>Fél fel</strong>, <strong>Plafon</strong>, <strong>Padló</strong>, <strong>Bankár</strong>.</li>
+      <li><strong>Kitevő</strong> — mikor használjon kitevőt. Választó: <strong>Soha</strong>, <strong>Auto</strong>, <strong>Mindig</strong>.</li>
+    </ul>
+    <p><strong>2. sor:</strong></p>
+    <ul>
+      <li><strong>Nullák eltávolítása</strong> — váltó <strong>BE</strong> / <strong>KI</strong> (záró nullák elrejtése vagy mutatása).</li>
+      <li><strong>Elválasztók</strong> — számjegy csoportosítás. Érintés választó: <strong>Nincs</strong>, <strong>Szóköz</strong>, <strong>Aposztróf</strong>.</li>
+      <li><strong>Mérnöki</strong> — váltó <strong>BE</strong> / <strong>KI</strong> (kitevő 3 többszöröse, pl. 1.5E3).</li>
+    </ul>
+    <p>Minden fő gomb az aktuális értéket mutatja; a <strong>Pontosság</strong>, <strong>Kerekítés</strong>, <strong>Kitevő</strong> vagy <strong>Elválasztók</strong> érintése választó overlayt nyit. <strong>Nullák eltávolítása</strong> és <strong>Mérnöki</strong> közvetlenül vált.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">RAND</span></summary>
+  <div><p><strong>Véletlen.</strong> Beilleszt egy véletlenszámot (az RND overlay beállításait vagy alapértelmezett tartományt használja).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">STAT</span></summary>
+  <div>
+    <p><strong>Statisztika overlay.</strong> A jelenlegi eredmény megvizsgálása: minden sor a szám egy számított tulajdonságát mutatja. Érintse meg a sort a kijelöléshez; <strong>Másolás</strong> másolja a sor értékét; <strong>Össz. másol.</strong> másolja a teljes listát.</p>
+    <p><strong>Fejléc:</strong> <strong>Másolás</strong> — a kijelölt sor értékének másolása; <strong>Össz. másol.</strong> — minden sor másolása a vágólapra; <strong>→Expr</strong> — kijelölt érték beillesztése a kifejezésbe; <strong>×</strong> — bezárás.</p>
+    <p><strong>Sorok (sorrendben):</strong></p>
+    <ul>
+      <li><strong>Előjel</strong> — + vagy −</li>
+      <li><strong>Abs</strong> — abszolút érték (sztring)</li>
+      <li><strong>Egész rész</strong> — egész rész</li>
+      <li><strong>Tört rész</strong> — törtrész (vagy — ha nincs)</li>
+      <li><strong>Skála</strong> — tizedes skála</li>
+      <li><strong>Számjegyek</strong> — számjegyek száma</li>
+      <li><strong>Nulla</strong> — Igen / Nem</li>
+      <li><strong>Egész</strong> — Igen / Nem</li>
+      <li><strong>Véges</strong> — Igen / Nem</li>
+      <li><strong>Paritás</strong> — Páros / Páratlan / —</li>
+    </ul>
+    <p>Érintse meg a sort a kijelöléshez (piros keret); a <strong>Másolás</strong> akkor azt a sor értékét használja.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">DIFF</span></summary>
+  <div><p><strong>Különbség overlay.</strong> Két eredmény összehasonlítása (A = előző, B = jelenlegi).</p>
+    <p><strong>Fejléc:</strong> <strong>&lt;&gt;</strong> — A és B cseréje; <strong>→Expr</strong> — kijelölt különbség beillesztése a kifejezésbe; <strong>×</strong> — bezárás.</p>
+    <p><strong>Gombok:</strong> <strong>A←</strong> — A az aktuális eredményre; <strong>B←</strong> — B az aktuális eredményre. <strong>Δ</strong> — különbség B−A; <strong>|Δ|</strong> — abszolút különbség; <strong>%Δ</strong> — százalékos változás (100*(B−A)/A vagy hasonló). Δ, |Δ| vagy %Δ egyike van kijelölve a <strong>→Expr</strong>-hez.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GRAPH</span></summary>
+  <div><p><strong>Grafikon képernyő.</strong> Megnyitja a grafikon lapot. Itt érhető el a <strong>GRAPH</strong> overlay a következőkkel:</p>
+    <details>
+      <summary><span class="summary-title">Hozzáadás az előzményekhez</span></summary>
+      <div><p>Menti az aktuális grafikont az Előzményekbe: képletek, X/T/θ tartományok, opciók (autoY, jelmagyarázat stb.) és PNG kép. Később a Menü → Előzmények és „Grafikon beillesztése” lehetőséggel nyithatja meg.</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Sorozatok</span></summary>
+      <div>
+        <p>Megnyitja a <strong>SOROZATOK</strong> overlayt. Fejléc: <strong>Sorozat hozzáadása</strong> (új sorozat, max. 6); <strong>×</strong> bezárás.</p>
+        <p>Minden sorozat soránál:</p>
+        <ul>
+          <li><strong>Színes doboz számozással (1, 2, 3…)</strong> — érintés: ez a sorozat lesz <strong>aktív</strong> (Képlet, X-tartomány, x0 stb. használja).</li>
+          <li><strong>✓ / ✕</strong> — láthatóság: sorozat mutatása vagy elrejtése a grafikonon.</li>
+          <li><strong>Fonc / Param / Pol.</strong> — típus: Függvény y=f(x), Paraméteres x(t),y(t), vagy Polár r(θ). Érintés vált.</li>
+          <li><strong>Vonal / Pontok</strong> — vonalként vagy pontokként. Érintés vált.</li>
+          <li><strong>f′</strong> (csak függvény) — első derivált. Érintés vált.</li>
+          <li><strong>Animált pont ikon</strong> (csak polár) — szöveg nélküli gomb; érintés az animált pont be/kikapcsolása a görbén.</li>
+          <li><strong>f″</strong> (csak függvény) — második derivált. Érintés vált.</li>
+          <li><strong>Kitöltés</strong> (csak függvény) — terület kitöltése a görbe alatt. Érintés vált.</li>
+          <li><strong>Törl</strong> — sorozat törlése (az első sorozatnál nem jelenik meg).</li>
+        </ul>
+        <p>A képlet szerkesztéséhez a fő GRAPH overlay <strong>Képlet</strong> gombját használja (az aktív sorozatot szerkeszti).</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Nézet</span></summary>
+      <div>
+        <p>Megnyitja a grafikon <strong>Nézet</strong> overlayt. Fejléc: <strong>×</strong> bezárás.</p>
+        <p><strong>1. sor</strong></p>
+        <ul>
+          <li><strong>Középp.</strong> — tengelyek középre</li>
+          <li><strong>Zoom+</strong> — nagyítás</li>
+          <li><strong>×N</strong> (pl. ×1.00) — aktuális zoom (számérték)</li>
+          <li><strong>Zoom−</strong> — kicsinyítés</li>
+          <li><strong>Visszaáll</strong> — zoom és rács alaphelyzet</li>
+        </ul>
+        <p><strong>2. sor</strong></p>
+        <ul>
+          <li><strong>Robuszt</strong> — robusztus Y skálázás (egy látható sorozatra)</li>
+          <li><strong>GridX+</strong> / <strong>GridX−</strong> — X rács lépés (köztük az érték)</li>
+          <li><strong>Snap</strong> — kurzor a rácshoz igazítása</li>
+        </ul>
+        <p><strong>3. sor</strong></p>
+        <ul>
+          <li><strong>Auto Y</strong> — automatikus Y tartomány</li>
+          <li><strong>GridY+</strong> / <strong>GridY−</strong> — Y rács lépés</li>
+          <li><strong>Kurzor</strong> — kereszt kurzor be/ki</li>
+        </ul>
+        <p><strong>4. sor</strong></p>
+        <ul>
+          <li><strong>Aszimpt</strong> — aszimptoták</li>
+          <li><strong>Teng.</strong> — tengelyek</li>
+          <li><strong>Rács</strong> — rács</li>
+          <li><strong>Címkék</strong> — címkék</li>
+          <li><strong>Jelmagy.</strong> — jelmagyarázat</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Képlet</span></summary>
+      <div>
+        <p>Megnyitja a <strong>Képlet</strong> overlayt az <strong>aktív</strong> sorozat képletének szerkesztéséhez.</p>
+        <p><strong>Fejléc:</strong> <strong>×</strong> — bezárás.</p>
+        <p><strong>Tartalom:</strong> Szerkeszthető képlet mező (paraméteresnél: x(t), y(t) célok; polárnál: r(θ)). Billentyűzet: <strong>←</strong>, <strong>C</strong>, számjegyek, operátorok, függvény gombok (LOG, LOG2, LN, sin, cos stb.), <strong>,</strong> argumentumelválasztó. Függvénynél: egy kifejezés (pl. sin(x)); paraméteresnél: x(t) és y(t); polárnál: r(θ).</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">X-tartomány / T-tartomány / θ-tartomány</span></summary>
+      <div>
+        <p>Megnyitja a <strong>Tartomány</strong> overlayt az aktív sorozathoz. A cím és mezők a sorozat típusától függenek.</p>
+        <p><strong>Fejléc:</strong> <strong>X-tartomány</strong> / <strong>T-tartomány</strong> / <strong>θ-tartomány</strong> (cím); <strong>×</strong> — bezárás.</p>
+        <p><strong>Tartalom:</strong></p>
+        <ul>
+          <li><strong>Függvény (X-tartomány):</strong> <strong>X min</strong>, <strong>X max</strong>, <strong>Δx</strong> (lépés).</li>
+          <li><strong>Paraméteres (T-tartomány):</strong> <strong>t min</strong>, <strong>t max</strong>, <strong>Δt</strong>.</li>
+          <li><strong>Polár (θ-tartomány):</strong> <strong>θ min</strong>, <strong>θ max</strong>, <strong>Δθ</strong>.</li>
+        </ul>
+        <p>Minden érték szerkeszthető; billentyűzet és vezérlőgombok (<strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, számjegyek, előbeállítások pl. π, 2π) az aktív mezőre. <strong>Alkalmaz</strong> a tartomány megerősítéséhez.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">x0, t0, θ0</span></summary>
+      <div>
+        <p>Megnyitja a kurzor-eltolás overlayt az aktív sorozathoz. A grafikon keresztvonala ezen az értékén van.</p>
+        <p><strong>Fejléc:</strong> <strong>X0</strong> / <strong>T0</strong> / <strong>θ0</strong> (cím a sorozat típusától: Függvény → X0, Paraméteres → T0, Polár → θ0); <strong>×</strong> — bezárás.</p>
+        <p><strong>Tartalom:</strong> Egy szerkeszthető mező a kurzor értékéhez (x0, t0 vagy θ0). Előbeállítások: függvénynél <strong>−π</strong>, <strong>0</strong>, <strong>π</strong>; paraméteres/polárnál <strong>0</strong>, <strong>π</strong>, <strong>2π</strong>. Vezérlősor: <strong>←</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, <strong>C</strong>. Számjegyek és konstansok (pl. π) beírhatók. Alkalmaz frissíti a grafikon kurzor pozícióját.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Szám mód: Normál / Nyers</span></summary>
+      <div><p>Váltás: hogyan jelenjenek meg a számok a grafikonon (Normál = formázott, Nyers = teljes pontosság).</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Témák</span></summary>
+      <div>
+        <p>Megnyitja a <strong>Témák</strong> overlayt a grafikon színtémájához (háttér és görbék).</p>
+        <p><strong>Fejléc:</strong> overlay címe; <strong>×</strong> — bezárás.</p>
+        <p><strong>Tartalom:</strong> Négy téma gomb — <strong>Világos</strong>, <strong>Közepes világos</strong>, <strong>Közepes sötét</strong>, <strong>Sötét</strong>. Érintés a kiválasztáshoz; az aktív téma kiemelve.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Megjelenítés: Gyorsítótárazott / Valós idejű</span></summary>
+      <div><p>Váltás: <strong>Gyorsítótárazott</strong> — gyorsabb, gyorsítótárazott bittérkép; <strong>Valós idejű</strong> — újrarajzolás változáskor. Lassú eszközön összetett grafikonhoz használja a Gyorsítótárazottat.</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Előbeállítások</span></summary>
+      <div>
+        <p>Megnyitja az <strong>Előbeállítások</strong> overlayt beépített példa grafikonokkal. Kész grafikon betöltése (függvény, paraméteres, polár vagy vegyes), majd szerkesztés vagy megosztás.</p>
+        <p><strong>Fejléc:</strong> <strong>ELŐBEÁLLÍTÁSOK</strong> cím; <strong>×</strong> — bezárás.</p>
+        <p><strong>Fülek:</strong> <strong>Fonc</strong> — y=f(x); <strong>Param</strong> — paraméteres x(t), y(t); <strong>Pol.</strong> — r(θ); <strong>Vegyes</strong> — kombinált.</p>
+        <p><strong>Tartalom:</strong> Görgethető előbeállítás kártyák (cím, megjegyzés, előnézet). Érintés a kártya kijelöléséhez („Kijelölve” felirat jelenik meg). Kártya menü (érintés vagy hosszú nyomás):</p>
+        <ul>
+          <li><strong>Grafikon beillesztése</strong> — előbeállítás betöltése (lecseréli az aktuális grafikont).</li>
+          <li><strong>Grafikon kép megosztása (.png)</strong> — megosztás képként, ha van mentett kép.</li>
+          <li><strong>Grafikon adat megosztása (.json)</strong> — grafikon definíció JSON-ként.</li>
+          <li><strong>Megjegyzés szerkesztése</strong> — előbeállítás megjegyzés (helyi, ebben a munkamenetben).</li>
+        </ul>
+        <p>Az aktuális grafikon későbbi használathoz: a GRAPH overlay <strong>Hozzáadás az előzményekhez</strong> gombja.</p>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">TIME</span></summary>
+  <div>
+    <p><strong>Idő overlay.</strong> Számítás két <strong>A</strong> és <strong>B</strong> operandussal: időtartamok (nap, óra, perc, mp, ms) vagy dátum-idő (ÉÉÉÉ-HH-NN és ÓÓ:PP:MP.ms). Művelet <strong>+</strong> vagy <strong>−</strong>; az eredmény lehet időtartam vagy dátum-idő. Másolja vagy illessze be az eredményt a kifejezésbe.</p>
+    <p><strong>Fejléc:</strong> <strong>Másolás</strong> — emberi formátumú eredmény másolása a vágólapra; <strong>→Expr</strong> — numerikus eredmény beillesztése (pl. időtartam a választott egységben vagy epoch ms) a kifejezésbe; <strong>×</strong> — bezárás.</p>
+    <p><strong>Operandus sor (felső):</strong></p>
+    <ul>
+      <li><strong>A</strong> / <strong>B</strong> — aktív operandus váltása (szerkesztés és „Eredmény használata” cél).</li>
+      <li><strong>Időtartam</strong> / <strong>DátumIdő</strong> — az aktív operandus típusa: időtartam (n, ó, p, mp, ms) vagy dátum-idő (dátum + idő).</li>
+      <li><strong>Most</strong> — az aktív operandus kitöltése az aktuális dátummal és idővel (csak DátumIdő kiválasztásakor).</li>
+      <li><strong>CA</strong> / <strong>CB</strong> — A vagy B operandus törlése.</li>
+    </ul>
+    <p><strong>Eredmény konverter:</strong> A gomb mutatja a numerikus eredmény egységét (<strong>év</strong>, <strong>hónap</strong>, <strong>hét</strong>, <strong>nap</strong>, <strong>óra</strong>, <strong>perc</strong>, <strong>mp</strong>, <strong>ms</strong>) — érintés vált. A mellette lévő érték az eredmény ebben az egységben (időtartam eredményeknél).</p>
+    <p><strong>Eredmény formázó:</strong></p>
+    <ul>
+      <li><strong>Abs</strong> — eredmény abszolút értékének használata (időtartamnál; pl. A−B különbség).</li>
+      <li><strong>Norm</strong> — időtartam normalizálása A-ban és B-ben (pl. 90 perc → 1ó 30p).</li>
+      <li><strong>Er. haszn.</strong> — numerikus eredmény beírása az aktív operandusba (láncolt számításokhoz).</li>
+    </ul>
+    <p><strong>Billentyűzet:</strong> <strong>←</strong> visszatörlés, <strong>−</strong> mínusz (megengedett Napokban vagy dátumban), <strong>:</strong> és <strong>.</strong> idő/tizedeshez, <strong>C</strong> minden törlése, számjegyek <strong>0–9</strong>. A bemenet az aktív operandus aktív mezőjébe kerül (Időtartam: nap, óra, perc, mp, ms; DátumIdő: dátum, majd idő).</p>
+    <p><strong>Műveletek:</strong> Időtartam ± Időtartam; DátumIdő + Időtartam vagy DátumIdő − Időtartam; DátumIdő − DátumIdő időtartamot ad. DT + DT nem megengedett. A teljes Idő képernyőn (amikor IDŐ látható felül) A és B operandusok feliratos mezőkkel (Nap, Óra, Perc, Mp, ms vagy Dátum, Idő), <strong>+</strong>/<strong>−</strong> művelet és <strong>Csere</strong> A és B cseréjéhez.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Kiterjesztések panel)</span></summary>
+  <div>
+    <p>Kiértékeli a kifejezést; hosszú megnyomás hozzáadja az előzményekhez, mint a többi panelon.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== ÁLLAPOTSOR ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Állapotsor</span></summary>
+  <div>
+    <p class="help-section-desc">A felső sáv mutatja a szögmódot, számrendszert, címet, opcionális ENG/HYP jelzéseket és a menüt.</p>
+
+<details>
+  <summary><span class="summary-title">RAD / DEG (lenyíló lista)</span></summary>
+  <div><p>Érintse meg a lista megnyitásához: <strong>RAD</strong> — szögek radiánban; <strong>DEG</strong> — szögek fokban. A pipa az aktuálist mutatja. Hatással van a sin, cos, tan stb. függvényekre.</p>
+    <p><strong>DEG</strong> módban a sin, cos, tan argumentumai <strong>fokban</strong> vannak. sin(π/6)-hoz használja a RAD-ot vagy gépelje be sin(30).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEC / HEX / OCT / BIN (lenyíló lista)</span></summary>
+  <div><p>Érintse meg a szám alap kiválasztásához a bemenetnek és eredménynek: <strong>DEC</strong> decimális, <strong>HEX</strong> hexadecimális, <strong>OCT</strong> oktális, <strong>BIN</strong> bináris.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Cím (CalcIUM / RECENTS)</span></summary>
+  <div>
+    <p>Ha nincs overlay nyitva: az alkalmazás <strong>CalcIUM</strong> címét mutatja. Ha az állapot visszaáll, egy fogaskerék ikon röviden megjelenhet.</p>
+    <p>Ha egy Kiterjesztések panel overlay nyitva van: a cím <strong>RECENTS</strong>-re vált és kattinthatóvá válik. Érintse meg a <strong>RECENTS</strong> overlay megnyitásához (a nemrég használt overlayek listája).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">RECENTS (nem régiek)</span></summary>
+  <div>
+    <p>A megnyitás: érintse meg az állapotsor címét, amikor <strong>RECENTS</strong>-et mutat (ha egy Kiterjesztések panel overlay aktív). A nemrég használt overlayeket kártyákként mutatja; érintse meg a kártyát az overlay megnyitásához. Minden kártya az overlay nevét és a használat óta eltelt időt mutatja.</p>
+    <p><strong>Fejléc:</strong> <strong>RECENTS</strong> cím; <strong>×</strong> — bezárás.</p>
+    <p><strong>Fülek:</strong></p>
+    <ul>
+      <li><strong>MIND</strong> — minden nemrég használt overlay.</li>
+      <li><strong>ESZKÖZÖK</strong> — AB (Szimbólumok), CONST, SI, DMS, FMT, TIME, STAT, DIFF, RND, mini Nr, mini Fn.</li>
+      <li><strong>BEÁLL</strong> — beállítás-szerű: SEED, CFG, BASE.</li>
+      <li><strong>UNIT</strong> — Egység kategórialista, kategória képernyő, egységválasztó.</li>
+      <li><strong>GRAPH</strong> — Grafikon eszközök, Képlet, gFüggvények, gKonstansok, gNumerikus, Sorozatok, Nézet, Témák, Előbeállítások, Tartomány (X/T/θ), x0, t0, θ0.</li>
+    </ul>
+    <p>Érintse meg a kártyát az overlay megnyitásához.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG, HYP (jelzők)</span></summary>
+  <div><p>Akkor jelenik meg, ha a mérnöki jelölés vagy a hiperbolikus mód be van kapcsolva.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Menü (☰)</span></summary>
+  <div><p>Érintse meg a megnyitáshoz:</p>
+    <ul>
+      <li><strong>Előzmények</strong> — Előzmények képernyő megnyitása (kifejezések és grafikonok).</li>
+      <li><strong>Beállítások</strong> — Beállítások képernyő megnyitása.</li>
+      <li><strong>Értékelés</strong> — alkalmazás értékelése (áruház).</li>
+      <li><strong>Névjegy</strong> — alkalmazás info és verzió.</li>
+      <li><strong>Súgó</strong> — ez a súgóképernyő megnyitása.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== ELŐZMÉNYEK ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Előzmények</span></summary>
+  <div>
+    <p class="help-section-desc">Megnyitás: <span class="key">Állapotsor → Menü → Előzmények</span>. Két típus: <strong>kifejezés rögzítések</strong> (kifejezés + eredmény + opcionális megjegyzés) és <strong>grafikon bejegyzések</strong> (formulák, tartományok, opcionális kép és megjegyzés).</p>
+
+<details>
+  <summary><span class="summary-title">Kifejezés kártyák — helyi menü</span></summary>
+  <div><p>Hosszú nyomás (vagy helyi menü) egy kifejezés kártyán:</p>
+    <ul>
+      <li><strong>Kifejezés beillesztése</strong> — a kifejezés beillesztése a számológépbe és visszalépés.</li>
+      <li><strong>Eredmény beillesztése</strong> — az eredmény beillesztése a kifejezésbe.</li>
+      <li><strong>Kifejezés=Eredmény másolása</strong> — „expr=result” másolása a vágólapra.</li>
+      <li><strong>Kifejezés másolása</strong> — csak a kifejezés másolása.</li>
+      <li><strong>Eredmény másolása</strong> — csak az eredmény másolása.</li>
+      <li><strong>Megjegyzés szerkesztése</strong> — kártya megjegyzés hozzáadása vagy szerkesztése.</li>
+      <li><strong>Törlés</strong> — ez a rögzítés eltávolítása.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Grafikon kártyák — helyi menü</span></summary>
+  <div><p>Hosszú nyomás egy grafikon kártyán:</p>
+    <ul>
+      <li><strong>Grafikon beillesztése</strong> — a grafikon visszaállítása (formulák, tartományok) a Grafikon képernyőre és visszalépés.</li>
+      <li><strong>Grafikon kép megosztása (.png)</strong> — mentett grafikon kép megosztása. „Nincs mentett kép” jelenhet meg, ha a grafikon nincs képpel mentve.</li>
+      <li><strong>Grafikon adat megosztása (.json)</strong> — grafikon paraméterek és képletek megosztása JSON-ként.</li>
+      <li><strong>Összes képlet másolása</strong> — minden sorozat képlet másolása a vágólapra.</li>
+      <li><strong>Megjegyzés szerkesztése</strong> — grafikon megjegyzés hozzáadása vagy szerkesztése.</li>
+      <li><strong>Törlés</strong> — ez a grafikon bejegyzés eltávolítása.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== BEÁLLÍTÁSOK ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Beállítások</span></summary>
+  <div>
+    <p class="help-section-desc">Megnyitás: <span class="key">Állapotsor → Menü → Beállítások</span>. Minden elem párbeszédablakot vagy alképernyőt nyit.</p>
+
+<details>
+  <summary><span class="summary-title">Nyelv</span></summary>
+  <div>
+    <p>Párbeszédablak az alkalmazás nyelvének kiválasztásához.</p>
+    <p><strong>Opciók (rádiógombok):</strong> <strong>English</strong>, <strong>Русский</strong>, <strong>Українська</strong>, <strong>Deutsch</strong>, <strong>Español</strong>, <strong>Français</strong>, <strong>Magyar</strong>. Érintse meg egyet a kiválasztáshoz és a bezáráshoz.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Téma</span></summary>
+  <div>
+    <p>Párbeszédablak az alkalmazás téma kiválasztásához.</p>
+    <p><strong>Opciók (rádió):</strong> <strong>Tengeri kavicsok (Világos)</strong>, <strong>Csillagos éj (Sötét)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Bevitel beállításai</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Bevitel beállításai</strong> párbeszédablakot.</p>
+    <p><strong>1. sor — beviteli mód:</strong> <strong>Int. bevitel</strong> — implikált operátorok és zárójelek; <strong>Szabad</strong> — nyers gépelés. Egy kiválasztva.</p>
+    <p><strong>2. sor — visszatörlés:</strong> <strong>Int. törlés</strong> — visszatörlés tokenenként (pl. teljes függvénynév); <strong>Karakterenként</strong> — egy karakter törlése. Egy kiválasztva.</p>
+    <p><strong>Jelölőnégyzet:</strong> <strong>Eredmény hozzáfűzése (kísérl.)</strong> — <strong>=</strong> után a következő bemenet hozzáfűzhető az eredményhez.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Megjelenítési opciók</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Megjelenítési opciók</strong> párbeszédablakot.</p>
+    <p><strong>Jelölőnégyzetek:</strong></p>
+    <ul>
+      <li><strong>Szintaxis kiemelés</strong> — színek a kifejezésben (számjegyek, függvények, operátorok).</li>
+      <li><strong>Beállítási panel mutatása a képernyőn</strong> — beállítási infó a számológép képernyőjén.</li>
+    </ul>
+    <p><strong>Számjegyelválasztók</strong> (szegmens gombok): <strong>Nincs</strong>, <strong>Szóköz</strong>, <strong>Aposztróf</strong>. Egy kiválasztva.</p>
+    <p><strong>Gyök fok nagybetű</strong> (szegmens): <strong>Felső</strong> (felső index), <strong>Klasszikus</strong>. Egy kiválasztva.</p>
+    <p><strong>Hatvány nagybetű</strong> (szegmens): <strong>Felső</strong> (felső index kitevőhöz), <strong>Klasszikus</strong>. Egy kiválasztva.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Animációk</span></summary>
+  <div>
+    <p>Megnyitja az <strong>Animációk</strong> párbeszédablakot.</p>
+    <p><strong>Jelölőnégyzetek:</strong> <strong>Indításkor (Képernyő)</strong>, <strong>Ezüst átmenet (Szöveg)</strong>, <strong>Karakterenkénti megjelenés/eltűnés (Szöveg)</strong>, <strong>Kifejezés elhalványulás (Képernyő)</strong>, <strong>Eredmény elhalványulás (Képernyő)</strong>.</p>
+    <p><strong>Gombnyomás</strong> (szegmens): <strong>Nyomás</strong>, <strong>Világos</strong>, <strong>Mix</strong>. Egy kiválasztva.</p>
+    <p><strong>Gombok és képernyők váltása</strong> (szegmens): <strong>Elhalványulás</strong>, <strong>Csúszt.</strong> Egy kiválasztva.</p>
+    <p><strong>Overlay megjelenés</strong> (szegmens): <strong>Nincs</strong>, <strong>Csúszt.+F</strong> (Csúsztatás+Elhalványulás), <strong>Mér.+F</strong> (Méretezés+Elhalványulás), <strong>Mix</strong> (Csúszt.+Mér.+F). Egy kiválasztva.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Rezgés</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Rezgés időtartam</strong> párbeszédablakot. Haptikus időtartam ms-ban a gombnyomáshoz; <strong>0</strong> kikapcsolja a rezgést.</p>
+    <p><strong>Opciók (rádió):</strong> <strong>0 ms</strong>, <strong>15 ms</strong>, <strong>20 ms</strong>, <strong>25 ms</strong>, <strong>30 ms</strong>, <strong>35 ms</strong>, <strong>40 ms</strong>, <strong>45 ms</strong>, <strong>50 ms</strong>. Érintse meg egyet a kiválasztáshoz és bezáráshoz.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Kerekítés</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Kerekítési mód</strong> párbeszédablakot. A tizedes eredmények kerekítésének módja.</p>
+    <p><strong>Opciók (rádió):</strong> <strong>Nincs kerekítés</strong>; <strong>Fél le</strong> (x,5 lefelé); <strong>Fél fel</strong> (x,5 felfelé); <strong>Plafond</strong> (a +∞ felé); <strong>Padló</strong> (a −∞ felé); <strong>Bankár</strong> (félig páros).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Pontosság</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Tizedesjegyek</strong> párbeszédablakot. Hány tizedesjegy jelenjen meg az eredményben.</p>
+    <p><strong>Opciók (rádió):</strong> <strong>Teljes/Nyers</strong>; <strong>Auto</strong>; <strong>0 tizedesjegy</strong>, <strong>1 tizedesjegy</strong>, … <strong>10 tizedesjegy</strong>; <strong>20 tizedesjegy</strong>. Érintse meg egyet a kiválasztáshoz és bezáráshoz.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Maradék '//' mód</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Maradék '//' mód</strong> párbeszédablakot. A <strong>//</strong> operátor viselkedése (egész osztás maradék).</p>
+    <p><strong>Opciók (rádió):</strong> <strong>Maradék (csonk.)</strong> — pl. 7//−4=3, −7//4=−3; <strong>Modulo (eukl.)</strong> — pl. 7//−4=3, −7//4=1; <strong>Padló maradék</strong> — pl. 7//−4=−1, −7//4=1.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Kitevő formátum</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Kitevő formátum</strong> párbeszédablakot. Mikor jelenjen meg a kitevős jelölés az eredményben.</p>
+    <p><strong>Opciók (rádió):</strong> <strong>Soha</strong>, <strong>Auto</strong>, <strong>Mindig</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Eredmény kezelés</span></summary>
+  <div>
+    <p>Megnyitja az <strong>Eredmény kezelés</strong> párbeszédablakot.</p>
+    <p><strong>Jelölőnégyzet:</strong> <strong>Záró nullák eltávolítása</strong> — bekapcsolva az eredmény záró nullái rejtve; kikapcsolva mutatva.</p>
+    <p><strong>Jelölőnégyzet:</strong> <strong>Közel nulla egyszerűsítése</strong> — bekapcsolva a nullához nagyon közeli értékek (|x| &lt; ε) 0-ként jelennek meg.</p>
+    <p><strong>Jelölőnégyzet:</strong> <strong>Közel egész egyszerűsítése</strong> — bekapcsolva a 0,5, 1 vagy −1 közeli értékek 0,5, 1, −1ként jelennek meg.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Százalék mód</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Százalék mód</strong> párbeszédablakot. A <strong>%</strong> értelmezése (pl. 200−10%).</p>
+    <p><strong>Opciók (rádió):</strong> <strong>Klasszikus</strong> — a bal operandus százaléka (200−10% = 180); <strong>Egyszerű</strong> — százalék tizedesként (200−10% = 199.9).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Állapot helyreállítás</span></summary>
+  <div>
+    <p>Megnyitja az <strong>Állapot helyreállítás</strong> párbeszédablakot. Mit állítson vissza az alkalmazás indulásakor.</p>
+    <p><strong>Jelölőnégyzetek:</strong></p>
+    <ul>
+      <li><strong>Szöveg/Grafikon induláskor</strong> — utolsó kifejezés és grafikon visszaállítása induláskor.</li>
+      <li><strong>Képernyő/Panel induláskor</strong> — utolsó képernyő (számológép/grafikon) és panel (Szám/Függvény/Kiterjesztés) visszaállítása.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Előzmények</span></summary>
+  <div>
+    <p>Megnyitja a <strong>Max. bejegyzés</strong> párbeszédablakot. A kifejezés- és grafikonelőzmény bejegyzések maximális száma.</p>
+    <p><strong>Opciók (rádió):</strong> <strong>100 bejegyzés</strong>, <strong>200</strong>, <strong>300</strong>, <strong>400</strong>, <strong>500</strong>, <strong>1000 bejegyzés</strong>. Érintse meg egyet a kiválasztáshoz és bezáráshoz.</p>
+    <p><strong>Gombok:</strong> <strong>Előzmények törlése</strong> — megerősítő párbeszéd; <strong>Törlés</strong> a teljes kifejezés- és grafikonelőzmény törléséhez. <strong>Bezár.</strong> — párbeszéd bezárása. A megerősítőn <strong>Törlés</strong> és <strong>Mégse</strong>.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+      </article>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html">Help</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <p class="footer__meta">CalcIUM · Scientific calculator for Android</p>
+    </div>
+  </footer>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

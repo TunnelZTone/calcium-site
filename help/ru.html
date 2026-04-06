@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e14">
+  <title>Справка CalcIUM — CalcIUM</title>
+  <link rel="icon" type="image/png" href="../assets/img/CalcIUM_Dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/help-content.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/CalcIUM_Dark.png" width="36" height="36" alt="">
+        <span>CalcIUM</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html" aria-current="page">Help</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout-main">
+    <main>
+      <nav class="help-lang-switch" aria-label="Help language">
+          <a href="en.html">English</a>
+          <a href="ru.html" aria-current="page">Русский</a>
+          <a href="ua.html">Українська</a>
+          <a href="de.html">Deutsch</a>
+          <a href="es.html">Español</a>
+          <a href="fr.html">Français</a>
+          <a href="hu.html">Magyar</a>
+      </nav>
+      <article class="help-document theme-dark">
+<!-- ========== NUMERIC PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Числовая панель</span></summary>
+  <div>
+    <p class="help-section-desc">Основная клавиатура для цифр, операторов и памяти. Подписи кнопок совпадают с отображаемыми на экране.</p>
+
+<details>
+  <summary><span class="summary-title">MR</span></summary>
+  <div><p><strong>Вызов из памяти.</strong> <span class="key">Вставляет</span> сохранённое в памяти значение в позицию курсора. Память не очищается.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MS</span></summary>
+  <div><p><strong>Запись в память.</strong> <span class="key">Сохраняет</span> текущий результат в памяти (заменяет предыдущее значение).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M+</span></summary>
+  <div><p><strong>Добавить к памяти.</strong> Прибавляет текущий результат к значению в памяти.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M−</span></summary>
+  <div><p><strong>Вычесть из памяти.</strong> Вычитает текущий результат из значения в памяти.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MC</span></summary>
+  <div><p><strong>Очистить память.</strong> <span class="key">Очищает</span> сохранённое значение памяти.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">←</span></summary>
+  <div><p><strong>Удаление.</strong> Удаляет один символ перед курсором. Если в Настройках включён <span class="key">Умный back</span>, может удалять целый токен (например, имя функции).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">(</span></summary>
+  <div><p><strong>Левая скобка.</strong> Вставляет <code>(</code> в выражение.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">)</span></summary>
+  <div><p><strong>Правая скобка.</strong> Вставляет <code>)</code> в выражение.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">//</span></summary>
+  <div><p><strong>Целочисленное деление / остаток.</strong> Вставляет <code>//</code>. Результат — остаток от целочисленного деления. Поведение задаётся в Настройки → Режим остатка '//': Остаток (усечение), Модуло (евклидов) или Остаток (к −∞).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">C</span></summary>
+  <div><p><strong>Очистить.</strong> Очищает выражение и результат.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">7, 8, 9</span></summary>
+  <div><p><strong>Цифры.</strong> Вставляют символы 7, 8, 9 в выражение.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">/</span></summary>
+  <div><p><strong>Деление.</strong> Вставляет <code>/</code>. Формула: a/b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Фн/Доп (Fn/Ext)</span></summary>
+  <div><p><strong>Переключение панелей.</strong> Короткое нажатие: переключает между Числовой и Функциональной панелями. Длинное: сразу открывает панель расширений. Подпись кнопки меняется в зависимости от контекста.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">4, 5, 6</span></summary>
+  <div><p><strong>Цифры.</strong> Вставляют 4, 5, 6.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">*</span></summary>
+  <div><p><strong>Умножение.</strong> Вставляет <code>*</code>. Формула: a*b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">%</span></summary>
+  <div><p><strong>Процент.</strong> Вставляет <code>%</code>. Смысл задаётся в Настройки → Режим процента: <strong>Классический</strong> — процент от левого операнда (например 200−10% = 200−20 = 180); <strong>Простой</strong> — процент как десятичная дробь (200−10% = 200−0.1 = 199.9).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">1, 2, 3</span></summary>
+  <div><p><strong>Цифры.</strong> Вставляют 1, 2, 3.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">−</span></summary>
+  <div><p><strong>Минус.</strong> Вставляет <code>−</code>. Формула: a−b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">√</span></summary>
+  <div><p><strong>Квадратный корень.</strong> Вставляет <code>√(</code>. Формула: √x (положительный корень).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">0, 00</span></summary>
+  <div><p><strong>Цифры.</strong> Вставляют 0 или 00.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">.</span></summary>
+  <div><p><strong>Десятичная запятая.</strong> Вставляет <code>.</code> для десятичных чисел.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">+</span></summary>
+  <div><p><strong>Плюс.</strong> Вставляет <code>+</code>. Формула: a+b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">=</span></summary>
+  <div>
+    <p><strong>Равно.</strong> <span class="key">Вычисляет</span> выражение и показывает результат.</p>
+    <p><strong>Длинное нажатие</strong> по = добавляет выражение и результат в Историю (Меню → История) для последующего использования.</p>
+    <p>Формат результата задаётся в Настройках (точность, экспоненциальный формат и т.д.).</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== FUNCTION PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Функциональная панель</span></summary>
+  <div>
+    <p class="help-section-desc">Тригонометрические, логарифмические и служебные функции. Некоторые кнопки открывают наложения (панели).</p>
+
+<details>
+  <summary><span class="summary-title">поз (pos)</span></summary>
+  <div>
+    <p><strong>Наложение курсора.</strong> Открывает панель <strong>КУРСОР</strong> для перемещения курсора в выражении и просмотра позиции.</p>
+    <p><strong>Заголовок:</strong> название панели; <strong>×</strong> — закрыть (или кнопка <strong>Откл</strong> ниже).</p>
+    <p><strong>Содержимое:</strong></p>
+    <ul>
+      <li><strong>SL</strong> — только чтение: символ слева от курсора.</li>
+      <li><strong>CP</strong> — только чтение: число символов от курсора до конца выражения.</li>
+      <li><strong>SR</strong> — только чтение: символ справа от курсора.</li>
+      <li><strong>←</strong> — сдвиг курсора влево на один символ.</li>
+      <li><strong>↑</strong> — переход на строку выше (при многострочном вводе).</li>
+      <li><strong>→</strong> — сдвиг курсора вправо на один символ.</li>
+      <li><strong>Конец (END)</strong> — в конец выражения.</li>
+      <li><strong>↓</strong> — на строку ниже.</li>
+      <li><strong>Нач (BEG)</strong> — в начало выражения.</li>
+      <li><strong>Откл (Off)</strong> (деактивация курсора) — снять фокус с поля выражения и закрыть режим курсора.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ABS</span></summary>
+  <div><p><strong>Модуль.</strong> Вставляет <code>abs(</code>. Формула: |x|.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEG</span></summary>
+  <div><p><strong>Функция градусов.</strong> Вставляет <code>deg(</code> в выражение. Преобразует радианы в градусы (например deg(π) = 180).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RAD</span></summary>
+  <div><p><strong>Функция радиан.</strong> Вставляет <code>rad(</code> в выражение. Преобразует градусы в радианы (например rad(180) = π).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">HYP</span></summary>
+  <div><p><strong>Переключатель гиперболического режима.</strong> Включает гиперболические функции. При включении SIN/COS/TAN и т.д. становятся sinh/cosh/tanh; ASIN/ACOS/ATAN — asinh/acosh/atanh (аналогично для COT, CSC, SEC и обратных).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">EXP</span></summary>
+  <div><p><strong>Экспонента.</strong> Вставляет <code>exp(</code>. Формула: e^x.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">INT</span></summary>
+  <div><p><strong>Целая часть.</strong> Вставляет <code>int(</code>. Усечение к нулю.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LOG</span></summary>
+  <div>
+    <p><strong>Логарифм по основанию 10.</strong> Короткое нажатие: вставляет <code>log(</code>. Длинное — вставляет <code>log2(</code> (логарифм по основанию 2). Метка <strong>LOG2</strong> в углу кнопки обозначает действие при удержании.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SIN, COS, TAN</span></summary>
+  <div><p>Вставляют <code>sin(</code>, <code>cos(</code>, <code>tan(</code>. При включённом HYP: <code>sinh(</code>, <code>cosh(</code>, <code>tanh(</code>. Учитывается режим углов (DEG/RAD).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LN</span></summary>
+  <div><p><strong>Натуральный логарифм.</strong> Вставляет <code>ln(</code>. Формула: ln(x) = log_e(x).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Чс/Доп (Nr/Ext)</span></summary>
+  <div><p><strong>Переключение панелей.</strong> Короткое нажатие: переключает между Функциональной и панелью расширений. Длинное: открывает панель расширений. Подпись кнопки меняется в зависимости от контекста.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ASIN, ACOS, ATAN</span></summary>
+  <div><p>Обратные тригонометрические. Вставляют <code>asin(</code>, <code>acos(</code>, <code>atan(</code>. С HYP: asinh, acosh, atanh.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">N!</span></summary>
+  <div><p><strong>Факториал.</strong> Вставляет <code>!(</code> или факториал предыдущего числа. Формула: n! = 1·2·…·n (целое n ≥ 0).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">x^y</span></summary>
+  <div><p><strong>Степень.</strong> Вставляет <code>^</code>. Формула: x^y.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">COT, CSC, SEC</span></summary>
+  <div><p>Вставляют <code>cot(</code>, <code>csc(</code>, <code>sec(</code>. С HYP: coth, csch, sech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">℮</span></summary>
+  <div><p><strong>Число Эйлера.</strong> Вставляет константу e (≈ 2.718…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ʸ√x</span></summary>
+  <div><p><strong>Корень степени y из x.</strong> Вставляет функцию корня. Формула: ʸ√x = x^(1/y).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ACOT, ACSC, ASEC</span></summary>
+  <div><p>Обратные cot, csc, sec. С HYP: acoth, acsch, asech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">π</span></summary>
+  <div><p><strong>Пи.</strong> Вставляет константу π (≈ 3.14159…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Функциональная панель)</span></summary>
+  <div>
+    <p>Как на числовой панели: тап вычисляет; длинное нажатие добавляет запись в Историю.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== EXTENSION PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Панель расширений</span></summary>
+  <div>
+    <p class="help-section-desc">Логика, системы счисления, константы, единицы, конфиг, статистика, графики, время и другое. Многие кнопки открывают наложения (в том числе вложенные).</p>
+
+<details>
+  <summary><span class="summary-title">AND, OR, XOR, NOT</span></summary>
+  <div><p><strong>Побитовые/логика.</strong> Вставляют <code>and</code>, <code>or</code>, <code>xor</code>, <code>not</code>. Используются с целочисленными основаниями (BIN, OCT, HEX).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG</span></summary>
+  <div><p><strong>Инженерная нотация.</strong> Переключает отображение результата в инженерной нотации (экспонента кратна 3, например 1.5E3). Отображается в строке состояния при включении.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">AB</span></summary>
+  <div><p><strong>Панель символов (AB).</strong> Открывает панель для вставки символов формата чисел и шестнадцатеричных цифр.</p>
+    <p><strong>Строка заголовка:</strong></p>
+    <ul>
+      <li><strong>←</strong> — удаление в выражении.</li>
+      <li><strong>C</strong> — Очистить выражение.</li>
+      <li><strong>Чс</strong> — Открыть мини числовую панель.</li>
+      <li><strong>Фн</strong> — Открыть мини функциональную панель.</li>
+    </ul>
+    <p><strong>Сетка символов (что вставляется):</strong></p>
+    <ul>
+      <li><strong>0b</strong> — префикс двоичного литерала (например 0b1010).</li>
+      <li><strong>0o</strong> — префикс восьмеричного литерала (например 0o12).</li>
+      <li><strong>0x</strong> — префикс шестнадцатеричного литерала (например 0xFF).</li>
+      <li><strong>_</strong> — разделитель цифр (визуальная группировка, в значении игнорируется).</li>
+      <li><strong>A, B, C, D, E, F</strong> — шестнадцатеричные цифры (вставка символа).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">КОНСТ</span></summary>
+  <div><p><strong>Панель констант.</strong> Вставляет имя константы (приложение подставляет числовое значение при вычислении).</p>
+    <p><strong>Заголовок:</strong> ← (удаление), C (очистить), Чс (мини числовая), Фн (мини функциональная).</p>
+    <p><strong>Константы (подпись = что вставляется):</strong></p>
+    <ul>
+      <li><strong>π</strong> — Пи (3.14159…).</li>
+      <li><strong>e</strong> — число Эйлера (2.718…).</li>
+      <li><strong>τ</strong> — Тау (2π).</li>
+      <li><strong>φ</strong> — Золотое сечение.</li>
+      <li><strong>γ</strong> — константа Эйлера–Маскерони.</li>
+      <li><strong>ln2, ln10</strong> — ln(2), ln(10).</li>
+      <li><strong>c</strong> — скорость света; <strong>h, ħ</strong> — постоянные Планка; <strong>kB</strong> — Больцман; <strong>R</strong> — газовая постоянная; <strong>NA</strong> — Авогадро; <strong>qe</strong> — элементарный заряд.</li>
+      <li><strong>ε0, μ0</strong> — диэлектрическая и магнитная проницаемость вакуума; <strong>g0</strong> — стандартная гравитация; <strong>G</strong> — гравитационная постоянная; <strong>σ</strong> — Стефана–Больцмана.</li>
+      <li><strong>me, mp, mn</strong> — масса электрона, протона, нейтрона.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ЕД. ИЗМ.</span></summary>
+  <div>
+    <p><strong>Панель единиц.</strong> Конвертер единиц в два уровня: список категорий, затем экран категории с преобразованием.</p>
+    <p><strong>Первый уровень (ЕД. ИЗМ.):</strong></p>
+    <ul>
+      <li><strong>Заголовок:</strong> <strong>ЕД. ИЗМ.</strong>; <strong>×</strong> — закрыть.</li>
+      <li><strong>Содержимое:</strong> Сетка кнопок категорий. Нажатие открывает категорию. Категории: <strong>Время</strong>, <strong>Длина</strong>, <strong>Площ.</strong>, <strong>Объём</strong>, <strong>Масса</strong>, <strong>Темп.</strong>, <strong>Скор.</strong>, <strong>Давл.</strong>, <strong>Энерг.</strong>, <strong>Мощн.</strong>, <strong>Угол</strong>, <strong>Частота</strong>, <strong>Сила</strong>, <strong>Ускор.</strong>, <strong>Момент</strong>, <strong>Плотн.</strong>, <strong>Данные</strong>, <strong>Ток</strong>, <strong>Напр.</strong>, <strong>Сопр.</strong>, <strong>Ёмкость</strong>.</li>
+    </ul>
+    <p><strong>Уровень категории (например ВРЕМЯ, ДЛИНА):</strong></p>
+    <ul>
+      <li><strong>Заголовок:</strong> Название категории (например ВРЕМЯ); <strong>←</strong> — назад к списку; <strong>×</strong> — закрыть.</li>
+      <li><strong>Поля:</strong> <strong>Ввод</strong> — значение в единице ИСТОЧНИК; <strong>Результат</strong> — значение в единице РЕЗУЛЬТАТ. Подсказка показывает «символ_из → символ_в».</li>
+      <li><strong>Строка кнопок:</strong> <strong>ИЗ</strong> (текущий символ ИСТОЧНИК) — нажатие открывает выбор единицы источника; <strong>В</strong> (символ РЕЗУЛЬТАТ) — выбор целевой единицы; <strong>&lt;&gt;</strong> — поменять ИЗ и В; <strong>Доб</strong> — вставить результат в выражение; <strong>←</strong> — назад к списку категорий.</li>
+      <li><strong>Клавиатура:</strong> Цифры <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> для редактирования поля Ввод.</li>
+      <li><strong>Категория ДАННЫЕ:</strong> В заголовке также есть переключатель <strong>SI</strong>/<strong>IEC</strong>. <strong>SI</strong> использует десятичные единицы (<strong>kB, MB, GB, TB</strong> = степени 1000); <strong>IEC</strong> использует двоичные единицы (<strong>KiB, MiB, GiB, TiB</strong> = степени 1024).</li>
+    </ul>
+    <p><strong>Недавно добавленные единицы:</strong> <strong>Объём</strong> — <strong>floz</strong>, <strong>tsp</strong>, <strong>tbsp</strong>, <strong>cup</strong>, <strong>pt</strong>; <strong>Масса</strong> — <strong>µg</strong>; <strong>Мощность</strong> — <strong>mW</strong>, <strong>GW</strong>; <strong>Частота</strong> — <strong>mHz</strong>, <strong>THz</strong>; <strong>Сила</strong> — <strong>mN</strong>; <strong>Плотность</strong> — <strong>g/ml</strong>; <strong>Ток</strong> — <strong>nA</strong>, <strong>MA</strong>; <strong>Напряжение</strong> — <strong>µV</strong>, <strong>MV</strong>; <strong>Сопротивление</strong> — <strong>mΩ</strong>, <strong>GΩ</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ЦЕЛ. ФОРМАТ</span></summary>
+  <div>
+    <p><strong>Панель конфигурации (формат целых).</strong> Задаёт представление целых для БАЗА и побитовых операций (AND, OR, // и т.д.).</p>
+    <p><strong>Заголовок:</strong> <strong>ЦЕЛЫЙ ФОРМАТ</strong>; <strong>×</strong> — закрыть.</p>
+    <p><strong>Содержимое:</strong></p>
+    <ul>
+      <li><strong>Разрядность</strong> — разрядность в битах. Кнопки: <strong>8</strong>, <strong>16</strong>, <strong>32</strong>, <strong>64</strong>. Выбор нажатием.</li>
+      <li><strong>Знак</strong> — <strong>Вкл</strong> (дополнительный код) или <strong>Откл</strong> (без знака). Выбор нажатием.</li>
+    </ul>
+    <p>Также открывается из панели БАЗА как Глобальная или Локальная конфигурация.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">nCr, nPr</span></summary>
+  <div><p><strong>Сочетания / размещения.</strong> Вставляют nCr(n,k) и nPr(n,k). Формулы: nCr = n!/(k!(n−k)!), nPr = n!/(n−k)!.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">СИ</span></summary>
+  <div><p><strong>Панель префиксов СИ.</strong> Каждая кнопка вставляет числовой множитель префикса (например k → 1000, μ → 1e-6).</p>
+    <p><strong>Заголовок:</strong> ←, C, Чс, Фн.</p>
+    <p><strong>Сетка префиксов (4 строки × 5):</strong></p>
+    <ul>
+      <li>Строка 1: <strong>Y, Z, E, P, T</strong> (10^24 … 10^12).</li>
+      <li>Строка 2: <strong>G, M, k, h, da</strong> (10^9, 10^6, 10^3, 10^2, 10^1).</li>
+      <li>Строка 3: <strong>d, c, m, μ, n</strong> (10^-1 … 10^-9).</li>
+      <li>Строка 4: <strong>p, f, a, z, y</strong> (10^-12 … 10^-24).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Фн/Чс, Чс, Фн (Fn/Nr, Nr, Fn)</span></summary>
+  <div><p><strong>Переключение панелей / мини-наложения.</strong> <strong>Фн/Чс</strong> (строка 3): нажатие → Функциональная панель, длинное → Числовая. <strong>Чс</strong> (строка 4) и <strong>Фн</strong> (строка 5) открывают небольшое плавающее наложение клавиатуры.</p>
+    <p><strong>Наложение ЧИСЛА (мини Чс):</strong> Заголовок «ЧИСЛА», в заголовке <strong>×</strong> (закрыть). Строки: ← ( ) // C | 7 8 9 / % | 4 5 6 * x^y | 1 2 3 - √ | 0 00 . + ʸ√x. Те же действия, что у основной числовой панели, кроме кнопки <strong>=</strong>.</p>
+    <p><strong>Наложение ФУНКЦИИ (мини Фн):</strong> Заголовок «ФУНКЦИИ», в заголовке <strong>×</strong>. Строки: ← DEG RAD HYP C | ABS EXP INT LOG LOG2 | SIN COS TAN LN % | ASIN ACOS ATAN N! x^y | COT CSC SEC e √ | ACOT ACSC ASEC π ʸ√x. Как на функциональной панели (режим углов, HYP, все триг/лог/функции, e, π).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">БАЗА</span></summary>
+  <div><p><strong>Панель основания.</strong> Показывает текущий результат в четырёх основаниях; опционально копирование или вставка в выражение.</p>
+    <p><strong>Заголовок:</strong> <strong>Копир</strong> — копировать выбранную строку основания в буфер; <strong>→Выр</strong> — вставить выбранное представление в выражение; <strong>×</strong> — закрыть.</p>
+    <p><strong>Строки:</strong> Каждая строка — одно основание: <strong>Глоб: Рзр=…, Знак=…</strong> с <strong>Конфиг</strong> (открывает глобальную конфигурацию: Разрядность, Знак Вкл/Откл); <strong>Лок: …</strong> с <strong>Конфиг</strong> (локальная конфигурация основания); затем <strong>DEC</strong>, <strong>HEX</strong>, <strong>OCT</strong>, <strong>BIN</strong> с текущим результатом в этом основании. Нажатие на строку выбирает её для Копир/→Выр.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ЗЕРНО</span></summary>
+  <div>
+    <p><strong>Панель ЗЕРНО ГПСЧ.</strong> Установка зерна для генератора случайных чисел, используемого <strong>RAND</strong> и панелью <strong>Сл. числа</strong>. Одинаковое зерно даёт воспроизводимую последовательность.</p>
+    <p><strong>Заголовок:</strong> <strong>ЗЕРНО ГПСЧ</strong>; <strong>Прим</strong> — применить введённое зерно (следующий RAND/Сл. будет его использовать); <strong>×</strong> — закрыть.</p>
+    <p><strong>Содержимое:</strong> Поле ввода значения зерна (целое). Клавиатура: цифры, <strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>±</strong>, <strong>.</strong>, опционально <strong>+1</strong>/<strong>−1</strong>. <strong>Прим</strong> активна при непустом поле; нажатие устанавливает зерно.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GCD, LCM</span></summary>
+  <div><p><strong>НОД / НОК.</strong> Вставляют gcd( и lcm( для двух целых.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Сл. числа</span></summary>
+  <div><p><strong>Панель Сл. числа.</strong> Генерация случайных чисел; опционально копирование или вставка в выражение.</p>
+    <p><strong>Заголовок:</strong> <strong>Копир</strong> — копировать текущее значение; <strong>→Выр</strong> — вставить текущее значение в позицию курсора; <strong>×</strong> — закрыть.</p>
+    <p><strong>Генер. число</strong> — кнопка в теле панели (одноразовая генерация).</p>
+    <p><strong>Режим:</strong> Переключатель <strong>INT</strong> / <strong>FLOAT</strong> — целое в [Мин, Макс] или дробное в [Мин, Макс].</p>
+    <p><strong>Поля:</strong> <strong>Мин</strong>, <strong>Макс</strong> — границы диапазона (редактируемые). <strong>Сл.</strong> — сгенерировать один раз.</p>
+    <p><strong>Клавиатура:</strong> Первая строка: <strong>&lt;&gt;</strong>, <strong>-</strong>, <strong>.</strong>, <strong>←</strong>, <strong>C</strong>. Затем цифры <strong>1 2 3 4 5</strong> и <strong>6 7 8 9 0</strong> — для редактирования Мин/Макс в панели.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ГМС</span></summary>
+  <div>
+    <p><strong>Панель ГМС.</strong> Преобразование между десятичными градусами и градусами–минутами–секундами (D°M′S″).</p>
+    <p><strong>Заголовок:</strong> <strong>→Выр</strong> — вставить результат преобразования в выражение; <strong>×</strong> — закрыть.</p>
+    <p><strong>Режимы:</strong> <strong>→ГМС</strong> — ввод десятичных градусов, результат D°M′S″; <strong>→ГРАД</strong> — ввод градусов, минут, секунд, результат — десятичные градусы. Нажатие на кнопку режима переключает.</p>
+    <p><strong>Поля:</strong></p>
+    <ul>
+      <li><strong>→ГМС:</strong> одно поле десятичного ввода; <strong>Результат</strong> показывает D°M′S″.</li>
+      <li><strong>→ГРАД:</strong> <strong>Градусы</strong>, <strong>Минуты</strong>, <strong>Секунды</strong> (три поля); <strong>Результат</strong> — десятичные градусы.</li>
+    </ul>
+    <p>Клавиатура и кнопки редактирования используются для активного поля. Длинное нажатие на ГМС (панель расширений) открывает эту панель напрямую.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ФМТ</span></summary>
+  <div>
+    <p><strong>Панель формата.</strong> Форматирование текущего результата с локальными опциями, затем копирование или вставка строки в выражение. Поле <strong>Форматир.:</strong> показывает результат в реальном времени.</p>
+    <p><strong>Заголовок:</strong> <strong>Копир</strong> — копировать отформатированный результат; <strong>→Выр</strong> — вставить отформатированный результат в позицию курсора; <strong>×</strong> — закрыть.</p>
+    <p><strong>Строка 1 (нажатие открывает выбор):</strong></p>
+    <ul>
+      <li><strong>Точность</strong> — знаков после запятой. Варианты: <strong>Полн/Исход.</strong>, <strong>Авто</strong>, <strong>0</strong>, <strong>1</strong>, … <strong>10</strong>, <strong>20</strong>.</li>
+      <li><strong>Округление</strong> — режим округления. Варианты: <strong>Нет</strong>, <strong>К меньш.</strong>, <strong>К больш.</strong>, <strong>Потолок</strong>, <strong>Пол</strong>, <strong>К чётн.</strong>.</li>
+      <li><strong>Экспонента</strong> — когда использовать экспоненту. Варианты: <strong>Никогда</strong>, <strong>Авто</strong>, <strong>Всегда</strong>.</li>
+    </ul>
+    <p><strong>Строка 2:</strong></p>
+    <ul>
+      <li><strong>Убрать нули</strong> — переключатель <strong>Вкл</strong> / <strong>Откл</strong> (скрыть или показывать конечные нули).</li>
+      <li><strong>Разделители</strong> — группировка цифр. Нажатие открывает выбор: <strong>Нет</strong>, <strong>Пробел</strong>, <strong>Апостроф</strong>.</li>
+      <li><strong>Инженерный</strong> — переключатель <strong>Вкл</strong> / <strong>Откл</strong> (экспонента кратна 3, например 1.5E3).</li>
+    </ul>
+    <p>Каждая основная кнопка показывает текущее значение; нажатие на <strong>Точность</strong>, <strong>Округление</strong>, <strong>Экспонента</strong> или <strong>Разделители</strong> открывает выбор. <strong>Убрать нули</strong> и <strong>Инженерный</strong> переключаются напрямую.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">СЛ.</span></summary>
+  <div><p><strong>Случайное число.</strong> Вставляет случайное число (используются настройки панели Сл. числа или диапазон по умолчанию).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Стат.</span></summary>
+  <div>
+    <p><strong>Панель Стат.</strong> Просмотр текущего результата: каждая строка — вычисленное свойство числа. Нажатие на строку выбирает её; <strong>Копир</strong> копирует значение этой строки; <strong>Копир. всё</strong> копирует весь список.</p>
+    <p><strong>Заголовок:</strong> <strong>Копир</strong> — копировать значение выбранной строки; <strong>Копир. всё</strong> — копировать все строки в буфер; <strong>→Выр</strong> — вставить значение в выражение; <strong>×</strong> — закрыть.</p>
+    <p><strong>Строки (по порядку):</strong></p>
+    <ul>
+      <li><strong>Знак</strong> — + или −</li>
+      <li><strong>Модуль</strong> — модуль (строка)</li>
+      <li><strong>Цел. ч.</strong> — целая часть</li>
+      <li><strong>Дроб. ч.</strong> — дробная часть (или —)</li>
+      <li><strong>Масшт.</strong> — масштаб десятичной части</li>
+      <li><strong>Цифры</strong> — количество цифр</li>
+      <li><strong>Ноль</strong> — Да / Нет</li>
+      <li><strong>Целое</strong> — Да / Нет</li>
+      <li><strong>Конечн.</strong> — Да / Нет</li>
+      <li><strong>Чётн.</strong> — Чёт / Нечёт / —</li>
+    </ul>
+    <p>Нажатие на строку выбирает её (красная рамка); затем <strong>Копир</strong> использует значение этой строки.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">РАЗН</span></summary>
+  <div><p><strong>Панель РАЗН.</strong> Сравнение двух результатов (A = предыдущий, B = текущий).</p>
+    <p><strong>Заголовок:</strong> <strong>&lt;&gt;</strong> — поменять A и B; <strong>→Выр</strong> — вставить выбранное значение разности в выражение; <strong>×</strong> — закрыть.</p>
+    <p><strong>Кнопки:</strong> <strong>A←</strong> — установить A в текущий результат; <strong>B←</strong> — установить B в текущий результат. <strong>Δ</strong> — разность B−A; <strong>|Δ|</strong> — модуль разности; <strong>%Δ</strong> — процентное изменение (100*(B−A)/A и т.п.). Одно из Δ, |Δ|, %Δ выбирается для <strong>→Выр</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ГРАФ</span></summary>
+  <div><p><strong>Экран графика.</strong> Открывает вкладку графика. Доступно наложение <strong>ГРАФ</strong> с:</p>
+    <details>
+      <summary><span class="summary-title">В историю</span></summary>
+      <div><p>Сохраняет текущий график в Историю: формулы, диапазоны X/T/θ, опции (Авто Y, легенда и т.д.) и изображение PNG. Позже можно открыть из Меню → История и «Вставить график».</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Серии</span></summary>
+      <div>
+        <p>Открывает наложение <strong>СЕРИИ</strong>. Заголовок: <strong>Доб. серию</strong> (добавить серию, до 6); <strong>×</strong> закрыть.</p>
+        <p>Для каждой строки серии:</p>
+        <ul>
+          <li><strong>Цветной квадрат с номером (1, 2, 3…)</strong> — нажатие делает эту серию <strong>активной</strong> (используется в Формула, X-диап., x0 и т.д.).</li>
+          <li><strong>✓ / ✕</strong> — видимость: показывать или скрывать серию на графике.</li>
+          <li><strong>Функ / Парам / Поляр</strong> — тип: функция y=f(x), параметрические x(t),y(t) или полярные r(θ). Нажатие переключает.</li>
+          <li><strong>Лин / Тчк</strong> — рисовать линией или точками. Нажатие переключает.</li>
+          <li><strong>f′</strong> (только Функция) — показывать первую производную. Нажатие переключает.</li>
+          <li><strong>Иконка: анимированная точка</strong> (только Полярн) — кнопка без текста; нажатие переключает анимированную точку на кривой.</li>
+          <li><strong>f″</strong> (только Функция) — показывать вторую производную. Нажатие переключает.</li>
+          <li><strong>Fill</strong> (только Функция) — заливка под кривой. Нажатие переключает.</li>
+          <li><strong>Удал</strong> — удалить эту серию (для первой серии не показывается).</li>
+        </ul>
+        <p>Для редактирования формулы используйте кнопку <strong>Формула</strong> в основном наложении ГРАФ (редактируется активная серия).</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Вид</span></summary>
+      <div>
+        <p>Открывает наложение <strong>Вид</strong> графика. Заголовок: <strong>×</strong> закрыть.</p>
+        <p><strong>Строка 1</strong></p>
+        <ul>
+          <li><strong>Центр</strong> — центрировать оси</li>
+          <li><strong>Zoom+</strong> — приблизить</li>
+          <li><strong>×N</strong> (например ×1.00) — текущий коэффициент масштаба</li>
+          <li><strong>Zoom−</strong> — отдалить</li>
+          <li><strong>Сброс</strong> — сбросить масштаб и сетку</li>
+        </ul>
+        <p><strong>Строка 2</strong></p>
+        <ul>
+          <li><strong>Robust</strong> — устойчивое масштабирование Y (для одной видимой серии)</li>
+          <li><strong>GridX+</strong> / <strong>GridX−</strong> — шаг сетки по X (значение между ними)</li>
+          <li><strong>Snap</strong> — привязка курсора к сетке</li>
+        </ul>
+        <p><strong>Строка 3</strong></p>
+        <ul>
+          <li><strong>Auto Y</strong> — авто диапазон Y</li>
+          <li><strong>GridY+</strong> / <strong>GridY−</strong> — шаг сетки по Y</li>
+          <li><strong>Курсор</strong> — показывать/скрывать курсор-перекрестие</li>
+        </ul>
+        <p><strong>Строка 4</strong></p>
+        <ul>
+          <li><strong>Асимп</strong> — показывать асимптоты</li>
+          <li><strong>Оси</strong> — показывать оси</li>
+          <li><strong>Сетка</strong> — показывать сетку</li>
+          <li><strong>Метки</strong> — показывать подписи</li>
+          <li><strong>Легенд</strong> — показывать легенду</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Формула</span></summary>
+      <div>
+        <p>Открывает наложение <strong>Формула</strong> для редактирования формулы <strong>активной</strong> серии.</p>
+        <p><strong>Заголовок:</strong> <strong>×</strong> — закрыть.</p>
+        <p><strong>Содержимое:</strong> Редактируемое поле формулы (для параметрических: цели x(t), y(t); для полярных: r(θ)). Клавиатура: <strong>←</strong>, <strong>C</strong>, цифры, операторы, кнопки функций (LOG, LOG2, LN, sin, cos и т.д.), <strong>,</strong> как разделитель аргументов. Для Функции: одно выражение (например sin(x)); для Параметр: x(t) и y(t); для Полярн: r(θ).</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">X-диап. / T-диап. / θ-диап.</span></summary>
+      <div>
+        <p>Открывает наложение <strong>Диапазон</strong> для активной серии. Заголовок и поля зависят от типа серии.</p>
+        <p><strong>Заголовок:</strong> <strong>X-диап.</strong> / <strong>T-диап.</strong> / <strong>θ-диап.</strong>; <strong>×</strong> — закрыть.</p>
+        <p><strong>Содержимое:</strong></p>
+        <ul>
+          <li><strong>Функция (X-диап.):</strong> <strong>X min</strong>, <strong>X max</strong>, <strong>Δx</strong> (шаг).</li>
+          <li><strong>Параметр (T-диап.):</strong> <strong>t min</strong>, <strong>t max</strong>, <strong>Δt</strong>.</li>
+          <li><strong>Полярн (θ-диап.):</strong> <strong>θ min</strong>, <strong>θ max</strong>, <strong>Δθ</strong>.</li>
+        </ul>
+        <p>Каждое значение редактируется; клавиатура и кнопки (<strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, цифры, пресеты π, 2π) применяются к активному полю. Для подтверждения диапазона может использоваться <strong>Применить</strong>.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">x0, t0, θ0</span></summary>
+      <div>
+        <p>Открывает наложение смещения курсора для активной серии. Перекрестие на графике находится в этом значении.</p>
+        <p><strong>Заголовок:</strong> <strong>X0</strong> / <strong>T0</strong> / <strong>θ0</strong> (в зависимости от типа серии: Функция → X0, Параметр → T0, Полярн → θ0); <strong>×</strong> — закрыть.</p>
+        <p><strong>Содержимое:</strong> Одно редактируемое поле для значения курсора (x0, t0 или θ0). Пресеты: для Функции <strong>−π</strong>, <strong>0</strong>, <strong>π</strong>; для Параметр/Полярн <strong>0</strong>, <strong>π</strong>, <strong>2π</strong>. Строка управления: <strong>←</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, <strong>C</strong>. Можно вводить цифры и константы (например π). Применить обновляет позицию курсора на графике.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Режим чисел: Норм / Исход.</span></summary>
+      <div><p>Переключатель отображения чисел на графике (Норм = форматированные, Исход. = полная точность).</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Темы</span></summary>
+      <div>
+        <p>Открывает наложение <strong>Темы</strong> для выбора цветовой темы графика (фон и кривые).</p>
+        <p><strong>Заголовок:</strong> название наложения; <strong>×</strong> — закрыть.</p>
+        <p><strong>Содержимое:</strong> Четыре кнопки тем — <strong>Светлая</strong>, <strong>Ср. светлая</strong>, <strong>Ср. тёмная</strong>, <strong>Тёмная</strong>. Нажатие выбирает; активная тема подсвечена.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Режим рендера: Кэш / Реалт.</span></summary>
+      <div><p>Режим отрисовки: <strong>Кэш</strong> — быстрее, кэшированный bitmap; <strong>Реалт.</strong> — перерисовка при изменении. Используйте Кэш для сложных графиков на слабых устройствах.</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Пресеты</span></summary>
+      <div>
+        <p>Открывает наложение <strong>Пресеты</strong> с встроенными примерами графиков. Загрузка готового графика (функции, параметрические, полярные или смешанные) для последующего редактирования или отправки.</p>
+        <p><strong>Заголовок:</strong> <strong>ПРЕСЕТЫ</strong>; <strong>×</strong> — закрыть.</p>
+        <p><strong>Вкладки:</strong> <strong>Функ</strong> — y=f(x); <strong>Парам</strong> — параметрические x(t), y(t); <strong>Поляр</strong> — r(θ); <strong>Смеш</strong> — смешанные.</p>
+        <p><strong>Содержимое:</strong> Прокручиваемый список карточек пресетов (название, комментарий, превью). Нажатие на карточку выбирает её (появляется заголовок «Выбрано»). Меню карточки (нажатие или длинное):</p>
+        <ul>
+          <li><strong>Вставить граф.</strong> — загрузить этот пресет в график (заменяет текущий).</li>
+          <li><strong>Отпр. изобр.</strong> — отправить как изображение при наличии сохранённого.</li>
+          <li><strong>Отпр. данные</strong> — отправить определение графика как JSON.</li>
+          <li><strong>Ред. коммент.</strong> — редактировать комментарий пресета (локально, в этой сессии).</li>
+        </ul>
+        <p>Чтобы сохранить текущий график для последующего использования, используйте <strong>В историю</strong> в наложении ГРАФ.</p>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ВРЕМЯ</span></summary>
+  <div>
+    <p><strong>Панель ВРЕМЯ.</strong> Вычисления с двумя операндами <strong>A</strong> и <strong>B</strong>: длительности (дни, часы, мин, сек, мс) или дата-время (ГГГГ-ММ-ДД и ЧЧ:ММ:СС.мс). Операция <strong>+</strong> или <strong>−</strong>; результат — длительность или дата-время. Копирование или вставка результата в выражение.</p>
+    <p><strong>Заголовок:</strong> <strong>Копир</strong> — копировать читаемый результат; <strong>→Выр</strong> — вставить числовой результат (например длительность в выбранной единице или эпоха в мс) в выражение; <strong>×</strong> — закрыть.</p>
+    <p><strong>Строка операндов (сверху):</strong></p>
+    <ul>
+      <li><strong>A</strong> / <strong>B</strong> — переключение активного операнда (редактирование и цель «Исп. рез.»).</li>
+      <li><strong>Длит.</strong> / <strong>ДатаВр</strong> — тип активного операнда: длительность (d, h, m, s, ms) или дата-время.</li>
+      <li><strong>Тек.</strong> — заполнить активный операнд текущей датой и временем (только при выбранном ДатаВр).</li>
+      <li><strong>CA</strong> / <strong>CB</strong> — очистить операнд A или B.</li>
+    </ul>
+    <p><strong>Преобразователь результата:</strong> Кнопка показывает единицу числового результата (<strong>год</strong>, <strong>мес</strong>, <strong>нед</strong>, <strong>дн</strong>, <strong>час</strong>, <strong>мин</strong>, <strong>сек</strong>, <strong>мс</strong>) — нажатие переключает. Значение рядом — результат в этой единице (для длительностей).</p>
+    <p><strong>Форматирование результата:</strong></p>
+    <ul>
+      <li><strong>Abs</strong> — использовать модуль результата (для длительности; например разность A−B).</li>
+      <li><strong>Норм</strong> — нормализовать длительность в A и B (например 90 мин → 1ч 30м).</li>
+      <li><strong>Исп. рез.</strong> — записать числовой результат в активный операнд (для цепочки вычислений).</li>
+    </ul>
+    <p><strong>Клавиатура:</strong> <strong>←</strong> удаление, <strong>−</strong> минус (допустим в днях или в дате), <strong>:</strong> и <strong>.</strong> для времени/дробей, <strong>C</strong> очистить, цифры <strong>0–9</strong>. Ввод идёт в активное поле активного операнда (Длит.: Дни, Часы, Мин, Сек, мс; ДатаВр: дата, затем время).</p>
+    <p><strong>Операции:</strong> Длительность ± Длительность; Дата-время + Длительность или Дата-время − Длительность; Дата-время − Дата-время даёт длительность. ДатаВр + ДатаВр не допускается. На полном экране ВРЕМЯ (когда ВРЕМЯ показан в верхней области) операнды A и B отображаются с подписанными полями (Дни, Часы, Мин, Сек, мс или Дата, Время), операция <strong>+</strong>/<strong>−</strong> и <strong>&lt;&gt;</strong> для обмена A и B.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Панель расширений)</span></summary>
+  <div>
+    <p>Вычисляет выражение; длинное нажатие добавляет запись в Историю, как на других панелях.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== STATUSBAR ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Строка состояния</span></summary>
+  <div>
+    <p class="help-section-desc">Строка состояния позволяет выбрать режим углов, основание числа, вызвать Избранное, показывает индикаторы ENG/HYP и также содержит меню.</p>
+
+<details>
+  <summary><span class="summary-title">RAD / DEG (выпадающий список)</span></summary>
+  <div><p>Нажатие открывает список: <strong>RAD</strong> — углы в радианах; <strong>DEG</strong> — углы в градусах. Галочка показывает текущий. Влияет на sin, cos, tan и т.д.</p>
+    <p>В режиме <strong>DEG</strong> аргументы sin, cos, tan задаются в <strong>градусах</strong>. Для sin(π/6) используйте RAD или введите sin(30).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEC / HEX / OCT / BIN (выпадающий список)</span></summary>
+  <div><p>Нажатие выбирает основание числа для ввода и результата: <strong>DEC</strong> десятичное, <strong>HEX</strong> шестнадцатеричное, <strong>OCT</strong> восьмеричное, <strong>BIN</strong> двоичное.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Заголовок (CalcIUM / НЕДАВНИЕ)</span></summary>
+  <div>
+    <p>Когда наложение не открыто: показывается название приложения <strong>CalcIUM</strong>. При восстановлении состояния кратко может появляться иконка шестерёнки.</p>
+    <p>Когда открыто наложение панели расширений: заголовок меняется на <strong>НЕДАВНИЕ</strong> и становится нажимаемым. Нажатие открывает наложение <strong>НЕДАВНИЕ</strong> (список недавно использованных наложений).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Наложение НЕДАВНИЕ</span></summary>
+  <div>
+    <p>Открывается нажатием на заголовок в строке состояния, когда отображается <strong>НЕДАВНИЕ</strong> (при активном наложении панели расширений). Показывает недавно использованные наложения карточками; нажатие на карточку открывает это наложение. На каждой карточке — название наложения и время последнего использования.</p>
+    <p><strong>Заголовок:</strong> <strong>НЕДАВНИЕ</strong>; <strong>×</strong> — закрыть.</p>
+    <p><strong>Вкладки:</strong></p>
+    <ul>
+      <li><strong>Все</strong> — все недавно использованные наложения.</li>
+      <li><strong>Инстр</strong> — AB (Символы), КОНСТ, СИ, ГМС, ФМТ, ВРЕМЯ, Стат., РАЗН, Сл. числа, мини Чс, мини Фн.</li>
+      <li><strong>Наст</strong> — настройки: ЗЕРНО ГПСЧ, ЦЕЛ. ФОРМАТ, БАЗА.</li>
+      <li><strong>Ед</strong> — список категорий единиц, экран категории, выбор единиц.</li>
+      <li><strong>Граф</strong> — инструменты графика, Формула, gФункции, gКонстанты, gЧисла, Серии, Вид, Темы, Пресеты, Диапазон (X/T/θ), x0, t0, θ0.</li>
+    </ul>
+    <p>Нажатие на карточку открывает это наложение.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ИНЖ, ГИП (индикаторы)</span></summary>
+  <div><p><strong>ИНЖ</strong> — отображается при включённой инженерной нотации. <strong>ГИП</strong> — отображается при включённом гиперболическом режиме.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Меню (☰)</span></summary>
+  <div><p>Нажатие открывает:</p>
+    <ul>
+      <li><strong>История</strong> — экран истории (выражения и графики).</li>
+      <li><strong>Настройки</strong> — экран настроек.</li>
+      <li><strong>Оценить</strong> — оценка приложения (магазин).</li>
+      <li><strong>О приложении</strong> — информация о приложении и версия.</li>
+      <li><strong>Справка</strong> — открыть эту справку.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== HISTORY ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">История</span></summary>
+  <div>
+    <p class="help-section-desc">Открытие: <span class="key">Строка состояния → Меню → История</span>. Хранит два типа: <strong>записи выражений</strong> (выражение + результат + опциональный комментарий) и <strong>записи графиков</strong> (формулы, диапазоны, опциональное изображение и комментарий).</p>
+
+<details>
+  <summary><span class="summary-title">Карточки выражений — контекстное меню</span></summary>
+  <div><p>Длинное нажатие (или контекстное действие) по карточке выражения:</p>
+    <ul>
+      <li><strong>Вставить выражение</strong> — вставить выражение в калькулятор и вернуться.</li>
+      <li><strong>Вставить результат</strong> — вставить результат в выражение.</li>
+      <li><strong>Копировать выражение=результат</strong> — копировать «выражение=результат» в буфер.</li>
+      <li><strong>Копировать выражение</strong> — копировать только выражение.</li>
+      <li><strong>Копировать результат</strong> — копировать только результат.</li>
+      <li><strong>Редактировать комментарий</strong> — добавить или изменить комментарий карточки.</li>
+      <li><strong>Удалить</strong> — удалить эту запись.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Карточки графиков — контекстное меню</span></summary>
+  <div><p>Длинное нажатие по карточке графика:</p>
+    <ul>
+      <li><strong>Вставить график</strong> — восстановить этот график (формулы, диапазоны) на экране графика и вернуться.</li>
+      <li><strong>Поделиться изображением графика</strong> — отправить сохранённое изображение графика. Может отображаться «нет сохранённого», если график был сохранён без изображения.</li>
+      <li><strong>Поделиться данными графика</strong> — отправить параметры и формулы графика в формате JSON.</li>
+      <li><strong>Копировать все формулы</strong> — копировать все формулы серий в буфер.</li>
+      <li><strong>Редактировать комментарий</strong> — добавить или изменить комментарий графика.</li>
+      <li><strong>Удалить</strong> — удалить эту запись графика.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== SETTINGS ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Настройки</span></summary>
+  <div>
+    <p class="help-section-desc">Открытие: <span class="key">Строка состояния → Меню → Настройки</span>. Каждый пункт открывает диалог или подэкран.</p>
+
+<details>
+  <summary><span class="summary-title">Язык</span></summary>
+  <div>
+    <p>Открывает диалог выбора языка приложения.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Английский</strong>, <strong>Русский</strong>, <strong>Украинский</strong>. Нажатие выбирает и закрывает диалог.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Тема</span></summary>
+  <div>
+    <p>Открывает диалог выбора темы приложения.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Морская галька (светлая)</strong>, <strong>Звёздная ночь (тёмная)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Параметры ввода</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Параметры ввода</strong>.</p>
+    <p><strong>Строка 1 — режим ввода:</strong> <strong>Умный ввод</strong> — подстановка операторов и скобок; <strong>Своб. ввод</strong> — ввод как есть. Выбирается один.</p>
+    <p><strong>Строка 2 — удаление:</strong> <strong>Умный back</strong> — удаление по токенам (например целое имя функции); <strong>По символу</strong> — удаление по символу. Выбирается один.</p>
+    <p><strong>Флажок:</strong> <strong>Добавлять результат к выражению (эксп.)</strong> — после <strong>=</strong> следующий ввод может дополнять результат.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Параметры отображения</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Параметры отображения</strong>.</p>
+    <p><strong>Флажки:</strong></p>
+    <ul>
+      <li><strong>Подсветка</strong> — подсветка синтаксиса в выражении (цифры, функции, операторы).</li>
+      <li><strong>Показывать панель настроек</strong> — показывать панель настроек на экране калькулятора.</li>
+    </ul>
+    <p><strong>Разделители цифр</strong> (сегментные кнопки): <strong>Нет</strong>, <strong>Пробел</strong>, <strong>Апостроф</strong>. Выбирается один.</p>
+    <p><strong>Регистр степени корня</strong> (сегмент): <strong>Верх. инд.</strong>, <strong>Классический</strong>. Выбирается один.</p>
+    <p><strong>Регистр степени</strong> (сегмент): <strong>Верх. инд.</strong>, <strong>Классический</strong>. Выбирается один.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Анимации</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Анимации</strong>.</p>
+    <p><strong>Флажки:</strong> <strong>При запуске (экран)</strong>, <strong>Серебристый градиент (текст)</strong>, <strong>Появление/исчезновение по символам (текст)</strong>, <strong>Затухание выражения (экран)</strong>, <strong>Затухание результата (экран)</strong>.</p>
+    <p><strong>Нажатие кнопок</strong> (сегмент): <strong>Нажатие</strong>, <strong>Свет</strong>, <strong>Микс</strong>. Выбирается один.</p>
+    <p><strong>Переключение кнопок и экранов</strong> (сегмент): <strong>Затухание</strong>, <strong>Сдвиг</strong>. Выбирается один.</p>
+    <p><strong>Появление наложений</strong> (сегмент): <strong>Нет</strong>, <strong>Сдвиг</strong>, <strong>Увел.</strong> (увеличение), <strong>Микс</strong>. Выбирается один.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Вибрация</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Длительность вибрации</strong>. Задаёт длительность тактильной отдачи в мс при нажатии кнопок; <strong>0</strong> отключает вибрацию.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>0 мс</strong>, <strong>15 мс</strong>, <strong>20 мс</strong>, <strong>25 мс</strong>, <strong>30 мс</strong>, <strong>35 мс</strong>, <strong>40 мс</strong>, <strong>45 мс</strong>, <strong>50 мс</strong>. Нажатие выбирает и закрывает.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Округление</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Округление</strong>. Выбор способа округления десятичных результатов.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Без округления</strong>; <strong>К меньшему</strong> (x.5 вниз); <strong>К большему</strong> (x.5 вверх); <strong>К +∞</strong>; <strong>К −∞</strong>; <strong>Банковское</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Точность</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Знаков после запятой</strong>. Количество знаков после запятой в результате.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Полная/исходная</strong>; <strong>Авто</strong>; <strong>0 знаков</strong>, <strong>1 знаков</strong>, … <strong>10 знаков</strong>; <strong>20 знаков</strong>. Нажатие выбирает и закрывает.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Режим остатка '//'</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Режим остатка '//'</strong>. Поведение оператора <strong>//</strong> (остаток от целочисленного деления).</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Остаток (усечение)</strong> — например 7//−4=3, −7//4=−3; <strong>Модуло (евклидов)</strong> — например 7//−4=3, −7//4=1; <strong>Остаток (к −∞)</strong> — например 7//−4=−1, −7//4=1.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Формат экспоненты</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Формат экспоненты</strong>. Когда показывать экспоненциальную запись в результате.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Никогда</strong>, <strong>Авто</strong>, <strong>Всегда</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Обработка результата</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Обработка результата</strong>.</p>
+    <p><strong>Флажок:</strong> <strong>Убирать нули</strong> — при включении конечные нули в результате скрываются; при выключении — показываются.</p>
+    <p><strong>Флажок:</strong> <strong>Упрощать около нуля</strong> — при включении значения, очень близкие к нулю (|x| &lt; ε), показываются как 0.</p>
+    <p><strong>Флажок:</strong> <strong>Упрощать около целого</strong> — при включении значения, близкие к 0.5, 1 или −1, показываются как 0.5, 1, −1.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Режим процента</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Режим процента</strong>. Задаёт интерпретацию <strong>%</strong> (например 200−10%).</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Классический</strong> — процент от левого операнда (200−10% = 180); <strong>Простой</strong> — процент как десятичная дробь (200−10% = 199.9).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Восстановление состояния</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Восстановление состояния</strong>. Что восстанавливать при запуске приложения.</p>
+    <p><strong>Флажки:</strong></p>
+    <ul>
+      <li><strong>Текст/график при запуске</strong> — восстанавливать последнее выражение и график при запуске.</li>
+      <li><strong>Экран/панель при запуске</strong> — восстанавливать последний экран (калькулятор/график) и панель (Числовая/Функциональная/Расширений).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">История</span></summary>
+  <div>
+    <p>Открывает диалог <strong>Макс. записей в истории</strong>. Максимальное количество записей в истории выражений и графиков.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>100 записей</strong>, <strong>200</strong>, <strong>300</strong>, <strong>400</strong>, <strong>500</strong>, <strong>1000 записей</strong>. Нажатие выбирает и закрывает.</p>
+    <p><strong>Кнопки:</strong> <strong>Очистить историю</strong> — открывает диалог подтверждения; подтверждение <strong>Очистить</strong> удаляет всю историю выражений и графиков. <strong>Закрыть</strong> — закрыть диалог. В диалоге подтверждения — <strong>Очистить</strong> и <strong>Отмена</strong>.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+      </article>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html">Help</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <p class="footer__meta">CalcIUM · Scientific calculator for Android</p>
+    </div>
+  </footer>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

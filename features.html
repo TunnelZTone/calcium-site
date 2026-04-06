@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e14">
+  <meta name="description" content="CalcIUM feature overview: mathematics, graphing, units, programmer tools, and interface.">
+  <meta property="og:title" content="Features — CalcIUM">
+  <meta property="og:description" content="Mathematics, graphing, unit conversion, programmer tools, and workflow in CalcIUM.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/CalcIUM_Dark.png">
+  <title>Features — CalcIUM</title>
+  <link rel="icon" type="image/png" href="assets/img/CalcIUM_Dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body class="page-features">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/CalcIUM_Dark.png" width="36" height="36" alt="">
+        <span>CalcIUM</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout-main">
+    <main>
+      <h1 class="page-title">Features</h1>
+      <p class="lead">Structured capabilities of CalcIUM, aligned with the in-app manual. For control names and step-by-step behavior, open <a href="help.html">Help</a>.</p>
+
+      <section class="section" id="core">
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <h2>Core mathematics</h2>
+            <ul>
+              <li>Scientific calculations with high-precision decimal arithmetic (BigDecimal-based engine).</li>
+              <li>Trigonometric, inverse and hyperbolic families; angle mode RAD/DEG.</li>
+              <li>Logarithmic and exponential functions; roots, powers, factorial; nPr and nCr.</li>
+              <li>Nested expressions; percentage modes (Classic / Simple) from Settings.</li>
+              <li>Rounding modes and decimal precision from Settings; remainder <code>//</code> modes.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/01_Numeric_Light.png" width="400" height="867" alt="">
+              <figcaption>Scientific calculator with smart input</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-block__text">
+            <h2>Functions panel</h2>
+            <ul>
+              <li>Function panel groups advanced operations; HYP toggles hyperbolic variants.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/02_Func_Light.png" width="400" height="867" alt="">
+              <figcaption>Advanced functions one tap away</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <h2>Extension panel overview</h2>
+            <ul>
+              <li>Advanced tools are grouped in one extension panel for fast access during calculations.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/15_ExtPanel_Dark.png" width="400" height="867" alt="">
+              <figcaption>All advanced tools together</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="graphing">
+        <h2 class="section__title">Graphing</h2>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <ul>
+              <li>Function <em>y = f(x)</em>, parametric <em>x(t), y(t)</em>, and polar <em>r(θ)</em>.</li>
+              <li>Up to six series; per-series visibility, line/dots, first and second derivatives (function mode), area under curve, polar animated point.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/04_GRAPH_SERIES_DARK.png" width="400" height="867" alt="">
+              <figcaption>Up to 6 series on one graph</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-block__text">
+            <h2>Graph presets</h2>
+            <ul>
+              <li>Presets for function, parametric and polar setups.</li>
+              <li>Fast start for common graph scenarios with editable follow-up.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/17_GRAPH_Presets_Light.png" width="400" height="867" alt="">
+              <figcaption>Presets for different graph types</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <h2>Graph view and control</h2>
+            <ul>
+              <li>View controls for zoom, grid, axes, labels, legend, asymptotes and auto Y.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/20_GRAPH_VIEW_DARK.png" width="400" height="867" alt="">
+              <figcaption>Fine control over graph view</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-block__text">
+            <h2>Graph themes</h2>
+            <ul>
+              <li>Switch graph themes instantly to match contrast and reading preferences.</li>
+              <li>Theme controls are available directly in graph overlays.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/19_GRAPH_THEMES_DARK.png" width="400" height="867" alt="">
+              <figcaption>Switch graph themes instantly</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="units">
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <h2>Unit conversion categories</h2>
+            <ul>
+              <li>Twenty-one categories (time, length, mass, temperature, data with SI/IEC toggle, electrical units, and more).</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/05_UNITS_Light.png" width="400" height="867" alt="">
+              <figcaption>21 unit categories built right in</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-block__text">
+            <h2>Conversion workflow</h2>
+            <ul>
+              <li>Large set of units per category with FROM/TO selection, swap, and direct insert into expression.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/28_UNITS_MASS_Light.png" width="400" height="867" alt="">
+              <figcaption>Units conversion in one panel</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <h2>Time and duration</h2>
+            <ul>
+              <li>TIME overlay supports duration and date-time operands with add/subtract workflows.</li>
+              <li>Copy or insert results into the expression when you are done.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/07_TIME_Dark.png" width="400" height="867" alt="">
+              <figcaption>Time and duration tools right in</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-block__text">
+            <h2>Result comparison</h2>
+            <ul>
+              <li>DIFF overlay compares previous and current results (difference, absolute change, percent change).</li>
+              <li>Selected comparison value can be inserted into the expression.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/13_DIFF_Light.png" width="400" height="867" alt="">
+              <figcaption>Compare results side by side</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <h2>Result formatting</h2>
+            <ul>
+              <li>FMT overlay formats the current result with local precision, rounding, exponent and separator options.</li>
+              <li>Copy formatted output or insert it at the cursor.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/16_FMT_Dark.png" width="400" height="867" alt="">
+              <figcaption>Flexible result formatting</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="additional">
+        <h2 class="section__title">Additional tools</h2>
+        <p class="lead lead--compact">The Extension panel includes programmer-oriented tools—binary, octal, decimal and hexadecimal via the status bar and BASE overlay; bitwise operators with configurable word size (8/16/32/64) and signed/unsigned mode in CFG; and the symbols overlay for <code>0b</code>, <code>0o</code>, <code>0x</code>, digit separators, and hex digits A–F—alongside DMS, constants, SI prefixes, number statistics, and random generators.</p>
+        <div class="screenshot-grid">
+          <figure class="shot">
+            <img src="assets/img/06_BASE_Dark.png" width="400" height="867" alt="">
+            <figcaption>DEC HEX OCT BIN in one panel</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/09_CFG_Dark.png" width="400" height="867" alt="">
+            <figcaption>Bitwise and integer settings</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/27_SYMBOLS_Dark.png" width="400" height="867" alt="">
+            <figcaption>Symbols for bases and digits</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/14_DMS_Light.png" width="400" height="867" alt="">
+            <figcaption>Degrees, minutes and seconds</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/11_CONSTANTS_Dark.png" width="400" height="867" alt="">
+            <figcaption>Math and physical constants</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/25_SI_Prefixes_Dark.png" width="400" height="867" alt="">
+            <figcaption>SI prefixes built in</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/26_STAT_Light.png" width="400" height="867" alt="">
+            <figcaption>Detailed number statistics</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/22_RND_Light.png" width="400" height="867" alt="">
+            <figcaption>Random values on demand</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/23_SEED_Light.png" width="400" height="867" alt="">
+            <figcaption>Repeatable random sequences</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="interface">
+        <h2 class="section__title">Interface &amp; workflow</h2>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <ul>
+              <li>Recents overlay for tools and graph panels; full History screen for expressions and graphs.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/08_RECENTS_Light.png" width="400" height="867" alt="">
+              <figcaption>Recents easy to switch panels</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block feature-block--reverse">
+          <div class="feature-block__text">
+            <h2 class="feature-subtitle">History</h2>
+            <ul>
+              <li>History provides quick recall for saved expression and graph records, including graph restore actions.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/21_History_Dark.png" width="400" height="867" alt="">
+              <figcaption>History with quick recall</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <h2 class="feature-subtitle">Settings</h2>
+            <ul>
+              <li>Deep settings for input, view, animations, vibration, precision, and history limits.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/24_Settings_Dark.png" width="400" height="867" alt="">
+              <figcaption>Deep settings, clear control</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experimental">
+        <h2 class="section__title">Experimental features</h2>
+        <div class="feature-block">
+          <div class="feature-block__text">
+            <ul>
+              <li>Smart input and smart backspace are optional in Settings.</li>
+              <li>Live evaluation feedback is shown on the main screen while editing expressions.</li>
+            </ul>
+          </div>
+          <div class="feature-block__media">
+            <figure class="shot">
+              <img src="assets/img/10_Chain_input_Dark.png" width="400" height="867" alt="">
+              <figcaption>Smart input with live feedback</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="note-box">
+        <p>CalcIUM includes a Free tier and extended PRO capabilities inside the app. This page does not list store-specific purchase items — see Google Play and in-app screens when available.</p>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a href="features.html">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer__meta">CalcIUM · Scientific calculator for Android</p>
+    </div>
+  </footer>
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>

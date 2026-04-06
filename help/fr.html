@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e14">
+  <title>Aide CalcIUM — CalcIUM</title>
+  <link rel="icon" type="image/png" href="../assets/img/CalcIUM_Dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/help-content.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/CalcIUM_Dark.png" width="36" height="36" alt="">
+        <span>CalcIUM</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html" aria-current="page">Help</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout-main">
+    <main>
+      <nav class="help-lang-switch" aria-label="Help language">
+          <a href="en.html">English</a>
+          <a href="ru.html">Русский</a>
+          <a href="ua.html">Українська</a>
+          <a href="de.html">Deutsch</a>
+          <a href="es.html">Español</a>
+          <a href="fr.html" aria-current="page">Français</a>
+          <a href="hu.html">Magyar</a>
+      </nav>
+      <article class="help-document theme-dark">
+<!-- ========== PANNEAU NUMÉRIQUE ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Panneau numérique</span></summary>
+  <div>
+    <p class="help-section-desc">Clavier principal pour les chiffres, opérateurs et mémoire. Les étiquettes des boutons correspondent à l'affichage à l'écran.</p>
+
+<details>
+  <summary><span class="summary-title">MR</span></summary>
+  <div><p><strong>Rappel mémoire.</strong> <span class="key">Insère</span> la valeur en mémoire à la position du curseur. Ne vide pas la mémoire.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MS</span></summary>
+  <div><p><strong>Stockage mémoire.</strong> <span class="key">Enregistre</span> le résultat actuel en mémoire (remplace la valeur précédente).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M+</span></summary>
+  <div><p><strong>Addition mémoire.</strong> Ajoute le résultat actuel à la valeur en mémoire.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M−</span></summary>
+  <div><p><strong>Soustraction mémoire.</strong> Soustrait le résultat actuel de la valeur en mémoire.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MC</span></summary>
+  <div><p><strong>Effacer mémoire.</strong> <span class="key">Vide</span> la valeur stockée en mémoire.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">←</span></summary>
+  <div><p><strong>Retour arrière.</strong> Supprime un caractère avant le curseur. Si <span class="key">Retour intelligent</span> est activé dans Paramètres, peut supprimer un jeton entier (ex. un nom de fonction).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">(</span></summary>
+  <div><p><strong>Parenthèse ouvrante.</strong> Insère <code>(</code> dans l'expression.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">)</span></summary>
+  <div><p><strong>Parenthèse fermante.</strong> Insère <code>)</code> dans l'expression.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">//</span></summary>
+  <div><p><strong>Division entière / reste.</strong> Insère <code>//</code>. Le résultat est le reste (ou modulo) de la division entière. Comportement selon Paramètres → Mode reste '//' : Reste (troncature), Modulo (euclidien) ou Plancher.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">C</span></summary>
+  <div><p><strong>Effacer.</strong> Efface l'expression et le résultat.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">7, 8, 9</span></summary>
+  <div><p><strong>Chiffres.</strong> Insèrent 7, 8, 9 dans l'expression.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">/</span></summary>
+  <div><p><strong>Division.</strong> Insère <code>/</code>. Formule : a/b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Fn/Ext</span></summary>
+  <div><p><strong>Changement de panneau.</strong> Appui court : bascule entre panneau numérique et panneau de fonctions. Appui long : passe au panneau d'extensions. L'étiquette du bouton change selon le panneau actif.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">4, 5, 6</span></summary>
+  <div><p><strong>Chiffres.</strong> Insèrent 4, 5, 6.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">*</span></summary>
+  <div><p><strong>Multiplication.</strong> Insère <code>*</code>. Formule : a*b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">%</span></summary>
+  <div><p><strong>Pourcentage.</strong> Insère <code>%</code>. Sens selon Paramètres → Mode pourcentage : <strong>Classique</strong> — pourcentage de l'opérande gauche (ex. 200−10% = 180) ; <strong>Simple</strong> — pourcentage comme décimal (ex. 200−10% = 199,9).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">1, 2, 3</span></summary>
+  <div><p><strong>Chiffres.</strong> Insèrent 1, 2, 3.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">−</span></summary>
+  <div><p><strong>Moins.</strong> Insère <code>−</code>. Formule : a−b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">√</span></summary>
+  <div><p><strong>Racine carrée.</strong> Insère <code>√(</code>. Formule : √x (racine positive).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">0, 00</span></summary>
+  <div><p><strong>Chiffres.</strong> Insèrent 0 ou 00.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">.</span></summary>
+  <div><p><strong>Virgule décimale.</strong> Insère <code>.</code> pour les nombres décimaux.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">+</span></summary>
+  <div><p><strong>Plus.</strong> Insère <code>+</code>. Formule : a+b.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">=</span></summary>
+  <div>
+    <p><strong>Égal.</strong> <span class="key">Évalue</span> l'expression et affiche le résultat.</p>
+    <p><strong>Appui long</strong> sur = ajoute l'expression et le résultat à l'historique (Menu → Historique) pour réutilisation ultérieure.</p>
+    <p>Le format du résultat dépend des Paramètres (précision, format d'exposant, etc.).</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== PANNEAU DE FONCTIONS ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Panneau de fonctions</span></summary>
+  <div>
+    <p class="help-section-desc">Fonctions trigonométriques, logarithmiques et utilitaires. Certains boutons ouvrent des overlays (panneaux).</p>
+
+<details>
+  <summary><span class="summary-title">pos</span></summary>
+  <div>
+    <p><strong>Overlay curseur.</strong> Ouvre l'overlay <strong>CURSOR</strong> pour déplacer le curseur dans l'expression et voir la position.</p>
+    <p><strong>En-tête :</strong> titre de l'overlay ; <strong>×</strong> — fermer (ou <strong>Désact.</strong> ci-dessous).</p>
+    <p><strong>Contenu :</strong></p>
+    <ul>
+      <li><strong>SL</strong> — lecture seule : caractère à gauche du curseur.</li>
+      <li><strong>CP</strong> — lecture seule : nombre de caractères du curseur à la fin de l'expression.</li>
+      <li><strong>SR</strong> — lecture seule : caractère à droite du curseur.</li>
+      <li><strong>←</strong> — déplacer le curseur d'un caractère à gauche.</li>
+      <li><strong>↑</strong> — passer à la ligne au-dessus (si multiligne).</li>
+      <li><strong>→</strong> — déplacer le curseur d'un caractère à droite.</li>
+      <li><strong>END</strong> — aller à la fin de l'expression.</li>
+      <li><strong>↓</strong> — passer à la ligne en dessous.</li>
+      <li><strong>BEG</strong> — aller au début de l'expression.</li>
+      <li><strong>Désact.</strong> — quitter le champ d'expression et fermer le mode curseur.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ABS</span></summary>
+  <div><p><strong>Valeur absolue.</strong> Insère <code>abs(</code>. Formule : |x|.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEG</span></summary>
+  <div><p><strong>Fonction degrés.</strong> Insère <code>deg(</code> dans l'expression. Convertit les radians en degrés (ex. deg(π) = 180).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RAD</span></summary>
+  <div><p><strong>Fonction radians.</strong> Insère <code>rad(</code> dans l'expression. Convertit les degrés en radians (ex. rad(180) = π).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">HYP</span></summary>
+  <div><p><strong>Mode hyperbolique.</strong> Active/désactive les fonctions hyperboliques. Quand activé, SIN/COS/TAN deviennent sinh/cosh/tanh ; ASIN/ACOS/ATAN deviennent asinh/acosh/atanh (idem pour COT, CSC, SEC et leurs inverses).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">EXP</span></summary>
+  <div><p><strong>Exponentielle.</strong> Insère <code>exp(</code>. Formule : e^x.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">INT</span></summary>
+  <div><p><strong>Partie entière.</strong> Insère <code>int(</code>. Troncature vers zéro.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LOG</span></summary>
+  <div>
+    <p><strong>Logarithme base 10.</strong> Appui court : insère <code>log(</code>. Appui long : insère <code>log2(</code> (logarithme en base 2). La mention <strong>LOG2</strong> dans le coin indique l’action sur appui long.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SIN, COS, TAN</span></summary>
+  <div><p>Insèrent <code>sin(</code>, <code>cos(</code>, <code>tan(</code>. Avec HYP : <code>sinh(</code>, <code>cosh(</code>, <code>tanh(</code>. Le mode d'angle (DEG/RAD) s'applique.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LN</span></summary>
+  <div><p><strong>Logarithme naturel.</strong> Insère <code>ln(</code>. Formule : ln(x) = log_e(x).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Nr/Ext</span></summary>
+  <div><p><strong>Changement de panneau.</strong> Appui court : bascule entre panneau de fonctions et panneau d'extensions. Appui long : panneau d'extensions.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ASIN, ACOS, ATAN</span></summary>
+  <div><p>Trigonométriques inverses. Insèrent <code>asin(</code>, <code>acos(</code>, <code>atan(</code>. Avec HYP : asinh, acosh, atanh.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">N!</span></summary>
+  <div><p><strong>Factorielle.</strong> Insère <code>!(</code> ou factorielle du nombre précédent. Formule : n! = 1·2·…·n (entier n ≥ 0).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">x^y</span></summary>
+  <div><p><strong>Puissance.</strong> Insère <code>^</code>. Formule : x^y.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">COT, CSC, SEC</span></summary>
+  <div><p>Insèrent <code>cot(</code>, <code>csc(</code>, <code>sec(</code>. Avec HYP : coth, csch, sech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">℮</span></summary>
+  <div><p><strong>Nombre d'Euler.</strong> Insère la constante e (≈ 2,718…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ʸ√x</span></summary>
+  <div><p><strong>Racine y-ième de x.</strong> Insère la fonction racine. Formule : ʸ√x = x^(1/y).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ACOT, ACSC, ASEC</span></summary>
+  <div><p>Inverses de cot, csc, sec. Avec HYP : acoth, acsch, asech.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">π</span></summary>
+  <div><p><strong>Pi.</strong> Insère la constante π (≈ 3,14159…).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Panneau de fonctions)</span></summary>
+  <div>
+    <p>Comme le panneau numérique : le tap évalue ; l'appui long ajoute l'enregistrement à l'historique.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== PANNEAU D'EXTENSIONS ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Panneau d'extensions</span></summary>
+  <div>
+    <p class="help-section-desc">Logique, bases, constantes, unités, config, statistiques, graphiques, temps et plus. De nombreux boutons ouvrent des overlays (certains avec overlays imbriqués).</p>
+
+<details>
+  <summary><span class="summary-title">AND, OR, XOR, NOT</span></summary>
+  <div><p><strong>Bits / logique.</strong> Insèrent <code>and</code>, <code>or</code>, <code>xor</code>, <code>not</code>. Utilisés avec les bases entières (BIN, OCT, HEX).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG</span></summary>
+  <div><p><strong>Notation ingénieur.</strong> Bascule l'affichage du résultat en notation ingénieur (exposant multiple de 3, ex. 1,5E3). S'affiche dans la barre d'état quand activé.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">AB</span></summary>
+  <div><p><strong>Overlay symboles (AB).</strong> Ouvre le panneau pour insérer les symboles de format numérique et chiffres hexadécimaux.</p>
+    <p><strong>Ligne d'en-tête :</strong></p>
+    <ul>
+      <li><strong>←</strong> — Retour arrière dans l'expression.</li>
+      <li><strong>C</strong> — Effacer l'expression.</li>
+      <li><strong>Nr</strong> — Ouvrir le mini overlay Numérique.</li>
+      <li><strong>Fn</strong> — Ouvrir le mini overlay Fonctions.</li>
+    </ul>
+    <p><strong>Grille de symboles (ce que chaque touche insère) :</strong></p>
+    <ul>
+      <li><strong>0b</strong> — Préfixe binaire (ex. 0b1010).</li>
+      <li><strong>0o</strong> — Préfixe octal (ex. 0o12).</li>
+      <li><strong>0x</strong> — Préfixe hexadécimal (ex. 0xFF).</li>
+      <li><strong>_</strong> — Séparateur de chiffres (groupement visuel, ignoré dans la valeur).</li>
+      <li><strong>A, B, C, D, E, F</strong> — Chiffres hexadécimaux (insèrent le caractère).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">CONST</span></summary>
+  <div><p><strong>Overlay constantes.</strong> Insère un nom de constante (l'app le remplace par la valeur numérique à l'évaluation).</p>
+    <p><strong>En-tête :</strong> ← (retour arrière), C (effacer), Nr (mini Numérique), Fn (mini Fonctions).</p>
+    <p><strong>Constantes (étiquette = ce qui est inséré) :</strong></p>
+    <ul>
+      <li><strong>π</strong> — Pi (3,14159…).</li>
+      <li><strong>e</strong> — Nombre d'Euler (2,718…).</li>
+      <li><strong>τ</strong> — Tau (2π).</li>
+      <li><strong>φ</strong> — Nombre d'or.</li>
+      <li><strong>γ</strong> — Constante d'Euler–Mascheroni.</li>
+      <li><strong>ln2, ln10</strong> — ln(2), ln(10).</li>
+      <li><strong>c</strong> — Vitesse de la lumière ; <strong>h, ħ</strong> — Constantes de Planck ; <strong>kB</strong> — Boltzmann ; <strong>R</strong> — Constante des gaz ; <strong>NA</strong> — Avogadro ; <strong>qe</strong> — Charge élémentaire.</li>
+      <li><strong>ε0, μ0</strong> — Permittivité et perméabilité du vide ; <strong>g0</strong> — Gravité standard ; <strong>G</strong> — Constante gravitationnelle ; <strong>σ</strong> — Stefan–Boltzmann.</li>
+      <li><strong>me, mp, mn</strong> — Masse électron, proton, neutron.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">UNITS</span></summary>
+  <div>
+    <p><strong>Overlay unités.</strong> Convertisseur à deux niveaux : liste de catégories, puis écran de catégorie avec conversion.</p>
+    <p><strong>Premier niveau (UNITÉS) :</strong></p>
+    <ul>
+      <li><strong>En-tête :</strong> titre <strong>UNITÉS</strong> ; <strong>×</strong> — fermer.</li>
+      <li><strong>Contenu :</strong> Grille de boutons de catégories. Appuyer sur une catégorie pour l'ouvrir. Catégories : <strong>Temps</strong>, <strong>Longueur</strong>, <strong>Surface</strong>, <strong>Volume</strong>, <strong>Masse</strong>, <strong>Température</strong>, <strong>Vitesse</strong>, <strong>Pression</strong>, <strong>Énergie</strong>, <strong>Puissance</strong>, <strong>Angle</strong>, <strong>Fréquence</strong>, <strong>Force</strong>, <strong>Accélération</strong>, <strong>Couple</strong>, <strong>Masse vol.</strong>, <strong>Données</strong>, <strong>Courant</strong>, <strong>Tension</strong>, <strong>Résistance</strong>, <strong>Capacité</strong>.</li>
+    </ul>
+    <p><strong>Niveau catégorie (ex. TEMPS, LONGUEUR) :</strong></p>
+    <ul>
+      <li><strong>En-tête :</strong> Nom de la catégorie ; <strong>←</strong> — retour à la liste ; <strong>×</strong> — fermer l'overlay.</li>
+      <li><strong>Champs :</strong> <strong>Entrée</strong> — valeur dans l'unité DE ; <strong>Résultat</strong> — valeur dans l'unité VERS. Ligne d'aide : « symbole_de → symbole_vers ».</li>
+      <li><strong>Ligne de boutons :</strong> <strong>DE</strong> (unité source) — appuyer pour ouvrir le sélecteur ; <strong>VERS</strong> (unité cible) — idem ; <strong>&lt;&gt;</strong> — échanger ; <strong>Ajouter</strong> — insérer le résultat dans l'expression ; <strong>←</strong> — retour.</li>
+      <li><strong>Clavier :</strong> Chiffres <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong> ; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong> ; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> pour éditer Entrée.</li>
+      <li><strong>Catégorie DONNÉES :</strong> L'en-tête affiche aussi un sélecteur <strong>SI</strong>/<strong>IEC</strong>. <strong>SI</strong> utilise les unités décimales (<strong>kB, MB, GB, TB</strong> = puissances de 1000) ; <strong>IEC</strong> utilise les unités binaires (<strong>KiB, MiB, GiB, TiB</strong> = puissances de 1024).</li>
+    </ul>
+    <p><strong>Unités ajoutées récemment :</strong> <strong>Volume</strong> — <strong>floz</strong>, <strong>tsp</strong>, <strong>tbsp</strong>, <strong>cup</strong>, <strong>pt</strong> ; <strong>Masse</strong> — <strong>µg</strong> ; <strong>Puissance</strong> — <strong>mW</strong>, <strong>GW</strong> ; <strong>Fréquence</strong> — <strong>mHz</strong>, <strong>THz</strong> ; <strong>Force</strong> — <strong>mN</strong> ; <strong>Masse vol.</strong> — <strong>g/ml</strong> ; <strong>Courant</strong> — <strong>nA</strong>, <strong>MA</strong> ; <strong>Tension</strong> — <strong>µV</strong>, <strong>MV</strong> ; <strong>Résistance</strong> — <strong>mΩ</strong>, <strong>GΩ</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">CFG</span></summary>
+  <div>
+    <p><strong>Overlay config (Format entier).</strong> Définit la représentation entière pour BASE et les opérations bit à bit (AND, OR, //, etc.).</p>
+    <p><strong>En-tête :</strong> titre <strong>Format entier</strong> ; <strong>×</strong> — fermer.</p>
+    <p><strong>Contenu :</strong></p>
+    <ul>
+      <li><strong>Taille du mot</strong> — largeur en bits. Boutons : <strong>8</strong>, <strong>16</strong>, <strong>32</strong>, <strong>64</strong>. Appuyer pour sélectionner.</li>
+      <li><strong>Signé</strong> — <strong>Oui</strong> (complément à deux) ou <strong>Non</strong> (non signé). Appuyer pour sélectionner.</li>
+    </ul>
+    <p>Peut aussi s'ouvrir depuis l'overlay BASE (CFG global ou local).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">nCr, nPr</span></summary>
+  <div><p><strong>Combinaisons / permutations.</strong> Insèrent nCr(n,k) et nPr(n,k). Formules : nCr = n!/(k!(n−k)!), nPr = n!/(n−k)!.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">SI</span></summary>
+  <div><p><strong>Overlay préfixes SI.</strong> Chaque bouton insère le multiplicateur du préfixe SI (ex. k → 1000, μ → 1e-6).</p>
+    <p><strong>En-tête :</strong> ←, C, Nr, Fn.</p>
+    <p><strong>Grille de préfixes (4 lignes × 5) :</strong></p>
+    <ul>
+      <li>Ligne 1 : <strong>Y, Z, E, P, T</strong> (10^24 à 10^12).</li>
+      <li>Ligne 2 : <strong>G, M, k, h, da</strong> (10^9 à 10^1).</li>
+      <li>Ligne 3 : <strong>d, c, m, μ, n</strong> (10^-1 à 10^-9).</li>
+      <li>Ligne 4 : <strong>p, f, a, z, y</strong> (10^-12 à 10^-24).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Fn/Nr, Nr, Fn</span></summary>
+  <div><p><strong>Changement de panneau / mini overlays.</strong> <strong>Fn/Nr</strong> (ligne 3) : appui court → panneau Fonctions, appui long → Numérique. <strong>Nr</strong> (ligne 4) et <strong>Fn</strong> (ligne 5) ouvrent un petit overlay clavier flottant.</p>
+    <p><strong>Overlay NUMÉRIQUE (mini Nr) :</strong> Titre « NUMÉRIQUE », en-tête <strong>×</strong>. Même disposition que le panneau Numérique principal, sauf qu'il n'y a pas de bouton <strong>=</strong>.</p>
+    <p><strong>Overlay FONCTIONS (mini Fn) :</strong> Titre « FONCTIONS », en-tête <strong>×</strong>. Même disposition que le panneau Fonctions (mode angle, HYP, trig/log, e, π).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">BASE</span></summary>
+  <div><p><strong>Overlay bases.</strong> Affiche le résultat actuel en quatre bases ; copie ou insertion dans l'expression possible.</p>
+    <p><strong>En-tête :</strong> <strong>Copier</strong> — copier la chaîne de la base sélectionnée ; <strong>→Exp</strong> — insérer dans l'expression ; <strong>×</strong> — fermer.</p>
+    <p><strong>Lignes :</strong> Chaque ligne = une base : <strong>Global : WS=…, Signé=…</strong> avec <strong>CFG</strong> (config globale) ; <strong>Local : …</strong> avec <strong>CFG</strong> (config locale) ; puis <strong>DEC</strong>, <strong>HEX</strong>, <strong>OCT</strong>, <strong>BIN</strong> avec le résultat. Appuyer sur une ligne pour la sélectionner pour Copier/→Exp.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SEED</span></summary>
+  <div>
+    <p><strong>Overlay graine (définir la graine RNG).</strong> Définit la graine du générateur aléatoire utilisé par <strong>RAND</strong> et l'overlay <strong>RND</strong>. Même graine = séquence reproductible.</p>
+    <p><strong>En-tête :</strong> titre <strong>Graine RNG</strong> ; <strong>Appliquer</strong> — appliquer la graine ; <strong>×</strong> — fermer.</p>
+    <p><strong>Contenu :</strong> Champ éditable pour la graine (entier). Clavier : chiffres, <strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>±</strong>, <strong>.</strong>, et optionnel <strong>+1</strong>/<strong>−1</strong>. <strong>Appliquer</strong> activé quand le champ n'est pas vide.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GCD, LCM</span></summary>
+  <div><p><strong>PGCD / PPCM.</strong> Insèrent gcd( et lcm( pour deux entiers.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RND</span></summary>
+  <div><p><strong>Overlay RND.</strong> Génère des nombres aléatoires ; copie ou insertion dans l'expression possible.</p>
+    <p><strong>En-tête :</strong> <strong>Copier</strong> — copier la valeur actuelle ; <strong>→Exp</strong> — insérer au curseur ; <strong>×</strong> — fermer.</p>
+    <p><strong>Générer un nombre</strong> — bouton dans l'overlay (génération une fois).</p>
+    <p><strong>Mode :</strong> <strong>INT</strong> / <strong>FLOAT</strong> — entier dans [Min, Max] ou flottant dans [Min, Max].</p>
+    <p><strong>Champs :</strong> <strong>Min</strong>, <strong>Max</strong> — bornes (éditables). <strong>Rnd</strong> — générer une fois.</p>
+    <p><strong>Clavier :</strong> Première ligne : <strong>&lt;&gt;</strong>, <strong>-</strong>, <strong>.</strong>, <strong>←</strong>, <strong>C</strong>. Puis chiffres pour éditer Min/Max.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">DMS</span></summary>
+  <div>
+    <p><strong>Overlay DMS.</strong> Conversion entre degrés décimaux et degrés–minutes–secondes (D°M′S″).</p>
+    <p><strong>En-tête :</strong> <strong>→Exp</strong> — insérer le résultat de conversion dans l'expression ; <strong>×</strong> — fermer.</p>
+    <p><strong>Modes :</strong> <strong>→DMS</strong> — saisir des degrés décimaux, résultat en D°M′S″ ; <strong>→DEG</strong> — saisir Degrés, Minutes, Secondes, résultat en degrés décimaux. Appuyer sur le bouton de mode pour changer.</p>
+    <p><strong>Champs :</strong></p>
+    <ul>
+      <li><strong>→DMS :</strong> un champ de saisie décimal ; <strong>Résultat</strong> affiche D°M′S″.</li>
+      <li><strong>→DEG :</strong> <strong>Degrés</strong>, <strong>Minutes</strong>, <strong>Secondes</strong> (trois champs) ; <strong>Résultat</strong> affiche les degrés décimaux.</li>
+    </ul>
+    <p>Le clavier et les boutons retour/édition servent à modifier le champ actif. Appui long sur DMS (panneau Extensions) ouvre cet overlay directement.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">FMT</span></summary>
+  <div>
+    <p><strong>Overlay format.</strong> Formater le résultat actuel (options locales), puis copier ou insérer la chaîne dans l'expression. Le champ <strong>Formaté :</strong> affiche le résultat en temps réel.</p>
+    <p><strong>En-tête :</strong> <strong>Copier</strong> — copier le résultat formaté ; <strong>→Exp</strong> — insérer au curseur ; <strong>×</strong> — fermer.</p>
+    <p><strong>Ligne 1 (appui ouvre le sélecteur) :</strong></p>
+    <ul>
+      <li><strong>Précision</strong> — décimales. Sélecteur : <strong>Complet/Brut</strong>, <strong>Auto</strong>, <strong>0</strong> à <strong>10</strong>, <strong>20</strong>.</li>
+      <li><strong>Arrondi</strong> — mode d'arrondi. Sélecteur : <strong>Aucun</strong>, <strong>Demi vers le bas</strong>, <strong>Demi vers le haut</strong>, <strong>Plafond</strong>, <strong>Plancher</strong>, <strong>Demi pair</strong>.</li>
+      <li><strong>Exposant</strong> — quand utiliser l'exposant. Sélecteur : <strong>Jamais</strong>, <strong>Auto</strong>, <strong>Toujours</strong>.</li>
+    </ul>
+    <p><strong>Ligne 2 :</strong></p>
+    <ul>
+      <li><strong>Supprimer les zéros</strong> — <strong>OUI</strong> / <strong>NON</strong> (masquer ou afficher les zéros de fin).</li>
+      <li><strong>Séparateurs</strong> — groupement des chiffres. Appui ouvre le sélecteur : <strong>Aucun</strong>, <strong>Espace</strong>, <strong>Apostrophe</strong>.</li>
+      <li><strong>Ingénieur</strong> — <strong>OUI</strong> / <strong>NON</strong> (exposant multiple de 3, ex. 1,5E3).</li>
+    </ul>
+    <p>Chaque bouton principal affiche la valeur actuelle ; <strong>Précision</strong>, <strong>Arrondi</strong>, <strong>Exposant</strong> ou <strong>Séparateurs</strong> ouvrent un overlay sélecteur. <strong>Supprimer les zéros</strong> et <strong>Ingénieur</strong> basculent directement.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">RAND</span></summary>
+  <div><p><strong>Aléatoire.</strong> Insère un nombre aléatoire (utilise les réglages de l'overlay RND ou la plage par défaut).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">STAT</span></summary>
+  <div>
+    <p><strong>Overlay stat.</strong> Inspecter le résultat actuel : chaque ligne affiche une propriété calculée du nombre. Appuyer sur une ligne pour la sélectionner ; <strong>Copier</strong> copie la valeur de cette ligne ; <strong>Tout copier</strong> copie toute la liste.</p>
+    <p><strong>En-tête :</strong> <strong>Copier</strong> — copier la valeur de la ligne sélectionnée ; <strong>Tout copier</strong> — copier toutes les lignes ; <strong>→Exp</strong> — insérer la valeur sélectionnée dans l'expression ; <strong>×</strong> — fermer.</p>
+    <p><strong>Lignes (dans l'ordre) :</strong></p>
+    <ul>
+      <li><strong>Signe</strong> — + ou −</li>
+      <li><strong>Abs</strong> — valeur absolue (chaîne)</li>
+      <li><strong>Part. entière</strong> — partie entière</li>
+      <li><strong>Part. décimale</strong> — partie fractionnaire (ou — si aucune)</li>
+      <li><strong>Échelle</strong> — échelle décimale</li>
+      <li><strong>Chiffres</strong> — nombre de chiffres</li>
+      <li><strong>Zéro</strong> — Oui / Non</li>
+      <li><strong>Entier</strong> — Oui / Non</li>
+      <li><strong>Fini</strong> — Oui / Non</li>
+      <li><strong>Parité</strong> — Pair / Impair / —</li>
+    </ul>
+    <p>Appuyer sur une ligne pour la sélectionner (bordure rouge) ; <strong>Copier</strong> utilise alors la valeur de cette ligne.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">DIFF</span></summary>
+  <div><p><strong>Overlay diff.</strong> Compare deux résultats (A = précédent, B = actuel).</p>
+    <p><strong>En-tête :</strong> <strong>&lt;&gt;</strong> — échanger A et B ; <strong>→Exp</strong> — insérer la valeur de différence sélectionnée dans l'expression ; <strong>×</strong> — fermer.</p>
+    <p><strong>Boutons :</strong> <strong>A←</strong> — mettre A = résultat actuel ; <strong>B←</strong> — mettre B = résultat actuel. <strong>Δ</strong> — différence B−A ; <strong>|Δ|</strong> — différence absolue ; <strong>%Δ</strong> — variation en % (100*(B−A)/A). Une des valeurs Δ, |Δ|, %Δ est sélectionnée pour <strong>→Exp</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GRAPH</span></summary>
+  <div><p><strong>Écran graphique.</strong> Ouvre l'onglet graphique. Vous y avez l'overlay <strong>GRAPH</strong> avec :</p>
+    <details>
+      <summary><span class="summary-title">Ajouter à l'historique</span></summary>
+      <div><p>Enregistre le graphique actuel dans l'historique : formules, plages X/T/θ, options (autoY, légende, etc.) et image PNG. Vous pourrez le rouvrir via Menu → Historique et « Insérer le graphique ».</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Séries</span></summary>
+      <div>
+        <p>Ouvre l'overlay <strong>SERIES</strong>. En-tête : <strong>Ajouter une série</strong> (jusqu'à 6) ; <strong>×</strong> — fermer.</p>
+        <p>Pour chaque ligne de série :</p>
+        <ul>
+          <li><strong>Boîte colorée avec numéro (1, 2, 3…)</strong> — appuyer pour définir cette série comme <strong>active</strong> (utilisée par Formule, X-range, x0, etc.).</li>
+          <li><strong>✓ / ✕</strong> — visibilité : afficher ou masquer cette série sur le graphique.</li>
+          <li><strong>Func / Param / Polar</strong> — type : Fonction y=f(x), Paramétrique x(t),y(t) ou Polaire r(θ). Appuyer pour changer.</li>
+          <li><strong>Ligne / Points</strong> — tracer en ligne ou en points. Appuyer pour basculer.</li>
+          <li><strong>f′</strong> (Fonction uniquement) — afficher la dérivée première. Appuyer pour basculer.</li>
+          <li><strong>Icône : point animé</strong> (Polaire uniquement) — bouton sans texte ; appuyer pour afficher/masquer le point animé sur la courbe.</li>
+          <li><strong>f″</strong> (Fonction uniquement) — afficher la dérivée seconde. Appuyer pour basculer.</li>
+          <li><strong>Remplir</strong> (Fonction uniquement) — remplir la zone sous la courbe. Appuyer pour basculer.</li>
+          <li><strong>Suppr.</strong> — supprimer cette série (bouton non affiché pour la première série).</li>
+        </ul>
+        <p>Pour éditer la formule, utiliser le bouton <strong>Formule</strong> dans l'overlay GRAPH principal (il édite la série active).</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Vue</span></summary>
+      <div>
+        <p>Ouvre l'overlay <strong>Vue</strong> du graphique. En-tête : <strong>×</strong> — fermer.</p>
+        <p><strong>Ligne 1</strong></p>
+        <ul>
+          <li><strong>Centrer</strong> — centrer les axes</li>
+          <li><strong>Zoom+</strong> — zoom avant</li>
+          <li><strong>×N</strong> (ex. ×1,00) — facteur de zoom actuel</li>
+          <li><strong>Zoom−</strong> — zoom arrière</li>
+          <li><strong>Réinit.</strong> — réinitialiser zoom et grille</li>
+        </ul>
+        <p><strong>Ligne 2</strong></p>
+        <ul>
+          <li><strong>Robuste</strong> — échelle Y robuste (pour une série visible)</li>
+          <li><strong>GridX+</strong> / <strong>GridX−</strong> — pas de grille X (valeur affichée entre les deux)</li>
+          <li><strong>Aligner</strong> — aligner le curseur sur la grille</li>
+        </ul>
+        <p><strong>Ligne 3</strong></p>
+        <ul>
+          <li><strong>Auto Y</strong> — plage Y automatique</li>
+          <li><strong>GridY+</strong> / <strong>GridY−</strong> — pas de grille Y (valeur affichée entre les deux)</li>
+          <li><strong>Curseur</strong> — afficher/masquer le curseur réticule</li>
+        </ul>
+        <p><strong>Ligne 4</strong></p>
+        <ul>
+          <li><strong>Asympt.</strong> — afficher les asymptotes</li>
+          <li><strong>Axes</strong> — afficher les axes</li>
+          <li><strong>Grille</strong> — afficher la grille</li>
+          <li><strong>Étiquettes</strong> — afficher les étiquettes</li>
+          <li><strong>Légende</strong> — afficher la légende</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Formule</span></summary>
+      <div>
+        <p>Ouvre l'overlay <strong>Formule</strong> pour éditer la formule de la série <strong>active</strong>.</p>
+        <p><strong>En-tête :</strong> <strong>×</strong> — fermer.</p>
+        <p><strong>Contenu :</strong> Champ de formule éditable (et pour paramétrique : x(t), y(t) ; pour polaire : r(θ)). Clavier : <strong>←</strong>, <strong>C</strong>, chiffres, opérateurs, boutons de fonctions (LOG, LOG2, LN, sin, cos, etc.), <strong>,</strong> pour séparer les arguments.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">X-range / T-range / θ-range</span></summary>
+      <div>
+        <p>Ouvre l'overlay <strong>Plage</strong> pour la série active. Le titre et les champs dépendent du type de série.</p>
+        <p><strong>En-tête :</strong> <strong>X-range</strong> / <strong>T-range</strong> / <strong>θ-range</strong> (titre) ; <strong>×</strong> — fermer.</p>
+        <p><strong>Contenu :</strong></p>
+        <ul>
+          <li><strong>Fonction (X-range) :</strong> <strong>X min</strong>, <strong>X max</strong>, <strong>Δx</strong> (pas).</li>
+          <li><strong>Paramétrique (T-range) :</strong> <strong>t min</strong>, <strong>t max</strong>, <strong>Δt</strong>.</li>
+          <li><strong>Polaire (θ-range) :</strong> <strong>θ min</strong>, <strong>θ max</strong>, <strong>Δθ</strong>.</li>
+        </ul>
+        <p>Chaque valeur est éditable ; le clavier et les boutons (<strong>←</strong>, <strong>C</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, chiffres, préréglages π, 2π) s'appliquent au champ actif. <strong>Appliquer</strong> permet de confirmer la plage.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">x0, t0, θ0</span></summary>
+      <div>
+        <p>Ouvre l'overlay curseur-décalage pour la série active. Le réticule sur le graphique est à cette valeur.</p>
+        <p><strong>En-tête :</strong> <strong>X0</strong> / <strong>T0</strong> / <strong>θ0</strong> (selon le type : Fonction → X0, Paramétrique → T0, Polaire → θ0) ; <strong>×</strong> — fermer.</p>
+        <p><strong>Contenu :</strong> Un champ éditable pour la valeur du curseur (x0, t0 ou θ0). Préréglages : pour Fonction <strong>−π</strong>, <strong>0</strong>, <strong>π</strong> ; pour Paramétrique/Polaire <strong>0</strong>, <strong>π</strong>, <strong>2π</strong>. Ligne de contrôle : <strong>←</strong>, <strong>−</strong>, <strong>.</strong>, <strong>/</strong>, <strong>C</strong>. Chiffres et constantes (ex. π) peuvent être saisis. <strong>Appliquer</strong> met à jour la position du curseur sur le graphique.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Mode nombre : Normal / Brut</span></summary>
+      <div><p>Choisir comment les nombres sont affichés sur le graphique (ex. Normal = formaté, Brut = précision complète).</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Thèmes</span></summary>
+      <div>
+        <p>Ouvre l'overlay <strong>Thèmes</strong> pour choisir le thème de couleurs du graphique (fond et courbes).</p>
+        <p><strong>En-tête :</strong> titre de l'overlay ; <strong>×</strong> — fermer.</p>
+        <p><strong>Contenu :</strong> Quatre boutons de thème — <strong>Clair</strong>, <strong>Méd. clair</strong>, <strong>Méd. sombre</strong>, <strong>Sombre</strong>. Appuyer pour sélectionner ; le thème actif est mis en évidence.</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Mode rendu : Cache / Temps réel</span></summary>
+      <div><p>Basculer le rendu : <strong>Cache</strong> — plus rapide, utilise une bitmap en cache ; <strong>Temps réel</strong> — redessine à chaque changement. Utiliser Cache pour les graphiques complexes sur appareils lents.</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">Préréglages</span></summary>
+      <div>
+        <p>Ouvre l'overlay <strong>Préréglages</strong> avec des exemples intégrés. Utilisez-le pour charger un graphique prédéfini (fonctions, paramétrique, polaire ou mixte) puis l'éditer ou le partager.</p>
+        <p><strong>En-tête :</strong> titre <strong>Préréglages</strong> ; <strong>×</strong> — fermer.</p>
+        <p><strong>Onglets :</strong> <strong>Fonction</strong> — y=f(x) ; <strong>Param</strong> — paramétrique x(t), y(t) ; <strong>Polaire</strong> — r(θ) ; <strong>Mixte</strong> — combiné.</p>
+        <p><strong>Contenu :</strong> Liste défilante de cartes de préréglages (titre, commentaire, aperçu). Appuyer sur une carte pour la sélectionner (un en-tête « Sélectionné » apparaît au-dessus). Ouvrir le menu de la carte (appui court ou long) pour :</p>
+        <ul>
+          <li><strong>Insérer le graphique</strong> — charger ce préréglage dans le graphique (remplace le graphique actuel).</li>
+          <li><strong>Partager l'image du graphique (.png)</strong> — partager en image lorsqu'une image enregistrée existe.</li>
+          <li><strong>Partager les données du graphique (.json)</strong> — partager la définition du graphique en JSON.</li>
+          <li><strong>Modifier le commentaire</strong> — éditer le commentaire du préréglage (local, pour cette session).</li>
+        </ul>
+        <p>Pour conserver votre graphique actuel pour plus tard, utilisez <strong>Ajouter à l'historique</strong> dans l'overlay GRAPH.</p>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">TIME</span></summary>
+  <div>
+    <p><strong>Overlay Temps.</strong> Calculer avec deux opérandes <strong>A</strong> et <strong>B</strong> : durées (jours, heures, min, s, ms) ou date-heure (AAAA-MM-JJ et HH:MM:SS.ms). Opération <strong>+</strong> ou <strong>−</strong> ; le résultat peut être une durée ou une date-heure. Copier ou insérer le résultat dans l'expression.</p>
+    <p><strong>En-tête :</strong> <strong>Copier</strong> — copier le résultat lisible dans le presse-papiers ; <strong>→Exp</strong> — insérer le résultat numérique (ex. durée dans l'unité choisie, ou timestamp en ms) dans l'expression ; <strong>×</strong> — fermer.</p>
+    <p><strong>Ligne opérandes (en haut) :</strong></p>
+    <ul>
+      <li><strong>A</strong> / <strong>B</strong> — changer l'opérande active (édition et cible « Utiliser le résultat »).</li>
+      <li><strong>Durée</strong> / <strong>Date-heure</strong> — type de l'opérande active : durée (j, h, m, s, ms) ou date-heure (date + heure).</li>
+      <li><strong>Main.</strong> — remplir l'opérande active avec la date et l'heure actuelles (uniquement quand Date-heure est sélectionné).</li>
+      <li><strong>CA</strong> / <strong>CB</strong> — effacer l'opérande A ou B.</li>
+    </ul>
+    <p><strong>Convertisseur de résultat :</strong> Le bouton affiche l'unité du résultat numérique (<strong>année</strong>, <strong>mois</strong>, <strong>semaine</strong>, <strong>jour</strong>, <strong>heure</strong>, <strong>min</strong>, <strong>s</strong>, <strong>ms</strong>) — appuyer pour changer. La valeur à côté est le résultat dans cette unité (pour les résultats en durée).</p>
+    <p><strong>Format du résultat :</strong></p>
+    <ul>
+      <li><strong>Abs</strong> — utiliser la valeur absolue du résultat (pour la durée ; ex. différence A−B).</li>
+      <li><strong>Norm</strong> — normaliser la durée dans A et B (ex. 90 min → 1h 30m).</li>
+      <li><strong>Utiliser le résultat</strong> — écrire le résultat numérique dans l'opérande active (pour des calculs en chaîne).</li>
+    </ul>
+    <p><strong>Clavier :</strong> <strong>←</strong> retour arrière, <strong>−</strong> moins (autorisé dans Jours ou date), <strong>:</strong> et <strong>.</strong> pour heure/décimales, <strong>C</strong> tout effacer, chiffres <strong>0–9</strong>. La saisie va dans le champ actif de l'opérande active (Durée : jours, heures, min, s, ms ; Date-heure : date puis heure).</p>
+    <p><strong>Opérations :</strong> Durée ± Durée ; Date-heure + Durée ou Date-heure − Durée ; Date-heure − Date-heure donne une durée. DT + DT non autorisé. Sur l'écran Temps complet, les opérandes A et B sont affichées avec des champs (Jours, Heures, Min, s, ms ou Date, Heure), opération <strong>+</strong>/<strong>−</strong>, et <strong>Échanger</strong> pour échanger A et B.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">= (Panneau Extensions)</span></summary>
+  <div>
+    <p>Évalue l'expression ; l'appui long ajoute l'enregistrement à l'historique, comme sur les autres panneaux.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== BARRE D'ÉTAT ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Barre d'état</span></summary>
+  <div>
+    <p class="help-section-desc">La barre du haut affiche le mode d'angles, la base numérique, le titre, les indicateurs ENG/HYP optionnels et le menu.</p>
+
+<details>
+  <summary><span class="summary-title">RAD / DEG (liste déroulante)</span></summary>
+  <div><p>Appuyer pour ouvrir la liste : <strong>RAD</strong> — angles en radians ; <strong>DEG</strong> — angles en degrés. La coche indique l'actuel. Affecte sin, cos, tan, etc.</p>
+    <p>En mode <strong>DEG</strong>, les arguments de sin, cos, tan sont en <strong>degrés</strong>. Pour sin(π/6), utilisez RAD ou saisissez sin(30).</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEC / HEX / OCT / BIN (liste déroulante)</span></summary>
+  <div><p>Appuyer pour choisir la base numérique pour la saisie et le résultat : <strong>DEC</strong> décimal, <strong>HEX</strong> hexadécimal, <strong>OCT</strong> octal, <strong>BIN</strong> binaire.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Titre (CalcIUM / RÉCENTS)</span></summary>
+  <div>
+    <p>Quand aucun overlay n'est ouvert : affiche le titre de l'app <strong>CalcIUM</strong>. Si l'état est en cours de restauration, une icône d'engrenage peut apparaître brièvement.</p>
+    <p>Quand un overlay du panneau Extensions est ouvert : le titre devient <strong>RÉCENTS</strong> et est cliquable. Appuyer pour ouvrir l'overlay <strong>RÉCENTS</strong> (liste des overlays récemment utilisés).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Overlay RÉCENTS</span></summary>
+  <div>
+    <p>S'ouvre en appuyant sur le titre de la barre d'état quand il affiche <strong>RÉCENTS</strong> (quand un overlay du panneau Extensions est actif). Affiche les overlays récents sous forme de cartes ; appuyer sur une carte pour ouvrir cet overlay. Chaque carte affiche le nom de l'overlay et depuis combien de temps il a été utilisé.</p>
+    <p><strong>En-tête :</strong> titre <strong>RÉCENTS</strong> ; <strong>×</strong> — fermer.</p>
+    <p><strong>Onglets :</strong></p>
+    <ul>
+      <li><strong>TOUS</strong> — tous les overlays récemment utilisés.</li>
+      <li><strong>OUTILS</strong> — AB (Symboles), CONST, SI, DMS, FMT, TEMPS, STAT, DIFF, RND, mini Nr, mini Fn.</li>
+      <li><strong>CONFIG</strong> — type paramètres : SEED, CFG, BASE.</li>
+      <li><strong>UNITÉS</strong> — liste de catégories d'unités, écran de catégorie, sélecteur d'unités.</li>
+      <li><strong>GRAPH</strong> — outils graphique, Formule, gFonctions, gConstantes, gNumérique, Séries, Vue, Thèmes, Préréglages, Plage (X/T/θ), x0, t0, θ0.</li>
+    </ul>
+    <p>Appuyer sur une carte pour ouvrir cet overlay.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG, HYP (indicateurs)</span></summary>
+  <div><p>Affichés quand la notation ingénieur ou le mode hyperbolique est activé.</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Menu (☰)</span></summary>
+  <div><p>Appuyer pour ouvrir :</p>
+    <ul>
+      <li><strong>Historique</strong> — ouvrir l'écran Historique (expressions et graphiques).</li>
+      <li><strong>Paramètres</strong> — ouvrir l'écran Paramètres.</li>
+      <li><strong>Noter</strong> — noter l'app (boutique).</li>
+      <li><strong>À propos</strong> — infos et version de l'app.</li>
+      <li><strong>Aide</strong> — ouvrir cet écran d'aide.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== HISTORIQUE ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Historique</span></summary>
+  <div>
+    <p class="help-section-desc">Ouvrir via <span class="key">Barre d'état → Menu → Historique</span>. Deux types : <strong>enregistrements d'expressions</strong> (expression + résultat + commentaire optionnel) et <strong>entrées de graphiques</strong> (formules, plages, image et commentaire optionnels).</p>
+
+<details>
+  <summary><span class="summary-title">Cartes d'expression — menu contextuel</span></summary>
+  <div><p>Appui long (ou action contextuelle) sur une carte d'expression :</p>
+    <ul>
+      <li><strong>Insérer l'expression</strong> — coller l'expression dans la calculatrice et revenir.</li>
+      <li><strong>Insérer le résultat</strong> — coller le résultat dans l'expression.</li>
+      <li><strong>Copier expr.=résultat</strong> — copier « expression=résultat » dans le presse-papiers.</li>
+      <li><strong>Copier l'expression</strong> — copier uniquement l'expression.</li>
+      <li><strong>Copier le résultat</strong> — copier uniquement le résultat.</li>
+      <li><strong>Modifier le commentaire</strong> — ajouter ou éditer le commentaire de la carte.</li>
+      <li><strong>Supprimer</strong> — supprimer cet enregistrement.</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Cartes de graphique — menu contextuel</span></summary>
+  <div><p>Appui long sur une carte de graphique :</p>
+    <ul>
+      <li><strong>Insérer le graphique</strong> — restaurer ce graphique (formules, plages) dans l'écran Graphique et revenir.</li>
+      <li><strong>Partager l'image du graphique (.png)</strong> — partager l'image du graphique enregistrée. L'étiquette peut afficher « Aucune image enregistrée » si le graphique n'a pas été enregistré avec une image.</li>
+      <li><strong>Partager les données du graphique (.json)</strong> — partager les paramètres et formules du graphique en JSON.</li>
+      <li><strong>Copier toutes les formules</strong> — copier toutes les formules des séries dans le presse-papiers.</li>
+      <li><strong>Modifier le commentaire</strong> — ajouter ou éditer le commentaire du graphique.</li>
+      <li><strong>Supprimer</strong> — supprimer cette entrée de graphique.</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== PARAMÈTRES ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">Paramètres</span></summary>
+  <div>
+    <p class="help-section-desc">Ouvrir via <span class="key">Barre d'état → Menu → Paramètres</span>. Chaque élément ouvre une boîte de dialogue ou un sous-écran.</p>
+
+<details>
+  <summary><span class="summary-title">Langue</span></summary>
+  <div>
+    <p>Ouvre une boîte de dialogue pour choisir la langue de l'application.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>English</strong>, <strong>Русский</strong>, <strong>Українська</strong>, <strong>Deutsch</strong>, <strong>Español</strong>, <strong>Français</strong>, <strong>Magyar</strong>. Appuyer sur une option pour sélectionner et fermer.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Thème</span></summary>
+  <div>
+    <p>Ouvre une boîte de dialogue pour choisir le thème de l'application.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>Beach Pebbles (Clair)</strong>, <strong>Starry Night (Sombre)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Options de saisie</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Options de saisie</strong>.</p>
+    <p><strong>Ligne 1 — mode de saisie :</strong> <strong>Saisie intelligente</strong> — ajoute les opérateurs et parenthèses implicites ; <strong>Saisie libre</strong> — saisie libre. Un seul sélectionné.</p>
+    <p><strong>Ligne 2 — retour arrière :</strong> <strong>Retour intelligent</strong> — supprime par jeton (ex. tout le nom de fonction) ; <strong>Retour libre</strong> — supprime un caractère. Un seul sélectionné.</p>
+    <p><strong>Case à cocher :</strong> <strong>Ajouter le résultat à l'expression (expérimental)</strong> — après <strong>=</strong>, la prochaine saisie peut s'ajouter au résultat.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Options d'affichage</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Options d'affichage</strong>.</p>
+    <p><strong>Cases à cocher :</strong></p>
+    <ul>
+      <li><strong>Coloration syntaxique</strong> — couleurs dans l'expression (chiffres, fonctions, opérateurs).</li>
+      <li><strong>Afficher le panneau des paramètres à l'écran</strong> — afficher les infos des paramètres sur l'écran de la calculatrice.</li>
+    </ul>
+    <p><strong>Séparateurs de chiffres</strong> (boutons) : <strong>Aucun</strong>, <strong>Espace</strong>, <strong>Apostrophe</strong>. Un sélectionné.</p>
+    <p><strong>Degré de racine en majuscule</strong> (segment) : <strong>Supérieur</strong> (exposant), <strong>Classique</strong>. Un sélectionné.</p>
+    <p><strong>Exposant en majuscule</strong> (segment) : <strong>Supérieur</strong> (exposant), <strong>Classique</strong>. Un sélectionné.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Animations</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Animations</strong>.</p>
+    <p><strong>Cases à cocher :</strong> <strong>Au démarrage (écran)</strong>, <strong>Dégradé argenté (texte)</strong>, <strong>Apparition/disparition caractère par caractère (texte)</strong>, <strong>Fondu expression (écran)</strong>, <strong>Fondu résultat (écran)</strong>.</p>
+    <p><strong>Appui sur les boutons</strong> (segment) : <strong>Appui</strong>, <strong>Léger</strong>, <strong>Mixte</strong>. Un sélectionné.</p>
+    <p><strong>Changement de boutons et d'écrans</strong> (segment) : <strong>Fondu</strong>, <strong>Glissement</strong>. Un sélectionné.</p>
+    <p><strong>Apparition des overlays</strong> (segment) : <strong>Aucun</strong>, <strong>Gl+F</strong> (Glissement+Fondu), <strong>Ec+F</strong> (Échelle+Fondu), <strong>Mixte</strong> (Glissement+Échelle+Fondu). Un sélectionné.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Vibration</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Durée de vibration</strong>. Définit la durée haptique en ms pour les appuis ; <strong>0</strong> désactive la vibration.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>0 ms</strong>, <strong>15 ms</strong>, <strong>20 ms</strong>, <strong>25 ms</strong>, <strong>30 ms</strong>, <strong>35 ms</strong>, <strong>40 ms</strong>, <strong>45 ms</strong>, <strong>50 ms</strong>. Appuyer sur une option pour sélectionner et fermer.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Arrondi</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Mode d'arrondi</strong>. Choisit comment les résultats décimaux sont arrondis.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>Aucun arrondi</strong> ; <strong>Demi vers le bas</strong> (x,5 arrondit vers le bas) ; <strong>Demi vers le haut</strong> (x,5 arrondit vers le haut) ; <strong>Plafond</strong> (vers +∞) ; <strong>Plancher</strong> (vers −∞) ; <strong>Demi pair</strong> (bancaire).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Précision</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Décimales</strong>. Contrôle le nombre de décimales affichées dans le résultat.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>Complet/Brut</strong> ; <strong>Auto</strong> ; <strong>0 décimales</strong>, <strong>1 décimale</strong>, … <strong>10 décimales</strong> ; <strong>20 décimales</strong>. Appuyer sur une option pour sélectionner et fermer.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Mode reste '//'</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Mode reste '//'</strong>. Définit le comportement de l'opérateur <strong>//</strong> (reste de division entière).</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>Reste (troncature)</strong> — ex. 7//−4=3, −7//4=−3 ; <strong>Modulo (euclidien)</strong> — ex. 7//−4=3, −7//4=1 ; <strong>Reste plancher</strong> — ex. 7//−4=−1, −7//4=1.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Format d'exposant</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Format d'exposant</strong>. Permet de choisir quand afficher la notation exponentielle dans le résultat.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>Jamais</strong>, <strong>Auto</strong>, <strong>Toujours</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Gestion du résultat</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Gestion du résultat</strong>.</p>
+    <p><strong>Case à cocher :</strong> <strong>Supprimer les zéros de fin</strong> — quand activé, les zéros de fin dans le résultat sont masqués ; quand désactivé, ils sont affichés.</p>
+    <p><strong>Case à cocher :</strong> <strong>Simplifier près de zéro</strong> — quand activé, les valeurs très proches de zéro (|x| &lt; ε) sont affichées comme 0.</p>
+    <p><strong>Case à cocher :</strong> <strong>Simplifier près d'entier</strong> — quand activé, les valeurs proches de 0,5, 1 ou −1 sont affichées comme 0,5, 1, −1.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Mode pourcentage</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Mode pourcentage</strong>. Définit comment <strong>%</strong> est interprété (ex. 200−10 %).</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>Classique</strong> — pourcentage de l'opérande gauche (200−10 % = 180) ; <strong>Simple</strong> — pourcentage comme décimal (200−10 % = 199,9).</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Restauration d'état</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Restauration d'état</strong>. Que restaurer au démarrage de l'app.</p>
+    <p><strong>Cases à cocher :</strong></p>
+    <ul>
+      <li><strong>Texte/Graphique au démarrage</strong> — restaurer la dernière expression et le dernier graphique au démarrage.</li>
+      <li><strong>Écran/Panneau au démarrage</strong> — restaurer le dernier écran (calculatrice/graphique) et le dernier panneau (Numérique/Fonctions/Extensions).</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Historique</span></summary>
+  <div>
+    <p>Ouvre la boîte de dialogue <strong>Nombre max d'enregistrements d'historique</strong>. Définit le nombre maximum d'entrées d'historique d'expressions et de graphiques.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>100 enregistrements</strong>, <strong>200</strong>, <strong>300</strong>, <strong>400</strong>, <strong>500</strong>, <strong>1000 enregistrements</strong>. Appuyer sur une option pour sélectionner et fermer.</p>
+    <p><strong>Boutons :</strong> <strong>Vider l'historique</strong> — ouvre une boîte de confirmation ; confirmer avec <strong>Vider</strong> pour supprimer tout l'historique. <strong>Fermer</strong> — fermer la boîte. La boîte de confirmation a <strong>Vider</strong> et <strong>Annuler</strong>.</p>
+  </div>
+</details>
+
+  </div>
+</details>
+      </article>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a href="../features.html">Features</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../help.html">Help</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <p class="footer__meta">CalcIUM · Scientific calculator for Android</p>
+    </div>
+  </footer>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>
