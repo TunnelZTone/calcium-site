@@ -108,32 +108,27 @@ main code {
 }
 
 /* Silver shimmer for CalcIUM wordmarks */
-.brand span,
-.hero__content h1 {
-  color: #d6d8de;
+.brand span {
+  color: #f8f8f8;
   background-image: linear-gradient(
     110deg,
-    #9ca0a9 0%,
-    #eef1f5 18%,
-    #a1a5ae 34%,
-    #f7f9fc 50%,
-    #9ca0a9 66%,
-    #eef1f5 82%,
-    #a1a5ae 100%
+    #808080 0%,
+    #f8f8f8 50%,
+    #7a7a7a 100%
   );
-  background-size: 220% 100%;
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: silver-shimmer 6.2s linear infinite;
+  animation: silver-shimmer 7.8s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
 
 @keyframes silver-shimmer {
   0% {
-    background-position: 200% 50%;
+    background-position: 8% 12%;
   }
   100% {
-    background-position: -120% 50%;
+    background-position: 92% 88%;
   }
 }
 
@@ -625,8 +620,7 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .brand span,
-  .hero__content h1 {
+  .brand span {
     animation: none;
     background-position: 50% 50%;
   }
