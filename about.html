@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e14">
+  <meta name="description" content="The story behind CalcIUM: product history, engineering decisions, and release philosophy.">
+  <link rel="canonical" href="https://tunnelztone.github.io/calcium-site/about.html">
+  <meta property="og:title" content="About — CalcIUM">
+  <meta property="og:description" content="The story behind CalcIUM and how it evolved into a full-featured scientific calculator.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/CalcIUM_Dark.png">
+  <title>About — CalcIUM</title>
+  <link rel="icon" type="image/png" href="assets/img/CalcIUM_Dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css?v=4">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/CalcIUM_Dark.png" width="36" height="36" alt="CalcIUM logo">
+        <span>CalcIUM</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="features.html">Features</a>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout-main">
+    <main class="privacy-doc">
+      <h1>The Story Behind CalcIUM</h1>
+      <p class="lead">A scientific calculator built with focus on precision, structure and usability.</p>
+
+      <h2>Introduction</h2>
+      <p>The Story Behind CalcIUM Scientific Calculator</p>
+      <p>My name is Liubomyr.</p>
+
+      <h2>Early development (2018)</h2>
+      <p>In 2018, I started learning Java. To make the learning process more effective and engaging, I decided to build a real application instead of writing simple exercises — that’s how my first calculator was created.</p>
+      <p>It was a fairly simple project: a basic Reverse Polish Notation (RPN) algorithm, a minimal interface, Numeric and Function panels, as well as Settings and History screens. At that time, I had no intention of publishing the app — it was purely a learning tool. After finishing it, I moved on to other things and eventually forgot about it.</p>
+
+      <h2>Return (2025)</h2>
+      <p>In 2025, I had more free time and returned to programming as one of my favorite activities. I started working on several new applications and remembered my first calculator. Before moving forward with new projects, I decided to restore it and release it for free, without ads — simply so the work wouldn’t go to waste. I thought it might be useful to someone.</p>
+      <p>The app was restored and ready for release, but during the process I began adding new features. Step by step, this evolved into something much bigger, and I ended up focusing entirely on building a full-featured scientific calculator — CalcIUM.</p>
+
+      <h2>Design goals</h2>
+      <p>From the beginning, I had a clear goal: not to create just another generic calculator, but to build a tool that is precise, well-structured, easy to use, and visually refined. The most difficult part was maintaining the balance between simplicity and a wide range of functionality.</p>
+
+      <h2>Accuracy</h2>
+      <p>Accuracy became the first priority. CalcIUM was fully migrated from Double to BigDecimal — this applies to all calculations across the entire application. To ensure correctness, I implemented a large set of instrumental tests with thousands of expressions. As a result, CalcIUM reaches the level of accuracy found in the best scientific calculators.</p>
+
+      <h2>Features</h2>
+      <p>Then the functionality started to take shape. The following features were added:</p>
+      <p>— a unit converter with multiple categories and a wide range of values<br>
+      — extended panels: SYMBOLS, BASE, CFG, STAT, FMT<br>
+      — number base operations and bitwise logic<br>
+      — an expanded set of mathematical and physical constants, along with SI prefixes<br>
+      — time calculations (TIME)</p>
+
+      <h2>Graphing</h2>
+      <p>Special attention was given to graphing. CalcIUM supports function, parametric, and polar graphs. The goal was not just to display graphs, but to provide a complete toolset:</p>
+      <p>— multiple series on a single graph<br>
+      — view control<br>
+      — presets<br>
+      — graph history<br>
+      — PNG export<br>
+      — JSON export</p>
+      <p>At the same time, the history system and interaction between values across panels were significantly expanded.</p>
+
+      <h2>Design</h2>
+      <p>Once the functionality reached the desired level, I moved on to design.</p>
+      <p>The light theme, Beach Pebbles, was created to feel calm and comfortable — something that makes even working with a calculator pleasant.</p>
+      <p>The dark theme, Starry Night, was designed to be more technical and строгая, but with its own character.</p>
+
+      <h2>Release and philosophy</h2>
+      <p>Over the course of about a year, CalcIUM evolved into a complete product and was released.</p>
+      <p>I also made a deliberate decision to avoid ads entirely. The app contains no banners, no pop-ups, and no hidden mechanisms that push the user toward a purchase. The paid version unlocks extended functionality, while the free version already includes everything most users need, including function graphing and part of the unit conversions.</p>
+      <p>The purchase is one-time, with no subscriptions. The user decides whether additional functionality is needed.</p>
+      <p>CalcIUM was built with attention to detail and genuine interest in the process.</p>
+      <p>I hope it proves useful and enjoyable to use.</p>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer__meta">CalcIUM · Scientific calculator for Android</p>
+      <p class="footer__credits">Created and developed by Yakob Liubomyr</p>
+    </div>
+  </footer>
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>
