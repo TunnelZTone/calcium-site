@@ -38,11 +38,11 @@ https://youtube.com/shorts/pr1Vn9dIKno
 
 ## 📷 Screenshots
 
-<img src="./screenshots/CalcIUM_GRAPH.png" width="500">
-
-<img src="./screenshots/CalcIUM_Numeric.png" width="400">
-
-<img src="./screenshots/CalcIUM_ExtPanel.png" width="400">
+<p align="center">
+  <img src="./screenshots/CalcIUM_GRAPH.png" width="30%">
+  <img src="./screenshots/CalcIUM_Numeric.png" width="30%">
+  <img src="./screenshots/CalcIUM_ExtPanel.png" width="30%">
+</p>
 
 ---
 
