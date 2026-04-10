@@ -1,4 +1,4 @@
-# CalcIUM — Scientific Calculator
+# CalcIUM: Scientific Calculator
 
 Fast, structured and precise scientific calculator for Android.
 
@@ -31,7 +31,7 @@ Designed to be both powerful and pleasant to use.
 • Graph presets (Short)  
 https://youtube.com/shorts/qW3mBljvFIo  
 
-• Quick conversions (Units)  
+• Unit conversions (Short)  
 https://youtube.com/shorts/pr1Vn9dIKno  
 
 ---
