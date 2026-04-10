@@ -190,7 +190,7 @@ main {
   max-width: var(--max);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 0.35rem 1rem;
 }
@@ -210,15 +210,6 @@ main {
 
 .footer__links a:hover {
   color: var(--accent);
-}
-
-.footer__meta {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin: 0;
-  justify-self: center;
-  text-align: center;
-  white-space: nowrap;
 }
 
 .footer__credits {
@@ -243,10 +234,6 @@ main {
   .footer__links {
     justify-self: center;
     justify-content: center;
-  }
-
-  .footer__meta {
-    white-space: normal;
   }
 
   .footer__credits {
