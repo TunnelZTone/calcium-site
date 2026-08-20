@@ -49,6 +49,9 @@
           <a href="es.html">Español</a>
           <a href="fr.html">Français</a>
           <a href="hu.html">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html">日本語</a>
       </nav>
       <article class="help-document theme-dark">
 <!-- ========== NUMERIC PANEL ========== -->
@@ -331,8 +334,8 @@
     <p><strong>Category level (e.g. TIME, LENGTH):</strong></p>
     <ul>
       <li><strong>Header:</strong> Category name (e.g. TIME); <strong>←</strong> — back to category list; <strong>×</strong> — close overlay.</li>
-      <li><strong>Fields:</strong> <strong>Input</strong> — value in the FROM unit; <strong>Result</strong> — value in the TO unit. Hint line shows &quot;from_symbol → to_symbol&quot;.</li>
-      <li><strong>Button row:</strong> <strong>FROM</strong> (shows current FROM unit symbol) — tap to open unit picker for source; <strong>TO</strong> (shows TO unit symbol) — tap to open picker for target; <strong>&lt;&gt;</strong> — swap FROM and TO; <strong>Add</strong> — insert the result into the expression; <strong>←</strong> — back to category list.</li>
+      <li><strong>Fields:</strong> <strong>Input</strong> — value in the <strong>FROM UNIT</strong>; <strong>Result</strong> — value in the <strong>TO UNIT</strong>. Hint line shows &quot;from_symbol → to_symbol&quot;.</li>
+      <li><strong>Button row:</strong> <strong>FROM UNIT</strong> (shows current unit symbol) — tap to open unit picker for source; <strong>TO UNIT</strong> (shows unit symbol) — tap to open picker for target; <strong>&lt;&gt;</strong> — swap FROM UNIT and TO UNIT; <strong>Add</strong> — insert the result into the expression; <strong>←</strong> — back to category list.</li>
       <li><strong>Keypad:</strong> Digits <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> for editing Input.</li>
       <li><strong>DATA category:</strong> The header also shows a <strong>SI</strong>/<strong>IEC</strong> switch. <strong>SI</strong> uses decimal units (<strong>kB, MB, GB, TB</strong> = powers of 1000); <strong>IEC</strong> uses binary units (<strong>KiB, MiB, GiB, TiB</strong> = powers of 1024).</li>
     </ul>
@@ -615,7 +618,7 @@
       <li><strong>Use result</strong> — write the numeric result into the active operand (for chained calculations).</li>
     </ul>
     <p><strong>Keypad:</strong> <strong>←</strong> backspace, <strong>−</strong> minus (allowed in Days or in date), <strong>:</strong> and <strong>.</strong> for time/decimals, <strong>C</strong> clear all, digits <strong>0–9</strong>. Input is entered into the active operand’s active field (Duration: days, hours, min, sec, ms; DateTime: date, then time).</p>
-    <p><strong>Operations:</strong> Duration ± Duration; DateTime + Duration or DateTime − Duration; DateTime − DateTime gives a duration. DT + DT is not allowed. On the full Time screen (when TIME is shown in the top area), operands A and B are shown with labeled fields (Days, Hours, Min, Sec, ms or Date, Time), operation <strong>+</strong>/<strong>−</strong>, and <strong>Swap</strong> to exchange A and B.</p>
+    <p><strong>Operations:</strong> Duration ± Duration; DateTime + Duration or DateTime − Duration; DateTime − DateTime gives a duration. DT + DT is not allowed. On the full Time screen (when TIME is shown in the top area), operands A and B are shown with labeled fields (Days, Hours, Min, Sec, ms or Date, Time), operation <strong>+</strong>/<strong>−</strong>, and <strong>&lt;&gt;</strong> to exchange A and B.</p>
   </div>
 </details>
 <details>
@@ -674,6 +677,7 @@
   <summary><span class="summary-title">Menu (☰)</span></summary>
   <div><p>Tap to open:</p>
     <ul>
+      <li><strong>Extension panel</strong> — switch to the Extension panel (calculator keypad).</li>
       <li><strong>History</strong> — open History screen (expressions and graphs).</li>
       <li><strong>Settings</strong> — open Settings screen.</li>
       <li><strong>Rate</strong> — rate the app (store).</li>
@@ -711,7 +715,7 @@
   <div><p>Long-press on a graph card:</p>
     <ul>
       <li><strong>Insert Graph</strong> — restore this graph (formulas, ranges) into the Graph screen and go back.</li>
-      <li><strong>Share Graph Image (.png)</strong> — share the saved graph image. Label may show &quot;No saved image&quot; if the graph was not saved with an image.</li>
+      <li><strong>Share Graph Image (.png)</strong> — share the saved graph image. If no image was saved, the menu item shows <strong>Share Graph Image (No saved image)</strong> and is disabled.</li>
       <li><strong>Share Graph Data (.json)</strong> — share graph parameters and formulas as JSON.</li>
       <li><strong>Copy All Formulas</strong> — copy all series formulas to clipboard.</li>
       <li><strong>Edit Comment</strong> — add or edit the graph comment.</li>
@@ -733,7 +737,7 @@
   <summary><span class="summary-title">Language</span></summary>
   <div>
     <p>Opens a dialog to choose the app language.</p>
-    <p><strong>Options (radio):</strong> <strong>English</strong>, <strong>Russian</strong>, <strong>Ukrainian</strong>. Tap one to select and close the dialog.</p>
+    <p><strong>Options (radio):</strong> <strong>English</strong>, <strong>Russian</strong>, <strong>Ukrainian</strong>, <strong>German</strong>, <strong>Spanish</strong>, <strong>French</strong>, <strong>Hungarian</strong>, <strong>Portuguese (Brazil)</strong>, <strong>Hindi</strong>, <strong>Japanese</strong>. Tap one to select and close the dialog.</p>
   </div>
 </details>
 <details>
@@ -741,6 +745,13 @@
   <div>
     <p>Opens a dialog to choose the app theme.</p>
     <p><strong>Options (radio):</strong> <strong>Beach Pebbles (Light)</strong>, <strong>Starry Night (Dark)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">App icon</span></summary>
+  <div>
+    <p>Opens a dialog to choose the launcher icon.</p>
+    <p><strong>Options (radio):</strong> <strong>Light</strong>, <strong>Dark</strong>, <strong>Auto (Follow theme)</strong>.</p>
   </div>
 </details>
 <details>
@@ -758,8 +769,9 @@
     <p>Opens the <strong>View Options</strong> dialog.</p>
     <p><strong>Checkboxes:</strong></p>
     <ul>
-      <li><strong>Syntax highlighting</strong> — colors in expression (digits, functions, operators).</li>
-      <li><strong>Show settings panel on screen</strong> — show settings info on the calculator screen.</li>
+      <li><strong>Text highlighting</strong> — colors in expression (digits, functions, operators).</li>
+      <li><strong>Show settings panel</strong> — show settings info on the calculator screen.</li>
+      <li><strong>UI tips</strong> — short on-screen hints. Turn this off to hide them.</li>
     </ul>
     <p><strong>Digit separators</strong> (segment buttons): <strong>None</strong>, <strong>Space</strong>, <strong>Apostrophe</strong>. One selected.</p>
     <p><strong>Uppercase root degree</strong> (segment): <strong>Upper</strong> (superscript), <strong>Classic</strong>. One selected.</p>
@@ -773,13 +785,14 @@
     <p><strong>Checkboxes:</strong> <strong>On start (Screen)</strong>, <strong>Silver gradient (Text)</strong>, <strong>Char-by-char appearance/disappearance (Text)</strong>, <strong>Expression fade in/out (Screen)</strong>, <strong>Result fade in/out (Screen)</strong>.</p>
     <p><strong>Pressing buttons</strong> (segment): <strong>Press</strong>, <strong>Light</strong>, <strong>Mix</strong>. One selected.</p>
     <p><strong>Switching buttons &amp; screens</strong> (segment): <strong>Fade</strong>, <strong>Slide</strong>. One selected.</p>
-    <p><strong>Overlays appearance</strong> (segment): <strong>None</strong>, <strong>Sl+F</strong> (Slide+Fade), <strong>Sc+F</strong> (Scale+Fade), <strong>Mix</strong> (Slide+Scale+Fade). One selected.</p>
+    <p><strong>Overlays appearance</strong> (segment): <strong>None</strong>, <strong>Slide</strong>, <strong>Scale</strong>, <strong>Mix</strong>. One selected.</p>
   </div>
 </details>
 <details>
   <summary><span class="summary-title">Vibration</span></summary>
   <div>
     <p>Opens the <strong>Vibration Duration</strong> dialog. Sets haptic duration in ms for button taps; <strong>0</strong> disables vibration.</p>
+    <p><strong>Checkbox:</strong> <strong>Double</strong> — vibrate on both press and release.</p>
     <p><strong>Options (radio):</strong> <strong>0 ms</strong>, <strong>15 ms</strong>, <strong>20 ms</strong>, <strong>25 ms</strong>, <strong>30 ms</strong>, <strong>35 ms</strong>, <strong>40 ms</strong>, <strong>45 ms</strong>, <strong>50 ms</strong>. Tap one to select and close.</p>
   </div>
 </details>

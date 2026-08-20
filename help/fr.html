@@ -49,6 +49,9 @@
           <a href="es.html">Español</a>
           <a href="fr.html" aria-current="page">Français</a>
           <a href="hu.html">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html">日本語</a>
       </nav>
       <article class="help-document theme-dark">
 <!-- ========== PANNEAU NUMÉRIQUE ========== -->
@@ -331,8 +334,8 @@
     <p><strong>Niveau catégorie (ex. TEMPS, LONGUEUR) :</strong></p>
     <ul>
       <li><strong>En-tête :</strong> Nom de la catégorie ; <strong>←</strong> — retour à la liste ; <strong>×</strong> — fermer l'overlay.</li>
-      <li><strong>Champs :</strong> <strong>Entrée</strong> — valeur dans l'unité DE ; <strong>Résultat</strong> — valeur dans l'unité VERS. Ligne d'aide : « symbole_de → symbole_vers ».</li>
-      <li><strong>Ligne de boutons :</strong> <strong>DE</strong> (unité source) — appuyer pour ouvrir le sélecteur ; <strong>VERS</strong> (unité cible) — idem ; <strong>&lt;&gt;</strong> — échanger ; <strong>Ajouter</strong> — insérer le résultat dans l'expression ; <strong>←</strong> — retour.</li>
+      <li><strong>Champs :</strong> <strong>Entrée</strong> — valeur dans <strong>UNITÉ SOURCE</strong> ; <strong>Résultat</strong> — valeur dans <strong>UNITÉ CIBLE</strong>. Ligne d'aide : « symbole_de → symbole_vers ».</li>
+      <li><strong>Ligne de boutons :</strong> <strong>UNITÉ SOURCE</strong> (unité source) — appuyer pour ouvrir le sélecteur ; <strong>UNITÉ CIBLE</strong> (unité cible) — idem ; <strong>&lt;&gt;</strong> — échanger UNITÉ SOURCE et UNITÉ CIBLE ; <strong>Ajouter</strong> — insérer le résultat dans l'expression ; <strong>←</strong> — retour.</li>
       <li><strong>Clavier :</strong> Chiffres <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong> ; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong> ; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> pour éditer Entrée.</li>
       <li><strong>Catégorie DONNÉES :</strong> L'en-tête affiche aussi un sélecteur <strong>SI</strong>/<strong>IEC</strong>. <strong>SI</strong> utilise les unités décimales (<strong>kB, MB, GB, TB</strong> = puissances de 1000) ; <strong>IEC</strong> utilise les unités binaires (<strong>KiB, MiB, GiB, TiB</strong> = puissances de 1024).</li>
     </ul>
@@ -615,7 +618,7 @@
       <li><strong>Utiliser le résultat</strong> — écrire le résultat numérique dans l'opérande active (pour des calculs en chaîne).</li>
     </ul>
     <p><strong>Clavier :</strong> <strong>←</strong> retour arrière, <strong>−</strong> moins (autorisé dans Jours ou date), <strong>:</strong> et <strong>.</strong> pour heure/décimales, <strong>C</strong> tout effacer, chiffres <strong>0–9</strong>. La saisie va dans le champ actif de l'opérande active (Durée : jours, heures, min, s, ms ; Date-heure : date puis heure).</p>
-    <p><strong>Opérations :</strong> Durée ± Durée ; Date-heure + Durée ou Date-heure − Durée ; Date-heure − Date-heure donne une durée. DT + DT non autorisé. Sur l'écran Temps complet, les opérandes A et B sont affichées avec des champs (Jours, Heures, Min, s, ms ou Date, Heure), opération <strong>+</strong>/<strong>−</strong>, et <strong>Échanger</strong> pour échanger A et B.</p>
+    <p><strong>Opérations :</strong> Durée ± Durée ; Date-heure + Durée ou Date-heure − Durée ; Date-heure − Date-heure donne une durée. DT + DT non autorisé. Sur l'écran Temps complet, les opérandes A et B sont affichées avec des champs (Jours, Heures, Min, s, ms ou Date, Heure), opération <strong>+</strong>/<strong>−</strong>, et <strong>&lt;&gt;</strong> pour échanger A et B.</p>
   </div>
 </details>
 <details>
@@ -674,6 +677,7 @@
   <summary><span class="summary-title">Menu (☰)</span></summary>
   <div><p>Appuyer pour ouvrir :</p>
     <ul>
+      <li><strong>Panneau d'extensions</strong> — basculer vers le panneau d'extensions (clavier).</li>
       <li><strong>Historique</strong> — ouvrir l'écran Historique (expressions et graphiques).</li>
       <li><strong>Paramètres</strong> — ouvrir l'écran Paramètres.</li>
       <li><strong>Noter</strong> — noter l'app (boutique).</li>
@@ -711,7 +715,7 @@
   <div><p>Appui long sur une carte de graphique :</p>
     <ul>
       <li><strong>Insérer le graphique</strong> — restaurer ce graphique (formules, plages) dans l'écran Graphique et revenir.</li>
-      <li><strong>Partager l'image du graphique (.png)</strong> — partager l'image du graphique enregistrée. L'étiquette peut afficher « Aucune image enregistrée » si le graphique n'a pas été enregistré avec une image.</li>
+      <li><strong>Partager l'image (.png)</strong> — partager l'image du graphique enregistrée. Si aucune image n'est enregistrée, l'élément de menu affiche <strong>Partager l'image (sans image)</strong> et est désactivé.</li>
       <li><strong>Partager les données du graphique (.json)</strong> — partager les paramètres et formules du graphique en JSON.</li>
       <li><strong>Copier toutes les formules</strong> — copier toutes les formules des séries dans le presse-papiers.</li>
       <li><strong>Modifier le commentaire</strong> — ajouter ou éditer le commentaire du graphique.</li>
@@ -733,7 +737,7 @@
   <summary><span class="summary-title">Langue</span></summary>
   <div>
     <p>Ouvre une boîte de dialogue pour choisir la langue de l'application.</p>
-    <p><strong>Options (boutons radio) :</strong> <strong>English</strong>, <strong>Русский</strong>, <strong>Українська</strong>, <strong>Deutsch</strong>, <strong>Español</strong>, <strong>Français</strong>, <strong>Magyar</strong>. Appuyer sur une option pour sélectionner et fermer.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>English</strong>, <strong>Русский</strong>, <strong>Українська</strong>, <strong>Deutsch</strong>, <strong>Español</strong>, <strong>Français</strong>, <strong>Magyar</strong>, <strong>Portugais (Brésil)</strong>, <strong>Hindi</strong>, <strong>Japonais</strong>. Appuyer sur une option pour sélectionner et fermer.</p>
   </div>
 </details>
 <details>
@@ -741,6 +745,13 @@
   <div>
     <p>Ouvre une boîte de dialogue pour choisir le thème de l'application.</p>
     <p><strong>Options (boutons radio) :</strong> <strong>Beach Pebbles (Clair)</strong>, <strong>Starry Night (Sombre)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Icône de l'app</span></summary>
+  <div>
+    <p>Ouvre une boîte de dialogue pour choisir l'icône de l'application dans le lanceur.</p>
+    <p><strong>Options (boutons radio) :</strong> <strong>Clair</strong>, <strong>Sombre</strong>, <strong>Auto (Suivre le thème)</strong>.</p>
   </div>
 </details>
 <details>
@@ -758,8 +769,9 @@
     <p>Ouvre la boîte de dialogue <strong>Options d'affichage</strong>.</p>
     <p><strong>Cases à cocher :</strong></p>
     <ul>
-      <li><strong>Coloration syntaxique</strong> — couleurs dans l'expression (chiffres, fonctions, opérateurs).</li>
-      <li><strong>Afficher le panneau des paramètres à l'écran</strong> — afficher les infos des paramètres sur l'écran de la calculatrice.</li>
+      <li><strong>Surlignage du texte</strong> — couleurs dans l'expression (chiffres, fonctions, opérateurs).</li>
+      <li><strong>Afficher le panneau des paramètres</strong> — afficher les infos des paramètres sur l'écran de la calculatrice.</li>
+      <li><strong>Astuces UI</strong> — courtes astuces à l'écran. Peuvent être désactivées ici.</li>
     </ul>
     <p><strong>Séparateurs de chiffres</strong> (boutons) : <strong>Aucun</strong>, <strong>Espace</strong>, <strong>Apostrophe</strong>. Un sélectionné.</p>
     <p><strong>Degré de racine en majuscule</strong> (segment) : <strong>Supérieur</strong> (exposant), <strong>Classique</strong>. Un sélectionné.</p>
@@ -773,13 +785,14 @@
     <p><strong>Cases à cocher :</strong> <strong>Au démarrage (écran)</strong>, <strong>Dégradé argenté (texte)</strong>, <strong>Apparition/disparition caractère par caractère (texte)</strong>, <strong>Fondu expression (écran)</strong>, <strong>Fondu résultat (écran)</strong>.</p>
     <p><strong>Appui sur les boutons</strong> (segment) : <strong>Appui</strong>, <strong>Léger</strong>, <strong>Mixte</strong>. Un sélectionné.</p>
     <p><strong>Changement de boutons et d'écrans</strong> (segment) : <strong>Fondu</strong>, <strong>Glissement</strong>. Un sélectionné.</p>
-    <p><strong>Apparition des overlays</strong> (segment) : <strong>Aucun</strong>, <strong>Gl+F</strong> (Glissement+Fondu), <strong>Ec+F</strong> (Échelle+Fondu), <strong>Mixte</strong> (Glissement+Échelle+Fondu). Un sélectionné.</p>
+    <p><strong>Apparition des superpositions</strong> (segment) : <strong>Aucun</strong>, <strong>Glisser</strong>, <strong>Échelle</strong>, <strong>Mix</strong>. Un sélectionné.</p>
   </div>
 </details>
 <details>
   <summary><span class="summary-title">Vibration</span></summary>
   <div>
     <p>Ouvre la boîte de dialogue <strong>Durée de vibration</strong>. Définit la durée haptique en ms pour les appuis ; <strong>0</strong> désactive la vibration.</p>
+    <p><strong>Case à cocher :</strong> <strong>Double</strong> — vibrer à l'appui et au relâchement.</p>
     <p><strong>Options (boutons radio) :</strong> <strong>0 ms</strong>, <strong>15 ms</strong>, <strong>20 ms</strong>, <strong>25 ms</strong>, <strong>30 ms</strong>, <strong>35 ms</strong>, <strong>40 ms</strong>, <strong>45 ms</strong>, <strong>50 ms</strong>. Appuyer sur une option pour sélectionner et fermer.</p>
   </div>
 </details>

@@ -49,6 +49,9 @@
           <a href="es.html" aria-current="page">Español</a>
           <a href="fr.html">Français</a>
           <a href="hu.html">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html">日本語</a>
       </nav>
       <article class="help-document theme-dark">
 <!-- ========== PANEL NUMÉRICO ========== -->
@@ -331,8 +334,8 @@
     <p><strong>Nivel de categoría (ej. TIEMPO, LONGITUD):</strong></p>
     <ul>
       <li><strong>Encabezado:</strong> Nombre de categoría (ej. TIEMPO); <strong>←</strong> — volver a lista; <strong>×</strong> — cerrar.</li>
-      <li><strong>Campos:</strong> <strong>Entrada</strong> — valor en unidad ORIGEN; <strong>Resultado</strong> — valor en unidad DESTINO. La pista muestra «símbolo_de → símbolo_a».</li>
-      <li><strong>Fila de botones:</strong> <strong>DE</strong> (símbolo ORIGEN actual) — pulsar abre selección de unidad origen; <strong>A</strong> (símbolo DESTINO) — selección de unidad destino; <strong>&lt;&gt;</strong> — intercambiar DE y A; <strong>Añadir</strong> — insertar resultado en expresión; <strong>←</strong> — volver a lista de categorías.</li>
+      <li><strong>Campos:</strong> <strong>Entrada</strong> — valor en <strong>UNIDAD ORIGEN</strong>; <strong>Resultado</strong> — valor en <strong>UNIDAD DESTINO</strong>. La pista muestra «símbolo_de → símbolo_a».</li>
+      <li><strong>Fila de botones:</strong> <strong>UNIDAD ORIGEN</strong> (símbolo actual) — pulsar abre selección de unidad origen; <strong>UNIDAD DESTINO</strong> (símbolo) — selección de unidad destino; <strong>&lt;&gt;</strong> — intercambiar UNIDAD ORIGEN y UNIDAD DESTINO; <strong>Añadir</strong> — insertar resultado en expresión; <strong>←</strong> — volver a lista de categorías.</li>
       <li><strong>Teclado:</strong> Dígitos <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> para editar campo Entrada.</li>
       <li><strong>Categoría DATOS:</strong> En el encabezado también aparece un conmutador <strong>SI</strong>/<strong>IEC</strong>. <strong>SI</strong> usa unidades decimales (<strong>kB, MB, GB, TB</strong> = potencias de 1000); <strong>IEC</strong> usa unidades binarias (<strong>KiB, MiB, GiB, TiB</strong> = potencias de 1024).</li>
     </ul>
@@ -602,7 +605,7 @@
     <p><strong>Encabezado:</strong> <strong>Copiar</strong> — copiar resultado legible; <strong>→Expr</strong> — insertar resultado numérico (ej. duración en unidad seleccionada o marca de tiempo en ms) en expresión; <strong>×</strong> — cerrar.</p>
     <p><strong>Fila de operandos (arriba):</strong></p>
     <ul>
-      <li><strong>A</strong> / <strong>B</strong> — alternar operando activo (edición y destino «Usar result.»).</li>
+      <li><strong>A</strong> / <strong>B</strong> — alternar operando activo (edición y destino «Usar resultado»).</li>
       <li><strong>Duración</strong> / <strong>FechaHora</strong> — tipo de operando activo: duración (d, h, m, s, ms) o fecha-hora.</li>
       <li><strong>Ahora</strong> — llenar operando activo con fecha y hora actuales (solo con FechaHora seleccionado).</li>
       <li><strong>CA</strong> / <strong>CB</strong> — limpiar operando A o B.</li>
@@ -612,7 +615,7 @@
     <ul>
       <li><strong>Abs</strong> — usar valor absoluto del resultado (para duración; ej. diferencia A−B).</li>
       <li><strong>Norm</strong> — normalizar duración en A y B (ej. 90 min → 1h 30m).</li>
-      <li><strong>Usar result.</strong> — escribir resultado numérico en operando activo (para cálculos encadenados).</li>
+      <li><strong>Usar resultado</strong> — escribir resultado numérico en operando activo (para cálculos encadenados).</li>
     </ul>
     <p><strong>Teclado:</strong> <strong>←</strong> borrar, <strong>−</strong> menos (permitido en días o fecha), <strong>:</strong> y <strong>.</strong> para tiempo/fracciones, <strong>C</strong> limpiar, dígitos <strong>0–9</strong>. Entrada va al campo activo del operando activo (Duración: Días, Horas, Min, Seg, ms; FechaHora: fecha, luego hora).</p>
     <p><strong>Operaciones:</strong> Duración ± Duración; FechaHora + Duración o FechaHora − Duración; FechaHora − FechaHora da duración. FechaHora + FechaHora no permitido. En pantalla completa TIEMPO (cuando TIEMPO se muestra en área superior) los operandos A y B se muestran con campos etiquetados (Días, Horas, Min, Seg, ms o Fecha, Hora), operación <strong>+</strong>/<strong>−</strong> y <strong>&lt;&gt;</strong> para intercambiar A y B.</p>
@@ -674,6 +677,7 @@
   <summary><span class="summary-title">Menú (☰)</span></summary>
   <div><p>Pulsar abre:</p>
     <ul>
+      <li><strong>Panel de extensiones</strong> — cambiar al panel de extensiones (teclado de la calculadora).</li>
       <li><strong>Historial</strong> — pantalla de historial (expresiones y gráficos).</li>
       <li><strong>Ajustes</strong> — pantalla de ajustes.</li>
       <li><strong>Valorar</strong> — valorar la app (tienda).</li>
@@ -711,7 +715,7 @@
   <div><p>Pulsación larga en tarjeta de gráfico:</p>
     <ul>
       <li><strong>Insertar gráfico</strong> — restaurar este gráfico (fórmulas, rangos) en pantalla de gráfico y volver.</li>
-      <li><strong>Compartir imagen del gráfico</strong> — enviar imagen guardada del gráfico. Puede mostrar «sin imagen guardada» si el gráfico se guardó sin imagen.</li>
+      <li><strong>Compartir imagen (.png)</strong> — enviar imagen guardada del gráfico. Si no hay imagen guardada, el elemento de menú muestra <strong>Compartir imagen (sin imagen)</strong> y está desactivado.</li>
       <li><strong>Compartir datos del gráfico</strong> — enviar parámetros y fórmulas del gráfico en formato JSON.</li>
       <li><strong>Copiar todas las fórmulas</strong> — copiar todas las fórmulas de series al portapapeles.</li>
       <li><strong>Editar comentario</strong> — añadir o cambiar comentario del gráfico.</li>
@@ -733,7 +737,7 @@
   <summary><span class="summary-title">Idioma</span></summary>
   <div>
     <p>Abre diálogo de selección de idioma de la app.</p>
-    <p><strong>Opciones (selector):</strong> <strong>Inglés</strong>, <strong>Ruso</strong>, <strong>Ucraniano</strong>, <strong>Alemán</strong>, <strong>Español</strong>, <strong>Francés</strong>, <strong>Magyar</strong>. Pulsar selecciona y cierra diálogo.</p>
+    <p><strong>Opciones (selector):</strong> <strong>Inglés</strong>, <strong>Ruso</strong>, <strong>Ucraniano</strong>, <strong>Alemán</strong>, <strong>Español</strong>, <strong>Francés</strong>, <strong>Húngaro</strong>, <strong>Portugués (Brasil)</strong>, <strong>Hindi</strong>, <strong>Japonés</strong>. Pulsar selecciona y cierra diálogo.</p>
   </div>
 </details>
 <details>
@@ -741,6 +745,13 @@
   <div>
     <p>Abre diálogo de selección de tema de la app.</p>
     <p><strong>Opciones (selector):</strong> <strong>Beach Pebbles (Claro)</strong>, <strong>Starry Night (Oscuro)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Icono de la app</span></summary>
+  <div>
+    <p>Abre diálogo para elegir el icono de la app en el lanzador.</p>
+    <p><strong>Opciones (selector):</strong> <strong>Claro</strong>, <strong>Oscuro</strong>, <strong>Auto (Seguir tema)</strong>.</p>
   </div>
 </details>
 <details>
@@ -758,8 +769,9 @@
     <p>Abre diálogo <strong>Opciones de vista</strong>.</p>
     <p><strong>Casillas:</strong></p>
     <ul>
-      <li><strong>Resaltado de sintaxis</strong> — resaltado en expresión (dígitos, funciones, operadores).</li>
+      <li><strong>Resaltado de texto</strong> — resaltado en expresión (dígitos, funciones, operadores).</li>
       <li><strong>Mostrar panel de ajustes</strong> — mostrar panel de ajustes en pantalla de calculadora.</li>
+      <li><strong>Consejos UI</strong> — sugerencias cortas en pantalla. Se pueden desactivar aquí.</li>
     </ul>
     <p><strong>Separadores de dígitos</strong> (botones segmentados): <strong>Ninguno</strong>, <strong>Espacio</strong>, <strong>Apóstrofo</strong>. Se selecciona uno.</p>
     <p><strong>Formato grado raíz</strong> (segmento): <strong>Sup.</strong>, <strong>Clásico</strong>. Se selecciona uno.</p>
@@ -773,13 +785,14 @@
     <p><strong>Casillas:</strong> <strong>Al iniciar (Pantalla)</strong>, <strong>Gradiente plateado (Texto)</strong>, <strong>Aparición/desaparición por carácter (Texto)</strong>, <strong>Desvanecimiento de expresión (Pantalla)</strong>, <strong>Desvanecimiento de resultado (Pantalla)</strong>.</p>
     <p><strong>Pulsación de botones</strong> (segmento): <strong>Presionar</strong>, <strong>Luz</strong>, <strong>Mezcla</strong>. Se selecciona uno.</p>
     <p><strong>Cambio de botones/pantallas</strong> (segmento): <strong>Desvanecer</strong>, <strong>Deslizar</strong>. Se selecciona uno.</p>
-    <p><strong>Aparición de overlays</strong> (segmento): <strong>Ninguno</strong>, <strong>Deslizar</strong>, <strong>Escalar</strong>, <strong>Mezcla</strong>. Se selecciona uno.</p>
+    <p><strong>Aparición de superposiciones</strong> (segmento): <strong>Ninguno</strong>, <strong>Deslizar</strong>, <strong>Escalar</strong>, <strong>Mezcla</strong>. Se selecciona uno.</p>
   </div>
 </details>
 <details>
   <summary><span class="summary-title">Vibración</span></summary>
   <div>
     <p>Abre diálogo <strong>Duración de vibración</strong>. Establece duración de retroalimentación táctil en ms al pulsar botones; <strong>0</strong> desactiva vibración.</p>
+    <p><strong>Casilla:</strong> <strong>Doble</strong> — vibrar al pulsar y al soltar.</p>
     <p><strong>Opciones (selector):</strong> <strong>0 ms</strong>, <strong>15 ms</strong>, <strong>20 ms</strong>, <strong>25 ms</strong>, <strong>30 ms</strong>, <strong>35 ms</strong>, <strong>40 ms</strong>, <strong>45 ms</strong>, <strong>50 ms</strong>. Pulsar selecciona y cierra.</p>
   </div>
 </details>

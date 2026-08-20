@@ -49,6 +49,9 @@
           <a href="es.html">Español</a>
           <a href="fr.html">Français</a>
           <a href="hu.html" aria-current="page">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html">日本語</a>
       </nav>
       <article class="help-document theme-dark">
 <!-- ========== SZÁM PANEL ========== -->
@@ -331,8 +334,8 @@
     <p><strong>Kategória szint (pl. IDŐ, HOSSZ):</strong></p>
     <ul>
       <li><strong>Fejléc:</strong> Kategória neve (pl. IDŐ); <strong>←</strong> — vissza a kategórialistához; <strong>×</strong> — overlay bezárása.</li>
-      <li><strong>Mezők:</strong> <strong>Bemenet</strong> — érték a forrás egységben; <strong>Eredmény</strong> — érték a CÉL egységben. A hint sor: „forrás_szimbólum → cél_szimbólum”.</li>
-      <li><strong>Gombsor:</strong> <strong>FORRÁS</strong> (aktuális forrás egység szimbólum) — érintés: egységválasztó megnyitása; <strong>CÉL</strong> (cél egység szimbólum) — érintés: cél választó; <strong>&lt;&gt;</strong> — forrás és cél cseréje; <strong>Hozzáad</strong> — eredmény beillesztése a kifejezésbe; <strong>←</strong> — vissza a kategórialistához.</li>
+      <li><strong>Mezők:</strong> <strong>Bemenet</strong> — érték a <strong>FORRÁS EGYSÉG</strong>-ben; <strong>Eredmény</strong> — érték a <strong>CÉL EGYSÉG</strong>-ben. A hint sor: „forrás_szimbólum → cél_szimbólum”.</li>
+      <li><strong>Gombsor:</strong> <strong>FORRÁS EGYSÉG</strong> (aktuális egység szimbólum) — érintés: egységválasztó megnyitása; <strong>CÉL EGYSÉG</strong> (egység szimbólum) — érintés: cél választó; <strong>&lt;&gt;</strong> — FORRÁS EGYSÉG és CÉL EGYSÉG cseréje; <strong>Hozzáad</strong> — eredmény beillesztése a kifejezésbe; <strong>←</strong> — vissza a kategórialistához.</li>
       <li><strong>Billentyűzet:</strong> Számjegyek <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> a bemenet szerkesztéséhez.</li>
       <li><strong>ADAT kategória:</strong> A fejlécben egy <strong>SI</strong>/<strong>IEC</strong> kapcsoló is megjelenik. Az <strong>SI</strong> decimális egységeket használ (<strong>kB, MB, GB, TB</strong> = 1000 hatványai); az <strong>IEC</strong> bináris egységeket használ (<strong>KiB, MiB, GiB, TiB</strong> = 1024 hatványai).</li>
     </ul>
@@ -615,7 +618,7 @@
       <li><strong>Er. haszn.</strong> — numerikus eredmény beírása az aktív operandusba (láncolt számításokhoz).</li>
     </ul>
     <p><strong>Billentyűzet:</strong> <strong>←</strong> visszatörlés, <strong>−</strong> mínusz (megengedett Napokban vagy dátumban), <strong>:</strong> és <strong>.</strong> idő/tizedeshez, <strong>C</strong> minden törlése, számjegyek <strong>0–9</strong>. A bemenet az aktív operandus aktív mezőjébe kerül (Időtartam: nap, óra, perc, mp, ms; DátumIdő: dátum, majd idő).</p>
-    <p><strong>Műveletek:</strong> Időtartam ± Időtartam; DátumIdő + Időtartam vagy DátumIdő − Időtartam; DátumIdő − DátumIdő időtartamot ad. DT + DT nem megengedett. A teljes Idő képernyőn (amikor IDŐ látható felül) A és B operandusok feliratos mezőkkel (Nap, Óra, Perc, Mp, ms vagy Dátum, Idő), <strong>+</strong>/<strong>−</strong> művelet és <strong>Csere</strong> A és B cseréjéhez.</p>
+    <p><strong>Műveletek:</strong> Időtartam ± Időtartam; DátumIdő + Időtartam vagy DátumIdő − Időtartam; DátumIdő − DátumIdő időtartamot ad. DT + DT nem megengedett. A teljes Idő képernyőn (amikor IDŐ látható felül) A és B operandusok feliratos mezőkkel (Nap, Óra, Perc, Mp, ms vagy Dátum, Idő), <strong>+</strong>/<strong>−</strong> művelet és <strong>&lt;&gt;</strong> A és B cseréjéhez.</p>
   </div>
 </details>
 <details>
@@ -644,17 +647,17 @@
   <div><p>Érintse meg a szám alap kiválasztásához a bemenetnek és eredménynek: <strong>DEC</strong> decimális, <strong>HEX</strong> hexadecimális, <strong>OCT</strong> oktális, <strong>BIN</strong> bináris.</p></div>
 </details>
 <details>
-  <summary><span class="summary-title">Cím (CalcIUM / RECENTS)</span></summary>
+  <summary><span class="summary-title">Cím (CalcIUM / LEGUTÓBBIAK)</span></summary>
   <div>
     <p>Ha nincs overlay nyitva: az alkalmazás <strong>CalcIUM</strong> címét mutatja. Ha az állapot visszaáll, egy fogaskerék ikon röviden megjelenhet.</p>
-    <p>Ha egy Kiterjesztések panel overlay nyitva van: a cím <strong>RECENTS</strong>-re vált és kattinthatóvá válik. Érintse meg a <strong>RECENTS</strong> overlay megnyitásához (a nemrég használt overlayek listája).</p>
+    <p>Ha egy Kiterjesztések panel overlay nyitva van: a cím <strong>LEGUTÓBBIAK</strong>-ra vált és kattinthatóvá válik. Érintse meg a <strong>LEGUTÓBBIAK</strong> overlay megnyitásához (a nemrég használt overlayek listája).</p>
   </div>
 </details>
 <details>
-  <summary><span class="summary-title">RECENTS (nem régiek)</span></summary>
+  <summary><span class="summary-title">LEGUTÓBBIAK</span></summary>
   <div>
-    <p>A megnyitás: érintse meg az állapotsor címét, amikor <strong>RECENTS</strong>-et mutat (ha egy Kiterjesztések panel overlay aktív). A nemrég használt overlayeket kártyákként mutatja; érintse meg a kártyát az overlay megnyitásához. Minden kártya az overlay nevét és a használat óta eltelt időt mutatja.</p>
-    <p><strong>Fejléc:</strong> <strong>RECENTS</strong> cím; <strong>×</strong> — bezárás.</p>
+    <p>A megnyitás: érintse meg az állapotsor címét, amikor <strong>LEGUTÓBBIAK</strong>-at mutat (ha egy Kiterjesztések panel overlay aktív). A nemrég használt overlayeket kártyákként mutatja; érintse meg a kártyát az overlay megnyitásához. Minden kártya az overlay nevét és a használat óta eltelt időt mutatja.</p>
+    <p><strong>Fejléc:</strong> <strong>LEGUTÓBBIAK</strong> cím; <strong>×</strong> — bezárás.</p>
     <p><strong>Fülek:</strong></p>
     <ul>
       <li><strong>MIND</strong> — minden nemrég használt overlay.</li>
@@ -674,6 +677,7 @@
   <summary><span class="summary-title">Menü (☰)</span></summary>
   <div><p>Érintse meg a megnyitáshoz:</p>
     <ul>
+      <li><strong>Kiterjesztések panel</strong> — váltás a kiterjesztések panelre (számológép-billentyűzet).</li>
       <li><strong>Előzmények</strong> — Előzmények képernyő megnyitása (kifejezések és grafikonok).</li>
       <li><strong>Beállítások</strong> — Beállítások képernyő megnyitása.</li>
       <li><strong>Értékelés</strong> — alkalmazás értékelése (áruház).</li>
@@ -711,7 +715,7 @@
   <div><p>Hosszú nyomás egy grafikon kártyán:</p>
     <ul>
       <li><strong>Grafikon beillesztése</strong> — a grafikon visszaállítása (formulák, tartományok) a Grafikon képernyőre és visszalépés.</li>
-      <li><strong>Grafikon kép megosztása (.png)</strong> — mentett grafikon kép megosztása. „Nincs mentett kép” jelenhet meg, ha a grafikon nincs képpel mentve.</li>
+      <li><strong>Grafikon kép megosztása (.png)</strong> — mentett grafikon kép megosztása. Ha nincs mentett kép, a menüpont <strong>Grafikon kép megosztása (nincs mentett kép)</strong> feliratot mutat, és le van tiltva.</li>
       <li><strong>Grafikon adat megosztása (.json)</strong> — grafikon paraméterek és képletek megosztása JSON-ként.</li>
       <li><strong>Összes képlet másolása</strong> — minden sorozat képlet másolása a vágólapra.</li>
       <li><strong>Megjegyzés szerkesztése</strong> — grafikon megjegyzés hozzáadása vagy szerkesztése.</li>
@@ -733,7 +737,7 @@
   <summary><span class="summary-title">Nyelv</span></summary>
   <div>
     <p>Párbeszédablak az alkalmazás nyelvének kiválasztásához.</p>
-    <p><strong>Opciók (rádiógombok):</strong> <strong>English</strong>, <strong>Русский</strong>, <strong>Українська</strong>, <strong>Deutsch</strong>, <strong>Español</strong>, <strong>Français</strong>, <strong>Magyar</strong>. Érintse meg egyet a kiválasztáshoz és a bezáráshoz.</p>
+    <p><strong>Opciók (rádiógombok):</strong> <strong>English</strong>, <strong>Русский</strong>, <strong>Українська</strong>, <strong>Deutsch</strong>, <strong>Español</strong>, <strong>Français</strong>, <strong>Magyar</strong>, <strong>Portugál (Brazília)</strong>, <strong>Hindi</strong>, <strong>Japán</strong>. Érintse meg egyet a kiválasztáshoz és a bezáráshoz.</p>
   </div>
 </details>
 <details>
@@ -741,6 +745,13 @@
   <div>
     <p>Párbeszédablak az alkalmazás téma kiválasztásához.</p>
     <p><strong>Opciók (rádió):</strong> <strong>Tengeri kavicsok (Világos)</strong>, <strong>Csillagos éj (Sötét)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Alkalmazás ikon</span></summary>
+  <div>
+    <p>Párbeszédablak az indítóikon kiválasztásához.</p>
+    <p><strong>Opciók (rádió):</strong> <strong>Világos</strong>, <strong>Sötét</strong>, <strong>Auto (Témát követi)</strong>.</p>
   </div>
 </details>
 <details>
@@ -753,13 +764,14 @@
   </div>
 </details>
 <details>
-  <summary><span class="summary-title">Megjelenítési opciók</span></summary>
+  <summary><span class="summary-title">Megjelenítés beállításai</span></summary>
   <div>
-    <p>Megnyitja a <strong>Megjelenítési opciók</strong> párbeszédablakot.</p>
+    <p>Megnyitja a <strong>Megjelenítés beállításai</strong> párbeszédablakot.</p>
     <p><strong>Jelölőnégyzetek:</strong></p>
     <ul>
-      <li><strong>Szintaxis kiemelés</strong> — színek a kifejezésben (számjegyek, függvények, operátorok).</li>
-      <li><strong>Beállítási panel mutatása a képernyőn</strong> — beállítási infó a számológép képernyőjén.</li>
+      <li><strong>Szöveg kiemelése</strong> — színek a kifejezésben (számjegyek, függvények, operátorok).</li>
+      <li><strong>Beállítási panel mutatása</strong> — beállítási infó a számológép képernyőjén.</li>
+      <li><strong>UI tippek</strong> — rövid képernyőtippek. Itt kapcsolhatók ki.</li>
     </ul>
     <p><strong>Számjegyelválasztók</strong> (szegmens gombok): <strong>Nincs</strong>, <strong>Szóköz</strong>, <strong>Aposztróf</strong>. Egy kiválasztva.</p>
     <p><strong>Gyök fok nagybetű</strong> (szegmens): <strong>Felső</strong> (felső index), <strong>Klasszikus</strong>. Egy kiválasztva.</p>
@@ -773,13 +785,14 @@
     <p><strong>Jelölőnégyzetek:</strong> <strong>Indításkor (Képernyő)</strong>, <strong>Ezüst átmenet (Szöveg)</strong>, <strong>Karakterenkénti megjelenés/eltűnés (Szöveg)</strong>, <strong>Kifejezés elhalványulás (Képernyő)</strong>, <strong>Eredmény elhalványulás (Képernyő)</strong>.</p>
     <p><strong>Gombnyomás</strong> (szegmens): <strong>Nyomás</strong>, <strong>Világos</strong>, <strong>Mix</strong>. Egy kiválasztva.</p>
     <p><strong>Gombok és képernyők váltása</strong> (szegmens): <strong>Elhalványulás</strong>, <strong>Csúszt.</strong> Egy kiválasztva.</p>
-    <p><strong>Overlay megjelenés</strong> (szegmens): <strong>Nincs</strong>, <strong>Csúszt.+F</strong> (Csúsztatás+Elhalványulás), <strong>Mér.+F</strong> (Méretezés+Elhalványulás), <strong>Mix</strong> (Csúszt.+Mér.+F). Egy kiválasztva.</p>
+    <p><strong>Átfedések megjelenése</strong> (szegmens): <strong>Nincs</strong>, <strong>Csúszt.</strong>, <strong>Méret.</strong>, <strong>Mix</strong>. Egy kiválasztva.</p>
   </div>
 </details>
 <details>
   <summary><span class="summary-title">Rezgés</span></summary>
   <div>
     <p>Megnyitja a <strong>Rezgés időtartam</strong> párbeszédablakot. Haptikus időtartam ms-ban a gombnyomáshoz; <strong>0</strong> kikapcsolja a rezgést.</p>
+    <p><strong>Jelölőnégyzet:</strong> <strong>Dupla</strong> — rezgés lenyomáskor és felengedéskor.</p>
     <p><strong>Opciók (rádió):</strong> <strong>0 ms</strong>, <strong>15 ms</strong>, <strong>20 ms</strong>, <strong>25 ms</strong>, <strong>30 ms</strong>, <strong>35 ms</strong>, <strong>40 ms</strong>, <strong>45 ms</strong>, <strong>50 ms</strong>. Érintse meg egyet a kiválasztáshoz és bezáráshoz.</p>
   </div>
 </details>

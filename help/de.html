@@ -49,6 +49,9 @@
           <a href="es.html">Español</a>
           <a href="fr.html">Français</a>
           <a href="hu.html">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html">日本語</a>
       </nav>
       <article class="help-document theme-dark">
 <!-- ========== ZAHLENFELD ========== -->
@@ -103,7 +106,7 @@
 </details>
 <details>
   <summary><span class="summary-title">/</span></summary>
-  <div><p><strong>Division.</strong> Fügt <code>/</code> ein. Formel: a/b.</p></div>
+  <div><p><strong>Teilen.</strong> Fügt <code>/</code> ein. Formel: a/b.</p></div>
 </details>
 <details>
   <summary><span class="summary-title">Fn/Erw</span></summary>
@@ -127,7 +130,7 @@
 </details>
 <details>
   <summary><span class="summary-title">−</span></summary>
-  <div><p><strong>Minus.</strong> Fügt <code>−</code> ein. Formel: a−b.</p></div>
+  <div><p><strong>Subtraktion.</strong> Fügt <code>−</code> ein. Formel: a−b.</p></div>
 </details>
 <details>
   <summary><span class="summary-title">√</span></summary>
@@ -143,7 +146,7 @@
 </details>
 <details>
   <summary><span class="summary-title">+</span></summary>
-  <div><p><strong>Plus.</strong> Fügt <code>+</code> ein. Formel: a+b.</p></div>
+  <div><p><strong>Addition.</strong> Fügt <code>+</code> ein. Formel: a+b.</p></div>
 </details>
 <details>
   <summary><span class="summary-title">=</span></summary>
@@ -314,7 +317,7 @@
       <li><strong>γ</strong> — Euler-Mascheroni-Konstante.</li>
       <li><strong>ln2, ln10</strong> — ln(2), ln(10).</li>
       <li><strong>c</strong> — Lichtgeschwindigkeit; <strong>h, ħ</strong> — Planck-Konstanten; <strong>kB</strong> — Boltzmann; <strong>R</strong> — Gaskonstante; <strong>NA</strong> — Avogadro; <strong>qe</strong> — Elementarladung.</li>
-      <li><strong>ε0, μ0</strong> — Dielektrische und magnetische Permeabilität des Vakuums; <strong>g0</strong> — Standardgravitation; <strong>G</strong> — Gravitationskonstante; <strong>σ</strong> — Stefan-Boltzmann.</li>
+      <li><strong>ε0, μ0</strong> — Permittivität und Permeabilität des Vakuums; <strong>g0</strong> — Standardgravitation; <strong>G</strong> — Gravitationskonstante; <strong>σ</strong> — Stefan-Boltzmann.</li>
       <li><strong>me, mp, mn</strong> — Masse von Elektron, Proton, Neutron.</li>
     </ul>
   </div>
@@ -331,8 +334,8 @@
     <p><strong>Kategorieebene (z.B. ZEIT, LÄNGE):</strong></p>
     <ul>
       <li><strong>Kopfzeile:</strong> Kategoriename (z.B. ZEIT); <strong>←</strong> — zurück zur Liste; <strong>×</strong> — schließen.</li>
-      <li><strong>Felder:</strong> <strong>Eingabe</strong> — Wert in QUELL-Einheit; <strong>Ergebnis</strong> — Wert in ZIEL-Einheit. Hinweis zeigt «symbol_von → symbol_zu».</li>
-      <li><strong>Tastenreihe:</strong> <strong>VON</strong> (aktuelles QUELL-Symbol) — Drücken öffnet Quelleinheit-Auswahl; <strong>ZU</strong> (ZIEL-Symbol) — Zieleinheit-Auswahl; <strong>&lt;&gt;</strong> — VON und ZU tauschen; <strong>Hinzu</strong> — Ergebnis in Ausdruck einfügen; <strong>←</strong> — zurück zur Kategorieliste.</li>
+      <li><strong>Felder:</strong> <strong>Eingabe</strong> — Wert in <strong>VON EINHEIT</strong>; <strong>Ergebnis</strong> — Wert in <strong>ZU EINHEIT</strong>. Hinweis zeigt «symbol_von → symbol_zu».</li>
+      <li><strong>Tastenreihe:</strong> <strong>VON EINHEIT</strong> (aktuelles Einheitensymbol) — Drücken öffnet Quelleinheit-Auswahl; <strong>ZU EINHEIT</strong> (Einheitensymbol) — Zieleinheit-Auswahl; <strong>&lt;&gt;</strong> — VON EINHEIT und ZU EINHEIT tauschen; <strong>Hinzu</strong> — Ergebnis in Ausdruck einfügen; <strong>←</strong> — zurück zur Kategorieliste.</li>
       <li><strong>Tastatur:</strong> Ziffern <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> zur Bearbeitung des Eingabefelds.</li>
       <li><strong>Kategorie DATEN:</strong> In der Kopfzeile gibt es zusätzlich einen <strong>SI</strong>/<strong>IEC</strong>-Schalter. <strong>SI</strong> verwendet dezimale Einheiten (<strong>kB, MB, GB, TB</strong> = Potenzen von 1000); <strong>IEC</strong> verwendet binäre Einheiten (<strong>KiB, MiB, GiB, TiB</strong> = Potenzen von 1024).</li>
     </ul>
@@ -674,6 +677,7 @@
   <summary><span class="summary-title">Menü (☰)</span></summary>
   <div><p>Drücken öffnet:</p>
     <ul>
+      <li><strong>Erweiterungspanel</strong> — zur Erweiterungspanel-Tastatur wechseln.</li>
       <li><strong>Verlauf</strong> — Verlaufsbildschirm (Ausdrücke und Graphen).</li>
       <li><strong>Einstellungen</strong> — Einstellungsbildschirm.</li>
       <li><strong>Bewerten</strong> — App bewerten (Store).</li>
@@ -711,7 +715,7 @@
   <div><p>Langes Drücken auf Graphkarte:</p>
     <ul>
       <li><strong>Graph einfügen</strong> — diesen Graph wiederherstellen (Formeln, Bereiche) auf Graph-Bildschirm und zurückkehren.</li>
-      <li><strong>Graphbild teilen</strong> — gespeichertes Graphbild teilen. Kann «kein Bild» anzeigen, wenn Graph ohne Bild gespeichert wurde.</li>
+      <li><strong>Graphbild teilen (.png)</strong> — gespeichertes Graphbild teilen. Wenn kein Bild gespeichert wurde, zeigt der Menüpunkt <strong>Graphbild teilen (kein Bild)</strong> und ist deaktiviert.</li>
       <li><strong>Graphdaten teilen</strong> — Graph-Parameter und Formeln als JSON teilen.</li>
       <li><strong>Alle Formeln kopieren</strong> — alle Serienformeln in Zwischenablage kopieren.</li>
       <li><strong>Kommentar bearbeiten</strong> — Graphkommentar hinzufügen oder ändern.</li>
@@ -733,7 +737,7 @@
   <summary><span class="summary-title">Sprache</span></summary>
   <div>
     <p>Öffnet Dialog zur Auswahl der App-Sprache.</p>
-    <p><strong>Optionen (Auswahl):</strong> <strong>Englisch</strong>, <strong>Russisch</strong>, <strong>Ukrainisch</strong>, <strong>Deutsch</strong>, <strong>Spanisch</strong>, <strong>Französisch</strong>, <strong>Ungarisch</strong>. Drücken wählt aus und schließt Dialog.</p>
+    <p><strong>Optionen (Auswahl):</strong> <strong>Englisch</strong>, <strong>Russisch</strong>, <strong>Ukrainisch</strong>, <strong>Deutsch</strong>, <strong>Spanisch</strong>, <strong>Französisch</strong>, <strong>Ungarisch</strong>, <strong>Portugiesisch (Brasilien)</strong>, <strong>Hindi</strong>, <strong>Japanisch</strong>. Drücken wählt aus und schließt Dialog.</p>
   </div>
 </details>
 <details>
@@ -741,6 +745,13 @@
   <div>
     <p>Öffnet Dialog zur Auswahl des App-Designs.</p>
     <p><strong>Optionen (Auswahl):</strong> <strong>Beach Pebbles (Hell)</strong>, <strong>Starry Night (Dunkel)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">App-Symbol</span></summary>
+  <div>
+    <p>Öffnet Dialog zur Auswahl des App-Symbols im Launcher.</p>
+    <p><strong>Optionen (Auswahl):</strong> <strong>Hell</strong>, <strong>Dunkel</strong>, <strong>Auto (Theme folgen)</strong>.</p>
   </div>
 </details>
 <details>
@@ -758,8 +769,9 @@
     <p>Öffnet <strong>Anzeigeoptionen</strong>-Dialog.</p>
     <p><strong>Checkboxen:</strong></p>
     <ul>
-      <li><strong>Hervorhebung</strong> — Syntaxhervorhebung im Ausdruck (Ziffern, Funktionen, Operatoren).</li>
+      <li><strong>Texthervorhebung</strong> — Syntaxhervorhebung im Ausdruck (Ziffern, Funktionen, Operatoren).</li>
       <li><strong>Einstellungsleiste anzeigen</strong> — Einstellungsleiste auf Rechnerbildschirm anzeigen.</li>
+      <li><strong>UI-Tipps</strong> — kurze Hinweise auf dem Rechnerbildschirm. Hier abschaltbar.</li>
     </ul>
     <p><strong>Zifferntrennzeichen</strong> (Segmenttasten): <strong>Keine</strong>, <strong>Leerzeichen</strong>, <strong>Apostroph</strong>. Eines auswählen.</p>
     <p><strong>Wurzelgrad-Schreibweise</strong> (Segment): <strong>Hochgestellt</strong>, <strong>Klassisch</strong>. Eines auswählen.</p>
@@ -780,6 +792,7 @@
   <summary><span class="summary-title">Vibration</span></summary>
   <div>
     <p>Öffnet <strong>Vibrationsdauer</strong>-Dialog. Legt Dauer der haptischen Rückmeldung in ms beim Tastendrücken fest; <strong>0</strong> deaktiviert Vibration.</p>
+    <p><strong>Checkbox:</strong> <strong>Doppelt</strong> — Vibration beim Drücken und beim Loslassen.</p>
     <p><strong>Optionen (Auswahl):</strong> <strong>0 ms</strong>, <strong>15 ms</strong>, <strong>20 ms</strong>, <strong>25 ms</strong>, <strong>30 ms</strong>, <strong>35 ms</strong>, <strong>40 ms</strong>, <strong>45 ms</strong>, <strong>50 ms</strong>. Drücken wählt aus und schließt.</p>
   </div>
 </details>

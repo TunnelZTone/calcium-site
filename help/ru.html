@@ -49,6 +49,9 @@
           <a href="es.html">Español</a>
           <a href="fr.html">Français</a>
           <a href="hu.html">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html">日本語</a>
       </nav>
       <article class="help-document theme-dark">
 <!-- ========== NUMERIC PANEL ========== -->
@@ -176,10 +179,10 @@
       <li><strong>←</strong> — сдвиг курсора влево на один символ.</li>
       <li><strong>↑</strong> — переход на строку выше (при многострочном вводе).</li>
       <li><strong>→</strong> — сдвиг курсора вправо на один символ.</li>
-      <li><strong>Конец (END)</strong> — в конец выражения.</li>
+      <li><strong>КОН.</strong> — в конец выражения.</li>
       <li><strong>↓</strong> — на строку ниже.</li>
-      <li><strong>Нач (BEG)</strong> — в начало выражения.</li>
-      <li><strong>Откл (Off)</strong> (деактивация курсора) — снять фокус с поля выражения и закрыть режим курсора.</li>
+      <li><strong>НАЧ.</strong> — в начало выражения.</li>
+      <li><strong>Откл</strong> (деактивация курсора) — снять фокус с поля выражения и закрыть режим курсора.</li>
     </ul>
   </div>
 </details>
@@ -323,16 +326,16 @@
   <summary><span class="summary-title">ЕД. ИЗМ.</span></summary>
   <div>
     <p><strong>Панель единиц.</strong> Конвертер единиц в два уровня: список категорий, затем экран категории с преобразованием.</p>
-    <p><strong>Первый уровень (ЕД. ИЗМ.):</strong></p>
+    <p><strong>Первый уровень (КОНВЕРТЕР ЕДИНИЦ):</strong></p>
     <ul>
-      <li><strong>Заголовок:</strong> <strong>ЕД. ИЗМ.</strong>; <strong>×</strong> — закрыть.</li>
+      <li><strong>Заголовок:</strong> <strong>КОНВЕРТЕР ЕДИНИЦ</strong>; <strong>×</strong> — закрыть.</li>
       <li><strong>Содержимое:</strong> Сетка кнопок категорий. Нажатие открывает категорию. Категории: <strong>Время</strong>, <strong>Длина</strong>, <strong>Площ.</strong>, <strong>Объём</strong>, <strong>Масса</strong>, <strong>Темп.</strong>, <strong>Скор.</strong>, <strong>Давл.</strong>, <strong>Энерг.</strong>, <strong>Мощн.</strong>, <strong>Угол</strong>, <strong>Частота</strong>, <strong>Сила</strong>, <strong>Ускор.</strong>, <strong>Момент</strong>, <strong>Плотн.</strong>, <strong>Данные</strong>, <strong>Ток</strong>, <strong>Напр.</strong>, <strong>Сопр.</strong>, <strong>Ёмкость</strong>.</li>
     </ul>
     <p><strong>Уровень категории (например ВРЕМЯ, ДЛИНА):</strong></p>
     <ul>
       <li><strong>Заголовок:</strong> Название категории (например ВРЕМЯ); <strong>←</strong> — назад к списку; <strong>×</strong> — закрыть.</li>
-      <li><strong>Поля:</strong> <strong>Ввод</strong> — значение в единице ИСТОЧНИК; <strong>Результат</strong> — значение в единице РЕЗУЛЬТАТ. Подсказка показывает «символ_из → символ_в».</li>
-      <li><strong>Строка кнопок:</strong> <strong>ИЗ</strong> (текущий символ ИСТОЧНИК) — нажатие открывает выбор единицы источника; <strong>В</strong> (символ РЕЗУЛЬТАТ) — выбор целевой единицы; <strong>&lt;&gt;</strong> — поменять ИЗ и В; <strong>Доб</strong> — вставить результат в выражение; <strong>←</strong> — назад к списку категорий.</li>
+      <li><strong>Поля:</strong> <strong>Ввод</strong> — значение в <strong>ЕДИНИЦА «ИЗ»</strong>; <strong>Результат</strong> — значение в <strong>ЕДИНИЦА «В»</strong>. Подсказка показывает «символ_из → символ_в».</li>
+      <li><strong>Строка кнопок:</strong> <strong>ЕДИНИЦА «ИЗ»</strong> (текущий символ единицы) — нажатие открывает выбор единицы источника; <strong>ЕДИНИЦА «В»</strong> (символ единицы) — выбор целевой единицы; <strong>&lt;&gt;</strong> — поменять ЕДИНИЦА «ИЗ» и ЕДИНИЦА «В»; <strong>→Выр</strong> — вставить результат в выражение; <strong>←</strong> — назад к списку категорий.</li>
       <li><strong>Клавиатура:</strong> Цифры <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> для редактирования поля Ввод.</li>
       <li><strong>Категория ДАННЫЕ:</strong> В заголовке также есть переключатель <strong>SI</strong>/<strong>IEC</strong>. <strong>SI</strong> использует десятичные единицы (<strong>kB, MB, GB, TB</strong> = степени 1000); <strong>IEC</strong> использует двоичные единицы (<strong>KiB, MiB, GiB, TiB</strong> = степени 1024).</li>
     </ul>
@@ -674,6 +677,7 @@
   <summary><span class="summary-title">Меню (☰)</span></summary>
   <div><p>Нажатие открывает:</p>
     <ul>
+      <li><strong>Панель расширений</strong> — переключить клавиатуру на панель расширений.</li>
       <li><strong>История</strong> — экран истории (выражения и графики).</li>
       <li><strong>Настройки</strong> — экран настроек.</li>
       <li><strong>Оценить</strong> — оценка приложения (магазин).</li>
@@ -711,7 +715,7 @@
   <div><p>Длинное нажатие по карточке графика:</p>
     <ul>
       <li><strong>Вставить график</strong> — восстановить этот график (формулы, диапазоны) на экране графика и вернуться.</li>
-      <li><strong>Поделиться изображением графика</strong> — отправить сохранённое изображение графика. Может отображаться «нет сохранённого», если график был сохранён без изображения.</li>
+      <li><strong>Поделиться изображением графика (.png)</strong> — отправить сохранённое изображение графика. Если изображения нет, пункт меню показывает <strong>Поделиться изображением графика (нет сохранённого)</strong> и отключён.</li>
       <li><strong>Поделиться данными графика</strong> — отправить параметры и формулы графика в формате JSON.</li>
       <li><strong>Копировать все формулы</strong> — копировать все формулы серий в буфер.</li>
       <li><strong>Редактировать комментарий</strong> — добавить или изменить комментарий графика.</li>
@@ -733,7 +737,7 @@
   <summary><span class="summary-title">Язык</span></summary>
   <div>
     <p>Открывает диалог выбора языка приложения.</p>
-    <p><strong>Варианты (переключатель):</strong> <strong>Английский</strong>, <strong>Русский</strong>, <strong>Украинский</strong>. Нажатие выбирает и закрывает диалог.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Английский</strong>, <strong>Русский</strong>, <strong>Украинский</strong>, <strong>Немецкий</strong>, <strong>Испанский</strong>, <strong>Французский</strong>, <strong>Венгерский</strong>, <strong>Португальский (Бразилия)</strong>, <strong>Хинди</strong>, <strong>Японский</strong>. Нажатие выбирает и закрывает диалог.</p>
   </div>
 </details>
 <details>
@@ -741,6 +745,13 @@
   <div>
     <p>Открывает диалог выбора темы приложения.</p>
     <p><strong>Варианты (переключатель):</strong> <strong>Морская галька (светлая)</strong>, <strong>Звёздная ночь (тёмная)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Иконка приложения</span></summary>
+  <div>
+    <p>Открывает диалог выбора иконки приложения на рабочем столе.</p>
+    <p><strong>Варианты (переключатель):</strong> <strong>Светлая</strong>, <strong>Тёмная</strong>, <strong>Авто (Следовать теме)</strong>.</p>
   </div>
 </details>
 <details>
@@ -758,8 +769,9 @@
     <p>Открывает диалог <strong>Параметры отображения</strong>.</p>
     <p><strong>Флажки:</strong></p>
     <ul>
-      <li><strong>Подсветка</strong> — подсветка синтаксиса в выражении (цифры, функции, операторы).</li>
+      <li><strong>Подсветка текста</strong> — подсветка синтаксиса в выражении (цифры, функции, операторы).</li>
       <li><strong>Показывать панель настроек</strong> — показывать панель настроек на экране калькулятора.</li>
+      <li><strong>Подсказки UI</strong> — короткие подсказки на экране калькулятора. Можно отключить здесь.</li>
     </ul>
     <p><strong>Разделители цифр</strong> (сегментные кнопки): <strong>Нет</strong>, <strong>Пробел</strong>, <strong>Апостроф</strong>. Выбирается один.</p>
     <p><strong>Регистр степени корня</strong> (сегмент): <strong>Верх. инд.</strong>, <strong>Классический</strong>. Выбирается один.</p>
@@ -780,6 +792,7 @@
   <summary><span class="summary-title">Вибрация</span></summary>
   <div>
     <p>Открывает диалог <strong>Длительность вибрации</strong>. Задаёт длительность тактильной отдачи в мс при нажатии кнопок; <strong>0</strong> отключает вибрацию.</p>
+    <p><strong>Флажок:</strong> <strong>Двойная</strong> — вибрация и при нажатии, и при отпускании.</p>
     <p><strong>Варианты (переключатель):</strong> <strong>0 мс</strong>, <strong>15 мс</strong>, <strong>20 мс</strong>, <strong>25 мс</strong>, <strong>30 мс</strong>, <strong>35 мс</strong>, <strong>40 мс</strong>, <strong>45 мс</strong>, <strong>50 мс</strong>. Нажатие выбирает и закрывает.</p>
   </div>
 </details>

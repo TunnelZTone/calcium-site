@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0e14">
+  <meta name="description" content="CalcIUM Help in Japanese: full user manual, calculator features, and usage guidance.">
+  <link rel="canonical" href="https://tunnelztone.github.io/calcium-site/help/ja.html">
+  <meta property="og:title" content="CalcIUM Help (Japanese) — CalcIUM">
+  <meta property="og:description" content="Japanese help manual for CalcIUM with setup, calculator features, and usage instructions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/img/CalcIUM_Dark.png">
+  <title>CalcIUM ヘルプ — CalcIUM</title>
+  <link rel="icon" type="image/png" href="../assets/img/CalcIUM_Dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css?v=38">
+  <link rel="stylesheet" href="../assets/css/help-content.css?v=3">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/img/CalcIUM_Dark.png" width="36" height="36" alt="CalcIUM logo">
+        <span>CalcIUM</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../features.html">Features</a>
+        <a href="../help.html" aria-current="page">Help</a>
+        <a href="../updates.html">Updates</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="layout-main">
+    <main>
+      <nav class="help-lang-switch" aria-label="Help language">
+          <a href="en.html">English</a>
+          <a href="ru.html">Русский</a>
+          <a href="ua.html">Українська</a>
+          <a href="de.html">Deutsch</a>
+          <a href="es.html">Español</a>
+          <a href="fr.html">Français</a>
+          <a href="hu.html">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html" aria-current="page">日本語</a>
+      </nav>
+      <article class="help-document theme-dark">
+<!-- ========== NUMERIC PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">数値パネル</span></summary>
+  <div>
+    <p class="help-section-desc">数字、演算子、メモリのメインキーパッドです。ボタンの表記は画面上のラベルと同じです。</p>
+
+<details>
+  <summary><span class="summary-title">MR</span></summary>
+  <div><p><strong>メモリ呼び出し。</strong> メモリに保存した値をカーソル位置へ<span class="key">挿入</span>します。メモリは消しません。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MS</span></summary>
+  <div><p><strong>メモリ保存。</strong> 現在の結果をメモリに<span class="key">保存</span>します（以前の値は上書き）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M+</span></summary>
+  <div><p><strong>メモリ加算。</strong> 現在の結果をメモリの値に足します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">M−</span></summary>
+  <div><p><strong>メモリ減算。</strong> メモリの値から現在の結果を引きます。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">MC</span></summary>
+  <div><p><strong>メモリ消去。</strong> 保存したメモリ値を<span class="key">消去</span>します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">←</span></summary>
+  <div><p><strong>バックスペース。</strong> カーソルの直前を1文字削除します。設定で<span class="key">スマート削除</span>がオンなら、関数名などトークン全体をまとめて消すことがあります。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">(</span></summary>
+  <div><p><strong>左括弧。</strong> 式に <code>(</code> を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">)</span></summary>
+  <div><p><strong>右括弧。</strong> 式に <code>)</code> を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">//</span></summary>
+  <div><p><strong>整数除算 / 剰余。</strong> <code>//</code> を挿入します。結果は整数除算の剰余（またはモジュロ）です。動作は設定 → 剰余 '//' のモードによります: 剰余（切り捨て）、モジュロ（ユークリッド）、または Floor剰余。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">C</span></summary>
+  <div><p><strong>クリア。</strong> 式と結果をすべて消去します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">7, 8, 9</span></summary>
+  <div><p><strong>数字。</strong> 式に 7、8、9 を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">/</span></summary>
+  <div><p><strong>除算。</strong> <code>/</code> を挿入します。式: a/b。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Fn/Ext</span></summary>
+  <div><p><strong>パネル切替。</strong> タップ: 数値パネルと関数パネルを切り替えます。長押し: 拡張パネルへ直接切り替えます。ラベルは現在のパネルに合わせて変わります。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">4, 5, 6</span></summary>
+  <div><p><strong>数字。</strong> 4、5、6 を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">*</span></summary>
+  <div><p><strong>乗算。</strong> <code>*</code> を挿入します。式: a*b。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">%</span></summary>
+  <div><p><strong>パーセント。</strong> <code>%</code> を挿入します。意味は設定 → パーセントモードによります: <strong>クラシック</strong> — 左オペランドに対する百分率（例: 200−10% = 200−20 = 180）; <strong>シンプル</strong> — パーセントを小数として扱う（例: 200−10% = 200−0.1 = 199.9）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">1, 2, 3</span></summary>
+  <div><p><strong>数字。</strong> 1、2、3 を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">−</span></summary>
+  <div><p><strong>マイナス。</strong> <code>−</code> を挿入します。式: a−b。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">√</span></summary>
+  <div><p><strong>平方根。</strong> <code>√(</code> を挿入します。式: √x（正の根）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">0, 00</span></summary>
+  <div><p><strong>数字。</strong> 0 または 00 を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">.</span></summary>
+  <div><p><strong>小数点。</strong> 小数用に <code>.</code> を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">+</span></summary>
+  <div><p><strong>プラス。</strong> <code>+</code> を挿入します。式: a+b。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">=</span></summary>
+  <div>
+    <p><strong>イコール。</strong> 式を<span class="key">計算</span>し、結果を表示します。</p>
+    <p><strong>=</strong> の<strong>長押し</strong>で、式と結果を履歴（メニュー → 履歴）に追加します。</p>
+    <p>結果の表示は設定（精度、指数形式など）に従います。</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== FUNCTION PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">関数パネル</span></summary>
+  <div>
+    <p class="help-section-desc">三角関数、対数、ユーティリティ関数です。一部のボタンはオーバーレイ（パネル）を開きます。</p>
+
+<details>
+  <summary><span class="summary-title">pos</span></summary>
+  <div>
+    <p><strong>カーソルオーバーレイ。</strong> <strong>カーソル</strong>オーバーレイを開き、式内のカーソル移動と位置情報を見ます。</p>
+    <p><strong>ヘッダー:</strong> オーバーレイタイトル; <strong>×</strong> — 閉じる（下の<strong>オフ</strong>でも可）。</p>
+    <p><strong>内容:</strong></p>
+    <ul>
+      <li><strong>SL</strong> — 読み取り専用: カーソル左の文字。</li>
+      <li><strong>CP</strong> — 読み取り専用: カーソルから式末尾までの文字数。</li>
+      <li><strong>SR</strong> — 読み取り専用: カーソル右の文字。</li>
+      <li><strong>←</strong> — カーソルを1文字左へ。</li>
+      <li><strong>↑</strong> — 上の行へ（複数行のとき）。</li>
+      <li><strong>→</strong> — カーソルを1文字右へ。</li>
+      <li><strong>末尾</strong> — 式の末尾へ。</li>
+      <li><strong>↓</strong> — 下の行へ。</li>
+      <li><strong>先頭</strong> — 式の先頭へ。</li>
+      <li><strong>オフ</strong> — 式フィールドのフォーカスを外し、カーソルモードを閉じます。</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ABS</span></summary>
+  <div><p><strong>絶対値。</strong> <code>abs(</code> を挿入します。式: |x|。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEG</span></summary>
+  <div><p><strong>度関数。</strong> 式に <code>deg(</code> を挿入します。ラジアンを度に換算します（例: deg(π) = 180）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RAD</span></summary>
+  <div><p><strong>ラジアン関数。</strong> 式に <code>rad(</code> を挿入します。度をラジアンに換算します（例: rad(180) = π）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">HYP</span></summary>
+  <div><p><strong>双曲線モード切替。</strong> 双曲線関数に切り替えます。オンのとき SIN/COS/TAN などは sinh/cosh/tanh になり、ASIN/ACOS/ATAN は asinh/acosh/atanh になります（COT、CSC、SEC とその逆関数も同様）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">EXP</span></summary>
+  <div><p><strong>指数関数。</strong> <code>exp(</code> を挿入します。式: e^x。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">INT</span></summary>
+  <div><p><strong>整数部。</strong> <code>int(</code> を挿入します。ゼロ方向に切り捨てます。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LOG</span></summary>
+  <div>
+    <p><strong>常用対数（底10）。</strong> タップ: <code>log(</code> を挿入。長押し: <code>log2(</code>（底2の対数）を挿入。角の小さな <strong>LOG2</strong> が長押し操作を示します。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SIN, COS, TAN</span></summary>
+  <div><p><code>sin(</code>、<code>cos(</code>、<code>tan(</code> を挿入します。HYP がオンのとき: <code>sinh(</code>、<code>cosh(</code>、<code>tanh(</code>。角度モード（DEG/RAD）が適用されます。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">LN</span></summary>
+  <div><p><strong>自然対数。</strong> <code>ln(</code> を挿入します。式: ln(x) = log_e(x)。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">Nr/Ext</span></summary>
+  <div><p><strong>パネル切替。</strong> タップ: 関数パネルと拡張パネルを切り替えます。長押し: 拡張パネルへ切り替えます。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ASIN, ACOS, ATAN</span></summary>
+  <div><p>逆三角関数。<code>asin(</code>、<code>acos(</code>、<code>atan(</code> を挿入します。HYP 時: asinh, acosh, atanh。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">N!</span></summary>
+  <div><p><strong>階乗。</strong> <code>!(</code>、または直前の数の階乗を挿入します。式: n! = 1·2·…·n（整数 n ≥ 0）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">x^y</span></summary>
+  <div><p><strong>累乗。</strong> <code>^</code>（または同等）を挿入します。式: x^y。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">COT, CSC, SEC</span></summary>
+  <div><p><code>cot(</code>、<code>csc(</code>、<code>sec(</code> を挿入します。HYP 時: coth, csch, sech。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">℮</span></summary>
+  <div><p><strong>ネイピア数。</strong> 定数 e（≈ 2.718…）を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ʸ√x</span></summary>
+  <div><p><strong>x の y 乗根。</strong> 根関数を挿入します。式: ʸ√x = x^(1/y)。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ACOT, ACSC, ASEC</span></summary>
+  <div><p>cot, csc, sec の逆関数。HYP 時: acoth, acsch, asech。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">π</span></summary>
+  <div><p><strong>円周率。</strong> 定数 π（≈ 3.14159…）を挿入します。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">=（関数パネル）</span></summary>
+  <div>
+    <p>数値パネルと同じです。タップで計算、長押しで履歴に追加します。</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== EXTENSION PANEL ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">拡張パネル</span></summary>
+  <div>
+    <p class="help-section-desc">論理、基数、定数、単位、設定、統計、グラフ、時間など。多くのボタンはオーバーレイを開きます（入れ子のオーバーレイもあります）。</p>
+
+<details>
+  <summary><span class="summary-title">AND, OR, XOR, NOT</span></summary>
+  <div><p><strong>ビット演算 / 論理。</strong> <code>and</code>、<code>or</code>、<code>xor</code>、<code>not</code> を挿入します。整数基数（BIN、OCT、HEX）と組み合わせて使います。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG</span></summary>
+  <div><p><strong>工学表記の切替。</strong> 結果を工学表記（指数が3の倍数、例: 1.5E3）で表示します。オンのときはステータスバーに表示されます。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">AB</span></summary>
+  <div><p><strong>記号オーバーレイ（AB）。</strong> 数値書式の記号と十六進桁を挿入するパネルを開きます。</p>
+    <p><strong>ヘッダー行:</strong></p>
+    <ul>
+      <li><strong>←</strong> — 式のバックスペース。</li>
+      <li><strong>C</strong> — 式を消去。</li>
+      <li><strong>Nr</strong> — ミニ数値オーバーレイを開く。</li>
+      <li><strong>Fn</strong> — ミニ関数オーバーレイを開く。</li>
+    </ul>
+    <p><strong>記号グリッド（挿入内容）:</strong></p>
+    <ul>
+      <li><strong>0b</strong> — 二進リテラルの接頭辞（例: 0b1010）。</li>
+      <li><strong>0o</strong> — 八進リテラルの接頭辞（例: 0o12）。</li>
+      <li><strong>0x</strong> — 十六進リテラルの接頭辞（例: 0xFF）。</li>
+      <li><strong>_</strong> — 桁区切り（見た目のグループ化。値には影響しません）。</li>
+      <li><strong>A, B, C, D, E, F</strong> — 十六進桁（その文字を挿入）。</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">CONST</span></summary>
+  <div><p><strong>定数オーバーレイ。</strong> 定数名を挿入します（計算時に数値が入ります）。</p>
+    <p><strong>ヘッダー:</strong> ←（バックスペース）、C（消去）、Nr（ミニ数値）、Fn（ミニ関数）。</p>
+    <p><strong>定数（ラベル = 挿入内容）:</strong></p>
+    <ul>
+      <li><strong>π</strong> — 円周率（3.14159…）。</li>
+      <li><strong>e</strong> — ネイピア数（2.718…）。</li>
+      <li><strong>τ</strong> — タウ（2π）。</li>
+      <li><strong>φ</strong> — 黄金比。</li>
+      <li><strong>γ</strong> — オイラー・マスケローニ定数。</li>
+      <li><strong>ln2, ln10</strong> — ln(2)、ln(10)。</li>
+      <li><strong>c</strong> — 光速; <strong>h, ħ</strong> — プランク定数; <strong>kB</strong> — ボルツマン; <strong>R</strong> — 気体定数; <strong>NA</strong> — アボガドロ; <strong>qe</strong> — 電気素量。</li>
+      <li><strong>ε0, μ0</strong> — 真空の誘電率と透磁率; <strong>g0</strong> — 標準重力; <strong>G</strong> — 万有引力定数; <strong>σ</strong> — シュテファン・ボルツマン。</li>
+      <li><strong>me, mp, mn</strong> — 電子、陽子、中性子の質量。</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">UNITS</span></summary>
+  <div>
+    <p><strong>単位オーバーレイ。</strong> 2段階の単位換算です。カテゴリ一覧のあと、換算画面が開きます。</p>
+    <p><strong>第1段階（単位）:</strong></p>
+    <ul>
+      <li><strong>ヘッダー:</strong> タイトル <strong>単位</strong>; <strong>×</strong> — 閉じる。</li>
+      <li><strong>内容:</strong> カテゴリボタンのグリッド。タップで開きます。カテゴリ: <strong>時間</strong>、<strong>長さ</strong>、<strong>面積</strong>、<strong>体積</strong>、<strong>質量</strong>、<strong>温度</strong>、<strong>速度</strong>、<strong>圧力</strong>、<strong>エネルギー</strong>、<strong>仕事率</strong>、<strong>角度</strong>、<strong>周波数</strong>、<strong>力</strong>、<strong>加速度</strong>、<strong>トルク</strong>、<strong>密度</strong>、<strong>データ</strong>、<strong>電流</strong>、<strong>電圧</strong>、<strong>抵抗</strong>、<strong>容量</strong>。</li>
+    </ul>
+    <p><strong>カテゴリ段階（例: 時間、長さ）:</strong></p>
+    <ul>
+      <li><strong>ヘッダー:</strong> カテゴリ名（例: 時間）; <strong>←</strong> — カテゴリ一覧へ戻る; <strong>×</strong> — オーバーレイを閉じる。</li>
+      <li><strong>フィールド:</strong> <strong>入力</strong> — <strong>変換元</strong>の単位の値; <strong>結果</strong> — <strong>変換先</strong>の単位の値。ヒント行は &quot;from_symbol → to_symbol&quot; を示します。</li>
+      <li><strong>ボタン行:</strong> <strong>変換元</strong>（現在の単位記号）— タップで変換元の単位選択; <strong>変換先</strong>（単位記号）— 変換先の選択; <strong>&lt;&gt;</strong> — 変換元と変換先を入れ替え; <strong>→Exp</strong> — 結果を式に挿入; <strong>←</strong> — カテゴリ一覧へ戻る。</li>
+      <li><strong>キーパッド:</strong> 数字 <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> で入力を編集します。</li>
+      <li><strong>データカテゴリ:</strong> ヘッダーに <strong>SI</strong>/<strong>IEC</strong> 切替もあります。<strong>SI</strong> は十進（<strong>kB, MB, GB, TB</strong> = 1000 の累乗）; <strong>IEC</strong> は二進（<strong>KiB, MiB, GiB, TiB</strong> = 1024 の累乗）。</li>
+    </ul>
+    <p><strong>追加された単位:</strong> <strong>体積</strong> — <strong>floz</strong>、<strong>tsp</strong>、<strong>tbsp</strong>、<strong>cup</strong>、<strong>pt</strong>; <strong>質量</strong> — <strong>µg</strong>; <strong>仕事率</strong> — <strong>mW</strong>、<strong>GW</strong>; <strong>周波数</strong> — <strong>mHz</strong>、<strong>THz</strong>; <strong>力</strong> — <strong>mN</strong>; <strong>密度</strong> — <strong>g/ml</strong>; <strong>電流</strong> — <strong>nA</strong>、<strong>MA</strong>; <strong>電圧</strong> — <strong>µV</strong>、<strong>MV</strong>; <strong>抵抗</strong> — <strong>mΩ</strong>、<strong>GΩ</strong>。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">CFG</span></summary>
+  <div>
+    <p><strong>設定オーバーレイ（整数形式）。</strong> BASE とビット演算（AND、OR、// など）の整数表現を設定します。</p>
+    <p><strong>ヘッダー:</strong> タイトル <strong>整数形式</strong>; <strong>×</strong> — 閉じる。</p>
+    <p><strong>内容:</strong></p>
+    <ul>
+      <li><strong>語長</strong> — ビット幅。ボタン: <strong>8</strong>、<strong>16</strong>、<strong>32</strong>、<strong>64</strong>。タップで選択。</li>
+      <li><strong>符号付き</strong> — <strong>オン</strong>（2の補数）または <strong>オフ</strong>（符号なし）。タップで選択。</li>
+    </ul>
+    <p>BASE オーバーレイからグローバルまたはローカル CFG としても開けます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">nCr, nPr</span></summary>
+  <div><p><strong>組合せ / 順列。</strong> nCr(n,k) と nPr(n,k) を挿入します。式: nCr = n!/(k!(n−k)!), nPr = n!/(n−k)!。上級の数学ツールです。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">SI</span></summary>
+  <div><p><strong>SI接頭辞オーバーレイ。</strong> 各ボタンはその SI 接頭辞の数値倍率を挿入します（例: k → 1000、μ → 1e-6）。</p>
+    <p><strong>ヘッダー:</strong> ←、C、Nr、Fn。</p>
+    <p><strong>接頭辞グリッド（4行 × 5）:</strong></p>
+    <ul>
+      <li>1行目: <strong>Y, Z, E, P, T</strong>（10^24 から 10^12）。</li>
+      <li>2行目: <strong>G, M, k, h, da</strong>（10^9、10^6、10^3、10^2、10^1）。</li>
+      <li>3行目: <strong>d, c, m, μ, n</strong>（10^-1 … 10^-9）。</li>
+      <li>4行目: <strong>p, f, a, z, y</strong>（10^-12 … 10^-24）。</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Fn/Nr, Nr, Fn</span></summary>
+  <div><p><strong>パネル切替 / ミニオーバーレイ。</strong> <strong>Fn/Nr</strong>（3行目）: タップ → 関数パネル、長押し → 数値。<strong>Nr</strong>（4行目）と <strong>Fn</strong>（5行目）は小さなフローティングキーパッドを開きます。</p>
+    <p><strong>数値オーバーレイ（ミニ Nr）:</strong> タイトル「数値」、ヘッダー <strong>×</strong>（閉じる）。行: ← ( ) // C | 7 8 9 / % | 4 5 6 * x^y | 1 2 3 - √ | 0 00 . + ʸ√x。メインの数値パネルと同じですが <strong>=</strong> はありません。</p>
+    <p><strong>関数オーバーレイ（ミニ Fn）:</strong> タイトル「関数」、ヘッダー <strong>×</strong>。行: ← DEG RAD HYP C | ABS EXP INT LOG LOG2 | SIN COS TAN LN % | ASIN ACOS ATAN N! x^y | COT CSC SEC e √ | ACOT ACSC ASEC π ʸ√x。関数パネルと同じ（角度モード、HYP、三角関数/対数、e、π）。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">BASE</span></summary>
+  <div><p><strong>BASE オーバーレイ。</strong> 現在の結果を4つの基数で表示します。コピーや式への挿入もできます。</p>
+    <p><strong>ヘッダー:</strong> <strong>コピー</strong> — 選択した基数の文字列をクリップボードへ; <strong>→Exp</strong> — 選択した基数表現を式へ挿入; <strong>×</strong> — 閉じる。</p>
+    <p><strong>行:</strong> 各行が1つの基数です。<strong>グローバル: WS=…, 符号=…</strong> と <strong>CFG</strong>（グローバル設定: 語長、符号付き オン/オフ）; <strong>ローカル: …</strong> と <strong>CFG</strong>（ローカル基数設定）; 続けて <strong>DEC</strong>、<strong>HEX</strong>、<strong>OCT</strong>、<strong>BIN</strong> にその基数での結果。行をタップするとコピー/式へ挿入の対象になります。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">SEED</span></summary>
+  <div>
+    <p><strong>シードオーバーレイ（SET RNG SEED）。</strong> <strong>RAND</strong> と <strong>RND</strong> オーバーレイが使う乱数生成器のシードを設定します。同じシードなら同じ乱数列になります。</p>
+    <p><strong>ヘッダー:</strong> タイトル <strong>SET RNG SEED</strong>; <strong>適用</strong> — 入力したシードを適用（次の RAND/Rnd で使用）; <strong>×</strong> — 閉じる。</p>
+    <p><strong>内容:</strong> シード値（整数）の編集フィールド。キーパッド: 数字、<strong>←</strong>、<strong>C</strong>、<strong>−</strong>、<strong>±</strong>、<strong>.</strong>、必要に応じて <strong>+1</strong>/<strong>−1</strong>。<strong>適用</strong> はフィールドが空でないとき有効です。タップでシードを設定します。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GCD, LCM</span></summary>
+  <div><p><strong>最大公約数 / 最小公倍数。</strong> 2整数用に gcd( と lcm( を挿入します。上級の数学ツールです。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">RND</span></summary>
+  <div><p><strong>RND オーバーレイ。</strong> 乱数を生成し、コピーまたは式へ挿入できます。</p>
+    <p><strong>ヘッダー:</strong> <strong>コピー</strong> — 現在の値をコピー; <strong>→Exp</strong> — 現在の値をカーソル位置へ挿入; <strong>×</strong> — 閉じる。</p>
+    <p><strong>乱数を生成</strong> — オーバーレイ本体のボタン（1回生成）。</p>
+    <p><strong>モード:</strong> <strong>INT</strong> / <strong>FLOAT</strong> 切替 — [最小, 最大] の整数、または [最小, 最大] の浮動小数。</p>
+    <p><strong>フィールド:</strong> <strong>最小</strong>、<strong>最大</strong> — 範囲（編集可）。<strong>Rnd</strong> — 1回生成。</p>
+    <p><strong>キーパッド:</strong> 1行目: <strong>&lt;&gt;</strong>、<strong>-</strong>、<strong>.</strong>、<strong>←</strong>、<strong>C</strong>。続けて数字 <strong>1 2 3 4 5</strong> と <strong>6 7 8 9 0</strong> — オーバーレイ内の最小/最大の編集用。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">DMS</span></summary>
+  <div>
+    <p><strong>DMS オーバーレイ。</strong> 十進度と度分秒（D°M′S″）を換算します。</p>
+    <p><strong>ヘッダー:</strong> <strong>→Exp</strong> — 換算結果を式へ挿入; <strong>×</strong> — 閉じる。</p>
+    <p><strong>モード:</strong> <strong>→DMS</strong> — 十進度を入力し、結果は D°M′S″; <strong>→DEG</strong> — 度、分、秒を入力し、結果は十進度。モードボタンをタップして切り替えます。</p>
+    <p><strong>フィールド:</strong></p>
+    <ul>
+      <li><strong>→DMS:</strong> 十進の入力フィールド1つ; <strong>結果</strong> に D°M′S″。</li>
+      <li><strong>→DEG:</strong> <strong>度</strong>、<strong>分</strong>、<strong>秒</strong>（3フィールド）; <strong>結果</strong> に十進度。</li>
+    </ul>
+    <p>キーパッドとバックスペース/編集ボタンでアクティブなフィールドを編集します。拡張パネルの DMS を長押しすると、このオーバーレイが直接開きます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">FMT</span></summary>
+  <div>
+    <p><strong>書式オーバーレイ。</strong> 現在の結果をローカル設定で整形し、コピーまたは式へ挿入します。<strong>書式:</strong> フィールドは結果をリアルタイム表示します。</p>
+    <p><strong>ヘッダー:</strong> <strong>コピー</strong> — 整形結果をクリップボードへ; <strong>→Exp</strong> — 整形結果をカーソル位置へ挿入; <strong>×</strong> — 閉じる。</p>
+    <p><strong>1行目（タップで選択）:</strong></p>
+    <ul>
+      <li><strong>精度</strong> — 小数桁。選択: <strong>全桁/生値</strong>、<strong>自動</strong>、<strong>0</strong>、<strong>1</strong>、… <strong>10</strong>、<strong>20</strong>。</li>
+      <li><strong>丸め</strong> — 丸めモード。選択: <strong>なし</strong>、<strong>0.5↓</strong>、<strong>0.5↑</strong>、<strong>切上</strong>、<strong>切捨</strong>、<strong>偶数</strong>。</li>
+      <li><strong>指数</strong> — 指数を使うタイミング。選択: <strong>しない</strong>、<strong>自動</strong>、<strong>常に</strong>。</li>
+    </ul>
+    <p><strong>2行目:</strong></p>
+    <ul>
+      <li><strong>末尾の0を消す</strong> — <strong>オン</strong> / <strong>オフ</strong>（末尾ゼロの表示/非表示）。</li>
+      <li><strong>区切り</strong> — 桁のグループ化。タップで選択: <strong>なし</strong>、<strong>スペース</strong>、<strong>'</strong>。</li>
+      <li><strong>工学</strong> — <strong>オン</strong> / <strong>オフ</strong>（指数が3の倍数、例: 1.5E3）。</li>
+    </ul>
+    <p>各メインボタンは現在値を表示します。<strong>精度</strong>、<strong>丸め</strong>、<strong>指数</strong>、<strong>区切り</strong> をタップすると選択オーバーレイが開きます。<strong>末尾の0を消す</strong> と <strong>工学</strong> は直接切り替えます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">RAND</span></summary>
+  <div><p><strong>乱数。</strong> 乱数を挿入します（RND オーバーレイの設定、または既定範囲を使用）。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">STAT</span></summary>
+  <div>
+    <p><strong>STAT オーバーレイ。</strong> 現在の結果を調べます。各行はその数の計算プロパティです。行をタップして選択; <strong>コピー</strong> はその行の値; <strong>すべてコピー</strong> は一覧全体です。</p>
+    <p><strong>ヘッダー:</strong> <strong>コピー</strong> — 選択行の値をコピー; <strong>すべてコピー</strong> — 全行をクリップボードへ; <strong>→Exp</strong> — 選択値を式へ挿入; <strong>×</strong> — 閉じる。</p>
+    <p><strong>行（順）:</strong></p>
+    <ul>
+      <li><strong>符号</strong> — + または −</li>
+      <li><strong>Abs</strong> — 絶対値（プレーン文字列）</li>
+      <li><strong>整数部</strong> — 整数部</li>
+      <li><strong>小数部</strong> — 小数部（なければ —）</li>
+      <li><strong>スケール</strong> — 小数のスケール</li>
+      <li><strong>桁数</strong> — 桁の個数</li>
+      <li><strong>ゼロ</strong> — はい / いいえ</li>
+      <li><strong>整数</strong> — はい / いいえ</li>
+      <li><strong>有限</strong> — はい / いいえ</li>
+      <li><strong>偶奇</strong> — 偶数 / 奇数 / —</li>
+    </ul>
+    <p>行をタップして選択（赤枠）; そのあと <strong>コピー</strong> はその行の値を使います。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">DIFF</span></summary>
+  <div><p><strong>DIFF オーバーレイ。</strong> 2つの結果を比較します（A = 前回、B = 現在）。</p>
+    <p><strong>ヘッダー:</strong> <strong>&lt;&gt;</strong> — A と B を入れ替え; <strong>→Exp</strong> — 選択した差を式へ挿入; <strong>×</strong> — 閉じる。</p>
+    <p><strong>ボタン:</strong> <strong>A←</strong> — A に現在の結果; <strong>B←</strong> — B に現在の結果。<strong>Δ</strong> — 差 B−A; <strong>|Δ|</strong> — 絶対差; <strong>%Δ</strong> — 変化率（100*(B−A)/A など）。Δ、|Δ|、%Δ のいずれかが <strong>→Exp</strong> の対象です。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">GRAPH</span></summary>
+  <div><p><strong>グラフ画面。</strong> グラフタブを開きます。そこにある <strong>グラフ</strong> オーバーレイの内容:</p>
+    <details>
+      <summary><span class="summary-title">履歴に追加</span></summary>
+      <div><p>現在のグラフを履歴に保存します: 数式、X/T/θ範囲、オプション（Auto Y、凡例など）、PNG 画像。あとでメニュー → 履歴から開き、<strong>グラフを挿入</strong>できます。</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">系列</span></summary>
+      <div>
+        <p><strong>系列</strong>オーバーレイを開きます。ヘッダー: <strong>系列を追加</strong>（新しい系列、最大6）; <strong>×</strong> 閉じる。</p>
+        <p>各系列行:</p>
+        <ul>
+          <li><strong>番号付きの色付き枠（1, 2, 3…）</strong> — タップでこの系列を<strong>アクティブ</strong>にします（数式、X範囲、x0 などが対象）。</li>
+          <li><strong>✓ / ✕</strong> — 表示: グラフ上でこの系列を表示/非表示。</li>
+          <li><strong>Func / Param / Polar</strong> — 種類: 関数 y=f(x)、パラメトリック x(t),y(t)、または極座標 r(θ)。タップで循環。</li>
+          <li><strong>Line / Dots</strong> — 折れ線または点で描画。タップで切替。</li>
+          <li><strong>f′</strong>（Function のみ）— 1次導関数を表示。タップで切替。</li>
+          <li><strong>アイコン: 動く点</strong>（Polar のみ）— 文字なしボタン。タップで曲線上の動点を切替。</li>
+          <li><strong>f″</strong>（Function のみ）— 2次導関数を表示。タップで切替。</li>
+          <li><strong>Fill</strong>（Function のみ）— 曲線下を塗る。タップで切替。</li>
+          <li><strong>削除</strong> — この系列を削除（最初の系列には出ません）。</li>
+        </ul>
+        <p>数式を編集するには、メインのグラフオーバーレイの<strong>数式</strong>ボタンを使います（アクティブ系列を編集）。</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">表示</span></summary>
+      <div>
+        <p>グラフの<strong>表示</strong>オーバーレイを開きます。ヘッダー: <strong>×</strong> 閉じる。</p>
+        <p><strong>1行目</strong></p>
+        <ul>
+          <li><strong>中央</strong> — 軸を中央へ</li>
+          <li><strong>Zoom+</strong> — 拡大</li>
+          <li><strong>×N</strong>（例: ×1.00）— 現在のズーム倍率（数値表示）</li>
+          <li><strong>Zoom−</strong> — 縮小</li>
+          <li><strong>リセット</strong> — ズームとグリッドをリセット</li>
+        </ul>
+        <p><strong>2行目</strong></p>
+        <ul>
+          <li><strong>Robust</strong> — ロバストな Y スケール（表示中の系列が1つのとき）</li>
+          <li><strong>GridX+</strong> / <strong>GridX−</strong> — X グリッド間隔（間に値を表示）</li>
+          <li><strong>Snap</strong> — カーソルをグリッドにスナップ</li>
+        </ul>
+        <p><strong>3行目</strong></p>
+        <ul>
+          <li><strong>Auto Y</strong> — Y 範囲を自動</li>
+          <li><strong>GridY+</strong> / <strong>GridY−</strong> — Y グリッド間隔（間に値を表示）</li>
+          <li><strong>カーソル</strong> — 十字カーソルの表示/非表示</li>
+        </ul>
+        <p><strong>4行目</strong></p>
+        <ul>
+          <li><strong>Asymp</strong> — 漸近線を表示</li>
+          <li><strong>軸</strong> — 軸を表示</li>
+          <li><strong>グリッド</strong> — グリッドを表示</li>
+          <li><strong>ラベル</strong> — ラベルを表示</li>
+          <li><strong>凡例</strong> — 凡例を表示</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">数式</span></summary>
+      <div>
+        <p><strong>数式</strong>オーバーレイを開き、<strong>アクティブ</strong>系列の式を編集します。</p>
+        <p><strong>ヘッダー:</strong> <strong>×</strong> — 閉じる。</p>
+        <p><strong>内容:</strong> 編集可能な数式フィールド（パラメトリックは x(t)、y(t); 極座標は r(θ)）。キーパッド: <strong>←</strong>、<strong>C</strong>、数字、演算子、関数ボタン（LOG、LOG2、LN、sin、cos など）、引数区切りの <strong>,</strong>。Function: 式1つ（例: sin(x)）; Parametric: x(t) と y(t); Polar: r(θ)。</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">X範囲 / T範囲 / θ範囲</span></summary>
+      <div>
+        <p>アクティブ系列の<strong>範囲</strong>オーバーレイを開きます。タイトルとフィールドは系列の種類によります。</p>
+        <p><strong>ヘッダー:</strong> <strong>X範囲</strong> / <strong>T範囲</strong> / <strong>θ範囲</strong>（タイトル）; <strong>×</strong> — 閉じる。</p>
+        <p><strong>内容:</strong></p>
+        <ul>
+          <li><strong>Function（X範囲）:</strong> <strong>Xmin</strong>、<strong>Xmax</strong>、<strong>Δx</strong>（刻み）。</li>
+          <li><strong>Parametric（T範囲）:</strong> <strong>Tmin</strong>、<strong>Tmax</strong>、<strong>Δt</strong>。</li>
+          <li><strong>Polar（θ範囲）:</strong> <strong>θmin</strong>、<strong>θmax</strong>、<strong>Δθ</strong>。</li>
+        </ul>
+        <p>各値は編集できます。キーパッドと操作ボタン（<strong>←</strong>、<strong>C</strong>、<strong>−</strong>、<strong>.</strong>、<strong>/</strong>、数字、π、2π などのプリセット）はアクティブなフィールドに効きます。範囲の確定に <strong>適用</strong> を使うことがあります。</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">x0, t0, θ0</span></summary>
+      <div>
+        <p>アクティブ系列のカーソル位置オーバーレイを開きます。グラフ上の十字はこの値にあります。ボタン表記は <strong>計算 @ x0</strong> / <strong>計算 @ t0</strong> / <strong>計算 @ θ0</strong> です。</p>
+        <p><strong>ヘッダー:</strong> <strong>X0</strong> / <strong>T0</strong> / <strong>θ0</strong>（系列の種類: Function → X0、Parametric → T0、Polar → θ0）; <strong>×</strong> — 閉じる。</p>
+        <p><strong>内容:</strong> カーソル値（x0、t0、または θ0）の編集フィールド1つ。プリセット: Function は <strong>−π</strong>、<strong>0</strong>、<strong>π</strong>; Parametric/Polar は <strong>0</strong>、<strong>π</strong>、<strong>2π</strong>。操作行: <strong>←</strong>、<strong>−</strong>、<strong>.</strong>、<strong>/</strong>、<strong>C</strong>。数字と定数（π など）を入力できます。適用するとグラフのカーソル位置が更新されます。グラフはこの値に十字を表示し、アクティブ系列をこの点で計算できます。</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">カーソル値: 標準 / 生値</span></summary>
+      <div><p>グラフ上の数値の出し方を切り替えます（<strong>標準</strong> = 整形、<strong>生値</strong> = 全精度）。</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">テーマ</span></summary>
+      <div>
+        <p><strong>テーマ</strong>オーバーレイを開き、グラフの配色（背景と曲線）を選びます。</p>
+        <p><strong>ヘッダー:</strong> オーバーレイタイトル; <strong>×</strong> — 閉じる。</p>
+        <p><strong>内容:</strong> 4つのテーマボタン — <strong>ライト</strong>、<strong>中ライト</strong>、<strong>中ダーク</strong>、<strong>ダーク</strong>。タップで選択。アクティブなテーマが強調されます。</p>
+      </div>
+    </details>
+    <details>
+      <summary><span class="summary-title">描画: キャッシュ / リアル</span></summary>
+      <div><p>描画パイプラインの切替: <strong>キャッシュ</strong> — 速く、キャッシュしたビットマップを使用; <strong>リアル</strong> — 変更のたびに再描画。遅い端末の複雑なグラフではキャッシュを使います。</p></div>
+    </details>
+    <details>
+      <summary><span class="summary-title">プリセット</span></summary>
+      <div>
+        <p><strong>プリセット</strong>オーバーレイを開き、組み込みの例グラフを使います。完成済みのグラフ（関数、パラメトリック、極座標、または混合）を読み込み、編集や共有ができます。</p>
+        <p><strong>ヘッダー:</strong> タイトル <strong>プリセット</strong>; <strong>×</strong> — 閉じる。</p>
+        <p><strong>タブ:</strong> <strong>Func</strong> — y=f(x); <strong>Param</strong> — パラメトリック x(t), y(t); <strong>Polar</strong> — r(θ); <strong>混合</strong> — 組み合わせ。</p>
+        <p><strong>内容:</strong> プリセットカードのスクロール一覧（タイトル、コメント、プレビュー）。カードをタップして選択（上に「選択中」が出ます）。カードメニュー（タップまたは長押し）:</p>
+        <ul>
+          <li><strong>グラフを挿入</strong> — このプリセットをグラフへ読み込み（現在のグラフを置き換え）。</li>
+          <li><strong>グラフ画像を共有 (.png)</strong> — 保存画像があるとき画像として共有。</li>
+          <li><strong>グラフデータを共有 (.json)</strong> — グラフ定義を JSON として共有。</li>
+          <li><strong>コメントを編集</strong> — プリセットのコメントを編集（このセッションのローカル）。</li>
+        </ul>
+        <p>現在のグラフを残すには、グラフオーバーレイの<strong>履歴に追加</strong>を使います。</p>
+      </div>
+    </details>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">TIME</span></summary>
+  <div>
+    <p><strong>時間オーバーレイ。</strong> 2つのオペランド <strong>A</strong> と <strong>B</strong> で計算します: 期間（日、時、分、秒、ms）または日時（YYYY-MM-DD と HH:MM:SS.ms）。演算 <strong>+</strong> または <strong>−</strong>; 結果は期間または日時になります。コピーまたは式へ挿入できます。</p>
+    <p><strong>ヘッダー:</strong> <strong>コピー</strong> — 読みやすい結果をクリップボードへ; <strong>→Exp</strong> — 数値結果（選択した単位の期間、またはエポック ms）を式へ挿入; <strong>×</strong> — 閉じる。</p>
+    <p><strong>オペランド行（上）:</strong></p>
+    <ul>
+      <li><strong>A</strong> / <strong>B</strong> — アクティブなオペランドを切替（編集と<strong>結果を使う</strong>の対象）。</li>
+      <li><strong>期間</strong> / <strong>日時</strong> — アクティブなオペランドの種類: 期間（d, h, m, s, ms）または日時（日付 + 時刻）。</li>
+      <li><strong>現在</strong> — アクティブなオペランドに現在の日時を入れる（日時のときのみ）。</li>
+      <li><strong>CA</strong> / <strong>CB</strong> — オペランド A または B を消去。</li>
+    </ul>
+    <p><strong>結果の単位:</strong> ボタンは数値結果の単位（<strong>年</strong>、<strong>月</strong>、<strong>週</strong>、<strong>日</strong>、<strong>時</strong>、<strong>分</strong>、<strong>秒</strong>、<strong>ms</strong>）を表示 — タップで循環。横の値はその単位での結果（期間結果のとき）。</p>
+    <p><strong>結果の形式:</strong></p>
+    <ul>
+      <li><strong>Abs</strong> — 結果の絶対値（期間; 例: 差 A−B）。</li>
+      <li><strong>Norm</strong> — A と B の期間を正規化（例: 90 分 → 1 時 30 分）。</li>
+      <li><strong>結果を使う</strong> — 数値結果をアクティブなオペランドへ書き込み（連鎖計算用）。</li>
+    </ul>
+    <p><strong>キーパッド:</strong> <strong>←</strong> バックスペース、<strong>−</strong> マイナス（日または日付で可）、<strong>:</strong> と <strong>.</strong> で時刻/小数、<strong>C</strong> すべて消去、数字 <strong>0–9</strong>。入力はアクティブなオペランドのアクティブなフィールドへ（期間: 日、時、分、秒、ms; 日時: 日付、続けて時刻）。</p>
+    <p><strong>演算:</strong> 期間 ± 期間; 日時 + 期間 または 日時 − 期間; 日時 − 日時 は期間。DT + DT は不可。時間画面全体では A と B にラベル付きフィールド（日、時、分、秒、ms または 日付、時刻）、<strong>+</strong>/<strong>−</strong>、A と B を入れ替える <strong>&lt;&gt;</strong> が表示されます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">=（拡張パネル）</span></summary>
+  <div>
+    <p>式を計算します。長押しで他のパネルと同様に履歴へ追加します。</p>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== STATUSBAR ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">ステータスバー</span></summary>
+  <div>
+    <p class="help-section-desc">上部バーに角度モード、数値基数、タイトル、ENG/HYP（任意）、メニューが表示されます。</p>
+
+<details>
+  <summary><span class="summary-title">RAD / DEG（ドロップダウン）</span></summary>
+  <div><p>タップで一覧を開きます: <strong>RAD</strong> — 角度はラジアン; <strong>DEG</strong> — 角度は度。チェックが現在の設定です。sin、cos、tan などに影響します。</p>
+    <p><strong>DEG</strong> モードでは sin、cos、tan の引数は<strong>度</strong>です。sin(π/6) には RAD を使うか sin(30) を入力してください。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">DEC / HEX / OCT / BIN（ドロップダウン）</span></summary>
+  <div><p>タップで入力と結果の基数を選択: <strong>DEC</strong> 十進、<strong>HEX</strong> 十六進、<strong>OCT</strong> 八進、<strong>BIN</strong> 二進。<strong>画面下のメニュー</strong>からも切り替えられます。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">タイトル（CalcIUM / 最近）</span></summary>
+  <div>
+    <p>オーバーレイが開いていないとき: アプリ名 <strong>CalcIUM</strong>。状態を復元中は、歯車アイコンが短く出ることがあります。</p>
+    <p>拡張パネルのオーバーレイが開いているとき: タイトルが <strong>最近</strong> に変わり、タップ可能になります。タップで<strong>最近</strong>オーバーレイ（最近使ったパネル一覧）を開きます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">最近オーバーレイ</span></summary>
+  <div>
+    <p>ステータスバーのタイトルが <strong>最近</strong> のときにタップして開きます（拡張パネルのオーバーレイ表示中）。最近使ったオーバーレイがカード表示され、タップでそのパネルを開きます。各カードに名前と最終使用からの経過時間が出ます。</p>
+    <p><strong>ヘッダー:</strong> タイトル <strong>最近</strong>; <strong>×</strong> — 閉じる。</p>
+    <p><strong>タブ:</strong></p>
+    <ul>
+      <li><strong>すべて</strong> — 最近使ったオーバーレイすべて。</li>
+      <li><strong>ツール</strong> — AB（記号）、CONST、SI、DMS、FMT、TIME、STAT、DIFF、RND、ミニ Nr、ミニ Fn。</li>
+      <li><strong>セット</strong> — 設定系: SEED、CFG、BASE。</li>
+      <li><strong>UNITS</strong> — 単位カテゴリ一覧、単位カテゴリ画面、単位選択。</li>
+      <li><strong>GRAPH</strong> — グラフツール、数式、g関数、g定数、g数値、系列、表示、テーマ、プリセット、範囲（X/T/θ）、x0、t0、θ0。</li>
+    </ul>
+    <p>カードをタップしてそのオーバーレイを開きます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">ENG, HYP（インジケータ）</span></summary>
+  <div><p>工学表記または双曲線モードがオンのときに表示されます。</p></div>
+</details>
+<details>
+  <summary><span class="summary-title">メニュー（☰）</span></summary>
+  <div><p>タップで開きます:</p>
+    <ul>
+      <li><strong>拡張パネル</strong> — 拡張パネル（電卓キーパッド）に切り替えます。</li>
+      <li><strong>履歴</strong> — 履歴画面（式とグラフ）。</li>
+      <li><strong>設定</strong> — 設定画面。</li>
+      <li><strong>評価</strong> — アプリを評価（Google Play）。</li>
+      <li><strong>情報</strong> — アプリ情報とバージョン。</li>
+      <li><strong>ヘルプ</strong> — このヘルプ画面。</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== HISTORY ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">履歴</span></summary>
+  <div>
+    <p class="help-section-desc"><span class="key">ステータスバー → メニュー → 履歴</span> から開きます。2種類を保存: <strong>式の記録</strong>（式 + 結果 + 任意のコメント）と <strong>グラフの項目</strong>（数式、範囲、任意の画像とコメント）。</p>
+
+<details>
+  <summary><span class="summary-title">式カード — コンテキストメニュー</span></summary>
+  <div><p>式カードを長押し（またはコンテキスト操作）:</p>
+    <ul>
+      <li><strong>式を挿入</strong> — 式を電卓へ貼り付けて戻る。</li>
+      <li><strong>結果を挿入</strong> — 結果を式へ貼り付け。</li>
+      <li><strong>式=結果をコピー</strong> — 「expr=result」をクリップボードへ。</li>
+      <li><strong>式をコピー</strong> — 式のみコピー。</li>
+      <li><strong>結果をコピー</strong> — 結果のみコピー。</li>
+      <li><strong>コメントを編集</strong> — カードのコメントを追加/編集。</li>
+      <li><strong>削除</strong> — この記録を削除。</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">グラフカード — コンテキストメニュー</span></summary>
+  <div><p>グラフカードを長押し:</p>
+    <ul>
+      <li><strong>グラフを挿入</strong> — このグラフ（数式、範囲）をグラフ画面へ復元して戻る。</li>
+      <li><strong>グラフ画像を共有 (.png)</strong> — 保存したグラフ画像を共有。保存画像がない場合は <strong>グラフ画像を共有（保存画像なし）</strong> と表示されます。</li>
+      <li><strong>グラフデータを共有 (.json)</strong> — グラフのパラメータと数式を JSON で共有。</li>
+      <li><strong>すべての数式をコピー</strong> — 全系列の数式をクリップボードへ。</li>
+      <li><strong>コメントを編集</strong> — グラフのコメントを追加/編集。</li>
+      <li><strong>削除</strong> — このグラフ項目を削除。</li>
+    </ul>
+  </div>
+</details>
+
+  </div>
+</details>
+
+<!-- ========== SETTINGS ========== -->
+<details class="help-section">
+  <summary><span class="summary-title">設定</span></summary>
+  <div>
+    <p class="help-section-desc"><span class="key">ステータスバー → メニュー → 設定</span> から開きます。各項目はダイアログまたはサブ画面を開きます。</p>
+
+<details>
+  <summary><span class="summary-title">言語</span></summary>
+  <div>
+    <p>アプリの言語を選ぶダイアログを開きます。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>English</strong>、<strong>ロシア語</strong>、<strong>ウクライナ語</strong>、<strong>ドイツ語</strong>、<strong>スペイン語</strong>、<strong>フランス語</strong>、<strong>ハンガリー語</strong>、<strong>ポルトガル語（ブラジル）</strong>、<strong>ヒンディー語</strong>、<strong>日本語</strong>。いずれかをタップして選択し、ダイアログを閉じます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">テーマ</span></summary>
+  <div>
+    <p>アプリのテーマを選ぶダイアログを開きます。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>ビーチペブルズ（ライト）</strong>、<strong>スターリーナイト（ダーク）</strong>。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">アプリアイコン</span></summary>
+  <div>
+    <p>ランチャーアイコンを選ぶダイアログを開きます。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>ライト</strong>、<strong>ダーク</strong>、<strong>自動（テーマに合わせる）</strong>。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">入力オプション</span></summary>
+  <div>
+    <p><strong>入力オプション</strong>ダイアログを開きます。</p>
+    <p><strong>1行目 — 入力モード:</strong> <strong>スマート入力</strong> — 暗黙の演算子と括弧を補う; <strong>自由入力</strong> — そのまま入力。どちらか1つ。</p>
+    <p><strong>2行目 — バックスペース:</strong> <strong>スマート削除</strong> — トークン単位で削除（例: 関数名全体）; <strong>文字削除</strong> — 1文字削除。どちらか1つ。</p>
+    <p><strong>チェックボックス:</strong> <strong>結果を式に追加（実験的）</strong> — <strong>=</strong> のあと、次の入力を結果に追加できる。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">表示オプション</span></summary>
+  <div>
+    <p><strong>表示オプション</strong>ダイアログを開きます。</p>
+    <p><strong>チェックボックス:</strong></p>
+    <ul>
+      <li><strong>テキストの強調</strong> — 式の色分け（数字、関数、演算子）。</li>
+      <li><strong>設定パネルを表示</strong> — 電卓画面に設定情報を表示。</li>
+      <li><strong>UIヒント</strong> — 短い画面上のヒント。オフにすると非表示。</li>
+    </ul>
+    <p><strong>桁区切り</strong>（セグメントボタン）: <strong>なし</strong>、<strong>スペース</strong>、<strong>'</strong>。いずれか1つ。</p>
+    <p><strong>根指数</strong>（セグメント）: <strong>上付き</strong>、<strong>クラシック</strong>。どちらか1つ。</p>
+    <p><strong>指数</strong>（セグメント）: <strong>上付き</strong>（指数を上付き）、<strong>クラシック</strong>。どちらか1つ。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">アニメーション</span></summary>
+  <div>
+    <p><strong>アニメーション</strong>ダイアログを開きます。</p>
+    <p><strong>チェックボックス:</strong> <strong>起動時（画面）</strong>、<strong>シルバーグラデ（テキスト）</strong>、<strong>1文字ずつの表示/消去（テキスト）</strong>、<strong>式のフェードイン/アウト（画面）</strong>、<strong>結果のフェードイン/アウト（画面）</strong>。</p>
+    <p><strong>ボタンを押すとき</strong>（セグメント）: <strong>押下</strong>、<strong>発光</strong>、<strong>ミックス</strong>。いずれか1つ。</p>
+    <p><strong>ボタンと画面の切替</strong>（セグメント）: <strong>フェード</strong>、<strong>スライド</strong>。どちらか1つ。</p>
+    <p><strong>オーバーレイの表示</strong>（セグメント）: <strong>なし</strong>、<strong>スライド</strong>、<strong>スケール</strong>、<strong>ミックス</strong>。いずれか1つ。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">振動</span></summary>
+  <div>
+    <p><strong>振動の長さ</strong>ダイアログを開きます。ボタンタップ時の触覚フィードバック（ms）を設定します。<strong>0</strong> で振動オフ。</p>
+    <p><strong>チェックボックス:</strong> <strong>ダブル</strong> — 押下と離す両方で振動。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>0 ms</strong>、<strong>15 ms</strong>、<strong>20 ms</strong>、<strong>25 ms</strong>、<strong>30 ms</strong>、<strong>35 ms</strong>、<strong>40 ms</strong>、<strong>45 ms</strong>、<strong>50 ms</strong>。タップで選択し閉じます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">丸め</span></summary>
+  <div>
+    <p><strong>丸め</strong>ダイアログを開きます。小数結果の丸め方を選びます。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>丸めなし</strong>; <strong>0.5↓（x.5は下へ）</strong>; <strong>0.5↑（x.5は上へ）</strong>; <strong>切上（+∞方向）</strong>; <strong>切捨（−∞方向）</strong>; <strong>偶数（銀行丸め）</strong>。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">精度</span></summary>
+  <div>
+    <p><strong>小数桁</strong>ダイアログを開きます。結果に表示する小数桁数を制御します。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>全桁/生値</strong>; <strong>自動</strong>; <strong>0 桁</strong>、<strong>1 桁</strong>、… <strong>10 桁</strong>; <strong>20 桁</strong>。タップで選択し閉じます。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">剰余 '//' のモード</span></summary>
+  <div>
+    <p><strong>剰余 '//' のモード</strong>ダイアログを開きます。<strong>//</strong> 演算子（整数除算の剰余）の動作を設定します。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>剰余（切り捨て）</strong> — 例: 7//−4=3, −7//4=−3; <strong>モジュロ（ユークリッド）</strong> — 例: 7//−4=3, −7//4=1; <strong>Floor剰余</strong> — 例: 7//−4=−1, −7//4=1。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">指数形式</span></summary>
+  <div>
+    <p><strong>指数形式</strong>ダイアログを開きます。結果で指数表記をいつ使うかを設定します。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>しない</strong>、<strong>自動</strong>、<strong>常に</strong>。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">結果の扱い</span></summary>
+  <div>
+    <p><strong>結果の扱い</strong>ダイアログを開きます。</p>
+    <p><strong>チェックボックス:</strong> <strong>末尾の0を消す</strong> — オンのとき結果の末尾ゼロを非表示; オフのとき表示。</p>
+    <p><strong>チェックボックス:</strong> <strong>ほぼ0を簡約</strong> — オンのとき |x| &lt; ε に近い値を 0 と表示。</p>
+    <p><strong>チェックボックス:</strong> <strong>ほぼ整数を簡約</strong> — オンのとき 0.5、1、−1 に非常に近い値を 0.5、1、−1 と表示。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">パーセントモード</span></summary>
+  <div>
+    <p><strong>パーセントモード</strong>ダイアログを開きます。<strong>%</strong> の解釈を設定します（例: 200−10%）。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>クラシック</strong> — 左オペランドの百分率（200−10% = 180）; <strong>シンプル</strong> — パーセントを小数として（200−10% = 199.9）。</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">状態の復元</span></summary>
+  <div>
+    <p><strong>状態の復元</strong>ダイアログを開きます。起動時に何を復元するかを設定します。</p>
+    <p><strong>チェックボックス:</strong></p>
+    <ul>
+      <li><strong>起動時にテキスト/グラフ</strong> — 起動時に前回の式とグラフを復元。</li>
+      <li><strong>起動時に画面/パネル</strong> — 起動時に前回の画面（電卓/グラフ）とパネル（数値/関数/拡張）を復元。</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">履歴</span></summary>
+  <div>
+    <p><strong>履歴の最大件数</strong>ダイアログを開きます。式とグラフの履歴の上限件数を設定します。</p>
+    <p><strong>オプション（ラジオ）:</strong> <strong>100 件</strong>、<strong>200</strong>、<strong>300</strong>、<strong>400</strong>、<strong>500</strong>、<strong>1000 件</strong>。タップで選択し閉じます。</p>
+    <p><strong>ボタン:</strong> <strong>履歴を消去</strong> — 確認ダイアログを開く; <strong>消去</strong> で式とグラフの履歴をすべて削除。<strong>閉じる</strong> — ダイアログを閉じる。確認ダイアログには <strong>消去</strong> と <strong>キャンセル</strong> があります。</p>
+  </div>
+</details>
+
+  </div>
+</details>
+      </article>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../features.html">Features</a>
+        <a href="../help.html">Help</a>
+        <a href="../updates.html">Updates</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <p class="footer__credits">Created and developed by Yakob Liubomyr</p>
+    </div>
+  </footer>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

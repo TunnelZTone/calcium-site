@@ -49,6 +49,9 @@
           <a href="es.html">Español</a>
           <a href="fr.html">Français</a>
           <a href="hu.html">Magyar</a>
+          <a href="pt-br.html">Português (Brasil)</a>
+          <a href="hi.html">हिन्दी</a>
+          <a href="ja.html">日本語</a>
       </nav>
       <article class="help-document theme-dark">
 <!-- ========== NUMERIC PANEL ========== -->
@@ -176,10 +179,10 @@
       <li><strong>←</strong> — зсув курсора вліво на один символ.</li>
       <li><strong>↑</strong> — перехід на рядок вище (при багаторядковому введенні).</li>
       <li><strong>→</strong> — зсув курсора вправо на один символ.</li>
-      <li><strong>Кінець (END)</strong> — в кінець виразу.</li>
+      <li><strong>КІН.</strong> — в кінець виразу.</li>
       <li><strong>↓</strong> — на рядок нижче.</li>
-      <li><strong>Поч (BEG)</strong> — на початок виразу.</li>
-      <li><strong>Вим (Off)</strong> (деактивація курсора) — зняти фокус з поля виразу і закрити режим курсора.</li>
+      <li><strong>ПОЧ.</strong> — на початок виразу.</li>
+      <li><strong>Вим</strong> (деактивація курсора) — зняти фокус з поля виразу і закрити режим курсора.</li>
     </ul>
   </div>
 </details>
@@ -323,16 +326,16 @@
   <summary><span class="summary-title">ОД. ВИМ.</span></summary>
   <div>
     <p><strong>Панель одиниць.</strong> Конвертер одиниць у два рівні: список категорій, потім екран категорії з перетворенням.</p>
-    <p><strong>Перший рівень (ОД. ВИМ.):</strong></p>
+    <p><strong>Перший рівень (КОНВЕРТЕР ОДИНИЦЬ):</strong></p>
     <ul>
-      <li><strong>Заголовок:</strong> <strong>ОД. ВИМ.</strong>; <strong>×</strong> — закрити.</li>
+      <li><strong>Заголовок:</strong> <strong>КОНВЕРТЕР ОДИНИЦЬ</strong>; <strong>×</strong> — закрити.</li>
       <li><strong>Вміст:</strong> Сітка кнопок категорій. Натискання відкриває категорію. Категорії: <strong>Час</strong>, <strong>Довжина</strong>, <strong>Площа</strong>, <strong>Об'єм</strong>, <strong>Маса</strong>, <strong>Темп.</strong>, <strong>Швидк.</strong>, <strong>Тиск</strong>, <strong>Енерг.</strong>, <strong>Потужн.</strong>, <strong>Кут</strong>, <strong>Частота</strong>, <strong>Сила</strong>, <strong>Приск.</strong>, <strong>Момент</strong>, <strong>Густ.</strong>, <strong>Дані</strong>, <strong>Струм</strong>, <strong>Напр.</strong>, <strong>Опір</strong>, <strong>Ємність</strong>.</li>
     </ul>
     <p><strong>Рівень категорії (наприклад ЧАС, ДОВЖИНА):</strong></p>
     <ul>
       <li><strong>Заголовок:</strong> Назва категорії (наприклад ЧАС); <strong>←</strong> — назад до списку; <strong>×</strong> — закрити.</li>
-      <li><strong>Поля:</strong> <strong>Ввід</strong> — значення в одиниці ДЖЕРЕЛО; <strong>Результат</strong> — значення в одиниці РЕЗУЛЬТАТ. Підказка показує «символ_з → символ_в».</li>
-      <li><strong>Рядок кнопок:</strong> <strong>З</strong> (поточний символ ДЖЕРЕЛО) — натискання відкриває вибір одиниці джерела; <strong>В</strong> (символ РЕЗУЛЬТАТ) — вибір цільової одиниці; <strong>&lt;&gt;</strong> — поміняти З і В; <strong>Дод</strong> — вставити результат у вираз; <strong>←</strong> — назад до списку категорій.</li>
+      <li><strong>Поля:</strong> <strong>Ввід</strong> — значення в <strong>ОДИНИЦЯ «З»</strong>; <strong>Результат</strong> — значення в <strong>ОДИНИЦЯ «В»</strong>. Підказка показує «символ_з → символ_в».</li>
+      <li><strong>Рядок кнопок:</strong> <strong>ОДИНИЦЯ «З»</strong> (поточний символ одиниці) — натискання відкриває вибір одиниці джерела; <strong>ОДИНИЦЯ «В»</strong> (символ одиниці) — вибір цільової одиниці; <strong>&lt;&gt;</strong> — поміняти ОДИНИЦЯ «З» і ОДИНИЦЯ «В»; <strong>→Вир</strong> — вставити результат у вираз; <strong>←</strong> — назад до списку категорій.</li>
       <li><strong>Клавіатура:</strong> Цифри <strong>7 8 9</strong> <strong>←</strong> <strong>C</strong>; <strong>4 5 6</strong> <strong>−</strong> <strong>±</strong>; <strong>1 2 3</strong> <strong>0</strong> <strong>.</strong> для редагування поля Ввід.</li>
       <li><strong>Категорія ДАНІ:</strong> У заголовку також є перемикач <strong>SI</strong>/<strong>IEC</strong>. <strong>SI</strong> використовує десяткові одиниці (<strong>kB, MB, GB, TB</strong> = степені 1000); <strong>IEC</strong> використовує двійкові одиниці (<strong>KiB, MiB, GiB, TiB</strong> = степені 1024).</li>
     </ul>
@@ -644,17 +647,17 @@
   <div><p>Натискання вибирає основу числа для введення та результату: <strong>DEC</strong> десяткова, <strong>HEX</strong> шістнадцяткова, <strong>OCT</strong> вісімкова, <strong>BIN</strong> двійкова.</p></div>
 </details>
 <details>
-  <summary><span class="summary-title">Заголовок (CalcIUM / ОБРАНЕ)</span></summary>
+  <summary><span class="summary-title">Заголовок (CalcIUM / НЕДАВНІ)</span></summary>
   <div>
     <p>Коли накладання не відкрито: показується назва додатку <strong>CalcIUM</strong>. При відновленні стану коротко може з'являтися іконка шестерні.</p>
-    <p>Коли відкрито накладання панелі розширень: заголовок змінюється на <strong>ОБРАНЕ</strong> і стає натискуваним. Натискання відкриває накладання <strong>ОБРАНЕ</strong> (список нещодавно використаних накладань).</p>
+    <p>Коли відкрито накладання панелі розширень: заголовок змінюється на <strong>НЕДАВНІ</strong> і стає натискуваним. Натискання відкриває накладання <strong>НЕДАВНІ</strong> (список нещодавно використаних накладань).</p>
   </div>
 </details>
 <details>
-  <summary><span class="summary-title">Накладання ОБРАНЕ</span></summary>
+  <summary><span class="summary-title">Накладання НЕДАВНІ</span></summary>
   <div>
-    <p>Відкривається натисканням на заголовок у рядку стану, коли відображається <strong>ОБРАНЕ</strong> (при активному накладанні панелі розширень). Показує нещодавно використані накладання картками; натискання на картку відкриває це накладання. На кожній картці — назва накладання та час останнього використання.</p>
-    <p><strong>Заголовок:</strong> <strong>ОБРАНЕ</strong>; <strong>×</strong> — закрити.</p>
+    <p>Відкривається натисканням на заголовок у рядку стану, коли відображається <strong>НЕДАВНІ</strong> (при активному накладанні панелі розширень). Показує нещодавно використані накладання картками; натискання на картку відкриває це накладання. На кожній картці — назва накладання та час останнього використання.</p>
+    <p><strong>Заголовок:</strong> <strong>НЕДАВНІ</strong>; <strong>×</strong> — закрити.</p>
     <p><strong>Вкладки:</strong></p>
     <ul>
       <li><strong>Все</strong> — всі нещодавно використані накладання.</li>
@@ -674,6 +677,7 @@
   <summary><span class="summary-title">Меню (☰)</span></summary>
   <div><p>Натискання відкриває:</p>
     <ul>
+      <li><strong>Панель розширень</strong> — перемкнути клавіатуру на панель розширень.</li>
       <li><strong>Історія</strong> — екран історії (вирази та графіки).</li>
       <li><strong>Налаштування</strong> — екран налаштувань.</li>
       <li><strong>Оцінити</strong> — оцінка додатку (магазин).</li>
@@ -711,7 +715,7 @@
   <div><p>Довге натискання по картці графіка:</p>
     <ul>
       <li><strong>Вставити графік</strong> — відновити цей графік (формули, діапазони) на екрані графіка і повернутися.</li>
-      <li><strong>Поділитися зображенням графіка</strong> — надіслати збережене зображення графіка. Може відображатися «немає збереженого», якщо графік було збережено без зображення.</li>
+      <li><strong>Поділитися зображенням графіка (.png)</strong> — надіслати збережене зображення графіка. Якщо зображення немає, пункт меню показує <strong>Поділитися зображенням графіка (немає збереженого)</strong> і вимкнений.</li>
       <li><strong>Поділитися даними графіка</strong> — надіслати параметри та формули графіка у форматі JSON.</li>
       <li><strong>Копіювати всі формули</strong> — копіювати всі формули серій у буфер.</li>
       <li><strong>Редагувати коментар</strong> — додати або змінити коментар графіка.</li>
@@ -733,7 +737,7 @@
   <summary><span class="summary-title">Мова</span></summary>
   <div>
     <p>Відкриває діалог вибору мови додатку.</p>
-    <p><strong>Варіанти (перемикач):</strong> <strong>English</strong>, <strong>Російська</strong>, <strong>Українська</strong>. Натискання вибирає і закриває діалог.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>English</strong>, <strong>Російська</strong>, <strong>Українська</strong>, <strong>Німецька</strong>, <strong>Іспанська</strong>, <strong>Французька</strong>, <strong>Угорська</strong>, <strong>Португальська (Бразилія)</strong>, <strong>Гінді</strong>, <strong>Японська</strong>. Натискання вибирає і закриває діалог.</p>
   </div>
 </details>
 <details>
@@ -741,6 +745,13 @@
   <div>
     <p>Відкриває діалог вибору теми додатку.</p>
     <p><strong>Варіанти (перемикач):</strong> <strong>Beach Pebbles (світла)</strong>, <strong>Starry Night (темна)</strong>.</p>
+  </div>
+</details>
+<details>
+  <summary><span class="summary-title">Іконка додатку</span></summary>
+  <div>
+    <p>Відкриває діалог вибору іконки додатку на робочому столі.</p>
+    <p><strong>Варіанти (перемикач):</strong> <strong>Світла</strong>, <strong>Темна</strong>, <strong>Авто (Слідувати темі)</strong>.</p>
   </div>
 </details>
 <details>
@@ -758,8 +769,9 @@
     <p>Відкриває діалог <strong>Параметри відображення</strong>.</p>
     <p><strong>Прапорці:</strong></p>
     <ul>
-      <li><strong>Підсвічування</strong> — підсвічування синтаксису у виразі (цифри, функції, оператори).</li>
+      <li><strong>Підсвічування тексту</strong> — підсвічування синтаксису у виразі (цифри, функції, оператори).</li>
       <li><strong>Показувати панель налаштувань</strong> — показувати панель налаштувань на екрані калькулятора.</li>
+      <li><strong>Підказки UI</strong> — короткі підказки на екрані калькулятора. Можна вимкнути тут.</li>
     </ul>
     <p><strong>Роздільники цифр</strong> (сегментні кнопки): <strong>Немає</strong>, <strong>Пробіл</strong>, <strong>Апостроф</strong>. Вибирається один.</p>
     <p><strong>Регістр степеня кореня</strong> (сегмент): <strong>Верх. інд.</strong>, <strong>Класичний</strong>. Вибирається один.</p>
@@ -780,6 +792,7 @@
   <summary><span class="summary-title">Вібрація</span></summary>
   <div>
     <p>Відкриває діалог <strong>Тривалість вібрації</strong>. Задає тривалість тактильного відгуку в мс при натисканні кнопок; <strong>0</strong> вимикає вібрацію.</p>
+    <p><strong>Прапорець:</strong> <strong>Подвійна</strong> — вібрація і при натисканні, і при відпусканні.</p>
     <p><strong>Варіанти (перемикач):</strong> <strong>0 мс</strong>, <strong>15 мс</strong>, <strong>20 мс</strong>, <strong>25 мс</strong>, <strong>30 мс</strong>, <strong>35 мс</strong>, <strong>40 мс</strong>, <strong>45 мс</strong>, <strong>50 мс</strong>. Натискання вибирає і закриває.</p>
   </div>
 </details>
