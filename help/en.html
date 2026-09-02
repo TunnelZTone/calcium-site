@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">TIME</span></summary>
   <div>
-    <p><strong>Time overlay.</strong> Compute with two operands <strong>A</strong> and <strong>B</strong>: durations (days, hours, min, sec, ms) or date-time (YYYY-MM-DD and HH:MM:SS.ms). Operation <strong>+</strong> or <strong>−</strong>; result can be a duration or a date-time. Copy or insert the result into the expression.</p>
+    <p><strong>Time overlay.</strong> Compute with two operands <strong>A</strong> and <strong>B</strong>: durations (days, hours, min, sec, ms) or date-time (<code>yyyy-MM-dd</code> and <code>HH:mm:ss</code>). Operation <strong>+</strong> or <strong>−</strong>; result can be a duration or a date-time. Copy or insert the result into the expression.</p>
     <p><strong>Header:</strong> <strong>Copy</strong> — copy the human-readable result to clipboard; <strong>→Exp</strong> — insert the numeric result (e.g. duration in chosen unit, or epoch ms) into the expression; <strong>×</strong> — close.</p>
     <p><strong>Operand row (top):</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> — switch active operand (editing and &quot;Use result&quot; target).</li>
       <li><strong>Duration</strong> / <strong>DateTime</strong> — type of the active operand: duration (d, h, m, s, ms) or date-time (date + time).</li>
-      <li><strong>Now</strong> — fill the active operand with current date and time (only when DateTime is selected).</li>
+      <li><strong>Now</strong> — fill the active operand with the current date and time in the device/system time zone (only when DateTime is selected).</li>
       <li><strong>CA</strong> / <strong>CB</strong> — clear operand A or B.</li>
     </ul>
     <p><strong>Result converter:</strong> Button shows the unit for the numeric result (<strong>year</strong>, <strong>month</strong>, <strong>week</strong>, <strong>day</strong>, <strong>hour</strong>, <strong>min</strong>, <strong>sec</strong>, <strong>ms</strong>) — tap to cycle. The value next to it is the result in that unit (for duration results).</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — normalize duration in A and B (e.g. 90 min → 1h 30m).</li>
       <li><strong>Use result</strong> — write the numeric result into the active operand (for chained calculations).</li>
     </ul>
-    <p><strong>Keypad:</strong> <strong>←</strong> backspace, <strong>−</strong> minus (allowed in Days or in date), <strong>:</strong> and <strong>.</strong> for time/decimals, <strong>C</strong> clear all, digits <strong>0–9</strong>. Input is entered into the active operand’s active field (Duration: days, hours, min, sec, ms; DateTime: date, then time).</p>
-    <p><strong>Operations:</strong> Duration ± Duration; DateTime + Duration or DateTime − Duration; DateTime − DateTime gives a duration. DT + DT is not allowed. On the full Time screen (when TIME is shown in the top area), operands A and B are shown with labeled fields (Days, Hours, Min, Sec, ms or Date, Time), operation <strong>+</strong>/<strong>−</strong>, and <strong>&lt;&gt;</strong> to exchange A and B.</p>
+    <p><strong>Keypad:</strong> <strong>←</strong> backspace, <strong>−</strong> minus (allowed in Days or in date), <strong>:</strong> and <strong>.</strong> for time/decimals, <strong>C</strong> clear all, digits <strong>0–9</strong>. Input can still be typed into the active operand’s active field (Duration: days, hours, min, sec, ms; DateTime: date, then time). Manual DateTime input remains flexible.</p>
+    <p><strong>DateTime pickers:</strong> Date fields also have a calendar picker. Time fields also have a 24-hour time picker.</p>
+    <p><strong>Operations:</strong> Duration ± Duration; DateTime + Duration or DateTime − Duration; DateTime − DateTime gives a duration. DT + DT is not allowed. Duration ± DateTime requires swapping operands (use <strong>&lt;&gt;</strong>; the app shows <strong>Swap operands</strong>). On the full Time screen (when TIME is shown in the top area), operands A and B are shown with labeled fields (Days, Hours, Min, Sec, ms or Date, Time), operation <strong>+</strong>/<strong>−</strong>, and <strong>&lt;&gt;</strong> to exchange A and B.</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">Theme</span></summary>
   <div>
-    <p>Opens a dialog to choose the app theme.</p>
-    <p><strong>Options (radio):</strong> <strong>Beach Pebbles (Light)</strong>, <strong>Starry Night (Dark)</strong>.</p>
+    <p>Opens a dialog to choose the app theme. The Theme Picker shows a preview of each theme.</p>
+    <p><strong>FREE:</strong> <strong>Beach Pebbles</strong>, <strong>Starry Night</strong>.</p>
+    <p><strong>PRO:</strong> <strong>Industrial Ember</strong>, <strong>Porcelain Wine</strong>, <strong>Nordic Blue</strong>, <strong>Violet Carbon</strong>. PRO themes are visible in the picker in FREE; applying them requires the existing one-time PRO unlock.</p>
   </div>
 </details>
 <details>

@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">TIEMPO</span></summary>
   <div>
-    <p><strong>Panel TIEMPO.</strong> Cálculos con dos operandos <strong>A</strong> y <strong>B</strong>: duraciones (días, horas, min, seg, ms) o fecha-hora (AAAA-MM-DD y HH:MM:SS.ms). Operación <strong>+</strong> o <strong>−</strong>; resultado es duración o fecha-hora. Copiar o insertar resultado en expresión.</p>
+    <p><strong>Panel TIEMPO.</strong> Cálculos con dos operandos <strong>A</strong> y <strong>B</strong>: duraciones (días, horas, min, seg, ms) o fecha-hora (<code>yyyy-MM-dd</code> y <code>HH:mm:ss</code>). Operación <strong>+</strong> o <strong>−</strong>; resultado es duración o fecha-hora. Copiar o insertar resultado en expresión.</p>
     <p><strong>Encabezado:</strong> <strong>Copiar</strong> — copiar resultado legible; <strong>→Expr</strong> — insertar resultado numérico (ej. duración en unidad seleccionada o marca de tiempo en ms) en expresión; <strong>×</strong> — cerrar.</p>
     <p><strong>Fila de operandos (arriba):</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> — alternar operando activo (edición y destino «Usar resultado»).</li>
       <li><strong>Duración</strong> / <strong>FechaHora</strong> — tipo de operando activo: duración (d, h, m, s, ms) o fecha-hora.</li>
-      <li><strong>Ahora</strong> — llenar operando activo con fecha y hora actuales (solo con FechaHora seleccionado).</li>
+      <li><strong>Ahora</strong> — llenar operando activo con fecha y hora actuales en la zona horaria del dispositivo (solo con FechaHora seleccionado).</li>
       <li><strong>CA</strong> / <strong>CB</strong> — limpiar operando A o B.</li>
     </ul>
     <p><strong>Convertidor de resultado:</strong> Botón muestra unidad del resultado numérico (<strong>año</strong>, <strong>mes</strong>, <strong>semana</strong>, <strong>día</strong>, <strong>hora</strong>, <strong>min</strong>, <strong>seg</strong>, <strong>ms</strong>) — pulsar alterna. Valor al lado es resultado en esa unidad (para duraciones).</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — normalizar duración en A y B (ej. 90 min → 1h 30m).</li>
       <li><strong>Usar resultado</strong> — escribir resultado numérico en operando activo (para cálculos encadenados).</li>
     </ul>
-    <p><strong>Teclado:</strong> <strong>←</strong> borrar, <strong>−</strong> menos (permitido en días o fecha), <strong>:</strong> y <strong>.</strong> para tiempo/fracciones, <strong>C</strong> limpiar, dígitos <strong>0–9</strong>. Entrada va al campo activo del operando activo (Duración: Días, Horas, Min, Seg, ms; FechaHora: fecha, luego hora).</p>
-    <p><strong>Operaciones:</strong> Duración ± Duración; FechaHora + Duración o FechaHora − Duración; FechaHora − FechaHora da duración. FechaHora + FechaHora no permitido. En pantalla completa TIEMPO (cuando TIEMPO se muestra en área superior) los operandos A y B se muestran con campos etiquetados (Días, Horas, Min, Seg, ms o Fecha, Hora), operación <strong>+</strong>/<strong>−</strong> y <strong>&lt;&gt;</strong> para intercambiar A y B.</p>
+    <p><strong>Teclado:</strong> <strong>←</strong> borrar, <strong>−</strong> menos (permitido en días o fecha), <strong>:</strong> y <strong>.</strong> para tiempo/fracciones, <strong>C</strong> limpiar, dígitos <strong>0–9</strong>. La entrada se puede seguir escribiendo en el campo activo del operando activo (Duración: Días, Horas, Min, Seg, ms; FechaHora: fecha, luego hora). La entrada manual de DateTime sigue siendo flexible.</p>
+    <p><strong>Selectores DateTime:</strong> los campos de fecha también tienen un selector de calendario. Los campos de hora también tienen un selector de hora de 24 horas.</p>
+    <p><strong>Operaciones:</strong> Duración ± Duración; FechaHora + Duración o FechaHora − Duración; FechaHora − FechaHora da duración. FechaHora + FechaHora no permitido. Duración ± FechaHora requiere intercambiar operandos (use <strong>&lt;&gt;</strong>; el mensaje es <strong>Intercambie operandos</strong>). En pantalla completa TIEMPO (cuando TIEMPO se muestra en área superior) los operandos A y B se muestran con campos etiquetados (Días, Horas, Min, Seg, ms o Fecha, Hora), operación <strong>+</strong>/<strong>−</strong> y <strong>&lt;&gt;</strong> para intercambiar A y B.</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">Tema</span></summary>
   <div>
-    <p>Abre diálogo de selección de tema de la app.</p>
-    <p><strong>Opciones (selector):</strong> <strong>Beach Pebbles (Claro)</strong>, <strong>Starry Night (Oscuro)</strong>.</p>
+    <p>Abre un diálogo para elegir el tema de la app. El selector muestra una vista previa de cada tema.</p>
+    <p><strong>FREE:</strong> <strong>Guijarros de playa</strong>, <strong>Noche estrellada</strong>.</p>
+    <p><strong>PRO:</strong> <strong>Ascua industrial</strong>, <strong>Vino porcelana</strong>, <strong>Nordic Blue</strong>, <strong>Violet Carbon</strong>. Los temas PRO se ven en el selector también en FREE; aplicarlos requiere el desbloqueo PRO de una sola vez.</p>
   </div>
 </details>
 <details>

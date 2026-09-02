@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">ZEIT</span></summary>
   <div>
-    <p><strong>ZEIT-Panel.</strong> Berechnungen mit zwei Operanden <strong>A</strong> und <strong>B</strong>: Dauer (Tage, Stunden, Min, Sek, ms) oder Datum-Zeit (JJJJ-MM-TT und HH:MM:SS.ms). Operation <strong>+</strong> oder <strong>−</strong>; Ergebnis ist Dauer oder Datum-Zeit. Kopieren oder Ergebnis in Ausdruck einfügen.</p>
+    <p><strong>ZEIT-Panel.</strong> Berechnungen mit zwei Operanden <strong>A</strong> und <strong>B</strong>: Dauer (Tage, Stunden, Min, Sek, ms) oder Datum-Zeit (<code>yyyy-MM-dd</code> und <code>HH:mm:ss</code>). Operation <strong>+</strong> oder <strong>−</strong>; Ergebnis ist Dauer oder Datum-Zeit. Kopieren oder Ergebnis in Ausdruck einfügen.</p>
     <p><strong>Kopfzeile:</strong> <strong>Kopier</strong> — lesbares Ergebnis kopieren; <strong>→Ausdr</strong> — numerisches Ergebnis (z.B. Dauer in gewählter Einheit oder Zeitstempel in ms) in Ausdruck einfügen; <strong>×</strong> — schließen.</p>
     <p><strong>Operandenzeile (oben):</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> — aktiven Operanden wechseln (Bearbeitung und Ziel für «Erg. verw.»).</li>
       <li><strong>Dauer</strong> / <strong>DatumZeit</strong> — Typ des aktiven Operanden: Dauer (d, h, m, s, ms) oder Datum-Zeit.</li>
-      <li><strong>Jetzt</strong> — aktiven Operanden mit aktuellem Datum und Zeit füllen (nur bei DatumZeit).</li>
+      <li><strong>Jetzt</strong> — aktiven Operanden mit aktuellem Datum und Zeit in der Geräte-/Systemzeitzone füllen (nur bei DatumZeit).</li>
       <li><strong>CA</strong> / <strong>CB</strong> — Operand A oder B löschen.</li>
     </ul>
     <p><strong>Ergebniskonverter:</strong> Taste zeigt Einheit des numerischen Ergebnisses (<strong>Jahr</strong>, <strong>Monat</strong>, <strong>Woche</strong>, <strong>Tag</strong>, <strong>Stunde</strong>, <strong>Min</strong>, <strong>Sek</strong>, <strong>ms</strong>) — Drücken wechselt. Wert daneben — Ergebnis in dieser Einheit (für Dauer).</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — Dauer in A und B normalisieren (z.B. 90 Min → 1h 30m).</li>
       <li><strong>Erg. verw.</strong> — numerisches Ergebnis in aktiven Operanden schreiben (für Kettenberechnungen).</li>
     </ul>
-    <p><strong>Tastatur:</strong> <strong>←</strong> Löschen, <strong>−</strong> Minus (erlaubt in Tagen oder Datum), <strong>:</strong> und <strong>.</strong> für Zeit/Brüche, <strong>C</strong> löschen, Ziffern <strong>0–9</strong>. Eingabe geht in aktives Feld des aktiven Operanden (Dauer: Tage, Stunden, Min, Sek, ms; DatumZeit: Datum, dann Zeit).</p>
-    <p><strong>Operationen:</strong> Dauer ± Dauer; Datum-Zeit + Dauer oder Datum-Zeit − Dauer; Datum-Zeit − Datum-Zeit ergibt Dauer. DatumZeit + DatumZeit nicht erlaubt. Im Vollbild-ZEIT (wenn ZEIT im oberen Bereich angezeigt wird) werden Operanden A und B mit beschrifteten Feldern angezeigt (Tage, Stunden, Min, Sek, ms oder Datum, Zeit), Operation <strong>+</strong>/<strong>−</strong> und <strong>&lt;&gt;</strong> zum Tauschen von A und B.</p>
+    <p><strong>Tastatur:</strong> <strong>←</strong> Löschen, <strong>−</strong> Minus (erlaubt in Tagen oder Datum), <strong>:</strong> und <strong>.</strong> für Zeit/Brüche, <strong>C</strong> löschen, Ziffern <strong>0–9</strong>. Eingabe kann weiterhin ins aktive Feld des aktiven Operanden getippt werden (Dauer: Tage, Stunden, Min, Sek, ms; DatumZeit: Datum, dann Zeit). Die manuelle DateTime-Eingabe bleibt flexibel.</p>
+    <p><strong>DateTime-Auswahl:</strong> Datumsfelder haben zusätzlich eine Kalenderauswahl. Zeitfelder haben zusätzlich eine 24-Stunden-Zeitauswahl.</p>
+    <p><strong>Operationen:</strong> Dauer ± Dauer; Datum-Zeit + Dauer oder Datum-Zeit − Dauer; Datum-Zeit − Datum-Zeit ergibt Dauer. DatumZeit + DatumZeit nicht erlaubt. Dauer ± Datum-Zeit erfordert das Tauschen der Operanden (mit <strong>&lt;&gt;</strong>; Meldung <strong>Operanden tauschen</strong>). Im Vollbild-ZEIT (wenn ZEIT im oberen Bereich angezeigt wird) werden Operanden A und B mit beschrifteten Feldern angezeigt (Tage, Stunden, Min, Sek, ms oder Datum, Zeit), Operation <strong>+</strong>/<strong>−</strong> und <strong>&lt;&gt;</strong> zum Tauschen von A und B.</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">Design</span></summary>
   <div>
-    <p>Öffnet Dialog zur Auswahl des App-Designs.</p>
-    <p><strong>Optionen (Auswahl):</strong> <strong>Beach Pebbles (Hell)</strong>, <strong>Starry Night (Dunkel)</strong>.</p>
+    <p>Öffnet einen Dialog zur Auswahl des App-Designs. Die Designauswahl zeigt eine Vorschau jedes Designs.</p>
+    <p><strong>FREE:</strong> <strong>Strandkiesel</strong>, <strong>Sternennacht</strong>.</p>
+    <p><strong>PRO:</strong> <strong>Industrielle Glut</strong>, <strong>Porzellanwein</strong>, <strong>Nordic Blue</strong>, <strong>Violet Carbon</strong>. PRO-Designs sind in FREE in der Auswahl sichtbar; zum Anwenden ist die bestehende einmalige PRO-Freischaltung nötig.</p>
   </div>
 </details>
 <details>

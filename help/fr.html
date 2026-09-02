@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">TIME</span></summary>
   <div>
-    <p><strong>Overlay Temps.</strong> Calculer avec deux opérandes <strong>A</strong> et <strong>B</strong> : durées (jours, heures, min, s, ms) ou date-heure (AAAA-MM-JJ et HH:MM:SS.ms). Opération <strong>+</strong> ou <strong>−</strong> ; le résultat peut être une durée ou une date-heure. Copier ou insérer le résultat dans l'expression.</p>
+    <p><strong>Overlay Temps.</strong> Calculer avec deux opérandes <strong>A</strong> et <strong>B</strong> : durées (jours, heures, min, s, ms) ou date-heure (<code>yyyy-MM-dd</code> et <code>HH:mm:ss</code>). Opération <strong>+</strong> ou <strong>−</strong> ; le résultat peut être une durée ou une date-heure. Copier ou insérer le résultat dans l'expression.</p>
     <p><strong>En-tête :</strong> <strong>Copier</strong> — copier le résultat lisible dans le presse-papiers ; <strong>→Exp</strong> — insérer le résultat numérique (ex. durée dans l'unité choisie, ou timestamp en ms) dans l'expression ; <strong>×</strong> — fermer.</p>
     <p><strong>Ligne opérandes (en haut) :</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> — changer l'opérande active (édition et cible « Utiliser le résultat »).</li>
       <li><strong>Durée</strong> / <strong>Date-heure</strong> — type de l'opérande active : durée (j, h, m, s, ms) ou date-heure (date + heure).</li>
-      <li><strong>Main.</strong> — remplir l'opérande active avec la date et l'heure actuelles (uniquement quand Date-heure est sélectionné).</li>
+      <li><strong>Main.</strong> — remplir l'opérande active avec la date et l'heure actuelles dans le fuseau horaire de l'appareil (uniquement quand Date-heure est sélectionné).</li>
       <li><strong>CA</strong> / <strong>CB</strong> — effacer l'opérande A ou B.</li>
     </ul>
     <p><strong>Convertisseur de résultat :</strong> Le bouton affiche l'unité du résultat numérique (<strong>année</strong>, <strong>mois</strong>, <strong>semaine</strong>, <strong>jour</strong>, <strong>heure</strong>, <strong>min</strong>, <strong>s</strong>, <strong>ms</strong>) — appuyer pour changer. La valeur à côté est le résultat dans cette unité (pour les résultats en durée).</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — normaliser la durée dans A et B (ex. 90 min → 1h 30m).</li>
       <li><strong>Utiliser le résultat</strong> — écrire le résultat numérique dans l'opérande active (pour des calculs en chaîne).</li>
     </ul>
-    <p><strong>Clavier :</strong> <strong>←</strong> retour arrière, <strong>−</strong> moins (autorisé dans Jours ou date), <strong>:</strong> et <strong>.</strong> pour heure/décimales, <strong>C</strong> tout effacer, chiffres <strong>0–9</strong>. La saisie va dans le champ actif de l'opérande active (Durée : jours, heures, min, s, ms ; Date-heure : date puis heure).</p>
-    <p><strong>Opérations :</strong> Durée ± Durée ; Date-heure + Durée ou Date-heure − Durée ; Date-heure − Date-heure donne une durée. DT + DT non autorisé. Sur l'écran Temps complet, les opérandes A et B sont affichées avec des champs (Jours, Heures, Min, s, ms ou Date, Heure), opération <strong>+</strong>/<strong>−</strong>, et <strong>&lt;&gt;</strong> pour échanger A et B.</p>
+    <p><strong>Clavier :</strong> <strong>←</strong> retour arrière, <strong>−</strong> moins (autorisé dans Jours ou date), <strong>:</strong> et <strong>.</strong> pour heure/décimales, <strong>C</strong> tout effacer, chiffres <strong>0–9</strong>. La saisie peut toujours être tapée dans le champ actif de l'opérande active (Durée : jours, heures, min, s, ms ; Date-heure : date puis heure). La saisie manuelle DateTime reste souple.</p>
+    <p><strong>Sélecteurs DateTime :</strong> les champs Date ont aussi un sélecteur de calendrier. Les champs Heure ont aussi un sélecteur d'heure 24 heures.</p>
+    <p><strong>Opérations :</strong> Durée ± Durée ; Date-heure + Durée ou Date-heure − Durée ; Date-heure − Date-heure donne une durée. DT + DT non autorisé. Durée ± Date-heure exige d'échanger les opérandes (utilisez <strong>&lt;&gt;</strong> ; le message est <strong>Échanger les opérandes</strong>). Sur l'écran Temps complet, les opérandes A et B sont affichées avec des champs (Jours, Heures, Min, s, ms ou Date, Heure), opération <strong>+</strong>/<strong>−</strong>, et <strong>&lt;&gt;</strong> pour échanger A et B.</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">Thème</span></summary>
   <div>
-    <p>Ouvre une boîte de dialogue pour choisir le thème de l'application.</p>
-    <p><strong>Options (boutons radio) :</strong> <strong>Beach Pebbles (Clair)</strong>, <strong>Starry Night (Sombre)</strong>.</p>
+    <p>Ouvre une boîte de dialogue pour choisir le thème de l'application. Le sélecteur affiche un aperçu de chaque thème.</p>
+    <p><strong>FREE :</strong> <strong>Galets de plage</strong>, <strong>Nuit étoilée</strong>.</p>
+    <p><strong>PRO :</strong> <strong>Braise industrielle</strong>, <strong>Vin porcelaine</strong>, <strong>Nordic Blue</strong>, <strong>Violet Carbon</strong>. Les thèmes PRO restent visibles dans le sélecteur en FREE ; les appliquer nécessite le déverrouillage PRO unique existant.</p>
   </div>
 </details>
 <details>

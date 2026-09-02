@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">TIME</span></summary>
   <div>
-    <p><strong>Overlay de tempo.</strong> Calcula com dois operandos <strong>A</strong> e <strong>B</strong>: durações (dias, horas, min, seg, ms) ou data-hora (YYYY-MM-DD e HH:MM:SS.ms). Operação <strong>+</strong> ou <strong>−</strong>; o resultado pode ser uma duração ou uma data-hora. Copie ou insira o resultado na expressão.</p>
+    <p><strong>Overlay de tempo.</strong> Calcula com dois operandos <strong>A</strong> e <strong>B</strong>: durações (dias, horas, min, seg, ms) ou data-hora (<code>yyyy-MM-dd</code> e <code>HH:mm:ss</code>). Operação <strong>+</strong> ou <strong>−</strong>; o resultado pode ser uma duração ou uma data-hora. Copie ou insira o resultado na expressão.</p>
     <p><strong>Cabeçalho:</strong> <strong>Copiar</strong> — copiar o resultado legível para a área de transferência; <strong>→Exp</strong> — inserir o resultado numérico (ex.: duração na unidade escolhida, ou epoch em ms) na expressão; <strong>×</strong> — fechar.</p>
     <p><strong>Linha de operandos (acima):</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> — alternar o operando ativo (edição e destino de &quot;Usar res.&quot;).</li>
       <li><strong>Duração</strong> / <strong>DataHora</strong> — tipo do operando ativo: duração (d, h, m, s, ms) ou data-hora (data + hora).</li>
-      <li><strong>Agora</strong> — preencher o operando ativo com a data e a hora atuais (somente quando DataHora estiver selecionado).</li>
+      <li><strong>Agora</strong> — preencher o operando ativo com a data e a hora atuais no fuso horário do dispositivo/sistema (somente quando DataHora estiver selecionado).</li>
       <li><strong>CA</strong> / <strong>CB</strong> — limpar o operando A ou B.</li>
     </ul>
     <p><strong>Conversor de resultado:</strong> O botão mostra a unidade do resultado numérico (<strong>ano</strong>, <strong>mês</strong>, <strong>semana</strong>, <strong>dia</strong>, <strong>hora</strong>, <strong>min</strong>, <strong>seg</strong>, <strong>ms</strong>) — toque para ciclar. O valor ao lado é o resultado nessa unidade (para resultados de duração).</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — normalizar a duração em A e B (ex.: 90 min → 1h 30m).</li>
       <li><strong>Usar res.</strong> — gravar o resultado numérico no operando ativo (para cálculos encadeados).</li>
     </ul>
-    <p><strong>Teclado:</strong> <strong>←</strong> backspace, <strong>−</strong> menos (permitido em Dias ou na data), <strong>:</strong> e <strong>.</strong> para hora/decimais, <strong>C</strong> limpar tudo, dígitos <strong>0–9</strong>. A entrada vai para o campo ativo do operando ativo (Duração: dias, horas, min, seg, ms; DataHora: data e, em seguida, hora).</p>
-    <p><strong>Operações:</strong> Duração ± Duração; DataHora + Duração ou DataHora − Duração; DataHora − DataHora resulta em uma duração. DT + DT não é permitido. Na tela completa de Tempo (quando TEMPO aparece na área superior), os operandos A e B são mostrados com campos rotulados (Dias, Horas, Min, Seg, ms ou Data, Hora), operação <strong>+</strong>/<strong>−</strong> e <strong>&lt;&gt;</strong> para trocar A e B.</p>
+    <p><strong>Teclado:</strong> <strong>←</strong> backspace, <strong>−</strong> menos (permitido em Dias ou na data), <strong>:</strong> e <strong>.</strong> para hora/decimais, <strong>C</strong> limpar tudo, dígitos <strong>0–9</strong>. A entrada ainda pode ser digitada no campo ativo do operando ativo (Duração: dias, horas, min, seg, ms; DataHora: data e, em seguida, hora). A entrada manual de DateTime continua flexível.</p>
+    <p><strong>Seletores DateTime:</strong> os campos de data também têm um seletor de calendário. Os campos de hora também têm um seletor de hora de 24 horas.</p>
+    <p><strong>Operações:</strong> Duração ± Duração; DataHora + Duração ou DataHora − Duração; DataHora − DataHora resulta em uma duração. DT + DT não é permitido. Duração ± DataHora exige trocar os operandos (use <strong>&lt;&gt;</strong>; a mensagem é <strong>Troque os operandos</strong>). Na tela completa de Tempo (quando TEMPO aparece na área superior), os operandos A e B são mostrados com campos rotulados (Dias, Horas, Min, Seg, ms ou Data, Hora), operação <strong>+</strong>/<strong>−</strong> e <strong>&lt;&gt;</strong> para trocar A e B.</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">Tema</span></summary>
   <div>
-    <p>Abre um diálogo para escolher o tema do aplicativo.</p>
-    <p><strong>Opções (radio):</strong> <strong>Beach Pebbles (Claro)</strong>, <strong>Starry Night (Escuro)</strong>.</p>
+    <p>Abre um diálogo para escolher o tema do aplicativo. O seletor de temas mostra uma prévia de cada tema.</p>
+    <p><strong>FREE:</strong> <strong>Beach Pebbles</strong>, <strong>Starry Night</strong>.</p>
+    <p><strong>PRO:</strong> <strong>Brasa industrial</strong>, <strong>Vinho porcelana</strong>, <strong>Nordic Blue</strong>, <strong>Violet Carbon</strong>. Os temas PRO ficam visíveis no seletor no FREE; aplicá-los exige o desbloqueio PRO único já existente.</p>
   </div>
 </details>
 <details>

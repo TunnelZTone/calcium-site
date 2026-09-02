@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">TIME</span></summary>
   <div>
-    <p><strong>時間オーバーレイ。</strong> 2つのオペランド <strong>A</strong> と <strong>B</strong> で計算します: 期間（日、時、分、秒、ms）または日時（YYYY-MM-DD と HH:MM:SS.ms）。演算 <strong>+</strong> または <strong>−</strong>; 結果は期間または日時になります。コピーまたは式へ挿入できます。</p>
+    <p><strong>時間オーバーレイ。</strong> 2つのオペランド <strong>A</strong> と <strong>B</strong> で計算します: 期間（日、時、分、秒、ms）または日時（<code>yyyy-MM-dd</code> と <code>HH:mm:ss</code>）。演算 <strong>+</strong> または <strong>−</strong>; 結果は期間または日時になります。コピーまたは式へ挿入できます。</p>
     <p><strong>ヘッダー:</strong> <strong>コピー</strong> — 読みやすい結果をクリップボードへ; <strong>→Exp</strong> — 数値結果（選択した単位の期間、またはエポック ms）を式へ挿入; <strong>×</strong> — 閉じる。</p>
     <p><strong>オペランド行（上）:</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> — アクティブなオペランドを切替（編集と<strong>結果を使う</strong>の対象）。</li>
       <li><strong>期間</strong> / <strong>日時</strong> — アクティブなオペランドの種類: 期間（d, h, m, s, ms）または日時（日付 + 時刻）。</li>
-      <li><strong>現在</strong> — アクティブなオペランドに現在の日時を入れる（日時のときのみ）。</li>
+      <li><strong>現在</strong> — アクティブなオペランドにデバイス／システムのタイムゾーンでの現在の日時を入れる（日時のときのみ）。</li>
       <li><strong>CA</strong> / <strong>CB</strong> — オペランド A または B を消去。</li>
     </ul>
     <p><strong>結果の単位:</strong> ボタンは数値結果の単位（<strong>年</strong>、<strong>月</strong>、<strong>週</strong>、<strong>日</strong>、<strong>時</strong>、<strong>分</strong>、<strong>秒</strong>、<strong>ms</strong>）を表示 — タップで循環。横の値はその単位での結果（期間結果のとき）。</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — A と B の期間を正規化（例: 90 分 → 1 時 30 分）。</li>
       <li><strong>結果を使う</strong> — 数値結果をアクティブなオペランドへ書き込み（連鎖計算用）。</li>
     </ul>
-    <p><strong>キーパッド:</strong> <strong>←</strong> バックスペース、<strong>−</strong> マイナス（日または日付で可）、<strong>:</strong> と <strong>.</strong> で時刻/小数、<strong>C</strong> すべて消去、数字 <strong>0–9</strong>。入力はアクティブなオペランドのアクティブなフィールドへ（期間: 日、時、分、秒、ms; 日時: 日付、続けて時刻）。</p>
-    <p><strong>演算:</strong> 期間 ± 期間; 日時 + 期間 または 日時 − 期間; 日時 − 日時 は期間。DT + DT は不可。時間画面全体では A と B にラベル付きフィールド（日、時、分、秒、ms または 日付、時刻）、<strong>+</strong>/<strong>−</strong>、A と B を入れ替える <strong>&lt;&gt;</strong> が表示されます。</p>
+    <p><strong>キーパッド:</strong> <strong>←</strong> バックスペース、<strong>−</strong> マイナス（日または日付で可）、<strong>:</strong> と <strong>.</strong> で時刻/小数、<strong>C</strong> すべて消去、数字 <strong>0–9</strong>。入力は引き続きアクティブなオペランドのアクティブなフィールドへ手入力できます（期間: 日、時、分、秒、ms; 日時: 日付、続けて時刻）。DateTime の手入力は柔軟なままです。</p>
+    <p><strong>DateTime ピッカー:</strong> 日付フィールドにはカレンダーピッカーもあります。時刻フィールドには 24 時間の時刻ピッカーもあります。</p>
+    <p><strong>演算:</strong> 期間 ± 期間; 日時 + 期間 または 日時 − 期間; 日時 − 日時 は期間。DT + DT は不可。期間 ± 日時はオペランドの入れ替えが必要です（<strong>&lt;&gt;</strong> を使用。メッセージは <strong>オペランドを入れ替えてください</strong>）。時間画面全体では A と B にラベル付きフィールド（日、時、分、秒、ms または 日付、時刻）、<strong>+</strong>/<strong>−</strong>、A と B を入れ替える <strong>&lt;&gt;</strong> が表示されます。</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">テーマ</span></summary>
   <div>
-    <p>アプリのテーマを選ぶダイアログを開きます。</p>
-    <p><strong>オプション（ラジオ）:</strong> <strong>ビーチペブルズ（ライト）</strong>、<strong>スターリーナイト（ダーク）</strong>。</p>
+    <p>アプリのテーマを選ぶダイアログを開きます。テーマ選択には各テーマのプレビューが表示されます。</p>
+    <p><strong>FREE:</strong> <strong>ビーチペブルズ</strong>、<strong>スターリーナイト</strong>。</p>
+    <p><strong>PRO:</strong> <strong>インダストリアル・エンバー</strong>、<strong>ポーセリン・ワイン</strong>、<strong>Nordic Blue</strong>、<strong>Violet Carbon</strong>。PRO テーマは FREE でも選択画面に表示されます。適用には既存の一度きりの PRO 解除が必要です。</p>
   </div>
 </details>
 <details>

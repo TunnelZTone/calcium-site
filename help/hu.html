@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">TIME</span></summary>
   <div>
-    <p><strong>Idő overlay.</strong> Számítás két <strong>A</strong> és <strong>B</strong> operandussal: időtartamok (nap, óra, perc, mp, ms) vagy dátum-idő (ÉÉÉÉ-HH-NN és ÓÓ:PP:MP.ms). Művelet <strong>+</strong> vagy <strong>−</strong>; az eredmény lehet időtartam vagy dátum-idő. Másolja vagy illessze be az eredményt a kifejezésbe.</p>
+    <p><strong>Idő overlay.</strong> Számítás két <strong>A</strong> és <strong>B</strong> operandussal: időtartamok (nap, óra, perc, mp, ms) vagy dátum-idő (<code>yyyy-MM-dd</code> és <code>HH:mm:ss</code>). Művelet <strong>+</strong> vagy <strong>−</strong>; az eredmény lehet időtartam vagy dátum-idő. Másolja vagy illessze be az eredményt a kifejezésbe.</p>
     <p><strong>Fejléc:</strong> <strong>Másolás</strong> — emberi formátumú eredmény másolása a vágólapra; <strong>→Expr</strong> — numerikus eredmény beillesztése (pl. időtartam a választott egységben vagy epoch ms) a kifejezésbe; <strong>×</strong> — bezárás.</p>
     <p><strong>Operandus sor (felső):</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> — aktív operandus váltása (szerkesztés és „Eredmény használata” cél).</li>
       <li><strong>Időtartam</strong> / <strong>DátumIdő</strong> — az aktív operandus típusa: időtartam (n, ó, p, mp, ms) vagy dátum-idő (dátum + idő).</li>
-      <li><strong>Most</strong> — az aktív operandus kitöltése az aktuális dátummal és idővel (csak DátumIdő kiválasztásakor).</li>
+      <li><strong>Most</strong> — az aktív operandus kitöltése az aktuális dátummal és idővel a készülék/rendszer időzónájában (csak DátumIdő kiválasztásakor).</li>
       <li><strong>CA</strong> / <strong>CB</strong> — A vagy B operandus törlése.</li>
     </ul>
     <p><strong>Eredmény konverter:</strong> A gomb mutatja a numerikus eredmény egységét (<strong>év</strong>, <strong>hónap</strong>, <strong>hét</strong>, <strong>nap</strong>, <strong>óra</strong>, <strong>perc</strong>, <strong>mp</strong>, <strong>ms</strong>) — érintés vált. A mellette lévő érték az eredmény ebben az egységben (időtartam eredményeknél).</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — időtartam normalizálása A-ban és B-ben (pl. 90 perc → 1ó 30p).</li>
       <li><strong>Er. haszn.</strong> — numerikus eredmény beírása az aktív operandusba (láncolt számításokhoz).</li>
     </ul>
-    <p><strong>Billentyűzet:</strong> <strong>←</strong> visszatörlés, <strong>−</strong> mínusz (megengedett Napokban vagy dátumban), <strong>:</strong> és <strong>.</strong> idő/tizedeshez, <strong>C</strong> minden törlése, számjegyek <strong>0–9</strong>. A bemenet az aktív operandus aktív mezőjébe kerül (Időtartam: nap, óra, perc, mp, ms; DátumIdő: dátum, majd idő).</p>
-    <p><strong>Műveletek:</strong> Időtartam ± Időtartam; DátumIdő + Időtartam vagy DátumIdő − Időtartam; DátumIdő − DátumIdő időtartamot ad. DT + DT nem megengedett. A teljes Idő képernyőn (amikor IDŐ látható felül) A és B operandusok feliratos mezőkkel (Nap, Óra, Perc, Mp, ms vagy Dátum, Idő), <strong>+</strong>/<strong>−</strong> művelet és <strong>&lt;&gt;</strong> A és B cseréjéhez.</p>
+    <p><strong>Billentyűzet:</strong> <strong>←</strong> visszatörlés, <strong>−</strong> mínusz (megengedett Napokban vagy dátumban), <strong>:</strong> és <strong>.</strong> idő/tizedeshez, <strong>C</strong> minden törlése, számjegyek <strong>0–9</strong>. A bemenet továbbra is begépelhető az aktív operandus aktív mezőjébe (Időtartam: nap, óra, perc, mp, ms; DátumIdő: dátum, majd idő). A kézi DateTime bevitel rugalmas marad.</p>
+    <p><strong>DateTime választók:</strong> a dátummezőkhöz naptárválasztó is tartozik. Az időmezőkhöz 24 órás időválasztó is tartozik.</p>
+    <p><strong>Műveletek:</strong> Időtartam ± Időtartam; DátumIdő + Időtartam vagy DátumIdő − Időtartam; DátumIdő − DátumIdő időtartamot ad. DT + DT nem megengedett. Időtartam ± DátumIdő esetén az operandusokat ki kell cserélni (használja a <strong>&lt;&gt;</strong> jelet; üzenet: <strong>Operandusok cseréje</strong>). A teljes Idő képernyőn (amikor IDŐ látható felül) A és B operandusok feliratos mezőkkel (Nap, Óra, Perc, Mp, ms vagy Dátum, Idő), <strong>+</strong>/<strong>−</strong> művelet és <strong>&lt;&gt;</strong> A és B cseréjéhez.</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">Téma</span></summary>
   <div>
-    <p>Párbeszédablak az alkalmazás téma kiválasztásához.</p>
-    <p><strong>Opciók (rádió):</strong> <strong>Tengeri kavicsok (Világos)</strong>, <strong>Csillagos éj (Sötét)</strong>.</p>
+    <p>Párbeszédablak az alkalmazás téma kiválasztásához. A témaválasztó minden témához előnézetet mutat.</p>
+    <p><strong>FREE:</strong> <strong>Tengerparti kavicsok</strong>, <strong>Csillagos éjszaka</strong>.</p>
+    <p><strong>PRO:</strong> <strong>Ipari parázs</strong>, <strong>Porcelánbor</strong>, <strong>Nordic Blue</strong>, <strong>Violet Carbon</strong>. A PRO témák FREE-ben is látszanak a választóban; alkalmazásukhoz a meglévő egyszeri PRO feloldás szükséges.</p>
   </div>
 </details>
 <details>

@@ -601,13 +601,13 @@
 <details>
   <summary><span class="summary-title">TIME</span></summary>
   <div>
-    <p><strong>टाइम ओवरले।</strong> दो ऑपरेंड <strong>A</strong> और <strong>B</strong> के साथ गणना करें: अवधि (दिन, घंटे, मिनट, सेकंड, ms) या दिनांक-समय (YYYY-MM-DD और HH:MM:SS.ms)। ऑपरेशन <strong>+</strong> या <strong>−</strong>; परिणाम अवधि या दिनांक-समय हो सकता है। परिणाम को अभिव्यक्ति में कॉपी या सम्मिलित किया जा सकता है।</p>
+    <p><strong>टाइम ओवरले।</strong> दो ऑपरेंड <strong>A</strong> और <strong>B</strong> के साथ गणना करें: अवधि (दिन, घंटे, मिनट, सेकंड, ms) या दिनांक-समय (<code>yyyy-MM-dd</code> और <code>HH:mm:ss</code>)। ऑपरेशन <strong>+</strong> या <strong>−</strong>; परिणाम अवधि या दिनांक-समय हो सकता है। परिणाम को अभिव्यक्ति में कॉपी या सम्मिलित किया जा सकता है।</p>
     <p><strong>शीर्षलेख:</strong> <strong>समय</strong> शीर्षक; <strong>कॉपी</strong> — पढ़ने योग्य परिणाम कॉपी करें; <strong>→Exp</strong> — संख्यात्मक परिणाम अभिव्यक्ति में डालें; <strong>×</strong> — बंद करें।</p>
     <p><strong>संकार्य पंक्ति (शीर्ष):</strong></p>
     <ul>
       <li><strong>A</strong> / <strong>B</strong> - सक्रिय ऑपरेंड स्विच करें (संपादन और <strong>परिणाम→</strong> लक्ष्य)।</li>
       <li><strong>अवधि</strong> / <strong>DateTime</strong> — सक्रिय ऑपरेंड का प्रकार: अवधि या दिनांक-समय।</li>
-      <li><strong>अब</strong> — सक्रिय ऑपरेंड को वर्तमान दिनांक-समय से भरें (जब DateTime चुना हो)।</li>
+      <li><strong>अब</strong> — सक्रिय ऑपरेंड को डिवाइस/सिस्टम समय क्षेत्र की वर्तमान दिनांक-समय से भरें (जब DateTime चुना हो)।</li>
       <li><strong>CA</strong> / <strong>CB</strong> — ऑपरेंड A या B साफ़ करें।</li>
     </ul>
     <p><strong>परिणाम कनवर्टर:</strong> बटन संख्यात्मक परिणाम की इकाई दिखाता है (<strong>वर्ष</strong>, <strong>माह</strong>, <strong>सप्ताह</strong>, <strong>दिन</strong>, <strong>घंटा</strong>, <strong>मिनट</strong>, <strong>सेकंड</strong>, <strong>ms</strong>) — चक्र के लिए टैप करें। आगे का मान उसी इकाई में परिणाम है।</p>
@@ -617,8 +617,9 @@
       <li><strong>Norm</strong> — A और B में अवधि सामान्य करें (जैसे 90 मिनट → 1 घंटा 30 मिनट)।</li>
       <li><strong>परिणाम→</strong> — संख्यात्मक परिणाम सक्रिय ऑपरेंड में लिखें।</li>
     </ul>
-    <p><strong>कीपैड:</strong> <strong>←</strong> बैकस्पेस, <strong>−</strong> माइनस (दिन या तारीख में मान्य), समय/दशमलव के लिए <strong>:</strong> और <strong>.</strong>, सब साफ़ करने के लिए <strong>C</strong>, और अंक <strong>0–9</strong>। इनपुट सक्रिय ऑपरेंड के सक्रिय फ़ील्ड में दर्ज होता है (अवधि: दिन, घंटे, मिनट, सेकंड, ms; दिनांक-समय: तारीख, फिर समय)।</p>
-    <p><strong>संचालन:</strong> अवधि ± अवधि; DateTime + अवधि या DateTime − अवधि; DateTime − DateTime एक अवधि देता है। DT+DT मान्य नहीं है। पूर्ण समय स्क्रीन पर ऑपरेंड A और B लेबल <strong>दिन</strong>, <strong>घंटे</strong>, <strong>मिनट</strong>, <strong>सेकंड</strong>, <strong>ms</strong> या <strong>तिथि</strong>, <strong>समय</strong> के साथ दिखते हैं; ऑपरेशन <strong>+</strong>/<strong>−</strong>; और <strong>&lt;&gt;</strong> से A और B बदले जा सकते हैं।</p>
+    <p><strong>कीपैड:</strong> <strong>←</strong> बैकस्पेस, <strong>−</strong> माइनस (दिन या तारीख में मान्य), समय/दशमलव के लिए <strong>:</strong> और <strong>.</strong>, सब साफ़ करने के लिए <strong>C</strong>, और अंक <strong>0–9</strong>। इनपुट अब भी सक्रिय ऑपरेंड के सक्रिय फ़ील्ड में टाइप किया जा सकता है (अवधि: दिन, घंटे, मिनट, सेकंड, ms; दिनांक-समय: तारीख, फिर समय)। मैन्युअल DateTime इनपुट लचीला रहता है।</p>
+    <p><strong>DateTime चयन:</strong> दिनांक फ़ील्ड में कैलेंडर पिकर भी है। समय फ़ील्ड में 24-घंटे का समय पिकर भी है।</p>
+    <p><strong>संचालन:</strong> अवधि ± अवधि; DateTime + अवधि या DateTime − अवधि; DateTime − DateTime एक अवधि देता है। DT+DT मान्य नहीं है। अवधि ± DateTime के लिए ऑपरेंड बदलें (<strong>&lt;&gt;</strong> उपयोग करें; संदेश <strong>ऑपरेंड बदलें</strong>)। पूर्ण समय स्क्रीन पर ऑपरेंड A और B लेबल <strong>दिन</strong>, <strong>घंटे</strong>, <strong>मिनट</strong>, <strong>सेकंड</strong>, <strong>ms</strong> या <strong>तिथि</strong>, <strong>समय</strong> के साथ दिखते हैं; ऑपरेशन <strong>+</strong>/<strong>−</strong>; और <strong>&lt;&gt;</strong> से A और B बदले जा सकते हैं।</p>
   </div>
 </details>
 <details>
@@ -743,8 +744,9 @@
 <details>
   <summary><span class="summary-title">थीम</span></summary>
   <div>
-    <p>ऐप थीम चुनने के लिए एक संवाद खोलता है।</p>
-    <p><strong>विकल्प (रेडियो):</strong> <strong>Beach Pebbles (लाइट)</strong>, <strong>Starry Night (डार्क)</strong>।</p>
+    <p>ऐप थीम चुनने के लिए एक संवाद खोलता है। Theme Picker प्रत्येक थीम का पूर्वावलोकन दिखाता है।</p>
+    <p><strong>FREE:</strong> <strong>Beach Pebbles</strong>, <strong>Starry Night</strong>।</p>
+    <p><strong>PRO:</strong> <strong>इंडस्ट्रियल एम्बर</strong>, <strong>पोर्सलिन वाइन</strong>, <strong>Nordic Blue</strong>, <strong>Violet Carbon</strong>। PRO थीम FREE में भी चयन में दिखती हैं; लागू करने के लिए मौजूदा एक-बार PRO अनलॉक चाहिए।</p>
   </div>
 </details>
 <details>
